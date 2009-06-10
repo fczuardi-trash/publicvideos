@@ -12,6 +12,7 @@ MANAGERS = ADMINS
 
 # create database publicvideos_dev default character set utf8;
 # grant all on publicvideos_dev.* to m1ch43l@localhost identified by 'p4l1n'; 
+
 DATABASE_ENGINE = 'mysql' # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
 DATABASE_NAME = 'publicvideos_dev' # Or path to database file if using sqlite3.
 DATABASE_USER = 'm1ch43l' # Not used with sqlite3.
@@ -55,30 +56,28 @@ SECRET_KEY = '6@4__^29fd+7lf$vl@x&9*8v7@_%hc()oz(rvlsomjptp8!7$p'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.load_template_source',
-    'django.template.loaders.app_directories.load_template_source',
-#     'django.template.loaders.eggs.load_template_source',
+  'django.template.loaders.filesystem.load_template_source',
+  'django.template.loaders.app_directories.load_template_source',
+# 'django.template.loaders.eggs.load_template_source',
 )
 
 MIDDLEWARE_CLASSES = (
-    'django.middleware.common.CommonMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
+  'django.middleware.common.CommonMiddleware',
+  'django.contrib.sessions.middleware.SessionMiddleware',
+  'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
 
 ROOT_URLCONF = 'publicvideos_site.urls'
 
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+  os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
 )
 
 INSTALLED_APPS = (
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.sites',
-    'django.contrib.admin',
-    'publicvideos_site.main'
+  'django.contrib.auth',
+  'django.contrib.contenttypes',
+  'django.contrib.sessions',
+  'django.contrib.sites',
+  'django.contrib.admin',
+  'publicvideos_site.main'
 )
