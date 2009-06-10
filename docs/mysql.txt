@@ -1,0 +1,53 @@
+
+.bash_login 
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+
+# delete any existing mysql installs
+sudo rm /usr/local/mysql
+
+# delete any auto-startup entries
+sudo rm -rf /Library/StartupItems/MySQLCOM/
+
+
+
+wget http://dev.mysql.com/get/Downloads/MySQL-5.1/mysql-5.1.35.tar.gz/from/http://mysql.cce.usp.br/
+
+
+CC=gcc CFLAGS="-O3 -fno-omit-frame-pointer" CXX=gcc 
+CXXFLAGS="-O3 -fno-omit-frame-pointer -felide-constructors -fno-exceptions -fno-rtti" 
+./configure --prefix=/usr/local/mysql --with-extra-charsets=complex --enable-thread-safe-client --enable-local-infile --enable-shared --with-plugins=innobase
+
+
+cd /usr/local/mysql
+sudo ./bin/mysql_install_db --user=mysql
+
+sudo chown -R mysql ./var
+
+
+mate /tmp/com.mysql.mysqld.plist
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>KeepAlive</key>
+    <true/>
+    <key>Label</key>
+    <string>com.mysql.mysqld</string>
+    <key>Program</key>
+    <string>/usr/local/mysql/bin/mysqld_safe</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>UserName</key>
+    <string>mysql</string>
+    <key>WorkingDirectory</key>
+    <string>/usr/local/mysql</string>
+</dict>
+</plist>
+
+
+sudo mv /tmp/com.mysql.mysqld.plist /Library/LaunchDaemons
+sudo chown root /Library/LaunchDaemons/com.mysql.mysqld.plist
+
+sudo launchctl load -w /Library/LaunchDaemons/com.mysql.mysqld.plist
+sudo launchctl unload -w /Library/LaunchDaemons/com.mysql.mysqld.plist
