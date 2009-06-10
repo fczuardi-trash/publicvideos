@@ -51,3 +51,13 @@ sudo chown root /Library/LaunchDaemons/com.mysql.mysqld.plist
 
 sudo launchctl load -w /Library/LaunchDaemons/com.mysql.mysqld.plist
 sudo launchctl unload -w /Library/LaunchDaemons/com.mysql.mysqld.plist
+
+
+
+mysql-python
+
+comment out uint def no _mysql.c
+sudo env ARCHFLAGS="-arch i386"
+sudo python setup.py bu
+
+
