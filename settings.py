@@ -49,7 +49,7 @@ USE_I18N = True
 # Example: "/home/media/media.lawrence.com/"
 MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'static').replace('\\','/')
 
-TMP_VIDEO_ROOT = os.path.join('/mnt/tmp/publicvideos/uploaded')
+TMP_VIDEO_ROOT = '/mnt/tmp/publicvideos/uploaded'
 
 FILE_UPLOAD_TEMP_DIR = TMP_VIDEO_ROOT
 
