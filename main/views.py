@@ -1,3 +1,4 @@
+from __future__ import with_statement
 import os
 import sha
 import time
@@ -37,14 +38,15 @@ def upload_videos(request):
     if request.method == 'POST':
       for k in request.FILES.keys():
         uploaded_file = request.FILES[k]
+        uploaded_file_content = uploaded_file.read()
         name, ext = os.path.splitext(uploaded_file.name)
         uploaded_video = Video()
+        uploaded_video.status = 'pending_upload_to_s3'
         uploaded_video.mimetype = mimetypes.types_map.get(ext)
-        uploaded_video.s3_key = sha.new('%s-%s' % (settings.SECRET_KEY, '%f' % time.time())).hexdigest()
-        handle = open(os.path.join(settings.TMP_VIDEO_ROOT, uploaded_video.s3_key), 'wb')
-        for chunk in uploaded_file.chunks():
-          handle.write(chunk)
-        handle.close()
+        uploaded_video.s3_key = sha.new('%s-%s' % (settings.SECRET_KEY, uploaded_file_content)).hexdigest()
+        with open(os.path.join(settings.TMP_VIDEO_ROOT, uploaded_video.s3_key), 'wb') as f:
+          f.write(uploaded_file_content)
+        del uploaded_file_content
         uploaded_video.save()
       return HttpResponse('')
     return render_to_response("videos/upload.html", locals())

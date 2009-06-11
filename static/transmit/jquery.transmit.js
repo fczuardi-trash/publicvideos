@@ -28,7 +28,7 @@
             allowedDomain: location.hostname,
             allowedFileTypes: {}, // Any file type.
             debug: false,
-            maxFileSize: 5242880, // 5 MB in bytes
+            maxFileSize: 80 * (1024*1204), // 5 MB in bytes
             swfId: 'transmit',
             swfUrl: 'uploader.swf'
         },

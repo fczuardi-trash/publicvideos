@@ -51,8 +51,12 @@ MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'static').replace('\\','/')
 
 TMP_VIDEO_ROOT = os.path.join('/mnt/tmp/publicvideos/uploaded')
 
+FILE_UPLOAD_TEMP_DIR = TMP_VIDEO_ROOT
+
 if not os.path.exists(TMP_VIDEO_ROOT):
   os.makedirs(TMP_VIDEO_ROOT)
+  
+FILE_UPLOAD_MAX_MEMORY_SIZE = 80 * (1024*1024) 
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
