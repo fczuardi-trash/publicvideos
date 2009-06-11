@@ -1,0 +1,276 @@
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym {border:0;font-variant:normal;}sup {vertical-align:text-top;}sub {vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}body {font:13px/1.231 verdana,arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}table {font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+
+/* ----- Common elements ----- */
+
+body {
+    background: #FFF;
+    text-align: center;
+}
+
+h1 {
+	font-size: 161.6%;
+}
+
+h3 {
+	font-size: 138.5%;
+}
+
+a, a:visited {
+	color: blue;
+	text-decoration: none;
+}
+
+.disabled {
+	color: #BBB;
+}
+
+.overlimit {
+    color: #C16803;
+}
+
+.hidden {
+	display: none;
+}
+
+p.note {
+	color: #BBB;
+	font-size: 85%;
+}
+
+/* ----- Structural elements ----- */
+
+#wrapper {
+	margin: 0 auto;
+	padding: 8px 0;
+    position: relative;
+    text-align: left;
+    width: 848px;
+}
+
+#transmit {
+    height: 1px;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 1px;
+}
+
+#transmit object,
+#transmit embed {
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+div.upload {
+	background: #F7F7F7 none repeat scroll 0;
+    margin: 8px 0;
+	padding: 8px 24px;
+}
+
+ul.instructions {
+	list-style: none;
+	margin-top: 16px;
+}
+
+ul.instructions li {
+	margin-bottom: 24px;
+}
+
+ul.instructions h3 {
+    color: #BBB;
+}
+
+ul.instructions li p {
+	color: #BBB;
+	margin-bottom: 4px;
+}
+
+ul.instructions li p.note {
+	margin-top: 4px;
+}
+
+/* ------ File Upload ----- */
+
+#upload-table {
+    margin-top: 16px;
+    width: 800px;
+}
+
+.upload-table {
+    border: 1px solid #CCC;
+    text-align: left;
+}
+
+#upload-table .scrollable,
+#upload-table .footer,
+#upload-table .contents {
+    width: 100%;
+}
+
+.upload-table ul,
+.upload-table li {
+    clear:both;
+}
+
+.upload-table div.name,
+.upload-table div.size,
+.upload-table div.status {
+     display: table-cell;
+     _float: left;
+     * display: inline-block;
+     _display: inline;
+}
+
+.upload-table div.name {
+    text-indent: 8px;
+    width: 555px;
+}
+
+.upload-table div.size {
+    padding-right: 20px;
+    text-align: right;
+    width: 150px;
+}
+
+.upload-table div.status {
+    width: 55px;
+}
+
+.upload-table .header {
+    background: #E4E4E4;
+    border-bottom: 1px solid #CCC;
+    font-size: 85%;
+    line-height: 22px;
+}
+
+.upload-table .footer {
+    font-size: 92%;
+}
+
+.upload-table .contents {
+    background: #FFF;
+    font-size: 85%;
+}
+
+.upload-table .contents li {
+    background: #FFF;
+    border-bottom: 1px solid #E4E4E4;
+    line-height: 30px;
+}
+
+.upload-table .contents li div {
+    overflow: hidden;
+}
+
+.upload-table .contents .scrollable {
+    height: 216px;
+    overflow: auto;
+    overflow-x: hidden;
+    position:relative;
+}
+
+.upload-table .footer {
+    background: #E4E4E4;
+    border-top: 1px solid #CCC;
+    line-height: 30px;
+}
+
+.upload-table .footer .divider {
+    color: #CCC;
+    margin: 0 4px;
+}
+
+.upload-table .contents .status a.remove {
+    background: transparent url(img/bin.png) 0 50% no-repeat;
+    display: block;
+    margin-left: 16px;
+    width: 16px;
+}
+
+.upload-table .contents .status a.error {
+    background: transparent url(img/error.png) 0 50% no-repeat;
+    display: block;
+    margin-left: 16px;
+    width: 16px;
+}
+
+.upload-table .contents .status a.complete {
+    background: transparent url(img/accept.png) 0 50% no-repeat;
+    display: block;
+    margin-left: 16px;
+    width: 16px;
+}
+
+div.messages {
+    display: block;
+    font-size: 85%;
+}
+
+div.messages .error,
+div.messages .overlimit,
+div.messages .success {
+    margin-bottom: 16px;
+}
+
+div.messages .error p,
+div.messages .overlimit p,
+div.messages .success p {
+    margin-left: 18px;
+    padding: 8px;
+}
+
+div.messages .error {
+    border: 1px solid red;
+}
+
+div.messages .overlimit {
+    border: 1px solid red;
+}
+
+div.messages .error,
+div.messages .overlimit {
+    background: #FAEFD5 url(img/error.png) 8px 50% no-repeat;
+    border: 1px solid #F4D650;
+    color: #C16803;
+}
+
+div.messages .success {
+    background: #D5F7D4 url(img/accept.png) 8px 50% no-repeat;
+    border: 1px solid #349F2F;
+    color: #277823;
+}
+
+div.buttons {
+	margin-bottom: 16px;
+}
+
+div.buttons input {
+	padding: 2px;
+}
+
+div.buttons p {
+	font-size: 85%;
+	margin: 4px 0 0 2px;
+}
+
+div.step3 p {
+    margin: 16px 0 8px 0;
+}
+
+/* ----- Clearfix ----- */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */

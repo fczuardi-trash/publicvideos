@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.conf.urls.defaults import *
 from django.contrib import admin
 from django.contrib.auth.views import login, logout
@@ -13,8 +14,11 @@ urlpatterns = patterns('',
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
+    (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
     (r'^admin/(.*)', admin.site.root),
     (r'^accounts/login/$', login),
     (r'^accounts/logout/$', logout),
-    (r'^accounts/register/$', 'main.views.register')
+    (r'^accounts/register/$', 'main.views.register_account'),
+    (r'^videos/$', 'main.views.videos'),
+    (r'^videos/upload/$', 'main.views.upload_videos'),
 )

@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Video upload</title>
+<script src="/static/js/jquery.js" type="text/javascript" language="javascript"></script>
+<script src="/static/js/jquery.form.js" type="text/javascript" language="javascript"></script>
+<script src="/static/js/jquery.MetaData.js" type="text/javascript" language="javascript"></script>
+<script src="/static/js/jquery.MultiFile.js" type="text/javascript" language="javascript"></script>
+<script src="/static/js/jquery.blockUI.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#fileInput').fileUpload ({
+		uploader: 'uploader.swf',
+		script: 'upload.php',
+		cancelImg: 'cancel.png',
+		auto: true,
+		folder: '/uploads'
+});
+});
+</script>
+</head>
+<body>
+<input type="file" name="fileInput" id="fileInput" />
+</body>
+<h1>Upload a file</h1>
+<form action="/videos/upload/" method="POST" enctype="multipart/form-data">
+<input type="file" class="multi" />
+<input type="submit" value="Upload video" />
+</form>
+{% ifnotequal uploaded_files None %}
+<h2>Uploaded files</h2>
+<ul>
+{% for uf in uploaded_files %}
+<li>{{ uf }}</li>
+{% endfor %}
+</ul>
+{% endifnotequal %}
+</body>
+</html>
