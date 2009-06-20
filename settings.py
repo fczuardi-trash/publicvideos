@@ -27,6 +27,9 @@ DATABASE_USER = 'm1ch43l' # Not used with sqlite3.
 DATABASE_PASSWORD = 'p4l1n' # Not used with sqlite3.
 DATABASE_HOST = '' # Set to empty string for localhost. Not used with sqlite3.
 DATABASE_PORT = '' # Set to empty string for default. Not used with sqlite3.
+DATABASE_OPTIONS = {
+  'init_command': 'SET NAMES "utf8"' # make sure mysql doesn't make poo poo with utf-8
+}
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
