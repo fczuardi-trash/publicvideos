@@ -6,7 +6,7 @@ logging.basicConfig(
   format = '%(asctime)s %(levelname)s %(message)s',
 )
 
-# Django settings for publicvideos_site project.
+# Django settings for publicvideos project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -87,7 +87,7 @@ MIDDLEWARE_CLASSES = (
   'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
 
-ROOT_URLCONF = 'publicvideos_site.urls'
+ROOT_URLCONF = 'publicvideos.urls'
 
 TEMPLATE_DIRS = (
   os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
@@ -99,5 +99,5 @@ INSTALLED_APPS = (
   'django.contrib.sessions',
   'django.contrib.sites',
   'django.contrib.admin',
-  'publicvideos_site.main'
+  'publicvideos.main'
 )
