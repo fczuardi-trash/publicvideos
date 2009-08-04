@@ -182,21 +182,21 @@ ul.instructions li p.note strong {
 }
 
 .upload-table .contents .status a.remove {
-    background: transparent url(../img/bin.png) 0 50% no-repeat;
+    background: transparent url(/static/lib/transmit/img/bin.png) 0 50% no-repeat;
     display: block;
     margin-left: 16px;
     width: 16px;
 }
 
 .upload-table .contents .status a.error {
-    background: transparent url(../img/error.png) 0 50% no-repeat;
+    background: transparent url(/static/lib/transmit/img/error.png) 0 50% no-repeat;
     display: block;
     margin-left: 16px;
     width: 16px;
 }
 
 .upload-table .contents .status a.complete {
-    background: transparent url(../img/accept.png) 0 50% no-repeat;
+    background: transparent url(/static/lib/transmit/img/accept.png) 0 50% no-repeat;
     display: block;
     margin-left: 16px;
     width: 16px;
@@ -236,13 +236,13 @@ div.messages .overlimit {
 
 div.messages .error,
 div.messages .overlimit {
-    background: #FAEFD5 url(../img/error.png) 8px 50% no-repeat;
+    background: #FAEFD5 url(/static/lib/transmit/img/error.png) 8px 50% no-repeat;
     border: 1px solid #F4D650;
     color: #C16803;
 }
 
 div.messages .success {
-    background: #D5F7D4 url(../img/accept.png) 8px 50% no-repeat;
+    background: #D5F7D4 url(/static/lib/transmit/img/accept.png) 8px 50% no-repeat;
     border: 1px solid #349F2F;
     color: #277823;
 }

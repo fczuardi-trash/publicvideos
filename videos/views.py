@@ -16,19 +16,10 @@ from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response
 
-from models import Video
+from videos.models import Video
 
-def register_account(request):
-  if request.method == 'POST':
-    form = UserCreationForm(request.POST)
-    if form.is_valid():
-      new_user = form.save()
-      return HttpResponseRedirect("/")
-  else:
-    form = UserCreationForm()
-  return render_to_response("registration/register.html", {'form': form})
 
-def videos(request):
+def index(request):
   videos = Video.objects.all()
   return render_to_response("videos/index.html", {})
 
@@ -51,7 +42,7 @@ def upload_videos(request):
       return HttpResponse('')
     return render_to_response("videos/upload.html", locals())
   except:
-    error_details = open('/Users/jonas/Desktop/error.txt', 'w')
+    error_details = open(settings.DEBUG_ERROR_FILE, 'w')
     traceback.print_exc(file=error_details)
     error_details.close()
     #stack = pprint.pformat(traceback.extract_stack())

@@ -30,7 +30,7 @@
             debug: false,
             maxFileSize: 80 * (1024*1204), // 5 MB in bytes
             swfId: 'transmit',
-            swfUrl: 'uploader.swf'
+            swfUrl: '/static/lib/transmit/uploader.swf'
         },
         files: {},
         isUploading: false,
