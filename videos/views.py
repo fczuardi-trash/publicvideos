@@ -14,7 +14,7 @@ from django.forms.widgets import Input
 from django.contrib.auth.forms import UserCreationForm
 
 from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render_to_response
+from lib.jinjasupport import render_to_response
 
 from videos.models import Video
 

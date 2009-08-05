@@ -54,6 +54,8 @@ SITE_ID = 1
 # to load the internationalization machinery.
 USE_I18N = True
 
+DEFAULT_CONTENT_TYPE = 'text/html'
+
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
 MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'static').replace('\\','/')
