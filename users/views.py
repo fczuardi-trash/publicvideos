@@ -4,7 +4,7 @@ from django.forms.widgets import Input
 from django.contrib.auth.forms import UserCreationForm
 
 from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response as django_render_to_response
 
 def register(request):
   if request.method == 'POST':
@@ -14,4 +14,4 @@ def register(request):
       return HttpResponseRedirect("/")
   else:
     form = UserCreationForm()
-  return render_to_response("users/register.html", {'form': form})
+  return django_render_to_response("users/register.html", {'form': form})

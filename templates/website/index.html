@@ -1,2 +1,9 @@
-website index
-## this is a Jinja2 comment
+# extends "base.html"
+{% block title %}Home{% endblock %}
+# block menu:
+<command>
+  <a href="{{ url('signout_url') }}">Logout</a>
+</command>
+# endblock menu
+# block content:
+# endblock content

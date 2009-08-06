@@ -3,6 +3,7 @@
 from django.conf import settings
 from django.template.context import Context
 from django.http import HttpResponse
+from django.core.urlresolvers import reverse
 from jinja2 import FileSystemLoader, Environment, Template
 
 class DjangoTemplate(Template):
@@ -25,6 +26,8 @@ jenv = DjangoEnvironment(
   line_comment_prefix = '##',
   loader=FileSystemLoader(template_dirs)
 )
+# our hacky replacement for the Django's {% url %} tag, see https://bugs.launchpad.net/publicvideos/+bug/409678
+jenv.globals['url'] = reverse
 
 def render_to_response(filename, context={},mimetype=getattr(settings, 'DEFAULT_CONTENT_TYPE')):
   template = jenv.get_template(filename)
