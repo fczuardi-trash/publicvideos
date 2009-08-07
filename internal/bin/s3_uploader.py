@@ -2,7 +2,7 @@ from __future__ import with_statement
 import sys
 import os
 
-base = os.path.abspath(os.path.dirname(sys.argv[0]))
+base = os.path.abspath(os.path.dirname(__file__))
 sys.path.append(os.path.join(base, os.path.pardir))
 sys.path.append(os.path.join(base, os.path.pardir, 'lib'))
 
