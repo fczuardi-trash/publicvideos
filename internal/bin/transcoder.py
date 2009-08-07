@@ -48,7 +48,7 @@ class TranscoderDaemon(daemon.Daemon):
         self.save_tmp_video(current_video.s3_key)
         jobs = models.TranscodingJob.objects.all()
         current_video.status = 'transcoding'
-        current_video.save
+        current_video.save()
         utils.unlock_and_lock_again_real_quick(cursor, 'video_queue')
         for job in jobs:
           # todo: transcoding magic here, figure out how to dynamically replace source and target filepaths
