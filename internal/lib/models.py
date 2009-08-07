@@ -4,7 +4,7 @@ import sys, os
 base = os.path.abspath(os.path.dirname(__file__))
 sys.path.append(os.path.join(base, os.path.pardir, os.path.pardir))
 
-import video.models
+import videos.models
 from django.conf import settings
 from utils import jshash
 
@@ -20,27 +20,29 @@ with jshash() as conf:
 from django.db import models
 from django.db import connection as conn
 
-class Video(video.models.Video):
-  class Meta:
-    app_label = 's3_uploader'
-    db_table = 'main_video'
+# fixme: get rid of the 'class Meta' crap someway somehow
 
-class VideoVersion(video.models.VideoVersion):
+class Video(videos.models.Video):
   class Meta:
     app_label = 's3_uploader'
-    db_table = 'main_video_version'
-    
-class TranscodingJob(video.models.TranscodingJob):
-  class Meta:
-    app_label = 's3_uploader'
-    db_table = 'main_transcoding_job'
+    db_table = 'videos_video'
 
-class TranscodingPass(video.models.TranscodingPass):
+class VideoVersion(videos.models.VideoVersion):
   class Meta:
     app_label = 's3_uploader'
-    db_table = 'main_transcoding_pass'
+    db_table = 'videos_video_version'
     
-class TranscodingJobPass(video.models.TranscodingJobPass):
+class TranscodingJob(videos.models.TranscodingJob):
   class Meta:
     app_label = 's3_uploader'
-    db_table = 'main_transcoding_job_pass'
+    db_table = 'videos_transcoding_job'
+
+class TranscodingPass(videos.models.TranscodingPass):
+  class Meta:
+    app_label = 's3_uploader'
+    db_table = 'videos_transcoding_pass'
+    
+class TranscodingJobPass(videos.models.TranscodingJobPass):
+  class Meta:
+    app_label = 's3_uploader'
+    db_table = 'videos_transcoding_job_pass'
