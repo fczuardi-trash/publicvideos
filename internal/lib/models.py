@@ -22,27 +22,25 @@ from django.db import connection as conn
 
 # fixme: get rid of the 'class Meta' crap someway somehow
 
+class BaseMeta:
+  app_label = 's3_uploader'
+
 class Video(videos.models.Video):
-  class Meta:
-    app_label = 's3_uploader'
+  class Meta(BaseMeta):
     db_table = 'videos_video'
 
 class VideoVersion(videos.models.VideoVersion):
-  class Meta:
-    app_label = 's3_uploader'
+  class Meta(BaseMeta):
     db_table = 'videos_video_version'
     
 class TranscodingJob(videos.models.TranscodingJob):
-  class Meta:
-    app_label = 's3_uploader'
+  class Meta(BaseMeta):
     db_table = 'videos_transcoding_job'
 
 class TranscodingPass(videos.models.TranscodingPass):
-  class Meta:
-    app_label = 's3_uploader'
+  class Meta(BaseMeta):
     db_table = 'videos_transcoding_pass'
     
 class TranscodingJobPass(videos.models.TranscodingJobPass):
-  class Meta:
-    app_label = 's3_uploader'
+  class Meta(BaseMeta):
     db_table = 'videos_transcoding_job_pass'

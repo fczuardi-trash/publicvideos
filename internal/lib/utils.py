@@ -14,3 +14,15 @@ def lock_on_string(cur, string, timeout):
 def unlock_on_string(cur, string):
   cur.execute('select release_lock(%s);', (string,))
   return cur.fetchone()
+  
+def load_aws_credentials(base):
+  AWS_CREDENTIALS = utils.jshash({'S3':jshash()})
+  config_file = os.path.join(base, os.path.pardir, 'config', 'aws.conf')
+  parsed_config = ConfigParser.ConfigParser()
+  parsed_config.read(config_file)
+  for section in parsed_config.sections():
+    service = section.split(':')[1]
+    if service == 's3':
+      AWS_CREDENTIALS.S3.access_key = parsed_config.get(section, 'access_key')
+      AWS_CREDENTIALS.S3.secret_key = parsed_config.get(section, 'secret_key')
+  return AWS_CREDENTIALS

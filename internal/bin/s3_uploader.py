@@ -53,19 +53,7 @@ class S3UploaderDaemon(daemon.Daemon):
         error_details.close()
         time.sleep(15)
 
-def load_aws_credentials():
-  global AWS_CREDENTIALS
-  AWS_CREDENTIALS = utils.jshash({'S3':utils.jshash()})
-  config_file = os.path.join(base, os.path.pardir, 'config', 'aws.conf')
-  parsed_config = ConfigParser.ConfigParser()
-  parsed_config.read(config_file)
-  for section in parsed_config.sections():
-    service = section.split(':')[1]
-    if service == 's3':
-      AWS_CREDENTIALS.S3.access_key = parsed_config.get(section, 'access_key')
-      AWS_CREDENTIALS.S3.secret_key = parsed_config.get(section, 'secret_key')
-
 if __name__ == '__main__':
-  load_aws_credentials()
+  AWS_CREDENTIALS = utils.load_aws_credentials(base)
   S3_CONN = S3.AWSAuthConnection(AWS_CREDENTIALS.S3.access_key, AWS_CREDENTIALS.S3.secret_key)
   S3UploaderDaemon().main()
