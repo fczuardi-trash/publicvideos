@@ -7,13 +7,17 @@ class jshash(dict):
   def __enter__(self): return self
   def __exit__(self, type, value, tv): pass
   
-def lock_on_string(cur, string, timeout):
+def lock_on_string(cur, string, timeout=1000):
   cur.execute('select get_lock(%s, %s);', (string, timeout))
   return cur.fetchone()
 
 def unlock_on_string(cur, string):
   cur.execute('select release_lock(%s);', (string,))
   return cur.fetchone()
+  
+def unlock_and_lock_again_real_quick(cur, string, timeout=100):
+  unlock_on_string(cur, string)
+  lock_on_string(cur, string, timeout)
   
 def load_aws_credentials(base):
   AWS_CREDENTIALS = utils.jshash({'S3':jshash()})
