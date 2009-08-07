@@ -15,3 +15,16 @@ urlpatterns = patterns('',
   (r'^admin/(.*)', admin.site.root),
 #  (r'^jinja2-generic-views-test$', 'django.views.generic.create_update.create_object', {'model': Video,'template_loader':jenv}),
 )
+
+# external links that appears on the beta-coming soon page
+urlpatterns += patterns('django.views.generic.simple',
+  url(r'^development/$', 'redirect_to', 
+    {'url': 'https://launchpad.net/publicvideos'}, 
+    name="development_url"),
+  url(r'^launch_notification/$', 'redirect_to', 
+    {'url': 'http://spreadsheets.google.com/viewform?formkey=dEFNRU96SXBkWFdjc2pWeXBZNE5KRHc6MA..'}, 
+    name="launch_notification_form_url"),
+  url(r'^join_beta/$', 'redirect_to', 
+    {'url': 'http://spreadsheets.google.com/viewform?formkey=dHJPZzczbVhuR0tnX0doaFRJVE5IX1E6MA..'}, 
+    name="join_beta_form"),
+)
