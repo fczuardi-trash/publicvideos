@@ -16,6 +16,12 @@ ADMINS = (
   ('Fabricio Zuardi', 'fabricio@fabricio.org')
 )
 
+#if working on Amazon EC2 AMIs set to True
+EC2_ENVIRONMENT = False
+
+#text file to append error details
+DEBUG_ERROR_FILE = os.path.join(os.path.dirname(__file__), 'log/error.txt').replace('\\','/')
+
 MANAGERS = ADMINS
 
 # create database publicvideos_dev default character set utf8;
@@ -48,11 +54,13 @@ SITE_ID = 1
 # to load the internationalization machinery.
 USE_I18N = True
 
+DEFAULT_CONTENT_TYPE = 'text/html'
+
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
 MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'static').replace('\\','/')
 
-TMP_VIDEO_ROOT = '/mnt/tmp/publicvideos/uploaded'
+TMP_VIDEO_ROOT =  ('/mnt' if EC2_ENVIRONMENT else '') + '/tmp/publicvideos/uploaded'
 
 FILE_UPLOAD_TEMP_DIR = TMP_VIDEO_ROOT
 
@@ -93,11 +101,17 @@ TEMPLATE_DIRS = (
   os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
 )
 
+LOGIN_URL = '/users/login/'
+LOGOUT_URL = '/users/logout/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
 INSTALLED_APPS = (
   'django.contrib.auth',
   'django.contrib.contenttypes',
   'django.contrib.sessions',
   'django.contrib.sites',
   'django.contrib.admin',
-  'publicvideos.main'
+  'publicvideos.users',
+  'publicvideos.videos',
 )

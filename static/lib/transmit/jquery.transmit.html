@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Upload files</title>
+		<link rel="stylesheet" type="text/css" href="css/transmit.css"/>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>Upload files</h1>
+			<!-- START JQUERY-TRANSMIT -->
+			<div class="upload clearfix">
+                <div id="transmit-uploader">
+                    <div id="transmit">This entire element should be replaced by jQuery.</div>
+                </div>
+                <div class="step1">
+					<ul class="instructions">
+						<li id="step1">
+							<p>Step 1:</p>
+							<h3>Choose files to upload</h3>
+							<p class="note"><strong>NOTE:</strong> Files are limited to 80 MB in size.</p>
+						</li>
+						<li id="step2">
+							<p>Step 2:</p>
+							<h3>Upload the selected files</h3>
+						</li>
+					</ul>
+				</div>
+				<div class="step2 hidden">
+                    <div id="upload-table" class="upload-table">
+                        <div class="header">
+                            <ul class="clearfix">
+                                <li>
+                                    <div class="name">Name</div>
+                                    <div class="size">Size</div>
+                                    <div class="status">Remove?</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contents">
+                            <div id="scrollable" class="scrollable">
+                                <ul id="file-list" class="clearfix">
+                                    <li id="row-template" class="hidden">
+                                        <div class="name">%name</div>
+                                        <div class="size">%size</div>
+                                        <div class="status">
+                                            <a class="remove" title="Remove?" href="javascript:void(0);">&nbsp;</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <ul class="clearfix">
+                                <li>
+                                    <div class="name">
+                                        <span id="upload-file-count">%files</span>
+                                        <span id="upload-add-more">
+                                            <span class="divider">|</span>
+                                            <a class="upload-add-more" href="javascript:void(0);">Add More</a>
+                                        </span>
+                                    </div>
+                                    <div id="upload-total-bytes" class="size">Total: %total</div>
+                                    <div class="status"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+					<br />
+                    <div class="messages">
+                        <div class="error hidden"><p>Doh! One or more of your uploads failed.</p></div>
+                        <div class="overlimit hidden"><p>Doh! One or more of your files exceeds the maximum file size. Remove them to continue.</p></div>
+                        <div class="success hidden"><p>Congratulations, all of your files have been uploaded successfully.</p></div>
+                    </div>
+                    <div class="buttons">
+						<input id="uploadBtn" type="button" value="Upload Files"/>
+						<p>Or, <a href="jquery.transmit.html">cancel</a> and return to the home page.</p>
+					</div>
+				</div>
+            </div>
+            <!-- END JQUERY-TRANSMIT -->
+		</div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+        <script type="text/javascript" src="swfobject.js"></script>
+        <script type="text/javascript" src="jquery.transmit.js"></script>
+        <script type="text/javascript" language="javascript">
+            $(document).ready(function() {
+                var options = {
+									allowedFileTypes: [{
+                  	description: "All",
+                    extensions: "*"
+                  }]
+                };
+                $("#transmit").transmit("http://127.0.0.1:8000/clips/upload/", options);
+            });
+		</script>
+	</body>
+</html>

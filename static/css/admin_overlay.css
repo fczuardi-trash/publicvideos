@@ -1,0 +1,11 @@
+#branding h1{
+  color: #ccc;
+}
+body.login{
+  background-color:#000;
+  color:#666;
+  font-family:sans-serif;
+}
+#header{
+  background-color:#333;
+}
