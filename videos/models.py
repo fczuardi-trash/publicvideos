@@ -26,7 +26,6 @@ class Video(models.Model):
 
 class TranscodingJob(models.Model):
   description = models.CharField(max_length=100, blank=True, null=True)
-  job_passes = models.ManyToManyField(TranscodingJobPass)
 
 class TranscodingPass(models.Model):
   description = models.CharField(max_length=100, blank=True, null=True)
