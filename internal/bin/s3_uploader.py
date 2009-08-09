@@ -36,7 +36,7 @@ class S3UploaderDaemon(old_daemon.Daemon):
           current_video = models.Video.objects.filter(status='pending_upload_to_s3')[0]
         except:
           utils.unlock_on_string(cursor, 'video_queue')
-          time.sleep(30)
+          time.sleep(10)
           continue
         remote_check = S3_CONN._make_request('HEAD', 'camera', 'originals/%s' % current_video.s3_key, {}, {})
         if remote_check.status == 200:
