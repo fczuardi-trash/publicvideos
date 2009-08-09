@@ -3,6 +3,7 @@ import sys
 import os
 
 base = os.path.abspath(os.path.dirname(__file__))
+sys.path.append(os.path.join(base, os.path.pardir, os.path.pardir, os.path.pardir))
 sys.path.append(os.path.join(base, os.path.pardir))
 sys.path.append(os.path.join(base, os.path.pardir, 'lib'))
 
@@ -37,14 +38,13 @@ class S3UploaderDaemon(old_daemon.Daemon):
           utils.unlock_on_string(cursor, 'video_queue')
           time.sleep(30)
           continue
-        logging.info("Got pending video %s and started uploading to S3." % current_video.s3_key)
-        tmp_video_file = self.get_tmp_video(current_video.s3_key)
-        options = {'Content-Type': current_video.mimetype or 'application/octet-stream', 'X-Amz-Acl': 'private'}
-        
         remote_check = S3_CONN._make_request('HEAD', 'camera', 'originals/%s' % current_video.s3_key, {}, {})
-        if remote_check.status == 404:
+        if remote_check.status == 200:
           logging.info("File %s already exists on S3." % current_video.s3_key)
         else:
+          tmp_video_file = self.get_tmp_video(current_video.s3_key)
+          logging.info("Got pending video %s and started uploading to S3." % current_video.s3_key)
+          options = {'Content-Type': current_video.mimetype or 'application/octet-stream', 'X-Amz-Acl': 'private'}
           S3_CONN.put(S3UploaderDaemon.S3_BUCKET_NAME, "originals/%s" % current_video.s3_key, S3.S3Object(tmp_video_file), options)
           logging.info("Finished uploading %s to S3." % current_video.s3_key)
         current_video.status = 'pending_transcoding'
@@ -52,8 +52,7 @@ class S3UploaderDaemon(old_daemon.Daemon):
         utils.unlock_on_string(cursor, 'video_queue');
       except:
         file_name = os.path.join(base, '..', 'log', 's3_uploader-%s.error' % str(time.time()).replace('.', ''))
-        logging.info("!!!!!!!!! OMGWTFLOL !!!1111oneeleven")
-        logging.info("!!!!!!!!! CANT HAZ CHEEZEBURGER. Logged the error here: %s." % file_name)
+        logging.info("OMGWTFLOLBBQ: %s." % file_name)
         error_details = open(file_name, 'w')
         traceback.print_exc(file=error_details)
         error_details.close()

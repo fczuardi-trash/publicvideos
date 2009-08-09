@@ -10,6 +10,7 @@ class Video(models.Model):
   title = models.CharField(max_length=100, blank=True, null=True)
   description = models.CharField(max_length=500, blank=True, null=True)
   mimetype = models.CharField(max_length=40, blank=True, null=True)
+  extension = models.CharField(max_length=10, blank=True, null=True)
   s3_key = models.CharField(max_length=40, blank=True, null=True)
   status = models.CharField(choices=STATUS_CHOICES, max_length=sorted(len(status) \
     for status,description in STATUS_CHOICES)[-1])
@@ -29,6 +30,8 @@ class TranscodingJob(models.Model):
   job_slug = models.CharField(max_length=15, blank=True, null=True)
 
 class TranscodingPass(models.Model):
+  from_extension = models.CharField(max_length=10, blank=True, null=True)
+  to_extension = models.CharField(max_length=10, blank=True, null=True)
   description = models.CharField(max_length=100, blank=True, null=True)
   command = models.TextField()
 
