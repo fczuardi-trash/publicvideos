@@ -26,6 +26,7 @@ class Video(models.Model):
 
 class TranscodingJob(models.Model):
   description = models.CharField(max_length=100, blank=True, null=True)
+  job_slug = models.CharField(max_length=15, blank=True, null=True)
 
 class TranscodingPass(models.Model):
   description = models.CharField(max_length=100, blank=True, null=True)

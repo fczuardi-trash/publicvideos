@@ -3,11 +3,13 @@ import sys
 import os
 
 base = os.path.abspath(os.path.dirname(__file__))
+sys.path.append(os.path.join(base, os.path.pardir, os.path.pardir, os.path.pardir))
 sys.path.append(os.path.join(base, os.path.pardir))
 sys.path.append(os.path.join(base, os.path.pardir, 'lib'))
 
-import daemon
+import old_daemon
 import logging
+import commands
 import ConfigParser
 import time
 import traceback
@@ -15,16 +17,17 @@ import datetime
 import S3
 import utils
 import models
+EC2_ENVIRONMENT = False
 
-class TranscoderDaemon(daemon.Daemon):
+class TranscoderDaemon(old_daemon.Daemon):
   BASEDIR = base # part of hack inside lib/daemon.py
   default_conf = os.path.join(base, '..', 'config', 'transcoder.conf')
   section = 'transcoder' # which should conventionally be the same as the filename
-  TMP_VIDEO_ROOT = '/mnt/tmp/publicvideos/transcoding_limbo'
+  TMP_VIDEO_ROOT = '%s/tmp/publicvideos/transcoding_limbo' % ('/mnt' if EC2_ENVIRONMENT else '')
   if not os.path.exists(os.path.join(TMP_VIDEO_ROOT, 'originals')):
-    os.makedirs(os.path.exists(os.path.join(TMP_VIDEO_ROOT, 'originals')))
+    os.makedirs(os.path.join(TMP_VIDEO_ROOT, 'originals'))
   S3_BUCKET_NAME = 'camera'
-  def save_tmp_video(self, current_video):
+  def save_tmp_video_and_create_references(self, current_video):
     data = S3_CONN.get(TranscoderDaemon.S3_BUCKET_NAME, "originals/%s" % current_video.s3_key)
     original_filename = "%s.%s" % (current_video.s3_key, '0')
     with open(os.path.join(S3UploaderDaemon.TMP_VIDEO_ROOT, 'originals', original_filename), 'wb') as f:
@@ -43,7 +46,7 @@ class TranscoderDaemon(daemon.Daemon):
     self.jobs = models.TranscodingJob.objects.all()
     for job in self.jobs:
       if not os.path.exists(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug)):
-        os.makedirs(job.job_slug)
+        os.makedirs(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug))
   def run(self):
     if not os.path.exists(TranscoderDaemon.TMP_VIDEO_ROOT):
       os.makedirs(TranscoderDaemon.TMP_VIDEO_ROOT)
@@ -51,18 +54,24 @@ class TranscoderDaemon(daemon.Daemon):
     while True:
       try:
         cursor = models.conn.cursor()
+        logging.info('1')
         utils.lock_on_string(cursor, 'video_queue', 1000000);
-        try:
-          current_video = models.Video.objects.filter(status='pending_transcoding')[0]
-        except:
-          utils.unlock_on_string(cursor, 'video_queue')
-          time.sleep(30)
-          continue
+        # try:
+        current_video = models.Video.objects.filter(status='pending_transcoding')[0]
+        # ########################################
+        # todo: handle specific [0] exception here
+        # ########################################
+        #  logging.info('current_video: %s' % current_video)
+        # except:
+        #   utils.unlock_on_string(cursor, 'video_queue')
+        #   time.sleep(30)
+        #   continue
         logging.info("Downloading original video %s so we can transcode the shit out of it." % current_video.s3_key)
         self.save_tmp_video_and_create_references(current_video)        
         current_video.status = 'transcoding'
         current_video.save()
         utils.unlock_and_lock_again_real_quick(cursor, 'video_queue')
+        logging.info("Preparing to run transcoding jobs on video %s." % current_video.s3_key)
         for job in jobs:
           job_passes = job.transcoding_job_pass_set.select_related().order_by('-step_number')
           for job_pass in job_passes:
@@ -71,6 +80,7 @@ class TranscoderDaemon(daemon.Daemon):
             target_pass_filename = '%s.%s' % (s3_key, str(job_pass.step_number))
             target_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job_slug, target_pass_filename)
             command = job_pass.command.replace('$SOURCE', source_pass_path).replace('$TARGET', target_pass_path)
+            logging.info("Running: %s" % command)
             command_status, command_output = commands.getstatusoutput(command)
           source_url = self.put_the_result_back_in_s3(current_video, job.job_slug, target_path_pass)
           VideoVersion(video=current_video, trancoded_with=job, url=source_url)
@@ -86,7 +96,7 @@ class TranscoderDaemon(daemon.Daemon):
         time.sleep(15)
 
 if __name__ == '__main__':
-  AWS_CREDENTIALS = utils.load_aws_credentials()
+  AWS_CREDENTIALS = utils.load_aws_credentials(base)
   ac, sk = AWS_CREDENTIALS.S3.access_key, AWS_CREDENTIALS.S3.secret_key
   S3_CONN = S3.AWSAuthConnection(ac, sk)
   S3_URL_GENERATOR = S3.QueryStringAuthGenerator(ac, sk, is_secure=False)

@@ -1,3 +1,5 @@
+import os, ConfigParser
+
 class jshash(dict):
   def __getattr__(self, k):
     if self.has_key(k): return self[k]
@@ -20,7 +22,7 @@ def unlock_and_lock_again_real_quick(cur, string, timeout=100):
   lock_on_string(cur, string, timeout)
   
 def load_aws_credentials(base):
-  AWS_CREDENTIALS = utils.jshash({'S3':jshash()})
+  AWS_CREDENTIALS = jshash({'S3':jshash()})
   config_file = os.path.join(base, os.path.pardir, 'config', 'aws.conf')
   parsed_config = ConfigParser.ConfigParser()
   parsed_config.read(config_file)
