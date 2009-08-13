@@ -1,5 +1,10 @@
 import os
+import sys
 import logging
+
+# add the apps subdirectory in the path
+base = os.path.abspath(os.path.dirname(__file__))
+sys.path.insert(0, os.path.join(base, 'apps'))
 
 logging.basicConfig(
   level = logging.DEBUG,
@@ -95,7 +100,7 @@ MIDDLEWARE_CLASSES = (
   'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
 
-ROOT_URLCONF = 'publicvideos.urls'
+ROOT_URLCONF = 'urls'
 
 TEMPLATE_DIRS = (
   os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
@@ -112,6 +117,6 @@ INSTALLED_APPS = (
   'django.contrib.sessions',
   'django.contrib.sites',
   'django.contrib.admin',
-  'publicvideos.users',
-  'publicvideos.videos',
+  'users',
+  'videos',
 )
