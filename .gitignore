@@ -3,3 +3,4 @@
 internal/config/aws.conf
 internal/log
 internal/pids/*
+docs/_*
