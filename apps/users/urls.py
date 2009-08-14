@@ -1,3 +1,5 @@
+# WE DON'T USE THIS ANYMORE
+
 from django.conf.urls.defaults import *
 
 urlpatterns = patterns('',

@@ -9,6 +9,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
   (r'^$', 'website.views.index'),
+  (r'^account/', include('django_authopenid.urls')),
   (r'^clips', include('videos.urls')),
   (r'^users', include('users.urls')),
   (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),

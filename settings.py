@@ -94,10 +94,16 @@ TEMPLATE_LOADERS = (
 # 'django.template.loaders.eggs.load_template_source',
 )
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+  'django_authopenid.context_processors.authopenid',
+)
+
+
 MIDDLEWARE_CLASSES = (
   'django.middleware.common.CommonMiddleware',
   'django.contrib.sessions.middleware.SessionMiddleware',
   'django.contrib.auth.middleware.AuthenticationMiddleware',
+  'django_authopenid.middleware.OpenIDMiddleware',
 )
 
 ROOT_URLCONF = 'urls'
@@ -106,17 +112,23 @@ TEMPLATE_DIRS = (
   os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
 )
 
-LOGIN_URL = '/users/login/'
-LOGOUT_URL = '/users/logout/'
+LOGIN_URL = '/account/login/'
+LOGOUT_URL = '/account/logout/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
 INSTALLED_APPS = (
+  # django contrib apps
   'django.contrib.auth',
   'django.contrib.contenttypes',
   'django.contrib.sessions',
   'django.contrib.sites',
   'django.contrib.admin',
+  
+  # django-authopenid
+  'django_authopenid',
+  
+  #publicvideos stuff
   'users',
   'videos',
 )
