@@ -66,7 +66,7 @@ class TranscoderDaemon(old_daemon.Daemon):
           current_video = models.Video.objects.filter(status='pending_transcoding')[0]
         except IndexError:
           utils.unlock_on_string(cursor, 'video_queue')
-          time.sleep(30)
+          time.sleep(10)
           continue
         logging.info("Downloading original video %s so we can transcode the shit out of it." % current_video.s3_key)
         self.save_tmp_video_and_create_references(current_video)        
@@ -75,10 +75,15 @@ class TranscoderDaemon(old_daemon.Daemon):
         utils.unlock_and_lock_again_real_quick(cursor, 'video_queue')
         logging.info("Preparing to run transcoding jobs on video %s." % current_video.s3_key)
         for job in self.jobs:
-          job_passes = job.transcodingjobpass_set.select_related().order_by('-step_number')
+          job_passes = job.transcodingjobpass_set.select_related().order_by('step_number')
           for job_pass in job_passes:
-            source_pass_filename = '%s.%s.%s' % (current_video.s3_key, str(job_pass.step_number-1), job_pass.transcoding_pass.from_extension)
-            source_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug, source_pass_filename)
+            logging.info('steps: %s' % range(1, job_pass.step_number)[::-1])
+            for step in range(1, job_pass.step_number+1)[::-1]:
+              source_pass_filename = '%s.%s.%s' % (current_video.s3_key, str(step-1), job_pass.transcoding_pass.from_extension)
+              logging.info('---> %s: ' % source_pass_filename)
+              source_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug, source_pass_filename)
+              if os.path.exists(source_pass_path):
+                break
             target_extension = job_pass.transcoding_pass.to_extension
             target_pass_filename = '%s.%s.%s' % (current_video.s3_key, str(job_pass.step_number), target_extension)
             target_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug, target_pass_filename)
@@ -87,7 +92,7 @@ class TranscoderDaemon(old_daemon.Daemon):
             command_status, command_output = commands.getstatusoutput(command)
           logging.info("Transcode completed, uploading result back to S3.")
           source_url = self.put_the_result_back_in_s3(current_video, job.job_slug, target_pass_path, target_extension)
-          VideoVersion(video=current_video, trancoded_with=job, url=source_url)
+          models.VideoVersion(video=current_video, trancoded_with=job, url=source_url)
           logging.info("Transcoded and uploaded video %s with the %s encoding." % (current_video.s3_key, job.job_slug))          
         utils.unlock_on_string(cursor, 'video_queue');
       except:

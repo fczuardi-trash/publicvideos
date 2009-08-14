@@ -1,0 +1,11 @@
+There are 2 daemons under the bin directory:
+
+ * One that checks the database for new Videos that still needs to be 
+ uploaded to S3 and then do it. (s3_uploader)
+ * One that checks the database for Videos on the queue waiting to be 
+ transcoded and executes the necessary jobs to generate different
+ Video Versions (transcoder.py)
+ 
+ 
+ You will need to rename aws.conf.example to aws.conf and fill it with
+ your amazon web sercices credentials.

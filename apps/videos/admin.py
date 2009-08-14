@@ -1,4 +1,4 @@
-from publicvideos.videos.models import Video
+from videos.models import Video
 from django.contrib import admin
 
 class VideoAdmin(admin.ModelAdmin):
