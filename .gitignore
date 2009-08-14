@@ -4,3 +4,4 @@ internal/*.log
 internal/config/aws.conf
 internal/log
 internal/pids/*
+*.DS_Store
