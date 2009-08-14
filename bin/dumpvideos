@@ -1,0 +1,2 @@
+#!/bin/sh
+python manage.py dumpdata videos > apps/videos/fixtures/all.json

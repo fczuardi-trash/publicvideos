@@ -3,7 +3,7 @@ import sys
 import os
 
 base = os.path.abspath(os.path.dirname(__file__))
-sys.path.append(os.path.join(base, os.path.pardir, os.path.pardir, os.path.pardir))
+sys.path.append(os.path.join(base, os.path.pardir, os.path.pardir, os.path.pardir, 'apps'))
 sys.path.append(os.path.join(base, os.path.pardir))
 sys.path.append(os.path.join(base, os.path.pardir, 'lib'))
 
