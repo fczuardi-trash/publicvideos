@@ -7,7 +7,8 @@ sys.path.append(os.path.join(base, os.path.pardir, os.path.pardir, os.path.pardi
 sys.path.append(os.path.join(base, os.path.pardir))
 sys.path.append(os.path.join(base, os.path.pardir, 'lib'))
 
-import old_daemon
+import lockfile
+import daemon
 import logging
 import commands
 import ConfigParser
@@ -54,7 +55,7 @@ class TranscoderDaemon(old_daemon.Daemon):
     for job in self.jobs:
       if not os.path.exists(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug)):
         os.makedirs(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug))
-  def run(self):
+  def main(self):
     if not os.path.exists(TranscoderDaemon.TMP_VIDEO_ROOT):
       os.makedirs(TranscoderDaemon.TMP_VIDEO_ROOT)
     self.load_jobs()
@@ -105,10 +106,19 @@ class TranscoderDaemon(old_daemon.Daemon):
         error_details.close()
         time.sleep(15)
 
-if __name__ == '__main__':
+def main():
   AWS_CREDENTIALS = utils.load_aws_credentials(base)
   ac, sk = AWS_CREDENTIALS.S3.access_key, AWS_CREDENTIALS.S3.secret_key
   S3_CONN = S3.AWSAuthConnection(ac, sk)
   S3_URL_GENERATOR = S3.QueryStringAuthGenerator(ac, sk, is_secure=False)
   S3_URL_GENERATOR.set_expires_in(60*60*2)
-  TranscoderDaemon().main()
+  # from wonderful PEP 3143: http://www.python.org/dev/peps/pep-3143/
+  daemon_context = daemon.DaemonContext()
+  daemon_context.pidfile = lockfile.FileLock(join(base, 'pids', 'transcoder.pid'))
+  with daemon_context:
+    transcoder = TranscoderDaemon()
+    transcoder.main()
+
+if __name__ == '__main__':
+  try: main()
+  except: traceback.print_exc(file=sys.stdout)

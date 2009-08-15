@@ -7,7 +7,7 @@ sys.path.append(os.path.join(base, os.path.pardir, os.path.pardir, os.path.pardi
 sys.path.append(os.path.join(base, os.path.pardir))
 sys.path.append(os.path.join(base, os.path.pardir, 'lib'))
 
-import old_daemon
+import daemon
 import logging
 import ConfigParser
 import time
@@ -27,7 +27,7 @@ class S3UploaderDaemon(old_daemon.Daemon):
   def get_tmp_video(self, s3_key):
     with open(os.path.join(S3UploaderDaemon.TMP_VIDEO_ROOT, s3_key), 'rb') as f:
       return f.read()
-  def run(self):
+  def main(self):
     while True:
       try:
         cursor = models.conn.cursor()
