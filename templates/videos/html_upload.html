@@ -1,0 +1,36 @@
+{% extends "base_jinja.html" %}
+{% block title %}Upload Clips{% endblock %}
+{% block head %}
+  {{ super() }}
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript">google.load("jquery", "1.3.2");</script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('#upload_button').click(function(){
+      //console.log($('#upload_form')[0]);
+      $('#key')[0].value = $('#filename')[0].value;
+      $('#upload_form')[0].submit()
+    });
+  });
+  </script>
+{% endblock %}
+{% block content %}
+<div id="wrapper">
+  <h1>Upload files</h1>
+  <form id="upload_form" action="https://{{ bucket }}.s3.amazonaws.com/" 
+        method="post" enctype="multipart/form-data">
+    <input type="hidden" id="key" name="key" value="{{ filename }}">
+    <input type="hidden" name="AWSAccessKeyId" value="{{ access_key }}"> 
+    <input type="hidden" name="acl" value="{{ acl }}"> 
+    
+    <input type="hidden" name="policy" value="{{ policy }}">
+    <input type="hidden" name="signature" value="{{ signature }}">
+    File to upload to S3:
+    <input name="file" type="file"> 
+    <br>
+    Filename:
+    <input id="filename" name="filename" type="text">
+    <input type="button" id="upload_button" value="Upload File to S3"> 
+  </form>
+</div>
+{% endblock %}

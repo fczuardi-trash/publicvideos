@@ -1,6 +1,31 @@
 import os
 import sys
 import logging
+import ConfigParser
+
+class jshash(dict):
+  def __getattr__(self, k):
+    if self.has_key(k): return self[k]
+    raise AttributeError, repr(k)
+  def __setattr__(self, k, v): self[k] = v
+  def __delattr__(self, k): del self[k]
+  def __enter__(self): return self
+  def __exit__(self, type, value, tv): pass
+
+def load_aws_credentials(config_path):
+  AWS_CREDENTIALS = jshash({'S3':jshash()})
+  config_file = os.path.join(config_path, 'aws.conf')
+  parsed_config = ConfigParser.ConfigParser()
+  parsed_config.read(config_file)
+  for section in parsed_config.sections():
+    service = section.split(':')[1]
+    if service == 's3':
+      AWS_CREDENTIALS.S3.access_key = parsed_config.get(section, 'access_key')
+      AWS_CREDENTIALS.S3.secret_key = parsed_config.get(section, 'secret_key')
+  return AWS_CREDENTIALS
+
+CONFIG_PATH = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'config')
+AWS_CREDENTIALS = load_aws_credentials(CONFIG_PATH)
 
 # add the apps subdirectory in the path
 base = os.path.abspath(os.path.dirname(__file__))

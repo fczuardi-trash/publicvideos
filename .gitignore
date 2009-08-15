@@ -1,6 +1,7 @@
 *.pyc
 *.pyc
 internal/*.log
+config/aws.conf
 internal/config/aws.conf
 internal/log
 internal/pids/*
