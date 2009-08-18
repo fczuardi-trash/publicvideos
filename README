@@ -1,0 +1,78 @@
+====== Local Development ======
+
+This page describes how to get the development environment setup from scratch and how to keep it synced with the latest changes.
+
+===== - Requirements =====
+  * Git
+  * Python 2.5+
+  * MySQL 5+
+  * MySQL for Python
+  * Django 1.0+
+  * Jinja2.2+
+  * MPlayer/MEncoder
+  * FFMpeg
+  * ffmpeg2theora
+
+===== - Installation =====
+
+==== - Get the Source ====
+
+git clone git@github.com:fczuardi/publicvideos.git
+
+==== - Install MySQL ====
+
+http://mysql.com (get the 32 bit version on Mac OS because the Mac OS Python is 32)
+
+==== - Install MySQL for Python (MySQLdb) ====
+Warning: Installing MySQLdb can be a pain in the ass on MacOSX, be prepared.
+
+http://sourceforge.net/projects/mysql-python/
+
+Download the tar file, something like this probably:
+<del>http://sourceforge.net/projects/mysql-python/files/mysql-python/1.2.2/MySQL-python-1.2.2.tar.gz/download</del>
+(maybe it is best to use the 1.2.1 version and follow http://dotnet.org.za/ncode/archive/2007/01/31/setting-up-mysql-for-python-mysqldb-on-mac-os-x-2.aspx on Mac)
+
+Unpack it, edit the site.cfg file if needed (to change the path of mysql_config to /usr/local/mysql/bin/mysql_config on MacOSX for example). You might need to edit a couple of more files on MacOSX as well, see here http://www.mangoorange.com/2008/08/01/installing-python-mysqldb-122-on-mac-os-x/
+
+==== - Install Django Trunk ====
+TBD
+==== - Install Jinja Trunk ====
+http://jinja.pocoo.org/2/documentation/intro#installation
+
+<code>
+sudo easy_install Jinja2==dev
+</code>
+=== - (optional MacOSX) Install Jinja Textmate bundle ===
+  - Unpack the file located at your jinja installation folder/ext
+  - copy it to your ~/Library/Application Support/Textmate/Bundles
+  - restart Textmate
+
+==== - Install django-authopenid ====
+http://bitbucket.org/benoitc/django-authopenid/wiki/Installation
+<code>sudo easy_install -U django-authopenid</code>
+
+==== - Install python-daemon ====
+<code>
+sudo easy_install python-daemon
+</code>
+
+==== - Create Dev Database ====
+  # sudo mysqld_safe&
+  # mysql --url=root
+  # create database publicvideos_dev default character set utf8;
+  # grant all on publicvideos_dev.* to m1ch43l@localhost identified by 'p4l1n'; 
+
+===== - Getting Latest Changes from Trunk =====
+
+  - git pull
+  - python manage.py sqlall main | pbcopy
+    * [[troubleshooting for the sqlall step]]
+  - <code>mysql -u root publicvideos_dev -e "show tables" | grep -v Tables_in | grep -v "+" | gawk '{print "drop table " $1 ";"}' | mysql -u root publicvideos_dev</code>
+  - mysql -u root publicvideos_dev
+    * (paste the mysql commands copied from the sqlall)
+  - mysql> exit
+  - python manage.py syncdb
+  - python manage.py runserver
+
+===== - Deploy =====
+TBD
