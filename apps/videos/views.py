@@ -56,6 +56,8 @@ def upload_videos(request):
         uploaded_file_content = uploaded_file.read()
         name, ext = os.path.splitext(uploaded_file.name)
         uploaded_video = Video()
+        uploaded_video.filename = uploaded_file.name
+        uploaded_video.size = uploaded_file.size
         uploaded_video.status = 'pending_upload_to_s3'
         uploaded_video.mimetype = mimetypes.types_map.get(ext)
         uploaded_video.s3_key = sha.new('%s-%s' % (settings.SECRET_KEY, uploaded_file_content)).hexdigest()
