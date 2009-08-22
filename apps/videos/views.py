@@ -3,6 +3,7 @@ import os
 import sha
 import time
 import mimetypes
+import hashlib
 import base64
 import hmac, sha
 import logging
@@ -58,10 +59,10 @@ def upload_videos(request):
         uploaded_video = Video()
         uploaded_video.filename = uploaded_file.name
         uploaded_video.size = uploaded_file.size
-        uploaded_video.status = 'pending_upload_to_s3'
+        uploaded_video.status = settings.DEFAULT_UPLOADED_VIDEO_STATUS
         uploaded_video.mimetype = mimetypes.types_map.get(ext)
-        uploaded_video.s3_key = sha.new('%s-%s' % (settings.SECRET_KEY, uploaded_file_content)).hexdigest()
-        with open(os.path.join(settings.TMP_VIDEO_ROOT, uploaded_video.s3_key), 'wb') as f:
+        uploaded_video.s3_key = hashlib.md5(uploaded_file_content).hexdigest()
+        with open(os.path.join(settings.TMP_VIDEO_ROOT, uploaded_video.s3_key+'.'+ext), 'wb') as f:
           f.write(uploaded_file_content)
         del uploaded_file_content
         uploaded_video.save()

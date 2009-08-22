@@ -94,6 +94,8 @@ TMP_VIDEO_ROOT =  ('/mnt' if EC2_ENVIRONMENT else '') + '/tmp/publicvideos/uploa
 
 FILE_UPLOAD_TEMP_DIR = TMP_VIDEO_ROOT
 
+DEFAULT_UPLOADED_VIDEO_STATUS = 'pending_upload_to_s3'
+
 if not os.path.exists(TMP_VIDEO_ROOT):
   os.makedirs(TMP_VIDEO_ROOT)
   
@@ -121,6 +123,7 @@ TEMPLATE_LOADERS = (
 
 TEMPLATE_CONTEXT_PROCESSORS = (
   'django_authopenid.context_processors.authopenid',
+  'django.core.context_processors.auth',
 )
 
 
