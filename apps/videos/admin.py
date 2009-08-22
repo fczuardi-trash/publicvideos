@@ -1,4 +1,4 @@
-from videos.models import Video
+from videos.models import Video, TranscodingJob, TranscodingPass, TranscodingJobPass, VideoVersion
 from django.contrib import admin
 
 class VideoAdmin(admin.ModelAdmin):
@@ -7,3 +7,7 @@ class VideoAdmin(admin.ModelAdmin):
   ]
 
 admin.site.register(Video, VideoAdmin)
+admin.site.register(TranscodingJob)
+admin.site.register(TranscodingPass)
+admin.site.register(TranscodingJobPass)
+admin.site.register(VideoVersion)
