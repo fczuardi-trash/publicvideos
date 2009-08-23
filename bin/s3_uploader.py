@@ -3,8 +3,7 @@ import sys
 import os
 
 base = os.path.abspath(os.path.dirname(__file__))
-sys.path.append(os.path.join(base, os.path.pardir, os.path.pardir, os.path.pardir, 'apps'))
-sys.path.append(os.path.join(base, os.path.pardir))
+sys.path.append(os.path.join(base, os.path.pardir, 'apps'))
 sys.path.append(os.path.join(base, os.path.pardir, 'lib'))
 
 import daemon
@@ -18,10 +17,10 @@ import utils
 import models
 EC2_ENVIRONMENT = False
 
-class S3UploaderDaemon(old_daemon.Daemon):
+class S3UploaderDaemon(daemon.Daemon):
   BASEDIR = base # part of hack inside lib/daemon.py
-  default_conf = os.path.join(base, '..', 'config', 's3_uploader.conf')
-  section = 's3_uploader' # which should conventionally be the same as the filename
+  log_filename = os.path.join(base, '..', 'log', 's3_uploader.log')
+  logging.basicConfig(filename=log_filename, level=logging.INFO)
   TMP_VIDEO_ROOT ='%s/tmp/publicvideos/uploaded' % ('/mnt' if EC2_ENVIRONMENT else '')
   S3_BUCKET_NAME = 'camera'
   def get_tmp_video(self, s3_key):

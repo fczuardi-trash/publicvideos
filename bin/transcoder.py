@@ -3,8 +3,7 @@ import sys
 import os
 
 base = os.path.abspath(os.path.dirname(__file__))
-sys.path.append(os.path.join(base, os.path.pardir, os.path.pardir, os.path.pardir, 'apps'))
-sys.path.append(os.path.join(base, os.path.pardir))
+sys.path.append(os.path.join(base, os.path.pardir, 'apps'))
 sys.path.append(os.path.join(base, os.path.pardir, 'lib'))
 
 import lockfile
@@ -20,9 +19,10 @@ import utils
 import models
 EC2_ENVIRONMENT = False
 
-class TranscoderDaemon(old_daemon.Daemon):
+class TranscoderDaemon(daemon.Daemon):
   BASEDIR = base # part of hack inside lib/daemon.py
-  default_conf = os.path.join(base, '..', 'config', 'transcoder.conf')
+  log_filename = os.path.join(base, '..', 'log', 'transcoder.log')
+  logging.basicConfig(filename=log_filename, level=logging.INFO)
   section = 'transcoder' # which should conventionally be the same as the filename
   TMP_VIDEO_ROOT = '%s/tmp/publicvideos/transcoding_limbo' % ('/mnt' if EC2_ENVIRONMENT else '')
   if not os.path.exists(os.path.join(TMP_VIDEO_ROOT, 'originals')):
