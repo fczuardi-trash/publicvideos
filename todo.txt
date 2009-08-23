@@ -1,0 +1,8 @@
+
+Things to fix/improve, or file a bug in launchpad:
+
+- replace the hardcoded s3 foldername 'originals' with a setting variable
+- replace the hardcoded s3 bucket 'camera' with a setting variable
+- remove the hardcoded 'mts' references -> original videos might come with a different format
+- modify the transcoder daemon to NOT download files from s3, a transcoder should be a transcoder, not a downloader/transcoder
+- modify the transcoder daemon to NOT upload back to s3, a transcoder should be a transcoder, not a transcoder/uploader
