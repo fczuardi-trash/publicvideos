@@ -23,7 +23,6 @@ class TranscoderDaemon(daemon.Daemon):
   BASEDIR = base # part of hack inside lib/daemon.py
   log_filename = os.path.join(base, '..', 'log', 'transcoder.log')
   logging.basicConfig(filename=log_filename, level=logging.INFO)
-  section = 'transcoder' # which should conventionally be the same as the filename
   TMP_VIDEO_ROOT = '%s/tmp/publicvideos/transcoding_limbo' % ('/mnt' if EC2_ENVIRONMENT else '')
   if not os.path.exists(os.path.join(TMP_VIDEO_ROOT, 'originals')):
     os.makedirs(os.path.join(TMP_VIDEO_ROOT, 'originals'))
