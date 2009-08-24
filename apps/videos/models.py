@@ -54,7 +54,7 @@ class TranscodingJobPass(models.Model):
   """
   transcoding_job = models.ForeignKey(TranscodingJob, blank=True, null=True)
   transcoding_pass = models.ForeignKey(TranscodingPass, blank=True, null=True)
-  use_result_from = models.ForeignKey(TranscodingJobPass, blank=True, null=True)
+  use_result_from = models.ForeignKey('self', blank=True, null=True)
   step_number = models.PositiveIntegerField(blank=True, null=True)
 
 class VideoVersion(models.Model):
