@@ -86,8 +86,8 @@ class TranscoderDaemon(daemon.Daemon):
                 if os.path.exists(source_pass_path):
                   break
             else:
-              tp = job_pass.use_result_from
-              source_pass_filename = '%s.%s.%s' % (current_video.s3_key, tp.step_number, tp.from_extension)
+              tp = job_pass.use_result_from.transcoding_pass
+              source_pass_filename = '%s.%s.%s' % (current_video.s3_key, job_pass.use_result_from.step_number, tp.from_extension)
               logging.info('---> %s: ' % source_pass_filename)
               source_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug, source_pass_filename)                
             target_extension = job_pass.transcoding_pass.to_extension
