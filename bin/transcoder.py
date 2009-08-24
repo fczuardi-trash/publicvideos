@@ -77,13 +77,19 @@ class TranscoderDaemon(daemon.Daemon):
         for job in self.jobs:
           job_passes = job.transcodingjobpass_set.select_related().order_by('step_number')
           for job_pass in job_passes:
-            logging.info('steps: %s' % range(1, job_pass.step_number)[::-1])
-            for step in range(1, job_pass.step_number+1)[::-1]:
-              source_pass_filename = '%s.%s.%s' % (current_video.s3_key, str(step-1), job_pass.transcoding_pass.from_extension)
+            if job_pass.use_result_from is None:
+              logging.info('steps: %s' % range(1, job_pass.step_number)[::-1])
+              for step in range(1, job_pass.step_number+1)[::-1]:
+                source_pass_filename = '%s.%s.%s' % (current_video.s3_key, str(step-1), job_pass.transcoding_pass.from_extension)
+                logging.info('---> %s: ' % source_pass_filename)
+                source_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug, source_pass_filename)
+                if os.path.exists(source_pass_path):
+                  break
+            else:
+              tp = job_pass.use_result_from
+              source_pass_filename = '%s.%s.%s' % (current_video.s3_key, tp.step_number, tp.from_extension)
               logging.info('---> %s: ' % source_pass_filename)
-              source_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug, source_pass_filename)
-              if os.path.exists(source_pass_path):
-                break
+              source_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug, source_pass_filename)                
             target_extension = job_pass.transcoding_pass.to_extension
             target_pass_filename = '%s.%s.%s' % (current_video.s3_key, str(job_pass.step_number), target_extension)
             target_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug, target_pass_filename)
