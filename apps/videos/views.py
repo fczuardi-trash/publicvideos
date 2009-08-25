@@ -59,7 +59,7 @@ def upload_videos(request):
         uploaded_video.filename = uploaded_file.name
         uploaded_video.size = uploaded_file.size
         uploaded_video.status = settings.DEFAULT_UPLOADED_VIDEO_STATUS
-        uploaded_video.extension = ext
+        uploaded_video.extension = ext[1:]
         uploaded_video.mimetype = mimetypes.types_map.get(ext)
         uploaded_video.s3_key = hashlib.md5(uploaded_file_content).hexdigest()
         if not os.path.exists(os.path.join(settings.TMP_VIDEO_ROOT, 'originals')):

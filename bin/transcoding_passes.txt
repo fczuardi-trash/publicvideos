@@ -1,0 +1,3 @@
+mencoder "$SOURCE" -o "$TARGET" -fps 60000/1001  -ofps 30000/1001 -noskip -mc 0 -demuxer mpegts -oac copy -ovc lavc -lavcopts vcodec=ffvhuff:format=YV12:vstrict=-1:aspect=16/9
+
+ffmpeg2theora --audiobitrate 128 --samplerate 44100 --deinterlace --copyright "No Copyright. The person who associated a work with this document has dedicated this work to the Commons by waiving all of his or her rights to the work under copyright law and all related or neighboring legal rights he or she had in the work, to the extent allowable by law." --license "http://creativecommons.org/publicdomain/zero/1.0/" --optimize --videoquality 8 --keyint 30 --width 480 --height 272 -o "$TARGET" "$SOURCE"

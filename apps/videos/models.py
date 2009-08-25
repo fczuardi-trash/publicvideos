@@ -35,7 +35,7 @@ class TranscodingJob(models.Model):
   Example: 60fps 1920x1080 mts to 30fps 640x360 ogg.
   """
   description = models.CharField(max_length=100, blank=True, null=True)
-  job_slug = models.CharField(max_length=15, blank=True, null=True)
+  job_slug = models.CharField(max_length=40, blank=True, null=True)
   def __unicode__(self):
     return self.description
 
@@ -48,6 +48,7 @@ class TranscodingPass(models.Model):
   
   Use $SOURCE and $TARGET on the command as placeholders for filenames.
   """
+  slug = models.CharField(max_length=40, blank=True, null=True)
   from_extension = models.CharField(max_length=10, blank=True, null=True)
   to_extension = models.CharField(max_length=10, blank=True, null=True)
   description = models.CharField(max_length=100, blank=True, null=True)
