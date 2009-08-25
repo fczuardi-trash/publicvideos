@@ -1,0 +1,161 @@
+from __future__ import with_statement
+import sys
+import os
+
+base = os.path.abspath(os.path.dirname(__file__))
+sys.path.append(os.path.join(base, os.path.pardir))
+sys.path.append(os.path.join(base, os.path.pardir, 'apps'))
+sys.path.append(os.path.join(base, os.path.pardir, 'lib'))
+
+import lockfile
+import daemon
+import logging
+import commands
+import ConfigParser
+import time
+import traceback
+import datetime
+import S3
+import utils
+import models
+EC2_ENVIRONMENT = False
+
+class TranscoderDaemon():
+  BASEDIR = base # part of hack inside lib/daemon.py
+  log_filename = os.path.join(base, '..', 'log', 'transcoder.log')
+  logging.basicConfig(filename=log_filename, level=logging.INFO)
+  logging.info("test")
+  TMP_VIDEO_ROOT = '%s/tmp/publicvideos/' % ('/mnt' if EC2_ENVIRONMENT else '')
+  if not os.path.exists(os.path.join(TMP_VIDEO_ROOT, 'originals')):
+    os.makedirs(os.path.join(TMP_VIDEO_ROOT, 'originals'))
+  S3_BUCKET_NAME = 'camera'
+  def save_tmp_video_and_create_references(self, current_video):
+    original_filename = "%s.%s.%s" % (current_video.s3_key, '0',  current_video.extension)
+    original_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'originals', original_filename)
+    logging.info("os.path.exists(original_path): %s, %s" % (str(os.path.exists(original_path)), original_path))
+    if not os.path.exists(original_path):
+      logging.info("file does not exist locally, try fetching it from s3")
+      response = S3_CONN.get(TranscoderDaemon.S3_BUCKET_NAME, "originals/%s" % current_video.s3_key)
+      with open(original_path, 'wb') as f:
+        logging.info("f = open('%s', 'wb')" % original_path)
+        logging.info("writing: %s" % response.object.data[0:10])
+        f.write(response.object.data)
+    for job in self.jobs:
+      try:
+        os.symlink(original_path, os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug, original_filename))
+      except OSError:
+        pass
+  def put_the_result_back_in_video_tmp(self, current_video, job_slug, result, result_extension):
+    if not os.path.exists(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'versions')):
+      os.makedirs(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'versions'))
+    version_filename = "%s.%s.%s" % (current_video.s3_key, job_slug,  result_extension)
+    version_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'versions', version_filename)
+    with open(version_path, 'wb') as f:
+      f.write(result)
+    return version_path
+  def put_the_result_back_in_s3(self, current_video, job_slug, result, result_extension):
+    options = {'Content-Type': current_video.mimetype or 'application/octet-stream', 'X-Amz-Acl': 'private'}
+    with open(result, 'rb') as f:
+      result = f.read()
+    transcoded_file = S3.S3Object(result)
+    S3_CONN.put(TranscoderDaemon.S3_BUCKET_NAME, "%s/%s.%s" % (job_slug, current_video.s3_key, result_extension), transcoded_file, options)
+    return S3_URL_GENERATOR.generate_url('GET', TranscoderDaemon.S3_BUCKET_NAME, "%s/%s" % (job_slug, current_video.s3_key))  
+  def load_jobs(self):
+    self.jobs = models.TranscodingJob.objects.all()
+    for job in self.jobs:
+      if not os.path.exists(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug)):
+        os.makedirs(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug))
+  def main(self):
+    logging.info("a")
+    if not os.path.exists(TranscoderDaemon.TMP_VIDEO_ROOT):
+      os.makedirs(TranscoderDaemon.TMP_VIDEO_ROOT)
+    logging.info("b")
+    self.load_jobs()
+    logging.info("c")
+    while True:
+      try:
+        logging.info("d")
+        cursor = models.conn.cursor()
+        logging.info("e")
+        utils.lock_on_string(cursor, 'video_queue', 1000000);
+        logging.info("f")
+        try:
+          current_video = models.Video.objects.filter(status='pending_transcoding')[0]
+          logging.info("g")
+        except IndexError:
+          logging.info("h")
+          utils.unlock_on_string(cursor, 'video_queue')
+          logging.info("i")
+          time.sleep(10)
+          logging.info("j")
+          continue
+        logging.info("Downloading original video %s so we can transcode the shit out of it." % current_video.s3_key)
+        self.save_tmp_video_and_create_references(current_video)        
+        current_video.status = 'transcoding'
+        current_video.save()
+        utils.unlock_and_lock_again_real_quick(cursor, 'video_queue')
+        logging.info("Preparing to run transcoding jobs on video %s." % current_video.s3_key)
+        for job in self.jobs:
+          job_passes = job.transcodingjobpass_set.select_related().order_by('step_number')
+          for job_pass in job_passes:
+            if job_pass.use_result_from is None:
+              logging.info('steps: %s' % range(1, job_pass.step_number)[::-1])
+              for step in range(1, job_pass.step_number+1)[::-1]:
+                source_pass_filename = '%s.%s.%s' % (current_video.s3_key, str(step-1), job_pass.transcoding_pass.from_extension)
+                logging.info('---> %s: ' % source_pass_filename)
+                source_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug, source_pass_filename)
+                if os.path.exists(source_pass_path):
+                  break
+            else:
+              tp = job_pass.use_result_from.transcoding_pass
+              source_pass_filename = '%s.%s.%s' % (current_video.s3_key, job_pass.use_result_from.step_number, tp.from_extension)
+              logging.info('---> %s: ' % source_pass_filename)
+              source_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug, source_pass_filename)                
+            target_extension = job_pass.transcoding_pass.to_extension
+            target_pass_filename = '%s.%s.%s' % (current_video.s3_key, str(job_pass.step_number), target_extension)
+            target_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug, target_pass_filename)
+            command = job_pass.transcoding_pass.command.replace('$SOURCE', source_pass_path).replace('$TARGET', target_pass_path)
+            logging.info("Running: %s" % command)
+            command_status, command_output = commands.getstatusoutput(command)
+          logging.info("Transcode completed, uploading result back to S3.")
+          # source_url = self.put_the_result_back_in_s3(current_video, job.job_slug, target_pass_path, target_extension)
+          source_url = self.put_the_result_back_in_video_tmp(current_video, job.job_slug, target_pass_path, target_extension)
+          models.VideoVersion(video=current_video, trancoded_with=job, url=source_url)
+          logging.info("Transcoded and uploaded video %s with the %s encoding." % (current_video.s3_key, job.job_slug))          
+        utils.unlock_on_string(cursor, 'video_queue');
+      except:
+        logging.info("kkk")
+        current_video.status = 'pending_transcoding'
+        current_video.save()
+        file_name = os.path.join(base, '..', 'log', 'transcoder-%s.error' % str(time.time()).replace('.', ''))
+        logging.info("OMGWTFLOLBBQ: %s." % file_name)
+        error_details = open(file_name, 'w')
+        traceback.print_exc(file=error_details)
+        error_details.close()
+        time.sleep(15)
+
+def main():
+  AWS_CREDENTIALS = utils.load_aws_credentials(base)
+  ac, sk = AWS_CREDENTIALS.S3.access_key, AWS_CREDENTIALS.S3.secret_key
+  S3_CONN = S3.AWSAuthConnection(ac, sk)
+  S3_URL_GENERATOR = S3.QueryStringAuthGenerator(ac, sk, is_secure=False)
+  S3_URL_GENERATOR.set_expires_in(60*60*2)
+  # from wonderful PEP 3143: http://www.python.org/dev/peps/pep-3143/
+  daemon_context = daemon.DaemonContext()
+  daemon_context.pidfile = lockfile.FileLock(os.path.join(base, 'pids', 'transcoder.pid'))
+  logging.info("pidfile: %s" % os.path.join(base, 'pids', 'transcoder.pid'))
+  logging.info("with daemon_context")  
+  daemon_context.stderr = open('/tmp/daemon-error.txt', 'w')  
+  with daemon_context:
+    logging.info('instantiate daemon')
+    transcoder = TranscoderDaemon()
+    logging.info('call main function')
+    transcoder.main()
+  logging.info("with daemon_context end")
+
+
+  
+
+if __name__ == '__main__':
+  try: main()
+  except: traceback.print_exc(file=sys.stdout)
