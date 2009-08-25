@@ -90,11 +90,11 @@ DEFAULT_CONTENT_TYPE = 'text/html'
 # Example: "/home/media/media.lawrence.com/"
 MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'static').replace('\\','/')
 
-TMP_VIDEO_ROOT =  ('/mnt' if EC2_ENVIRONMENT else '') + '/tmp/publicvideos/uploaded'
+TMP_VIDEO_ROOT =  ('/mnt' if EC2_ENVIRONMENT else '') + '/tmp/publicvideos/'
 
 FILE_UPLOAD_TEMP_DIR = TMP_VIDEO_ROOT
 
-DEFAULT_UPLOADED_VIDEO_STATUS = 'pending_upload_to_s3'
+DEFAULT_UPLOADED_VIDEO_STATUS = 'pending_transcoding'
 
 if not os.path.exists(TMP_VIDEO_ROOT):
   os.makedirs(TMP_VIDEO_ROOT)

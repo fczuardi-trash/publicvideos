@@ -36,18 +36,24 @@ class TranscodingJob(models.Model):
   """
   description = models.CharField(max_length=100, blank=True, null=True)
   job_slug = models.CharField(max_length=15, blank=True, null=True)
+  def __unicode__(self):
+    return self.description
 
 class TranscodingPass(models.Model):
   """The object representing an individual step (encoding pass) in a 
   transcoding job, usually this means one call to a video converter tool.
   Different TranscodingJobs may share some TranscodingPass steps, for 
   example: the convertion from an original camera file to an 
-  intermediate format can be the first step of different TranscodingJobs
+  intermediate format can be the first step of different TranscodingJobs.
+  
+  Use $SOURCE and $TARGET on the command as placeholders for filenames.
   """
   from_extension = models.CharField(max_length=10, blank=True, null=True)
   to_extension = models.CharField(max_length=10, blank=True, null=True)
   description = models.CharField(max_length=100, blank=True, null=True)
   command = models.TextField()
+  def __unicode__(self):
+    return self.description
 
 class TranscodingJobPass(models.Model):
   """The relationship table for transcoding steps and transcoding jobs.
@@ -56,6 +62,8 @@ class TranscodingJobPass(models.Model):
   transcoding_pass = models.ForeignKey(TranscodingPass, blank=True, null=True)
   use_result_from = models.ForeignKey('self', blank=True, null=True)
   step_number = models.PositiveIntegerField(blank=True, null=True)
+  def __unicode__(self):
+    return self.transcoding_job.job_slug + ': ' + str(self.step_number)
 
 class VideoVersion(models.Model):
   """A video derivate, the files that are actually used by the website.
