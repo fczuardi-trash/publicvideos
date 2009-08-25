@@ -6,7 +6,6 @@ import mimetypes
 import hashlib
 import base64
 import hmac, sha
-import logging
 import traceback
 import pprint
 
@@ -78,4 +77,3 @@ def upload_videos(request):
     traceback.print_exc(file=error_details)
     error_details.close()
     #stack = pprint.pformat(traceback.extract_stack())
-    #logging.debug('An error occurred: %s' % stack)

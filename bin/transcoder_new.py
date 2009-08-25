@@ -7,6 +7,7 @@ sys.path.append(os.path.join(base, os.path.pardir))
 sys.path.append(os.path.join(base, os.path.pardir, 'apps'))
 sys.path.append(os.path.join(base, os.path.pardir, 'lib'))
 
+
 import lockfile
 import daemon
 import logging
@@ -22,9 +23,6 @@ EC2_ENVIRONMENT = False
 
 class TranscoderDaemon():
   BASEDIR = base # part of hack inside lib/daemon.py
-  log_filename = os.path.join(base, '..', 'log', 'transcoder.log')
-  logging.basicConfig(filename=log_filename, level=logging.INFO)
-  logging.info("test")
   TMP_VIDEO_ROOT = '%s/tmp/publicvideos/' % ('/mnt' if EC2_ENVIRONMENT else '')
   if not os.path.exists(os.path.join(TMP_VIDEO_ROOT, 'originals')):
     os.makedirs(os.path.join(TMP_VIDEO_ROOT, 'originals'))
@@ -65,29 +63,25 @@ class TranscoderDaemon():
     for job in self.jobs:
       if not os.path.exists(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug)):
         os.makedirs(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug))
+  def customlog():
+    f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'w')
+    f.write('msg')
+    f.close()
   def main(self):
-    logging.info("a")
+    self.customlog()
     if not os.path.exists(TranscoderDaemon.TMP_VIDEO_ROOT):
       os.makedirs(TranscoderDaemon.TMP_VIDEO_ROOT)
-    logging.info("b")
+    self.customlog()
     self.load_jobs()
-    logging.info("c")
     while True:
       try:
-        logging.info("d")
         cursor = models.conn.cursor()
-        logging.info("e")
         utils.lock_on_string(cursor, 'video_queue', 1000000);
-        logging.info("f")
         try:
           current_video = models.Video.objects.filter(status='pending_transcoding')[0]
-          logging.info("g")
         except IndexError:
-          logging.info("h")
           utils.unlock_on_string(cursor, 'video_queue')
-          logging.info("i")
           time.sleep(10)
-          logging.info("j")
           continue
         logging.info("Downloading original video %s so we can transcode the shit out of it." % current_video.s3_key)
         self.save_tmp_video_and_create_references(current_video)        
@@ -120,11 +114,10 @@ class TranscoderDaemon():
           logging.info("Transcode completed, uploading result back to S3.")
           # source_url = self.put_the_result_back_in_s3(current_video, job.job_slug, target_pass_path, target_extension)
           source_url = self.put_the_result_back_in_video_tmp(current_video, job.job_slug, target_pass_path, target_extension)
-          models.VideoVersion(video=current_video, trancoded_with=job, url=source_url)
+          models.VideoVersion(source=current_video, trancoded_with=job, url=source_url)
           logging.info("Transcoded and uploaded video %s with the %s encoding." % (current_video.s3_key, job.job_slug))          
         utils.unlock_on_string(cursor, 'video_queue');
       except:
-        logging.info("kkk")
         current_video.status = 'pending_transcoding'
         current_video.save()
         file_name = os.path.join(base, '..', 'log', 'transcoder-%s.error' % str(time.time()).replace('.', ''))
@@ -140,21 +133,15 @@ def main():
   S3_CONN = S3.AWSAuthConnection(ac, sk)
   S3_URL_GENERATOR = S3.QueryStringAuthGenerator(ac, sk, is_secure=False)
   S3_URL_GENERATOR.set_expires_in(60*60*2)
-  # from wonderful PEP 3143: http://www.python.org/dev/peps/pep-3143/
   daemon_context = daemon.DaemonContext()
   daemon_context.pidfile = lockfile.FileLock(os.path.join(base, 'pids', 'transcoder.pid'))
-  logging.info("pidfile: %s" % os.path.join(base, 'pids', 'transcoder.pid'))
-  logging.info("with daemon_context")  
-  daemon_context.stderr = open('/tmp/daemon-error.txt', 'w')  
+  # daemon_context.working_directory = base
   with daemon_context:
-    logging.info('instantiate daemon')
-    transcoder = TranscoderDaemon()
-    logging.info('call main function')
-    transcoder.main()
-  logging.info("with daemon_context end")
-
-
-  
+    f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'w')
+    f.write('test')
+    f.close()
+    # transcoder = TranscoderDaemon()
+    # transcoder.main()
 
 if __name__ == '__main__':
   try: main()

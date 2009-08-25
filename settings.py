@@ -1,6 +1,5 @@
 import os
 import sys
-import logging
 import ConfigParser
 
 class jshash(dict):
@@ -30,11 +29,6 @@ AWS_CREDENTIALS = load_aws_credentials(CONFIG_PATH)
 # add the apps subdirectory in the path
 base = os.path.abspath(os.path.dirname(__file__))
 sys.path.insert(0, os.path.join(base, 'apps'))
-
-logging.basicConfig(
-  level = logging.DEBUG,
-  format = '%(asctime)s %(levelname)s %(message)s',
-)
 
 # Django settings for publicvideos project.
 
