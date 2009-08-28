@@ -61,10 +61,10 @@ def upload_videos(request):
         uploaded_video.status = settings.DEFAULT_UPLOADED_VIDEO_STATUS
         uploaded_video.extension = ext[1:]
         uploaded_video.mimetype = mimetypes.types_map.get(ext)
-        uploaded_video.s3_key = hashlib.md5(uploaded_file_content).hexdigest()
+        uploaded_video.md5 = hashlib.md5(uploaded_file_content).hexdigest()
         if not os.path.exists(os.path.join(settings.TMP_VIDEO_ROOT, 'originals')):
           os.makedirs(os.path.join(settings.TMP_VIDEO_ROOT, 'originals'))
-        original_filename = "%s.%s.%s" % (uploaded_video.s3_key, '0',  uploaded_video.extension)
+        original_filename = "%s.%s" % (uploaded_video.md5, uploaded_video.extension)
         with open(os.path.join(settings.TMP_VIDEO_ROOT, 'originals', original_filename), 'wb') as f:
           f.write(uploaded_file_content)
         del uploaded_file_content

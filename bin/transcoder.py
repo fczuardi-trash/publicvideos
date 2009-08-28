@@ -28,11 +28,11 @@ class TranscoderDaemon(daemon.Daemon):
     os.makedirs(os.path.join(TMP_VIDEO_ROOT, 'originals'))
   S3_BUCKET_NAME = 'camera'
   def save_tmp_video_and_create_references(self, current_video):
-    original_filename = "%s.%s.%s" % (current_video.s3_key, '0',  'mts')
+    original_filename = "%s.%s.%s" % (current_video.md5, '0',  'mts')
     original_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'originals', original_filename)
     logging.info("os.path.exists(original_path): %s, %s" % (str(os.path.exists(original_path)), original_path))
     if not os.path.exists(original_path):
-      response = S3_CONN.get(TranscoderDaemon.S3_BUCKET_NAME, "originals/%s" % current_video.s3_key)
+      response = S3_CONN.get(TranscoderDaemon.S3_BUCKET_NAME, "originals/%s" % current_video.md5)
       with open(original_path, 'wb') as f:
         logging.info("f = open('%s', 'wb')" % original_path)
         logging.info("writing: %s" % response.object.data[0:10])
@@ -47,8 +47,8 @@ class TranscoderDaemon(daemon.Daemon):
     with open(result, 'rb') as f:
       result = f.read()
     transcoded_file = S3.S3Object(result)
-    S3_CONN.put(TranscoderDaemon.S3_BUCKET_NAME, "%s/%s.%s" % (job_slug, current_video.s3_key, result_extension), transcoded_file, options)
-    return S3_URL_GENERATOR.generate_url('GET', TranscoderDaemon.S3_BUCKET_NAME, "%s/%s" % (job_slug, current_video.s3_key))  
+    S3_CONN.put(TranscoderDaemon.S3_BUCKET_NAME, "%s/%s.%s" % (job_slug, current_video.md5, result_extension), transcoded_file, options)
+    return S3_URL_GENERATOR.generate_url('GET', TranscoderDaemon.S3_BUCKET_NAME, "%s/%s" % (job_slug, current_video.md5))  
   def load_jobs(self):
     self.jobs = models.TranscodingJob.objects.all()
     for job in self.jobs:
@@ -68,30 +68,30 @@ class TranscoderDaemon(daemon.Daemon):
           utils.unlock_on_string(cursor, 'video_queue')
           time.sleep(10)
           continue
-        logging.info("Downloading original video %s so we can transcode the shit out of it." % current_video.s3_key)
+        logging.info("Downloading original video %s so we can transcode the shit out of it." % current_video.md5)
         self.save_tmp_video_and_create_references(current_video)        
         current_video.status = 'transcoding'
         current_video.save()
         utils.unlock_and_lock_again_real_quick(cursor, 'video_queue')
-        logging.info("Preparing to run transcoding jobs on video %s." % current_video.s3_key)
+        logging.info("Preparing to run transcoding jobs on video %s." % current_video.md5)
         for job in self.jobs:
           job_passes = job.transcodingjobpass_set.select_related().order_by('step_number')
           for job_pass in job_passes:
             if job_pass.use_result_from is None:
               logging.info('steps: %s' % range(1, job_pass.step_number)[::-1])
               for step in range(1, job_pass.step_number+1)[::-1]:
-                source_pass_filename = '%s.%s.%s' % (current_video.s3_key, str(step-1), job_pass.transcoding_pass.from_extension)
+                source_pass_filename = '%s.%s.%s' % (current_video.md5, str(step-1), job_pass.transcoding_pass.from_extension)
                 logging.info('---> %s: ' % source_pass_filename)
                 source_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug, source_pass_filename)
                 if os.path.exists(source_pass_path):
                   break
             else:
               tp = job_pass.use_result_from.transcoding_pass
-              source_pass_filename = '%s.%s.%s' % (current_video.s3_key, job_pass.use_result_from.step_number, tp.from_extension)
+              source_pass_filename = '%s.%s.%s' % (current_video.md5, job_pass.use_result_from.step_number, tp.from_extension)
               logging.info('---> %s: ' % source_pass_filename)
               source_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug, source_pass_filename)                
             target_extension = job_pass.transcoding_pass.to_extension
-            target_pass_filename = '%s.%s.%s' % (current_video.s3_key, str(job_pass.step_number), target_extension)
+            target_pass_filename = '%s.%s.%s' % (current_video.md5, str(job_pass.step_number), target_extension)
             target_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, job.job_slug, target_pass_filename)
             command = job_pass.transcoding_pass.command.replace('$SOURCE', source_pass_path).replace('$TARGET', target_pass_path)
             logging.info("Running: %s" % command)
@@ -99,7 +99,7 @@ class TranscoderDaemon(daemon.Daemon):
           logging.info("Transcode completed, uploading result back to S3.")
           source_url = self.put_the_result_back_in_s3(current_video, job.job_slug, target_pass_path, target_extension)
           models.VideoVersion(video=current_video, trancoded_with=job, url=source_url)
-          logging.info("Transcoded and uploaded video %s with the %s encoding." % (current_video.s3_key, job.job_slug))          
+          logging.info("Transcoded and uploaded video %s with the %s encoding." % (current_video.md5, job.job_slug))          
         utils.unlock_on_string(cursor, 'video_queue');
       except:
         current_video.status = 'pending_transcoding'

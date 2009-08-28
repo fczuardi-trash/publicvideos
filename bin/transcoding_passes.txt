@@ -1,3 +1,20 @@
-mencoder "$SOURCE" -o "$TARGET" -fps 60000/1001  -ofps 30000/1001 -noskip -mc 0 -demuxer mpegts -oac copy -ovc lavc -lavcopts vcodec=ffvhuff:format=YV12:vstrict=-1:aspect=16/9
 
+mts2avi.30fps
+Convert 60fps mpegts files into 30fps lossless avi
+mencoder "$SOURCE" -o "$TARGET" -fps 60000/1001  -ofps 30000/1001 -noskip -mc 0 -demuxer mpegts -oac copy -ovc lavc -lavcopts vcodec=ffv1
+
+avi2ogv.480x272
+Convert an intermediate avi to ogv 480x272 deinterlaced
 ffmpeg2theora --audiobitrate 128 --samplerate 44100 --deinterlace --copyright "No Copyright. The person who associated a work with this document has dedicated this work to the Commons by waiving all of his or her rights to the work under copyright law and all related or neighboring legal rights he or she had in the work, to the extent allowable by law." --license "http://creativecommons.org/publicdomain/zero/1.0/" --optimize --videoquality 8 --keyint 30 --width 480 --height 272 -o "$TARGET" "$SOURCE"
+
+avi2ogv.640x360
+Convert an intermediate avi to ogv 640x360 deinterlaced
+ffmpeg2theora --audiobitrate 128 --samplerate 44100 --deinterlace --copyright "No Copyright. The person who associated a work with this document has dedicated this work to the Commons by waiving all of his or her rights to the work under copyright law and all related or neighboring legal rights he or she had in the work, to the extent allowable by law." --license "http://creativecommons.org/publicdomain/zero/1.0/" --optimize --videoquality 8 --keyint 30 --width 640 --height 360 -o "$TARGET" "$SOURCE"
+
+avi2mp4.480x272
+Convert an intermediate avi to h264 baseline mp4 480x272 deinterlaced, bitrate 650k
+ffmpeg -i "$SOURCE" -an -pass 1 -vcodec libx264 -vpre hq -vpre libx264-baseline -b 650k -s 480x272 -f ipod -deinterlace -threads 0 -benchmark -y /dev/null&&ffmpeg -i "$SOURCE" -pass 2 -vcodec libx264 -vpre hq -vpre libx264-baseline -b 650k -s 480x272 -acodec libfaac -ab 128k -ar 44100 -deinterlace -threads 0 -benchmark -y "$TARGET"
+
+avi2mp4.640x360
+Convert an intermediate avi to h264 baseline mp4 640x360 deinterlaced, bitrate 1000k
+ffmpeg -i "$SOURCE" -an -pass 1 -vcodec libx264 -vpre hq -vpre libx264-baseline -b 1000k -s 640x360 -f ipod -deinterlace -threads 0 -benchmark -y /dev/null&&ffmpeg -i "$SOURCE" -pass 2 -vcodec libx264 -vpre hq -vpre libx264-baseline -b 1000k -s 640x360 -acodec libfaac -ab 128k -ar 44100 -deinterlace -threads 0 -benchmark -y "$TARGET"

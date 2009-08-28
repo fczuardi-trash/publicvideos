@@ -23,8 +23,8 @@ class S3UploaderDaemon(daemon.Daemon):
   logging.basicConfig(filename=log_filename, level=logging.INFO)
   TMP_VIDEO_ROOT ='%s/tmp/publicvideos/uploaded' % ('/mnt' if EC2_ENVIRONMENT else '')
   S3_BUCKET_NAME = 'camera'
-  def get_tmp_video(self, s3_key):
-    with open(os.path.join(S3UploaderDaemon.TMP_VIDEO_ROOT, s3_key), 'rb') as f:
+  def get_tmp_video(self, md5):
+    with open(os.path.join(S3UploaderDaemon.TMP_VIDEO_ROOT, md5), 'rb') as f:
       return f.read()
   def main(self):
     while True:
@@ -37,15 +37,15 @@ class S3UploaderDaemon(daemon.Daemon):
           utils.unlock_on_string(cursor, 'video_queue')
           time.sleep(10)
           continue
-        remote_check = S3_CONN._make_request('HEAD', 'camera', 'originals/%s' % current_video.s3_key, {}, {})
+        remote_check = S3_CONN._make_request('HEAD', 'camera', 'originals/%s' % current_video.md5, {}, {})
         if remote_check.status == 200:
-          logging.info("File %s already exists on S3." % current_video.s3_key)
+          logging.info("File %s already exists on S3." % current_video.md5)
         else:
-          tmp_video_file = self.get_tmp_video(current_video.s3_key)
-          logging.info("Got pending video %s and started uploading to S3." % current_video.s3_key)
+          tmp_video_file = self.get_tmp_video(current_video.md5)
+          logging.info("Got pending video %s and started uploading to S3." % current_video.md5)
           options = {'Content-Type': current_video.mimetype or 'application/octet-stream', 'X-Amz-Acl': 'private'}
-          S3_CONN.put(S3UploaderDaemon.S3_BUCKET_NAME, "originals/%s" % current_video.s3_key, S3.S3Object(tmp_video_file), options)
-          logging.info("Finished uploading %s to S3." % current_video.s3_key)
+          S3_CONN.put(S3UploaderDaemon.S3_BUCKET_NAME, "originals/%s" % current_video.md5, S3.S3Object(tmp_video_file), options)
+          logging.info("Finished uploading %s to S3." % current_video.md5)
         current_video.status = 'pending_transcoding'
         current_video.save()
         utils.unlock_on_string(cursor, 'video_queue');

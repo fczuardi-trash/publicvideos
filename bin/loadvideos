@@ -1,2 +1,2 @@
 #!/bin/sh
-python manage.py loaddata videos
+python manage.py loaddata apps/videos/fixtures/all.json 

@@ -32,7 +32,7 @@ class TranscoderDaemon():
     os.makedirs(os.path.join(TMP_VIDEO_ROOT, 'transcoding'))
   S3_BUCKET_NAME = 'camera'
   def save_tmp_video_and_create_references(self, current_video):
-    original_filename = "%s.%s.%s" % (current_video.s3_key, '0',  current_video.extension)
+    original_filename = "%s.%s" % (current_video.md5, current_video.extension)
     original_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'originals', original_filename)
     f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
     f.write("\nos.path.exists(original_path): %s, %s" % (str(os.path.exists(original_path)), original_path));f.close();
@@ -41,7 +41,7 @@ class TranscoderDaemon():
       f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
       f.write("\nfile does not exist locally, try fetching it from s3");f.close();
       logging.info("file does not exist locally, try fetching it from s3")
-      response = S3_CONN.get(TranscoderDaemon.S3_BUCKET_NAME, "originals/%s" % current_video.s3_key)
+      response = S3_CONN.get(TranscoderDaemon.S3_BUCKET_NAME, "originals/%s" % current_video.md5)
       with open(original_path, 'wb') as f:
         logging.info("f = open('%s', 'wb')" % original_path)
         logging.info("writing: %s" % response.object.data[0:10])
@@ -49,7 +49,7 @@ class TranscoderDaemon():
   def put_the_result_back_in_video_tmp(self, current_video, job_slug, result, result_extension):
     if not os.path.exists(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'versions')):
       os.makedirs(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'versions'))
-    version_filename = "%s.%s.%s" % (current_video.s3_key, job_slug,  result_extension)
+    version_filename = "%s.%s.%s" % (current_video.md5, job_slug,  result_extension)
     version_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'versions', version_filename)
     shutil.copy2(result, version_path)
     return version_path
@@ -58,8 +58,8 @@ class TranscoderDaemon():
     with open(result, 'rb') as f:
       result = f.read()
     transcoded_file = S3.S3Object(result)
-    S3_CONN.put(TranscoderDaemon.S3_BUCKET_NAME, "%s/%s.%s" % (job_slug, current_video.s3_key, result_extension), transcoded_file, options)
-    return S3_URL_GENERATOR.generate_url('GET', TranscoderDaemon.S3_BUCKET_NAME, "%s/%s" % (job_slug, current_video.s3_key))  
+    S3_CONN.put(TranscoderDaemon.S3_BUCKET_NAME, "%s/%s.%s" % (job_slug, current_video.md5, result_extension), transcoded_file, options)
+    return S3_URL_GENERATOR.generate_url('GET', TranscoderDaemon.S3_BUCKET_NAME, "%s/%s" % (job_slug, current_video.md5))  
   def main(self):
     f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
     f.write("\n testing");f.close();
@@ -78,15 +78,15 @@ class TranscoderDaemon():
           time.sleep(10)
           continue
         f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-        f.write("\nDownloading original video %s so we can transcode the shit out of it." % current_video.s3_key);f.close();
-        logging.info("Downloading original video %s so we can transcode the shit out of it." % current_video.s3_key)
+        f.write("\nDownloading original video %s so we can transcode the shit out of it." % current_video.md5);f.close();
+        logging.info("Downloading original video %s so we can transcode the shit out of it." % current_video.md5)
         self.save_tmp_video_and_create_references(current_video)        
         current_video.status = 'transcoding'
         current_video.save()
         utils.unlock_and_lock_again_real_quick(cursor, 'video_queue')
         f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-        f.write("\nPreparing to run transcoding jobs on video %s." % current_video.s3_key);f.close();
-        logging.info("Preparing to run transcoding jobs on video %s." % current_video.s3_key)
+        f.write("\nPreparing to run transcoding jobs on video %s." % current_video.md5);f.close();
+        logging.info("Preparing to run transcoding jobs on video %s." % current_video.md5)
         for job in self.jobs:
           f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
           f.write("\n\n Job: %s." % job.job_slug);f.close();
@@ -99,7 +99,7 @@ class TranscoderDaemon():
           f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
           f.write("\nb");f.close();
         
-          original_filename = "%s.%s.%s" % (current_video.s3_key, '0',  current_video.extension)
+          original_filename = "%s.%s" % (current_video.md5, current_video.extension)
           f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
           f.write("\nc");f.close();
         
@@ -123,7 +123,7 @@ class TranscoderDaemon():
             f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
             f.write("\n target_extension: %s" % target_extension);f.close();
           
-            target_pass_filename = "%s%s.%s" % (current_video.s3_key, current_pass_stack, target_extension)
+            target_pass_filename = "%s%s.%s" % (current_video.md5, current_pass_stack, target_extension)
             f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
             f.write("\n target_pass_filename: %s" % target_pass_filename);f.close();
           
@@ -154,8 +154,7 @@ class TranscoderDaemon():
           logging.info("Transcode completed, uploading result back to S3.")
           # source_url = self.put_the_result_back_in_s3(current_video, job.job_slug, target_pass_path, target_extension)
           source_url = self.put_the_result_back_in_video_tmp(current_video, job.job_slug, target_pass_path, target_extension)
-          models.VideoVersion(source=current_video, transcoded_with=job, url=source_url)
-          logging.info("Transcoded and uploaded video %s with the %s encoding." % (current_video.s3_key, job.job_slug))          
+          logging.info("Transcoded and uploaded video %s with the %s encoding." % (current_video.md5, job.job_slug))          
         utils.unlock_on_string(cursor, 'video_queue');
         f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
         f.write("\n Wait 15 seconds...");f.close();

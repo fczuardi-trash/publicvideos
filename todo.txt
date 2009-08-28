@@ -1,6 +1,12 @@
 
 Things to fix/improve, or file a bug in launchpad:
 
+- change transcoding pass to have an extra command_muted attribute containing the muted version of that transcoding pass
+- upload form to have option to flag a video as "mute derivates"
+- transcoder to recognise the attribute mute_export and use the mute versions of the transcoding passes
+- add new video state: rejected
+- fill up video created_date on the first uploader
+- check if for hash colision after first uploading to avoid duplicates
 - replace the hardcoded s3 foldername 'originals' with a setting variable
 - replace the hardcoded s3 bucket 'camera' with a setting variable
 - remove the hardcoded 'mts' references -> original videos might come with a different format
