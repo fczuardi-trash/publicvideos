@@ -1,2 +1,5 @@
 #!/bin/sh
 python manage.py dumpdata videos > apps/videos/fixtures/all.json
+python manage.py dumpdata --indent 2 videos.transcodingpass > apps/videos/fixtures/transcodingpass.json
+python manage.py dumpdata --indent 2 videos.transcodingjob > apps/videos/fixtures/transcodingjob.json
+python manage.py dumpdata --indent 2 videos.transcodingjobpass > apps/videos/fixtures/transcodingjobpass.json

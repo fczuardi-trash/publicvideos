@@ -1,0 +1,34 @@
+[
+  {
+    "pk": 1, 
+    "model": "videos.transcodingjob", 
+    "fields": {
+      "description": "Generates 30fps deinterlaced OGV 480x272 files from 60fps mpegts files.", 
+      "job_slug": "mts-ogv30-272"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "videos.transcodingjob", 
+    "fields": {
+      "description": "Generates 30fps deinterlaced OGV 640x360 files from 60fps mpegts files.", 
+      "job_slug": "mts-ogv30-360"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "videos.transcodingjob", 
+    "fields": {
+      "description": "Generates 30fps deinterlaced MP4 480x272 files from 60fps mpegts files.", 
+      "job_slug": "mts-mp430-272"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "videos.transcodingjob", 
+    "fields": {
+      "description": "Generates 30fps deinterlaced MP4 640x360 files from 60fps mpegts files.", 
+      "job_slug": "mts-mp430-360"
+    }
+  }
+]

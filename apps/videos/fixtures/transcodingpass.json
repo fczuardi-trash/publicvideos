@@ -1,0 +1,68 @@
+[
+  {
+    "pk": 1, 
+    "model": "videos.transcodingpass", 
+    "fields": {
+      "from_extension": "MTS", 
+      "description": "Convert 60fps mpegts files into 30fps lossless avi, resize to 480x272, deinterlace", 
+      "command": "mencoder \"$SOURCE\" -o \"$TARGET\" -fps 60000/1001  -ofps 30000/1001 -noskip -mc 0 -demuxer mpegts -oac copy -ovc raw -vf scale=480:272,pullup,softskip,pp=lb", 
+      "slug": "MTS.1080.60-272.30.vRaw.aCopy", 
+      "to_extension": "AVI"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "videos.transcodingpass", 
+    "fields": {
+      "from_extension": "MTS", 
+      "description": "Convert 60fps mpegts files into 30fps lossless avi, resize to 640x360, deinterlace", 
+      "command": "mencoder \"$SOURCE\" -o \"$TARGET\" -fps 60000/1001  -ofps 30000/1001 -noskip -mc 0 -demuxer mpegts -oac copy -ovc raw -vf scale=640:360,pullup,softskip,pp=lb", 
+      "slug": "MTS.1080.60-360.30.vRaw.aCopy", 
+      "to_extension": "AVI"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "videos.transcodingpass", 
+    "fields": {
+      "from_extension": "", 
+      "description": "Converts a given video to ogv 1200k bitrate, two pass", 
+      "command": "ffmpeg2theora --videobitrate 1200 --keyint 30 --audiobitrate 128 --samplerate 44100 --optimize --two-pass --license \"http://creativecommons.org/publicdomain/zero/1.0/\" --copyright \"No Copyright. The person who associated a work with this document has dedicated this work to the Commons by waiving all of his or her rights to the work under copyright law and all related or neighboring legal rights he or she had in the work, to the extent allowable by law.\" -o \"$TARGET\" \"$SOURCE\"", 
+      "slug": "theo.1200k.vorbis.128.44100", 
+      "to_extension": "OGV"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "videos.transcodingpass", 
+    "fields": {
+      "from_extension": "", 
+      "description": "Converts a given video to ogv 2040k bitrate, two pass", 
+      "command": "ffmpeg2theora --videobitrate 2040 --keyint 30 --audiobitrate 128 --samplerate 44100 --optimize --two-pass --license \"http://creativecommons.org/publicdomain/zero/1.0/\" --copyright \"No Copyright. The person who associated a work with this document has dedicated this work to the Commons by waiving all of his or her rights to the work under copyright law and all related or neighboring legal rights he or she had in the work, to the extent allowable by law.\" -o \"$TARGET\" \"$SOURCE\"", 
+      "slug": "theo.2040k.vorbis.128.44100", 
+      "to_extension": "OGV"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "videos.transcodingpass", 
+    "fields": {
+      "from_extension": "", 
+      "description": "Converts a given video to h2.64 baseline mp4 1000k bitrate, two pass", 
+      "command": "ffmpeg -i \"$SOURCE\"  -b 1000k -an -pass 1 -vcodec libx264 -vpre hq -vpre libx264-baseline -f ipod -threads 0 -benchmark -y /dev/null&&ffmpeg -i \"$SOURCE\" -b 1000k -pass 2 -vcodec libx264 -vpre hq -vpre libx264-baseline -acodec libfaac -ab 128k -ar 44100 -threads 0 -benchmark -y \"$TARGET\"", 
+      "slug": "x264.1000k.base.faac.128.44100", 
+      "to_extension": "MP4"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "videos.transcodingpass", 
+    "fields": {
+      "from_extension": "", 
+      "description": "Converts a given video to h2.64 baseline mp4 1700k bitrate, two pass", 
+      "command": "ffmpeg -i \"$SOURCE\"  -b 1700k -an -pass 1 -vcodec libx264 -vpre hq -vpre libx264-baseline -f ipod -threads 0 -benchmark -y /dev/null&&ffmpeg -i \"$SOURCE\" -b 1700k -pass 2 -vcodec libx264 -vpre hq -vpre libx264-baseline -acodec libfaac -ab 128k -ar 44100 -threads 0 -benchmark -y \"$TARGET\"", 
+      "slug": "x264.1700k.base.faac.128.44100", 
+      "to_extension": "MP4"
+    }
+  }
+]
