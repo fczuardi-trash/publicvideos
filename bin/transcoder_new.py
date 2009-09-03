@@ -61,7 +61,8 @@ class TranscoderDaemon():
     S3_CONN.put(TranscoderDaemon.S3_BUCKET_NAME, "%s/%s.%s" % (job_slug, current_video.md5, result_extension), transcoded_file, options)
     return S3_URL_GENERATOR.generate_url('GET', TranscoderDaemon.S3_BUCKET_NAME, "%s/%s" % (job_slug, current_video.md5))  
   def debug_log(self, msg):
-    f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
+    file_name = os.path.join(base, '..', 'log', 'transcoder.log')
+    f = open(file_name, 'a')
     f.write(msg);
     f.close();
     return
