@@ -28,7 +28,7 @@ class Video(models.Model):
   mute_export = models.NullBooleanField(blank=True)
   # thumbnail, author, credit, copyright, keywords, category ?
   def __unicode__(self):
-    return self.title
+    return self.filename
 
 class TranscodingJob(models.Model):
   """The object representing a video transcoding process, the conversion

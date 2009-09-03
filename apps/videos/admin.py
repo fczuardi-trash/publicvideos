@@ -1,12 +1,7 @@
 from videos.models import Video, TranscodingJob, TranscodingPass, TranscodingJobPass, VideoVersion
 from django.contrib import admin
 
-class VideoAdmin(admin.ModelAdmin):
-  fieldsets = [
-    (None, {'fields': ['description', 'md5', 'mimetype', 'created_at']})
-  ]
-
-admin.site.register(Video, VideoAdmin)
+admin.site.register(Video)
 admin.site.register(TranscodingJob)
 admin.site.register(TranscodingPass)
 admin.site.register(TranscodingJobPass)

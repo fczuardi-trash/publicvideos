@@ -60,9 +60,13 @@ class TranscoderDaemon():
     transcoded_file = S3.S3Object(result)
     S3_CONN.put(TranscoderDaemon.S3_BUCKET_NAME, "%s/%s.%s" % (job_slug, current_video.md5, result_extension), transcoded_file, options)
     return S3_URL_GENERATOR.generate_url('GET', TranscoderDaemon.S3_BUCKET_NAME, "%s/%s" % (job_slug, current_video.md5))  
-  def main(self):
+  def debug_log(self, msg):
     f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-    f.write("\n testing");f.close();
+    f.write(msg);
+    f.close();
+    return
+  def main(self):
+    self.debug_log("\n testing")
     if not os.path.exists(TranscoderDaemon.TMP_VIDEO_ROOT):
       os.makedirs(TranscoderDaemon.TMP_VIDEO_ROOT)
     # self.load_jobs()
@@ -77,96 +81,61 @@ class TranscoderDaemon():
           utils.unlock_on_string(cursor, 'video_queue')
           time.sleep(10)
           continue
-        f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-        f.write("\nDownloading original video %s so we can transcode the shit out of it." % current_video.md5);f.close();
+        self.debug_log("\nDownloading original video %s so we can transcode the shit out of it." % current_video.md5)
         logging.info("Downloading original video %s so we can transcode the shit out of it." % current_video.md5)
         self.save_tmp_video_and_create_references(current_video)        
         current_video.status = 'transcoding'
         current_video.save()
         utils.unlock_and_lock_again_real_quick(cursor, 'video_queue')
-        f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-        f.write("\nPreparing to run transcoding jobs on video %s." % current_video.md5);f.close();
+        self.debug_log("\nPreparing to run transcoding jobs on video %s." % current_video.md5);
         logging.info("Preparing to run transcoding jobs on video %s." % current_video.md5)
         for job in self.jobs:
-          f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-          f.write("\n\n Job: %s." % job.job_slug);f.close();
-        
+          self.debug_log("\n\n Job: %s." % job.job_slug);
           job_passes = job.transcodingjobpass_set.select_related().order_by('step_number')
-          f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-          f.write("\na %s" % job_passes);f.close();
-        
           current_pass_stack = ''
-          f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-          f.write("\nb");f.close();
-        
           original_filename = "%s.%s" % (current_video.md5, current_video.extension)
-          f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-          f.write("\nc");f.close();
-        
           original_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'originals', original_filename)
-          f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-          f.write("\nd");f.close();
-        
           source_pass_path = original_path
-          f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-          f.write("\n source_pass_path: %s." % source_pass_path);f.close();
-
           for job_pass in job_passes:
-            f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-            f.write("\n\n Job Pass: %s." % job_pass.transcoding_pass);f.close();
-          
-            current_pass_stack = "%s_%s" % (current_pass_stack, job_pass.transcoding_pass.slug)
-            f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-            f.write("\ncurrent_pass_stack: %s" % current_pass_stack);f.close();
-          
+            self.debug_log("\n\n Job Pass: %s." % job_pass.transcoding_pass);
+            current_pass_stack = "%s__%s" % (current_pass_stack, job_pass.transcoding_pass.slug)
+            self.debug_log("\ncurrent_pass_stack: %s" % current_pass_stack);
             target_extension = job_pass.transcoding_pass.to_extension
-            f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-            f.write("\n target_extension: %s" % target_extension);f.close();
-          
+            self.debug_log("\n target_extension: %s" % target_extension);
             target_pass_filename = "%s%s.%s" % (current_video.md5, current_pass_stack, target_extension)
-            f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-            f.write("\n target_pass_filename: %s" % target_pass_filename);f.close();
-          
+            self.debug_log("\n target_pass_filename: %s" % target_pass_filename);
             target_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'transcoding', target_pass_filename)
-            f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-            f.write("\n target_pass_path: %s" % target_pass_path);f.close();
-          
-            f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-            f.write("\n source_pass_path: %s target_pass_path: %s" % (source_pass_path, target_pass_path));f.close();
-          
-            f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-            f.write("\n os.path.exists(target_pass_path): %s" % os.path.exists(target_pass_path));f.close();
-          
+            self.debug_log("\n target_pass_path: %s" % target_pass_path);
+            self.debug_log("\n source_pass_path: %s target_pass_path: %s" % (source_pass_path, target_pass_path));
+            self.debug_log("\n os.path.exists(target_pass_path): %s" % os.path.exists(target_pass_path));
             if os.path.exists(target_pass_path):
               source_pass_path = target_pass_path
-              f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-              f.write("\n some other transcoding job already generated the file for this pass, skip it: %s" % target_pass_path);f.close();
+              self.debug_log("\n some other transcoding job already generated the file for this pass, skip it: %s" % target_pass_path);
               continue
             else:
               command = job_pass.transcoding_pass.command.replace('$SOURCE', source_pass_path).replace('$TARGET', target_pass_path)
-              f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-              f.write("\n Running: %s" % command);f.close();
+              self.debug_log("\n Running: %s" % command);
               command_status, command_output = commands.getstatusoutput(command)
-              f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-              f.write("\n command completed! %s" % command_output);f.close();
-            
+              self.debug_log("\n command completed! %s" % command_output);
               source_pass_path = target_pass_path
           logging.info("Transcode completed, uploading result back to S3.")
           # source_url = self.put_the_result_back_in_s3(current_video, job.job_slug, target_pass_path, target_extension)
           source_url = self.put_the_result_back_in_video_tmp(current_video, job.job_slug, target_pass_path, target_extension)
           logging.info("Transcoded and uploaded video %s with the %s encoding." % (current_video.md5, job.job_slug))          
         utils.unlock_on_string(cursor, 'video_queue');
-        f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-        f.write("\n Wait 15 seconds...");f.close();
+        self.debug_log("\n Wait 15 seconds...");
         time.sleep(15)
       except:
-        current_video.status = 'pending_transcoding'
-        current_video.save()
+        self.debug_log("\n Error!");
+        traceback.print_exc(file=sys.stdout)
         file_name = os.path.join(base, '..', 'log', 'transcoder-%s.error' % str(time.time()).replace('.', ''))
         logging.info("OMGWTFLOLBBQ: %s." % file_name)
         error_details = open(file_name, 'w')
         traceback.print_exc(file=error_details)
         error_details.close()
+        if (current_video):
+          current_video.status = 'pending_transcoding'
+          current_video.save()
         time.sleep(15)
 
 def main():
