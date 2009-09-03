@@ -3,6 +3,7 @@
   {% block head %}
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>{% block title %}{% endblock %} — Publicvideos.org</title>
+  {% block extrahead %}{% endblock %}
   {% endblock %}
 </head>
 <body {% block body_attributes %}{% endblock %}>
@@ -18,5 +19,7 @@
   <footer>
     {% block footer %}{% endblock %}
   </footer>
+  {% block extra_scripts %}
+  {% endblock %}
 </body>
 </html>

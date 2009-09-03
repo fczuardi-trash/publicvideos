@@ -1,19 +1,46 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% block extrahead %}
+<style>
+#content{width:500px;}
+#openid_choice div,#openid_choice p,#openid_choice input,#openid_choice label,#openid_choice ul,#openid_choice li,#openid_choice span{margin:0px;padding:0px;}
+#openid_choice #openid_choice_title{padding-left:0.3em;width:70%;margin-bottom:1em;}
+#openid_choice ul{width:70%;list-style:none;text-align:center;}
+#openid_choice ul li{display:inline;margin-right:.3em;}
+#openid_choice #openid_btns{margin-bottom:-0.8em;}
+#openid_choice #id_openid_url{width:70%;padding-left:20px;height:2em;}
+#openid_choice .helper-text{font-size:0.7em;opacity:0.8;text-align:center;width:70%;}
+#openid_choice #label_openid_url{
+  display:block;
+  overflow:hidden;
+  position:relative;
+  width:16px;
+  height:0px;
+  padding-top:16px;
+  top:20px;
+  left:4px;
+  background-image:url(/static/images/openid-16x16.gif);
+}
+/*without radio*/
+#openid_choice input[type="radio"]{display:none;}
+#openid_choice ul li{margin-right:.5em;}
+#openid_choice .radio-label:hover{text-decoration:underline;cursor:pointer;}
+</style>
+{% endblock %}
 
 {% block content %}
 {% if msg %}
 <br />
-	<p class="warning">{{ msg }}</p>
+  <p class="warning">{{ msg }}</p>
 {% endif %}
 {% if form2.errors %}
 <div class="errors"><p>{% trans "Please correct errors below:" %}<br />
-	{% if form2.username.errors %} 
-		<span class="error">{{ form2.username.errors|join:", " }}</span>
-	{% endif %}
-	{% if form2.password.errors %} 
-		<span class="error">{{ form2.password.errors|join:", " }}</span>
-	{% endif %}
+  {% if form2.username.errors %} 
+    <span class="error">{{ form2.username.errors|join:", " }}</span>
+  {% endif %}
+  {% if form2.password.errors %} 
+    <span class="error">{{ form2.password.errors|join:", " }}</span>
+  {% endif %}
 </p></div>
 <br>
 {% endif %}
@@ -25,32 +52,67 @@
 <br>
 {% endif %}
 <form id="openid_form" name="openid_form" action="{% url user_signin %}" method="post">
-    <input type="hidden" name="action" value="verify" />
-    <input type="hidden" name="next" value="{{ next }}" />
-	<fieldset>
-		<legend>{% trans "Sign In Using Your OpenID URL" %}</legend>
-		<div id="openid_choice">
-    		<p>Please click your account provider:</p>
-    		<div id="openid_btns"></div>
-    	</div>
-    	    <div id="openid_input_area">
-                <label for="id_openid_url">{% trans "OpenId URL :" %}</label>{{ form1.openid_url }}
-                <input name="openid_submit" type="submit" value="{% trans "Sign in with OpenID" %}">
-            </div>
-		
-	</fieldset>
-</form>	
-</div>	
+  <input type="hidden" name="action" value="verify" />
+  <input type="hidden" name="next" value="{{ next }}" />
+  <div id="openid_choice">
+    <p id="openid_choice_title">Login with your account from:</p>
+    <div id="openid_btns">
+      <ul>
+        <li>
+          <input type="radio" name="openid_provider"
+          id="openid-google" value="https://www.google.com/accounts/o8/id">
+          <label for="openid-google" class="radio-label">Google</label>
+        </li>
+        <li>
+          <input type="radio" name="openid_provider"
+          id="openid-flickr" value="http://flickr.com/photos/YOUR_USERNAME/">
+          <label for="openid-flickr" class="radio-label">Flickr</label>
+        </li>
+        <li>
+          <input type="radio" name="openid_provider"
+          id="openid-launchpad" value="https://launchpad.net/~YOUR_USERNAME/">
+          <label for="openid-launchpad" class="radio-label">Launchpad</label>
+        </li>
+        <li>
+          <input type="radio" name="openid_provider"
+          id="openid-ccnetwork" value="https://creativecommons.net/YOUR_USERNAME/">
+          <label for="openid-ccnetwork" class="radio-label"><acronym title="Creative Commons">CC</acronym> Network</label>
+        </li>
+      </ul>
+    </div>
+    <label for="id_openid_url" id="label_openid_url">OpenID:</label>{{ form1.openid_url }}<input name="openid_submit" id="openid_submit" type="submit" value="{% trans "Login" %}">
+    <p class="helper-text">{% trans "You can manually type the OpenID URL of any other compatible provider." %}</p>
+  </div>  
+</form> 
 {% endblock %}
 
 {% block extra_scripts %}
-<script type="text/javascript" src="{{ MEDIA_URL }}/js/openid-jquery.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    openid.init('id_openid_url');
-});
+<script type="text/javascript" src="/static/lib/mootools-1.2.3-core-nc.js"></script>
+<script>
+  function init(){
+    var openid_provider_buttons = $$('#openid_btns li input')
+    for (var i=0; i< openid_provider_buttons.length; i++){
+      openid_provider_buttons[i].addEventListener('change', onProviderClicked, false)
+    }
+  }
+  function onProviderClicked(e){
+    var token = "YOUR_USERNAME"
+    var provider = e.target
+    if (provider.get('type') != 'radio') {return false}
+    var url_field = $('id_openid_url')
+    var provider_url = provider.get('value')
+    url_field.set('value',provider_url)
+    url_field.focus()
+    var begin = provider_url.indexOf(token)
+    if (begin != -1){
+      url_field.selectionStart = begin;
+      url_field.selectionEnd = begin + token.length;
+    } else {
+      url_field.selectionStart = url_field.selectionEnd = 0;
+      $('openid_submit').focus()
+    }
+  }
+  init();
 </script>
-<!-- /Simple OpenID Selector -->
-    
 {% endblock %}
 
