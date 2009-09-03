@@ -1,5 +1,4 @@
 *.pyc
-*.pyc
 internal/*.log
 config/aws.conf
 internal/config/aws.conf
@@ -7,3 +6,7 @@ internal/log
 internal/pids/*
 docs/_*
 *.DS_Store
+log/*.error
+ffmpeg2pass-0.log
+x264_2pass.log
+/log/*.log
