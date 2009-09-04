@@ -34,12 +34,10 @@ class TranscoderDaemon():
   def save_tmp_video_and_create_references(self, current_video):
     original_filename = "%s.%s" % (current_video.md5, current_video.extension)
     original_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'originals', original_filename)
-    f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-    f.write("\nos.path.exists(original_path): %s, %s" % (str(os.path.exists(original_path)), original_path));f.close();
+    self.debug_log("\nos.path.exists(original_path): %s, %s" % (str(os.path.exists(original_path)), original_path))
     logging.info("os.path.exists(original_path): %s, %s" % (str(os.path.exists(original_path)), original_path))
     if not os.path.exists(original_path):
-      f = open('/Users/fczuardi/trampos/publicvideos/log/transcoder.log', 'a')
-      f.write("\nfile does not exist locally, try fetching it from s3");f.close();
+      self.debug_log("\nfile does not exist locally, try fetching it from s3")
       logging.info("file does not exist locally, try fetching it from s3")
       response = S3_CONN.get(TranscoderDaemon.S3_BUCKET_NAME, "originals/%s" % current_video.md5)
       with open(original_path, 'wb') as f:
@@ -116,7 +114,13 @@ class TranscoderDaemon():
             else:
               command = job_pass.transcoding_pass.command.replace('$SOURCE', source_pass_path).replace('$TARGET', target_pass_path)
               self.debug_log("\n Running: %s" % command);
-              command_status, command_output = commands.getstatusoutput(command)
+              # command_status, command_output = commands.getstatusoutput(command)
+              pipe = os.popen('{ ' + command + '; } 2>&1', 'r')
+              command_output = pipe.read()
+              try:
+                command_status = pipe.close()
+              except:
+                pass
               self.debug_log("\n command completed! %s" % command_output);
               source_pass_path = target_pass_path
           logging.info("Transcode completed, uploading result back to S3.")
