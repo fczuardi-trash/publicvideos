@@ -26,6 +26,8 @@ class Video(models.Model):
   duration = models.DecimalField(max_digits=8, decimal_places=3, blank=True, null=True, help_text='Clip duration in seconds.')
   filename = models.CharField(max_length=100, blank=True, null=True, help_text='The filename of the original file.')
   mute_export = models.NullBooleanField(blank=True)
+  set_slug = models.CharField(max_length=40, blank=True, null=True)
+  author = models.ForeignKey('auth.User', blank=True, null=True)
   # thumbnail, author, credit, copyright, keywords, category ?
   def __unicode__(self):
     return self.filename

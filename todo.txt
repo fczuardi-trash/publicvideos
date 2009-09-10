@@ -1,6 +1,7 @@
 
 Things to fix/improve, or file a bug in launchpad:
 
+- check for duplicates on upload
 - change transcoding pass to have an extra command_muted attribute containing the muted version of that transcoding pass
 - upload form to have option to flag a video as "mute derivates"
 - transcoder to recognise the attribute mute_export and use the mute versions of the transcoding passes

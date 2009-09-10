@@ -192,7 +192,12 @@
         $.transmit.swf.setAllowMultipleFiles(true);
         $.transmit.swf.setFileFilters($.transmit.settings.allowedFileTypes);
         $('#uploadBtn').attr('disabled', '').click(function() {
-            $.fn.upload();
+            var params_elements = $('#extra_parameters input')
+            var params = {}
+            for (i=0; i< params_elements.length; i++){
+              params[params_elements[i].id] = params_elements[i].value
+            }
+            $.fn.upload(params);
         });
     }
     
