@@ -1,0 +1,56 @@
+[
+  {
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "fczuardi", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": 1, 
+      "is_superuser": 1, 
+      "is_staff": 1, 
+      "last_login": "2009-09-10 19:18:47", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "sha1$97f1f$c682d93effcad253b9e8503717a47f2a30f339b4", 
+      "email": "fabricio@fabricio.org", 
+      "date_joined": "2009-09-03 00:42:07"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "fabricio", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": 1, 
+      "is_superuser": 0, 
+      "is_staff": 0, 
+      "last_login": "2009-09-10 15:26:00", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "!", 
+      "email": "fabricio@gmail.com", 
+      "date_joined": "2009-09-10 15:25:59"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "ace", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": 1, 
+      "is_superuser": 0, 
+      "is_staff": 0, 
+      "last_login": "2009-09-10 15:26:00", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "!", 
+      "email": "aceofspades02@gmail.com", 
+      "date_joined": "2009-09-10 15:25:59"
+    }
+  }
+]
