@@ -4,4 +4,5 @@ python manage.py dumpdata --indent 2 videos.transcodingpass > apps/videos/fixtur
 python manage.py dumpdata --indent 2 videos.transcodingjob > apps/videos/fixtures/transcodingjob.json
 python manage.py dumpdata --indent 2 videos.transcodingjobpass > apps/videos/fixtures/transcodingjobpass.json
 python manage.py dumpdata --indent 2 videos.video > apps/videos/fixtures/video.json
+python manage.py dumpdata --indent 2 videos.videoversion > apps/videos/fixtures/videoversion.json
 python manage.py dumpdata --indent 2 auth.user > apps/users/fixtures/user.json
