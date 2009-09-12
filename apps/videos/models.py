@@ -82,6 +82,8 @@ class VideoVersion(models.Model):
   transcoded_with = models.ForeignKey(TranscodingJob, blank=True, null=True)
   codecs = models.CharField(max_length=40, blank=True, null=True, help_text='HTML5 \
     <a href="http://www.whatwg.org/specs/web-apps/current-work/#attr-source-type">codecs</a> string.')
+  created_at = models.DateTimeField('datetime created_at', null=True)
+  updated_at = models.DateTimeField('datetime updated_at', null=True)
   # bitrate, framerate, samplingrate, channels, lang, player ?
   def __unicode__(self):
     return self.url

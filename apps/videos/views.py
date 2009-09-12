@@ -75,7 +75,7 @@ def upload_videos(request):
         uploaded_video.extension = ext[1:]
         uploaded_video.mimetype = mimetypes.types_map.get(ext)
         uploaded_video.md5 = md5digest
-        delta = datetime.timedelta(days=-56)
+        delta = datetime.timedelta(days=-47)
         uploaded_video.created_at = datetime.datetime.now()+delta
         uploaded_video.updated_at = datetime.datetime.now()+delta
         uploaded_video.author = author
