@@ -34,6 +34,12 @@ Download the tar file, something like this probably:
 
 Unpack it, edit the site.cfg file if needed (to change the path of mysql_config to /usr/local/mysql/bin/mysql_config on MacOSX for example). You might need to edit a couple of more files on MacOSX as well, see here http://www.mangoorange.com/2008/08/01/installing-python-mysqldb-122-on-mac-os-x/
 
+**SNOW LEOPARD**
+For Mac OS X 10.6 users, the trick is to install the 64 bits of MySQL, then download the latest version of mysql-python, then build and install with the proper flags as described here http://birdhouse.org/blog/2009/02/21/python-mysql-connections-on-mac-os/#snowleopard and maybe restart the computer.
+
+  ARCHFLAGS='-arch x86_64' python setup.py build
+  ARCHFLAGS='-arch x86_64' python setup.py install
+  
 ==== - Install Django Trunk ====
 TBD
 ==== - Install Jinja Trunk ====
