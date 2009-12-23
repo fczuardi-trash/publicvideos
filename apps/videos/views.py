@@ -89,10 +89,9 @@ def upload_videos(request):
         uploaded_video.save()
       return HttpResponse('')
     else:
-      author_email = request.GET['author']
-      set_slug = request.GET['set_slug']
+      author_email = request.GET['author'] if 'author' in request.GET else ''
+      set_slug = request.GET['set_slug'] if 'set_slug' in request.GET else ''
     return render_to_response("videos/upload.html", locals())
-    
   except:
     error_details = open(settings.DEBUG_ERROR_FILE, 'w')
     traceback.print_exc(file=error_details)
