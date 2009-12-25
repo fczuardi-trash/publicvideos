@@ -13666,5 +13666,6329 @@
       "duration": null, 
       "size": 7126610
     }
+  }, 
+  {
+    "pk": 805, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/fdb6a6dcd6aa3334557d8f1eb026064f.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-25 05:31:54", 
+      "updated_at": "2009-12-25 05:31:54", 
+      "height": null, 
+      "source": 341, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 1421762
+    }
+  }, 
+  {
+    "pk": 806, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/fdb6a6dcd6aa3334557d8f1eb026064f.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-25 05:32:41", 
+      "updated_at": "2009-12-25 05:32:41", 
+      "height": null, 
+      "source": 341, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 2028233
+    }
+  }, 
+  {
+    "pk": 807, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/fdb6a6dcd6aa3334557d8f1eb026064f.mts-mp430-272.MP4", 
+      "created_at": "2009-12-25 05:28:36", 
+      "updated_at": "2009-12-25 05:28:36", 
+      "height": null, 
+      "source": 341, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4423163
+    }
+  }, 
+  {
+    "pk": 808, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/fdb6a6dcd6aa3334557d8f1eb026064f.mts-mp430-360.MP4", 
+      "created_at": "2009-12-25 05:31:20", 
+      "updated_at": "2009-12-25 05:31:20", 
+      "height": null, 
+      "source": 341, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7174944
+    }
+  }, 
+  {
+    "pk": 809, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c113d66a9058c8de7237d8a252029e0a.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 16:20:55", 
+      "updated_at": "2009-12-24 16:20:55", 
+      "height": null, 
+      "source": 340, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4844372
+    }
+  }, 
+  {
+    "pk": 810, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c113d66a9058c8de7237d8a252029e0a.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 16:33:43", 
+      "updated_at": "2009-12-24 16:33:43", 
+      "height": null, 
+      "source": 340, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7825646
+    }
+  }, 
+  {
+    "pk": 811, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c113d66a9058c8de7237d8a252029e0a.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 16:21:10", 
+      "updated_at": "2009-12-24 16:21:10", 
+      "height": null, 
+      "source": 340, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4284631
+    }
+  }, 
+  {
+    "pk": 812, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c113d66a9058c8de7237d8a252029e0a.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 16:25:22", 
+      "updated_at": "2009-12-24 16:25:22", 
+      "height": null, 
+      "source": 340, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6941152
+    }
+  }, 
+  {
+    "pk": 813, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/71c3c8110c6d5427f7a98c33090d5330.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 10:44:26", 
+      "updated_at": "2009-12-24 10:44:26", 
+      "height": null, 
+      "source": 339, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 2128510
+    }
+  }, 
+  {
+    "pk": 814, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/71c3c8110c6d5427f7a98c33090d5330.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 10:49:10", 
+      "updated_at": "2009-12-24 10:49:10", 
+      "height": null, 
+      "source": 339, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 3075697
+    }
+  }, 
+  {
+    "pk": 815, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/71c3c8110c6d5427f7a98c33090d5330.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 10:42:12", 
+      "updated_at": "2009-12-24 10:42:12", 
+      "height": null, 
+      "source": 339, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4440794
+    }
+  }, 
+  {
+    "pk": 816, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/71c3c8110c6d5427f7a98c33090d5330.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 10:46:16", 
+      "updated_at": "2009-12-24 10:46:16", 
+      "height": null, 
+      "source": 339, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7134989
+    }
+  }, 
+  {
+    "pk": 817, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a2d90fcc3bf1f1491a32ab98088da517.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 15:02:16", 
+      "updated_at": "2009-12-24 15:02:16", 
+      "height": null, 
+      "source": 338, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4344070
+    }
+  }, 
+  {
+    "pk": 818, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a2d90fcc3bf1f1491a32ab98088da517.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 15:10:14", 
+      "updated_at": "2009-12-24 15:10:14", 
+      "height": null, 
+      "source": 338, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6958153
+    }
+  }, 
+  {
+    "pk": 819, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a2d90fcc3bf1f1491a32ab98088da517.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 14:57:06", 
+      "updated_at": "2009-12-24 14:57:06", 
+      "height": null, 
+      "source": 338, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4394769
+    }
+  }, 
+  {
+    "pk": 820, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a2d90fcc3bf1f1491a32ab98088da517.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 15:03:45", 
+      "updated_at": "2009-12-24 15:03:45", 
+      "height": null, 
+      "source": 338, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7043852
+    }
+  }, 
+  {
+    "pk": 821, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/d190307a725dbf9071f87540779a7e8f.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 21:11:51", 
+      "updated_at": "2009-12-24 21:11:51", 
+      "height": null, 
+      "source": 337, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4545326
+    }
+  }, 
+  {
+    "pk": 822, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/d190307a725dbf9071f87540779a7e8f.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 21:14:39", 
+      "updated_at": "2009-12-24 21:14:39", 
+      "height": null, 
+      "source": 337, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7094893
+    }
+  }, 
+  {
+    "pk": 823, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/d190307a725dbf9071f87540779a7e8f.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 21:07:20", 
+      "updated_at": "2009-12-24 21:07:20", 
+      "height": null, 
+      "source": 337, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4328855
+    }
+  }, 
+  {
+    "pk": 824, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/d190307a725dbf9071f87540779a7e8f.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 21:10:03", 
+      "updated_at": "2009-12-24 21:10:03", 
+      "height": null, 
+      "source": 337, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7014281
+    }
+  }, 
+  {
+    "pk": 825, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/66483b4e18e9d5776d57163cf23851b2.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 10:26:38", 
+      "updated_at": "2009-12-24 10:26:38", 
+      "height": null, 
+      "source": 336, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5180154
+    }
+  }, 
+  {
+    "pk": 826, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/66483b4e18e9d5776d57163cf23851b2.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 10:32:43", 
+      "updated_at": "2009-12-24 10:32:43", 
+      "height": null, 
+      "source": 336, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8267894
+    }
+  }, 
+  {
+    "pk": 827, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/66483b4e18e9d5776d57163cf23851b2.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 10:22:35", 
+      "updated_at": "2009-12-24 10:22:35", 
+      "height": null, 
+      "source": 336, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4586034
+    }
+  }, 
+  {
+    "pk": 828, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/66483b4e18e9d5776d57163cf23851b2.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 10:26:31", 
+      "updated_at": "2009-12-24 10:26:31", 
+      "height": null, 
+      "source": 336, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7384897
+    }
+  }, 
+  {
+    "pk": 829, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/4e5472d2753e63696a8b02327a40b673.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 08:23:31", 
+      "updated_at": "2009-12-24 08:23:31", 
+      "height": null, 
+      "source": 335, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 3072126
+    }
+  }, 
+  {
+    "pk": 830, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/4e5472d2753e63696a8b02327a40b673.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 08:26:48", 
+      "updated_at": "2009-12-24 08:26:48", 
+      "height": null, 
+      "source": 335, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4743402
+    }
+  }, 
+  {
+    "pk": 831, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/4e5472d2753e63696a8b02327a40b673.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 08:19:35", 
+      "updated_at": "2009-12-24 08:19:35", 
+      "height": null, 
+      "source": 335, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4398804
+    }
+  }, 
+  {
+    "pk": 832, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/4e5472d2753e63696a8b02327a40b673.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 08:26:23", 
+      "updated_at": "2009-12-24 08:26:23", 
+      "height": null, 
+      "source": 335, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7050801
+    }
+  }, 
+  {
+    "pk": 833, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a2c09206f8022fb594f6c3c99d8ca4ca.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 14:38:58", 
+      "updated_at": "2009-12-24 14:38:58", 
+      "height": null, 
+      "source": 334, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5281141
+    }
+  }, 
+  {
+    "pk": 834, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a2c09206f8022fb594f6c3c99d8ca4ca.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 14:50:01", 
+      "updated_at": "2009-12-24 14:50:01", 
+      "height": null, 
+      "source": 334, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8506854
+    }
+  }, 
+  {
+    "pk": 835, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a2c09206f8022fb594f6c3c99d8ca4ca.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 14:36:16", 
+      "updated_at": "2009-12-24 14:36:16", 
+      "height": null, 
+      "source": 334, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4477187
+    }
+  }, 
+  {
+    "pk": 836, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a2c09206f8022fb594f6c3c99d8ca4ca.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 14:40:13", 
+      "updated_at": "2009-12-24 14:40:13", 
+      "height": null, 
+      "source": 334, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7264786
+    }
+  }, 
+  {
+    "pk": 837, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/80584b4d922d0afe83ecfa74a72e1ad4.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 11:52:59", 
+      "updated_at": "2009-12-24 11:52:59", 
+      "height": null, 
+      "source": 333, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5121077
+    }
+  }, 
+  {
+    "pk": 838, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/80584b4d922d0afe83ecfa74a72e1ad4.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 12:00:01", 
+      "updated_at": "2009-12-24 12:00:01", 
+      "height": null, 
+      "source": 333, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8063113
+    }
+  }, 
+  {
+    "pk": 839, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/80584b4d922d0afe83ecfa74a72e1ad4.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 11:44:16", 
+      "updated_at": "2009-12-24 11:44:16", 
+      "height": null, 
+      "source": 333, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4550220
+    }
+  }, 
+  {
+    "pk": 840, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/80584b4d922d0afe83ecfa74a72e1ad4.mts-mp430-360.MP4", 
+      "created_at": "2009-12-25 11:12:08", 
+      "updated_at": "2009-12-25 11:12:08", 
+      "height": null, 
+      "source": 333, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7261711
+    }
+  }, 
+  {
+    "pk": 841, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/7d612cdc90622dbac538ac37cfffa417.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 11:42:34", 
+      "updated_at": "2009-12-24 11:42:34", 
+      "height": null, 
+      "source": 332, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5201303
+    }
+  }, 
+  {
+    "pk": 842, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/7d612cdc90622dbac538ac37cfffa417.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 11:48:32", 
+      "updated_at": "2009-12-24 11:48:32", 
+      "height": null, 
+      "source": 332, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8395706
+    }
+  }, 
+  {
+    "pk": 843, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/7d612cdc90622dbac538ac37cfffa417.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 11:36:08", 
+      "updated_at": "2009-12-24 11:36:08", 
+      "height": null, 
+      "source": 332, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4443884
+    }
+  }, 
+  {
+    "pk": 844, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/7d612cdc90622dbac538ac37cfffa417.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 11:42:05", 
+      "updated_at": "2009-12-24 11:42:05", 
+      "height": null, 
+      "source": 332, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7077297
+    }
+  }, 
+  {
+    "pk": 845, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/885994f2ee2f773210789761ff760e17.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 12:25:45", 
+      "updated_at": "2009-12-24 12:25:45", 
+      "height": null, 
+      "source": 331, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5292143
+    }
+  }, 
+  {
+    "pk": 846, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/885994f2ee2f773210789761ff760e17.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 12:34:12", 
+      "updated_at": "2009-12-24 12:34:12", 
+      "height": null, 
+      "source": 331, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8540643
+    }
+  }, 
+  {
+    "pk": 847, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/885994f2ee2f773210789761ff760e17.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 12:16:21", 
+      "updated_at": "2009-12-24 12:16:21", 
+      "height": null, 
+      "source": 331, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4497136
+    }
+  }, 
+  {
+    "pk": 848, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/885994f2ee2f773210789761ff760e17.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 12:21:17", 
+      "updated_at": "2009-12-24 12:21:17", 
+      "height": null, 
+      "source": 331, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7314598
+    }
+  }, 
+  {
+    "pk": 849, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/7acdd75afdd5b9c951f9c7a078e1e34e.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 11:29:51", 
+      "updated_at": "2009-12-24 11:29:51", 
+      "height": null, 
+      "source": 330, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4623668
+    }
+  }, 
+  {
+    "pk": 850, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/7acdd75afdd5b9c951f9c7a078e1e34e.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 11:34:02", 
+      "updated_at": "2009-12-24 11:34:02", 
+      "height": null, 
+      "source": 330, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7189210
+    }
+  }, 
+  {
+    "pk": 851, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/7acdd75afdd5b9c951f9c7a078e1e34e.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 11:21:10", 
+      "updated_at": "2009-12-24 11:21:10", 
+      "height": null, 
+      "source": 330, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4419960
+    }
+  }, 
+  {
+    "pk": 852, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/7acdd75afdd5b9c951f9c7a078e1e34e.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 11:32:42", 
+      "updated_at": "2009-12-24 11:32:42", 
+      "height": null, 
+      "source": 330, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7053587
+    }
+  }, 
+  {
+    "pk": 853, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/483d5e888a106b3913ef759f22dd2df5.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 07:54:05", 
+      "updated_at": "2009-12-24 07:54:05", 
+      "height": null, 
+      "source": 329, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4880232
+    }
+  }, 
+  {
+    "pk": 854, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/483d5e888a106b3913ef759f22dd2df5.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 08:01:43", 
+      "updated_at": "2009-12-24 08:01:43", 
+      "height": null, 
+      "source": 329, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7760781
+    }
+  }, 
+  {
+    "pk": 855, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/483d5e888a106b3913ef759f22dd2df5.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 07:45:27", 
+      "updated_at": "2009-12-24 07:45:27", 
+      "height": null, 
+      "source": 329, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4359394
+    }
+  }, 
+  {
+    "pk": 856, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/483d5e888a106b3913ef759f22dd2df5.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 07:55:05", 
+      "updated_at": "2009-12-24 07:55:05", 
+      "height": null, 
+      "source": 329, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7026830
+    }
+  }, 
+  {
+    "pk": 857, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f981fe150c6364475d377983211dee8d.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-25 05:48:57", 
+      "updated_at": "2009-12-25 05:48:57", 
+      "height": null, 
+      "source": 328, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 3937654
+    }
+  }, 
+  {
+    "pk": 858, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f981fe150c6364475d377983211dee8d.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-25 05:51:19", 
+      "updated_at": "2009-12-25 05:51:19", 
+      "height": null, 
+      "source": 328, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6215502
+    }
+  }, 
+  {
+    "pk": 859, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f981fe150c6364475d377983211dee8d.mts-mp430-272.MP4", 
+      "created_at": "2009-12-25 05:44:45", 
+      "updated_at": "2009-12-25 05:44:45", 
+      "height": null, 
+      "source": 328, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4266385
+    }
+  }, 
+  {
+    "pk": 860, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f981fe150c6364475d377983211dee8d.mts-mp430-360.MP4", 
+      "created_at": "2009-12-25 05:47:27", 
+      "updated_at": "2009-12-25 05:47:27", 
+      "height": null, 
+      "source": 328, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7018981
+    }
+  }, 
+  {
+    "pk": 861, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/d8efc985f1c63f10f25d46af55c90b14.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 21:20:36", 
+      "updated_at": "2009-12-24 21:20:36", 
+      "height": null, 
+      "source": 327, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 3711373
+    }
+  }, 
+  {
+    "pk": 862, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/d8efc985f1c63f10f25d46af55c90b14.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 21:22:43", 
+      "updated_at": "2009-12-24 21:22:43", 
+      "height": null, 
+      "source": 327, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5519628
+    }
+  }, 
+  {
+    "pk": 863, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/d8efc985f1c63f10f25d46af55c90b14.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 21:16:25", 
+      "updated_at": "2009-12-24 21:16:25", 
+      "height": null, 
+      "source": 327, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4526920
+    }
+  }, 
+  {
+    "pk": 864, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/d8efc985f1c63f10f25d46af55c90b14.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 21:19:11", 
+      "updated_at": "2009-12-24 21:19:11", 
+      "height": null, 
+      "source": 327, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7152197
+    }
+  }, 
+  {
+    "pk": 865, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/37bff608dd8522207e1d7874913a0d93.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 06:51:35", 
+      "updated_at": "2009-12-24 06:51:35", 
+      "height": null, 
+      "source": 326, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5076628
+    }
+  }, 
+  {
+    "pk": 866, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/37bff608dd8522207e1d7874913a0d93.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 07:00:13", 
+      "updated_at": "2009-12-24 07:00:13", 
+      "height": null, 
+      "source": 326, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8198920
+    }
+  }, 
+  {
+    "pk": 867, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/37bff608dd8522207e1d7874913a0d93.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 06:44:16", 
+      "updated_at": "2009-12-24 06:44:16", 
+      "height": null, 
+      "source": 326, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4294783
+    }
+  }, 
+  {
+    "pk": 868, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/37bff608dd8522207e1d7874913a0d93.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 06:53:40", 
+      "updated_at": "2009-12-24 06:53:40", 
+      "height": null, 
+      "source": 326, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7080153
+    }
+  }, 
+  {
+    "pk": 869, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c75e528b0496ba783227506c68951a6d.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 20:36:17", 
+      "updated_at": "2009-12-24 20:36:17", 
+      "height": null, 
+      "source": 325, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4189423
+    }
+  }, 
+  {
+    "pk": 870, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c75e528b0496ba783227506c68951a6d.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 20:40:15", 
+      "updated_at": "2009-12-24 20:40:15", 
+      "height": null, 
+      "source": 325, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6369604
+    }
+  }, 
+  {
+    "pk": 871, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c75e528b0496ba783227506c68951a6d.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 20:29:54", 
+      "updated_at": "2009-12-24 20:29:54", 
+      "height": null, 
+      "source": 325, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4294264
+    }
+  }, 
+  {
+    "pk": 872, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c75e528b0496ba783227506c68951a6d.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 20:35:32", 
+      "updated_at": "2009-12-24 20:35:32", 
+      "height": null, 
+      "source": 325, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6967138
+    }
+  }, 
+  {
+    "pk": 873, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/45eedb2379c5d476592a93c96c3cbdb6.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 07:42:52", 
+      "updated_at": "2009-12-24 07:42:52", 
+      "height": null, 
+      "source": 324, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4642257
+    }
+  }, 
+  {
+    "pk": 874, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/45eedb2379c5d476592a93c96c3cbdb6.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 07:46:42", 
+      "updated_at": "2009-12-24 07:46:42", 
+      "height": null, 
+      "source": 324, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7111669
+    }
+  }, 
+  {
+    "pk": 875, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/45eedb2379c5d476592a93c96c3cbdb6.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 07:33:38", 
+      "updated_at": "2009-12-24 07:33:38", 
+      "height": null, 
+      "source": 324, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4472006
+    }
+  }, 
+  {
+    "pk": 876, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/45eedb2379c5d476592a93c96c3cbdb6.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 07:46:35", 
+      "updated_at": "2009-12-24 07:46:35", 
+      "height": null, 
+      "source": 324, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7190489
+    }
+  }, 
+  {
+    "pk": 877, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/77cb988f8105d14d9af4de963ac53d80.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 11:06:57", 
+      "updated_at": "2009-12-24 11:06:57", 
+      "height": null, 
+      "source": 323, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5132866
+    }
+  }, 
+  {
+    "pk": 878, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/77cb988f8105d14d9af4de963ac53d80.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 11:12:48", 
+      "updated_at": "2009-12-24 11:12:48", 
+      "height": null, 
+      "source": 323, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8233289
+    }
+  }, 
+  {
+    "pk": 879, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/77cb988f8105d14d9af4de963ac53d80.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 10:57:28", 
+      "updated_at": "2009-12-24 10:57:28", 
+      "height": null, 
+      "source": 323, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4397226
+    }
+  }, 
+  {
+    "pk": 880, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/77cb988f8105d14d9af4de963ac53d80.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 11:09:17", 
+      "updated_at": "2009-12-24 11:09:17", 
+      "height": null, 
+      "source": 323, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6961662
+    }
+  }, 
+  {
+    "pk": 881, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/de2119113229c9fa27df9ea2485b8182.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 21:38:56", 
+      "updated_at": "2009-12-24 21:38:56", 
+      "height": null, 
+      "source": 322, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4176838
+    }
+  }, 
+  {
+    "pk": 882, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/de2119113229c9fa27df9ea2485b8182.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 21:41:25", 
+      "updated_at": "2009-12-24 21:41:25", 
+      "height": null, 
+      "source": 322, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6409792
+    }
+  }, 
+  {
+    "pk": 883, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/de2119113229c9fa27df9ea2485b8182.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 21:34:06", 
+      "updated_at": "2009-12-24 21:34:06", 
+      "height": null, 
+      "source": 322, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4369823
+    }
+  }, 
+  {
+    "pk": 884, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/de2119113229c9fa27df9ea2485b8182.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 21:36:48", 
+      "updated_at": "2009-12-24 21:36:48", 
+      "height": null, 
+      "source": 322, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7057720
+    }
+  }, 
+  {
+    "pk": 885, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/3f0f7f461873232df0d7e34925df2b9c.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 07:33:09", 
+      "updated_at": "2009-12-24 07:33:09", 
+      "height": null, 
+      "source": 321, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5123013
+    }
+  }, 
+  {
+    "pk": 886, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/3f0f7f461873232df0d7e34925df2b9c.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 07:36:27", 
+      "updated_at": "2009-12-24 07:36:27", 
+      "height": null, 
+      "source": 321, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8237776
+    }
+  }, 
+  {
+    "pk": 887, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/3f0f7f461873232df0d7e34925df2b9c.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 07:25:34", 
+      "updated_at": "2009-12-24 07:25:34", 
+      "height": null, 
+      "source": 321, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4289919
+    }
+  }, 
+  {
+    "pk": 888, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/3f0f7f461873232df0d7e34925df2b9c.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 07:33:28", 
+      "updated_at": "2009-12-24 07:33:28", 
+      "height": null, 
+      "source": 321, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6975741
+    }
+  }, 
+  {
+    "pk": 889, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ed21411038db4dbabbe4731183ddfa5a.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 22:48:21", 
+      "updated_at": "2009-12-24 22:48:21", 
+      "height": null, 
+      "source": 320, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4997489
+    }
+  }, 
+  {
+    "pk": 890, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ed21411038db4dbabbe4731183ddfa5a.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 22:51:22", 
+      "updated_at": "2009-12-24 22:51:22", 
+      "height": null, 
+      "source": 320, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7844034
+    }
+  }, 
+  {
+    "pk": 891, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ed21411038db4dbabbe4731183ddfa5a.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 22:43:05", 
+      "updated_at": "2009-12-24 22:43:05", 
+      "height": null, 
+      "source": 320, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4364670
+    }
+  }, 
+  {
+    "pk": 892, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ed21411038db4dbabbe4731183ddfa5a.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 22:46:26", 
+      "updated_at": "2009-12-24 22:46:26", 
+      "height": null, 
+      "source": 320, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7036531
+    }
+  }, 
+  {
+    "pk": 893, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/636ab8cfae67f53bcc27e4d9451f067c.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 10:04:41", 
+      "updated_at": "2009-12-24 10:04:41", 
+      "height": null, 
+      "source": 319, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5119420
+    }
+  }, 
+  {
+    "pk": 894, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/636ab8cfae67f53bcc27e4d9451f067c.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 10:13:43", 
+      "updated_at": "2009-12-24 10:13:43", 
+      "height": null, 
+      "source": 319, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8210038
+    }
+  }, 
+  {
+    "pk": 895, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/636ab8cfae67f53bcc27e4d9451f067c.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 10:01:45", 
+      "updated_at": "2009-12-24 10:01:45", 
+      "height": null, 
+      "source": 319, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4293708
+    }
+  }, 
+  {
+    "pk": 896, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/636ab8cfae67f53bcc27e4d9451f067c.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 10:07:04", 
+      "updated_at": "2009-12-24 10:07:04", 
+      "height": null, 
+      "source": 319, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7011016
+    }
+  }, 
+  {
+    "pk": 897, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/725ddcff229f98c1c31e8571b55ba8f1.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 10:56:04", 
+      "updated_at": "2009-12-24 10:56:04", 
+      "height": null, 
+      "source": 318, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5201682
+    }
+  }, 
+  {
+    "pk": 898, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/725ddcff229f98c1c31e8571b55ba8f1.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 11:04:11", 
+      "updated_at": "2009-12-24 11:04:11", 
+      "height": null, 
+      "source": 318, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8469727
+    }
+  }, 
+  {
+    "pk": 899, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/725ddcff229f98c1c31e8571b55ba8f1.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 10:49:19", 
+      "updated_at": "2009-12-24 10:49:19", 
+      "height": null, 
+      "source": 318, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4415866
+    }
+  }, 
+  {
+    "pk": 900, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/725ddcff229f98c1c31e8571b55ba8f1.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 10:57:32", 
+      "updated_at": "2009-12-24 10:57:32", 
+      "height": null, 
+      "source": 318, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7155055
+    }
+  }, 
+  {
+    "pk": 901, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/9d1c98dfa2e9bd8cacfaa66da08b2a7a.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 13:49:33", 
+      "updated_at": "2009-12-24 13:49:33", 
+      "height": null, 
+      "source": 317, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4429439
+    }
+  }, 
+  {
+    "pk": 902, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/9d1c98dfa2e9bd8cacfaa66da08b2a7a.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 13:58:21", 
+      "updated_at": "2009-12-24 13:58:21", 
+      "height": null, 
+      "source": 317, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6928426
+    }
+  }, 
+  {
+    "pk": 903, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/9d1c98dfa2e9bd8cacfaa66da08b2a7a.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 13:47:23", 
+      "updated_at": "2009-12-24 13:47:23", 
+      "height": null, 
+      "source": 317, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4457112
+    }
+  }, 
+  {
+    "pk": 904, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/9d1c98dfa2e9bd8cacfaa66da08b2a7a.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 13:55:44", 
+      "updated_at": "2009-12-24 13:55:44", 
+      "height": null, 
+      "source": 317, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7070020
+    }
+  }, 
+  {
+    "pk": 905, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5af1032cd1e1bd0265872e4f3d30d2e0.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 09:32:26", 
+      "updated_at": "2009-12-24 09:32:26", 
+      "height": null, 
+      "source": 316, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4435716
+    }
+  }, 
+  {
+    "pk": 906, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5af1032cd1e1bd0265872e4f3d30d2e0.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 09:35:32", 
+      "updated_at": "2009-12-24 09:35:32", 
+      "height": null, 
+      "source": 316, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6635623
+    }
+  }, 
+  {
+    "pk": 907, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5af1032cd1e1bd0265872e4f3d30d2e0.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 09:23:18", 
+      "updated_at": "2009-12-24 09:23:18", 
+      "height": null, 
+      "source": 316, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4426047
+    }
+  }, 
+  {
+    "pk": 908, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5af1032cd1e1bd0265872e4f3d30d2e0.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 09:34:28", 
+      "updated_at": "2009-12-24 09:34:28", 
+      "height": null, 
+      "source": 316, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7098350
+    }
+  }, 
+  {
+    "pk": 909, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/617ebd394171b8af22a4e33ee5b04dcc.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 09:53:03", 
+      "updated_at": "2009-12-24 09:53:03", 
+      "height": null, 
+      "source": 315, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 1867237
+    }
+  }, 
+  {
+    "pk": 910, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/617ebd394171b8af22a4e33ee5b04dcc.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 09:54:53", 
+      "updated_at": "2009-12-24 09:54:53", 
+      "height": null, 
+      "source": 315, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 3252211
+    }
+  }, 
+  {
+    "pk": 911, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/617ebd394171b8af22a4e33ee5b04dcc.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 09:47:55", 
+      "updated_at": "2009-12-24 09:47:55", 
+      "height": null, 
+      "source": 315, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4272832
+    }
+  }, 
+  {
+    "pk": 912, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/617ebd394171b8af22a4e33ee5b04dcc.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 09:58:41", 
+      "updated_at": "2009-12-24 09:58:41", 
+      "height": null, 
+      "source": 315, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6941863
+    }
+  }, 
+  {
+    "pk": 913, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/4b49d0b6e259c756d4062dac34aa57da.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 08:12:36", 
+      "updated_at": "2009-12-24 08:12:36", 
+      "height": null, 
+      "source": 314, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 2741203
+    }
+  }, 
+  {
+    "pk": 914, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/4b49d0b6e259c756d4062dac34aa57da.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 08:18:07", 
+      "updated_at": "2009-12-24 08:18:07", 
+      "height": null, 
+      "source": 314, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4334689
+    }
+  }, 
+  {
+    "pk": 915, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/4b49d0b6e259c756d4062dac34aa57da.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 08:09:26", 
+      "updated_at": "2009-12-24 08:09:26", 
+      "height": null, 
+      "source": 314, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4316699
+    }
+  }, 
+  {
+    "pk": 916, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/4b49d0b6e259c756d4062dac34aa57da.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 08:17:53", 
+      "updated_at": "2009-12-24 08:17:53", 
+      "height": null, 
+      "source": 314, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6939687
+    }
+  }, 
+  {
+    "pk": 917, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a2c36090feb38bd540f34a819436dd9a.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 14:50:04", 
+      "updated_at": "2009-12-24 14:50:04", 
+      "height": null, 
+      "source": 313, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5182364
+    }
+  }, 
+  {
+    "pk": 918, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a2c36090feb38bd540f34a819436dd9a.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 15:05:22", 
+      "updated_at": "2009-12-24 15:05:22", 
+      "height": null, 
+      "source": 313, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8402102
+    }
+  }, 
+  {
+    "pk": 919, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a2c36090feb38bd540f34a819436dd9a.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 14:48:05", 
+      "updated_at": "2009-12-24 14:48:05", 
+      "height": null, 
+      "source": 313, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4459273
+    }
+  }, 
+  {
+    "pk": 920, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a2c36090feb38bd540f34a819436dd9a.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 14:53:34", 
+      "updated_at": "2009-12-24 14:53:34", 
+      "height": null, 
+      "source": 313, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7089812
+    }
+  }, 
+  {
+    "pk": 921, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ebdcccf44721a251b4ca0005e22070d1.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 22:38:43", 
+      "updated_at": "2009-12-24 22:38:43", 
+      "height": null, 
+      "source": 312, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 3575332
+    }
+  }, 
+  {
+    "pk": 922, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ebdcccf44721a251b4ca0005e22070d1.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 22:41:23", 
+      "updated_at": "2009-12-24 22:41:23", 
+      "height": null, 
+      "source": 312, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5480119
+    }
+  }, 
+  {
+    "pk": 923, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ebdcccf44721a251b4ca0005e22070d1.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 22:34:37", 
+      "updated_at": "2009-12-24 22:34:37", 
+      "height": null, 
+      "source": 312, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4419245
+    }
+  }, 
+  {
+    "pk": 924, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ebdcccf44721a251b4ca0005e22070d1.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 22:37:19", 
+      "updated_at": "2009-12-24 22:37:19", 
+      "height": null, 
+      "source": 312, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7120693
+    }
+  }, 
+  {
+    "pk": 925, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5a77191ae112dee500e5e4911620e032.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 09:08:58", 
+      "updated_at": "2009-12-24 09:08:58", 
+      "height": null, 
+      "source": 311, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5088122
+    }
+  }, 
+  {
+    "pk": 926, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5a77191ae112dee500e5e4911620e032.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 09:14:42", 
+      "updated_at": "2009-12-24 09:14:42", 
+      "height": null, 
+      "source": 311, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8138808
+    }
+  }, 
+  {
+    "pk": 927, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5a77191ae112dee500e5e4911620e032.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 08:58:52", 
+      "updated_at": "2009-12-24 08:58:52", 
+      "height": null, 
+      "source": 311, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4361973
+    }
+  }, 
+  {
+    "pk": 928, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5a77191ae112dee500e5e4911620e032.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 09:12:21", 
+      "updated_at": "2009-12-24 09:12:21", 
+      "height": null, 
+      "source": 311, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7214365
+    }
+  }, 
+  {
+    "pk": 929, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f111839b1487a2344bf124aec31fd4d5.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 23:27:14", 
+      "updated_at": "2009-12-24 23:27:14", 
+      "height": null, 
+      "source": 310, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5156059
+    }
+  }, 
+  {
+    "pk": 930, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f111839b1487a2344bf124aec31fd4d5.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 23:30:26", 
+      "updated_at": "2009-12-24 23:30:26", 
+      "height": null, 
+      "source": 310, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8367614
+    }
+  }, 
+  {
+    "pk": 931, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f111839b1487a2344bf124aec31fd4d5.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 23:22:34", 
+      "updated_at": "2009-12-24 23:22:34", 
+      "height": null, 
+      "source": 310, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4316751
+    }
+  }, 
+  {
+    "pk": 932, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f111839b1487a2344bf124aec31fd4d5.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 23:25:16", 
+      "updated_at": "2009-12-24 23:25:16", 
+      "height": null, 
+      "source": 310, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7004115
+    }
+  }, 
+  {
+    "pk": 933, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/96331b966b0524375bfa1fe2fa9d79ff.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 12:49:02", 
+      "updated_at": "2009-12-24 12:49:02", 
+      "height": null, 
+      "source": 309, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4807975
+    }
+  }, 
+  {
+    "pk": 934, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/96331b966b0524375bfa1fe2fa9d79ff.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 12:57:26", 
+      "updated_at": "2009-12-24 12:57:26", 
+      "height": null, 
+      "source": 309, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7616411
+    }
+  }, 
+  {
+    "pk": 935, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/96331b966b0524375bfa1fe2fa9d79ff.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 12:41:17", 
+      "updated_at": "2009-12-24 12:41:17", 
+      "height": null, 
+      "source": 309, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4331484
+    }
+  }, 
+  {
+    "pk": 936, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/96331b966b0524375bfa1fe2fa9d79ff.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 12:49:23", 
+      "updated_at": "2009-12-24 12:49:23", 
+      "height": null, 
+      "source": 309, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7010918
+    }
+  }, 
+  {
+    "pk": 937, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/9abdadb2236c267a4416f45d7e3fa8f6.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 13:39:04", 
+      "updated_at": "2009-12-24 13:39:04", 
+      "height": null, 
+      "source": 308, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4428326
+    }
+  }, 
+  {
+    "pk": 938, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/9abdadb2236c267a4416f45d7e3fa8f6.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 13:49:46", 
+      "updated_at": "2009-12-24 13:49:46", 
+      "height": null, 
+      "source": 308, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6946011
+    }
+  }, 
+  {
+    "pk": 939, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/9abdadb2236c267a4416f45d7e3fa8f6.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 13:35:29", 
+      "updated_at": "2009-12-24 13:35:29", 
+      "height": null, 
+      "source": 308, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4480846
+    }
+  }, 
+  {
+    "pk": 940, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/9abdadb2236c267a4416f45d7e3fa8f6.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 13:42:55", 
+      "updated_at": "2009-12-24 13:42:55", 
+      "height": null, 
+      "source": 308, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7322489
+    }
+  }, 
+  {
+    "pk": 941, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ee06a074513e1bbfadd5a641c8a6d3d6.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 22:57:40", 
+      "updated_at": "2009-12-24 22:57:40", 
+      "height": null, 
+      "source": 307, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4450070
+    }
+  }, 
+  {
+    "pk": 942, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ee06a074513e1bbfadd5a641c8a6d3d6.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 23:00:22", 
+      "updated_at": "2009-12-24 23:00:22", 
+      "height": null, 
+      "source": 307, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7006496
+    }
+  }, 
+  {
+    "pk": 943, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ee06a074513e1bbfadd5a641c8a6d3d6.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 22:53:06", 
+      "updated_at": "2009-12-24 22:53:06", 
+      "height": null, 
+      "source": 307, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4540690
+    }
+  }, 
+  {
+    "pk": 944, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ee06a074513e1bbfadd5a641c8a6d3d6.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 22:55:57", 
+      "updated_at": "2009-12-24 22:55:57", 
+      "height": null, 
+      "source": 307, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7466958
+    }
+  }, 
+  {
+    "pk": 945, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/014bd391c39a30c28c5b6f0594a0cbd6.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 04:43:04", 
+      "updated_at": "2009-12-24 04:43:04", 
+      "height": null, 
+      "source": 306, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5132148
+    }
+  }, 
+  {
+    "pk": 946, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/014bd391c39a30c28c5b6f0594a0cbd6.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 04:52:28", 
+      "updated_at": "2009-12-24 04:52:28", 
+      "height": null, 
+      "source": 306, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8205643
+    }
+  }, 
+  {
+    "pk": 947, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/014bd391c39a30c28c5b6f0594a0cbd6.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 04:34:52", 
+      "updated_at": "2009-12-24 04:34:52", 
+      "height": null, 
+      "source": 306, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4409199
+    }
+  }, 
+  {
+    "pk": 948, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/014bd391c39a30c28c5b6f0594a0cbd6.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 04:40:18", 
+      "updated_at": "2009-12-24 04:40:18", 
+      "height": null, 
+      "source": 306, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7083065
+    }
+  }, 
+  {
+    "pk": 949, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/385bc90758ef5a496a79f8b5acea958a.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 06:59:43", 
+      "updated_at": "2009-12-24 06:59:43", 
+      "height": null, 
+      "source": 305, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 2847832
+    }
+  }, 
+  {
+    "pk": 950, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/385bc90758ef5a496a79f8b5acea958a.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 07:07:05", 
+      "updated_at": "2009-12-24 07:07:05", 
+      "height": null, 
+      "source": 305, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4464274
+    }
+  }, 
+  {
+    "pk": 951, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/385bc90758ef5a496a79f8b5acea958a.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 06:58:20", 
+      "updated_at": "2009-12-24 06:58:20", 
+      "height": null, 
+      "source": 305, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4358365
+    }
+  }, 
+  {
+    "pk": 952, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/385bc90758ef5a496a79f8b5acea958a.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 07:03:22", 
+      "updated_at": "2009-12-24 07:03:22", 
+      "height": null, 
+      "source": 305, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7039895
+    }
+  }, 
+  {
+    "pk": 953, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/6fe0ee6ba196e681966a06588bf2e97f.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 10:32:48", 
+      "updated_at": "2009-12-24 10:32:48", 
+      "height": null, 
+      "source": 304, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 3710856
+    }
+  }, 
+  {
+    "pk": 954, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/6fe0ee6ba196e681966a06588bf2e97f.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 10:42:29", 
+      "updated_at": "2009-12-24 10:42:29", 
+      "height": null, 
+      "source": 304, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5935041
+    }
+  }, 
+  {
+    "pk": 955, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/6fe0ee6ba196e681966a06588bf2e97f.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 10:30:54", 
+      "updated_at": "2009-12-24 10:30:54", 
+      "height": null, 
+      "source": 304, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4293554
+    }
+  }, 
+  {
+    "pk": 956, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/6fe0ee6ba196e681966a06588bf2e97f.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 10:39:54", 
+      "updated_at": "2009-12-24 10:39:54", 
+      "height": null, 
+      "source": 304, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7083679
+    }
+  }, 
+  {
+    "pk": 957, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/bd484e566595c424ac0b433982bed4e3.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 16:00:19", 
+      "updated_at": "2009-12-24 16:00:19", 
+      "height": null, 
+      "source": 303, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5133659
+    }
+  }, 
+  {
+    "pk": 958, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/bd484e566595c424ac0b433982bed4e3.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 16:11:46", 
+      "updated_at": "2009-12-24 16:11:46", 
+      "height": null, 
+      "source": 303, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8351494
+    }
+  }, 
+  {
+    "pk": 959, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/bd484e566595c424ac0b433982bed4e3.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 15:55:57", 
+      "updated_at": "2009-12-24 15:55:57", 
+      "height": null, 
+      "source": 303, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4371578
+    }
+  }, 
+  {
+    "pk": 960, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/bd484e566595c424ac0b433982bed4e3.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 16:00:16", 
+      "updated_at": "2009-12-24 16:00:16", 
+      "height": null, 
+      "source": 303, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7090756
+    }
+  }, 
+  {
+    "pk": 961, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/17c5143078740f43396477421cf8633e.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 05:20:45", 
+      "updated_at": "2009-12-24 05:20:45", 
+      "height": null, 
+      "source": 302, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4435970
+    }
+  }, 
+  {
+    "pk": 962, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/17c5143078740f43396477421cf8633e.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 05:26:53", 
+      "updated_at": "2009-12-24 05:26:53", 
+      "height": null, 
+      "source": 302, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6698972
+    }
+  }, 
+  {
+    "pk": 963, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/17c5143078740f43396477421cf8633e.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 05:13:57", 
+      "updated_at": "2009-12-24 05:13:57", 
+      "height": null, 
+      "source": 302, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4260071
+    }
+  }, 
+  {
+    "pk": 964, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/17c5143078740f43396477421cf8633e.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 05:24:40", 
+      "updated_at": "2009-12-24 05:24:40", 
+      "height": null, 
+      "source": 302, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6850010
+    }
+  }, 
+  {
+    "pk": 965, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c7fcea24b20ed7b4be44dc5cf61c0eb3.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 20:44:36", 
+      "updated_at": "2009-12-24 20:44:36", 
+      "height": null, 
+      "source": 301, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 2911256
+    }
+  }, 
+  {
+    "pk": 966, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c7fcea24b20ed7b4be44dc5cf61c0eb3.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 20:46:41", 
+      "updated_at": "2009-12-24 20:46:41", 
+      "height": null, 
+      "source": 301, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5148493
+    }
+  }, 
+  {
+    "pk": 967, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c7fcea24b20ed7b4be44dc5cf61c0eb3.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 20:39:46", 
+      "updated_at": "2009-12-24 20:39:46", 
+      "height": null, 
+      "source": 301, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4279734
+    }
+  }, 
+  {
+    "pk": 968, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c7fcea24b20ed7b4be44dc5cf61c0eb3.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 20:43:00", 
+      "updated_at": "2009-12-24 20:43:00", 
+      "height": null, 
+      "source": 301, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6917231
+    }
+  }, 
+  {
+    "pk": 969, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/2a0634d7e4ff5e5fc9854e378847409e.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 05:55:06", 
+      "updated_at": "2009-12-24 05:55:06", 
+      "height": null, 
+      "source": 300, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 3820065
+    }
+  }, 
+  {
+    "pk": 970, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/2a0634d7e4ff5e5fc9854e378847409e.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 06:02:05", 
+      "updated_at": "2009-12-24 06:02:05", 
+      "height": null, 
+      "source": 300, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5611000
+    }
+  }, 
+  {
+    "pk": 971, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/2a0634d7e4ff5e5fc9854e378847409e.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 05:51:30", 
+      "updated_at": "2009-12-24 05:51:30", 
+      "height": null, 
+      "source": 300, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4506304
+    }
+  }, 
+  {
+    "pk": 972, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/2a0634d7e4ff5e5fc9854e378847409e.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 05:59:13", 
+      "updated_at": "2009-12-24 05:59:13", 
+      "height": null, 
+      "source": 300, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7294754
+    }
+  }, 
+  {
+    "pk": 973, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/2edfbf4bd0f102a9e0d81ddd1ad4b30c.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 06:10:05", 
+      "updated_at": "2009-12-24 06:10:05", 
+      "height": null, 
+      "source": 299, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4978289
+    }
+  }, 
+  {
+    "pk": 974, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/2edfbf4bd0f102a9e0d81ddd1ad4b30c.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 06:16:03", 
+      "updated_at": "2009-12-24 06:16:03", 
+      "height": null, 
+      "source": 299, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7954278
+    }
+  }, 
+  {
+    "pk": 975, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/2edfbf4bd0f102a9e0d81ddd1ad4b30c.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 06:02:47", 
+      "updated_at": "2009-12-24 06:02:47", 
+      "height": null, 
+      "source": 299, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4332787
+    }
+  }, 
+  {
+    "pk": 976, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/2edfbf4bd0f102a9e0d81ddd1ad4b30c.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 06:08:02", 
+      "updated_at": "2009-12-24 06:08:02", 
+      "height": null, 
+      "source": 299, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6976324
+    }
+  }, 
+  {
+    "pk": 977, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c2c1ad042944b375ad48396f63e1c0df.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 16:32:04", 
+      "updated_at": "2009-12-24 16:32:04", 
+      "height": null, 
+      "source": 298, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4121326
+    }
+  }, 
+  {
+    "pk": 978, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c2c1ad042944b375ad48396f63e1c0df.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 20:14:26", 
+      "updated_at": "2009-12-24 20:14:26", 
+      "height": null, 
+      "source": 298, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6371328
+    }
+  }, 
+  {
+    "pk": 979, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c2c1ad042944b375ad48396f63e1c0df.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 16:29:50", 
+      "updated_at": "2009-12-24 16:29:50", 
+      "height": null, 
+      "source": 298, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4350664
+    }
+  }, 
+  {
+    "pk": 980, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c2c1ad042944b375ad48396f63e1c0df.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 16:34:37", 
+      "updated_at": "2009-12-24 16:34:37", 
+      "height": null, 
+      "source": 298, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7033893
+    }
+  }, 
+  {
+    "pk": 981, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/35f047ecc75100dbca19f712716854b4.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 06:27:40", 
+      "updated_at": "2009-12-24 06:27:40", 
+      "height": null, 
+      "source": 297, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 3809988
+    }
+  }, 
+  {
+    "pk": 982, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/35f047ecc75100dbca19f712716854b4.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 06:35:01", 
+      "updated_at": "2009-12-24 06:35:01", 
+      "height": null, 
+      "source": 297, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5899993
+    }
+  }, 
+  {
+    "pk": 983, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/35f047ecc75100dbca19f712716854b4.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 06:24:28", 
+      "updated_at": "2009-12-24 06:24:28", 
+      "height": null, 
+      "source": 297, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4373379
+    }
+  }, 
+  {
+    "pk": 984, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/35f047ecc75100dbca19f712716854b4.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 06:33:53", 
+      "updated_at": "2009-12-24 06:33:53", 
+      "height": null, 
+      "source": 297, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6952835
+    }
+  }, 
+  {
+    "pk": 985, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/98603316e5d9952218588f233c277814.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 13:04:15", 
+      "updated_at": "2009-12-24 13:04:15", 
+      "height": null, 
+      "source": 296, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 2292084
+    }
+  }, 
+  {
+    "pk": 986, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/98603316e5d9952218588f233c277814.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 13:09:24", 
+      "updated_at": "2009-12-24 13:09:24", 
+      "height": null, 
+      "source": 296, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 3625320
+    }
+  }, 
+  {
+    "pk": 987, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/98603316e5d9952218588f233c277814.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 13:06:14", 
+      "updated_at": "2009-12-24 13:06:14", 
+      "height": null, 
+      "source": 296, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4262488
+    }
+  }, 
+  {
+    "pk": 988, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/98603316e5d9952218588f233c277814.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 13:13:13", 
+      "updated_at": "2009-12-24 13:13:13", 
+      "height": null, 
+      "source": 296, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7023924
+    }
+  }, 
+  {
+    "pk": 989, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/b008db99f93a3707e325da7cf684d81f.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 15:14:33", 
+      "updated_at": "2009-12-24 15:14:33", 
+      "height": null, 
+      "source": 295, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4854696
+    }
+  }, 
+  {
+    "pk": 990, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/b008db99f93a3707e325da7cf684d81f.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 15:23:45", 
+      "updated_at": "2009-12-24 15:23:45", 
+      "height": null, 
+      "source": 295, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7589122
+    }
+  }, 
+  {
+    "pk": 991, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/b008db99f93a3707e325da7cf684d81f.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 15:11:13", 
+      "updated_at": "2009-12-24 15:11:13", 
+      "height": null, 
+      "source": 295, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4367798
+    }
+  }, 
+  {
+    "pk": 992, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/b008db99f93a3707e325da7cf684d81f.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 15:14:43", 
+      "updated_at": "2009-12-24 15:14:43", 
+      "height": null, 
+      "source": 295, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7071200
+    }
+  }, 
+  {
+    "pk": 993, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f8b6db567beeb074b94d8c1faaed7f14.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-25 05:42:02", 
+      "updated_at": "2009-12-25 05:42:02", 
+      "height": null, 
+      "source": 294, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 1039608
+    }
+  }, 
+  {
+    "pk": 994, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f8b6db567beeb074b94d8c1faaed7f14.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-25 05:43:07", 
+      "updated_at": "2009-12-25 05:43:07", 
+      "height": null, 
+      "source": 294, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 1382831
+    }
+  }, 
+  {
+    "pk": 995, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f8b6db567beeb074b94d8c1faaed7f14.mts-mp430-272.MP4", 
+      "created_at": "2009-12-25 05:38:55", 
+      "updated_at": "2009-12-25 05:38:55", 
+      "height": null, 
+      "source": 294, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4305075
+    }
+  }, 
+  {
+    "pk": 996, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f8b6db567beeb074b94d8c1faaed7f14.mts-mp430-360.MP4", 
+      "created_at": "2009-12-25 05:41:37", 
+      "updated_at": "2009-12-25 05:41:37", 
+      "height": null, 
+      "source": 294, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7036885
+    }
+  }, 
+  {
+    "pk": 997, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/8a6f7b1ae4e833cad6c51b5c8b553d40.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 12:35:56", 
+      "updated_at": "2009-12-24 12:35:56", 
+      "height": null, 
+      "source": 293, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5154639
+    }
+  }, 
+  {
+    "pk": 998, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/8a6f7b1ae4e833cad6c51b5c8b553d40.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 12:43:15", 
+      "updated_at": "2009-12-24 12:43:15", 
+      "height": null, 
+      "source": 293, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8310113
+    }
+  }, 
+  {
+    "pk": 999, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/8a6f7b1ae4e833cad6c51b5c8b553d40.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 12:30:05", 
+      "updated_at": "2009-12-24 12:30:05", 
+      "height": null, 
+      "source": 293, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4376356
+    }
+  }, 
+  {
+    "pk": 1000, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/8a6f7b1ae4e833cad6c51b5c8b553d40.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 12:40:08", 
+      "updated_at": "2009-12-24 12:40:08", 
+      "height": null, 
+      "source": 293, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7199626
+    }
+  }, 
+  {
+    "pk": 1001, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/7a8780c895456fa0d409480ccc68e363.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 11:19:15", 
+      "updated_at": "2009-12-24 11:19:15", 
+      "height": null, 
+      "source": 292, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5117303
+    }
+  }, 
+  {
+    "pk": 1002, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/7a8780c895456fa0d409480ccc68e363.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 11:27:21", 
+      "updated_at": "2009-12-24 11:27:21", 
+      "height": null, 
+      "source": 292, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8232675
+    }
+  }, 
+  {
+    "pk": 1003, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/7a8780c895456fa0d409480ccc68e363.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 11:12:42", 
+      "updated_at": "2009-12-24 11:12:42", 
+      "height": null, 
+      "source": 292, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4298513
+    }
+  }, 
+  {
+    "pk": 1004, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/7a8780c895456fa0d409480ccc68e363.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 11:20:02", 
+      "updated_at": "2009-12-24 11:20:02", 
+      "height": null, 
+      "source": 292, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7027583
+    }
+  }, 
+  {
+    "pk": 1005, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/378901c329c5b166630c933e1db1a939.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 06:42:50", 
+      "updated_at": "2009-12-24 06:42:50", 
+      "height": null, 
+      "source": 291, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5071885
+    }
+  }, 
+  {
+    "pk": 1006, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/378901c329c5b166630c933e1db1a939.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 06:50:06", 
+      "updated_at": "2009-12-24 06:50:06", 
+      "height": null, 
+      "source": 291, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8179212
+    }
+  }, 
+  {
+    "pk": 1007, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/378901c329c5b166630c933e1db1a939.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 06:35:13", 
+      "updated_at": "2009-12-24 06:35:13", 
+      "height": null, 
+      "source": 291, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4324586
+    }
+  }, 
+  {
+    "pk": 1008, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/378901c329c5b166630c933e1db1a939.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 06:40:20", 
+      "updated_at": "2009-12-24 06:40:20", 
+      "height": null, 
+      "source": 291, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7091242
+    }
+  }, 
+  {
+    "pk": 1009, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e179dca58725c97d13fd446f6bac7a54.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 21:56:33", 
+      "updated_at": "2009-12-24 21:56:33", 
+      "height": null, 
+      "source": 290, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5189578
+    }
+  }, 
+  {
+    "pk": 1010, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e179dca58725c97d13fd446f6bac7a54.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 21:59:47", 
+      "updated_at": "2009-12-24 21:59:47", 
+      "height": null, 
+      "source": 290, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8428338
+    }
+  }, 
+  {
+    "pk": 1011, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e179dca58725c97d13fd446f6bac7a54.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 21:51:42", 
+      "updated_at": "2009-12-24 21:51:42", 
+      "height": null, 
+      "source": 290, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4376148
+    }
+  }, 
+  {
+    "pk": 1012, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e179dca58725c97d13fd446f6bac7a54.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 21:54:34", 
+      "updated_at": "2009-12-24 21:54:34", 
+      "height": null, 
+      "source": 290, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7196709
+    }
+  }, 
+  {
+    "pk": 1013, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/38def59001a8ea9502d1a4afda239306.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 07:11:46", 
+      "updated_at": "2009-12-24 07:11:46", 
+      "height": null, 
+      "source": 289, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4612985
+    }
+  }, 
+  {
+    "pk": 1014, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/38def59001a8ea9502d1a4afda239306.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 07:19:54", 
+      "updated_at": "2009-12-24 07:19:54", 
+      "height": null, 
+      "source": 289, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6940771
+    }
+  }, 
+  {
+    "pk": 1015, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/38def59001a8ea9502d1a4afda239306.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 07:07:49", 
+      "updated_at": "2009-12-24 07:07:49", 
+      "height": null, 
+      "source": 289, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4706478
+    }
+  }, 
+  {
+    "pk": 1016, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/38def59001a8ea9502d1a4afda239306.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 07:15:06", 
+      "updated_at": "2009-12-24 07:15:06", 
+      "height": null, 
+      "source": 289, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7578385
+    }
+  }, 
+  {
+    "pk": 1017, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/87d5797412be1e415aa1394d1e0f3386.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 12:08:25", 
+      "updated_at": "2009-12-24 12:08:25", 
+      "height": null, 
+      "source": 288, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 2838833
+    }
+  }, 
+  {
+    "pk": 1018, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/87d5797412be1e415aa1394d1e0f3386.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 12:25:24", 
+      "updated_at": "2009-12-24 12:25:24", 
+      "height": null, 
+      "source": 288, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4471336
+    }
+  }, 
+  {
+    "pk": 1019, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/87d5797412be1e415aa1394d1e0f3386.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 12:08:11", 
+      "updated_at": "2009-12-24 12:08:11", 
+      "height": null, 
+      "source": 288, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4380834
+    }
+  }, 
+  {
+    "pk": 1020, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/87d5797412be1e415aa1394d1e0f3386.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 12:16:38", 
+      "updated_at": "2009-12-24 12:16:38", 
+      "height": null, 
+      "source": 288, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7032855
+    }
+  }, 
+  {
+    "pk": 1021, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/3ac73e3c3fd422128c769b239642ec09.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 07:18:14", 
+      "updated_at": "2009-12-24 07:18:14", 
+      "height": null, 
+      "source": 287, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 1468038
+    }
+  }, 
+  {
+    "pk": 1022, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/3ac73e3c3fd422128c769b239642ec09.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 07:22:12", 
+      "updated_at": "2009-12-24 07:22:12", 
+      "height": null, 
+      "source": 287, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 2621460
+    }
+  }, 
+  {
+    "pk": 1023, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/3ac73e3c3fd422128c769b239642ec09.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 07:17:30", 
+      "updated_at": "2009-12-24 07:17:30", 
+      "height": null, 
+      "source": 287, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4184487
+    }
+  }, 
+  {
+    "pk": 1024, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/3ac73e3c3fd422128c769b239642ec09.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 07:23:10", 
+      "updated_at": "2009-12-24 07:23:10", 
+      "height": null, 
+      "source": 287, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6870475
+    }
+  }, 
+  {
+    "pk": 1025, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/caa7af6253edb7d4825b126014c99710.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 20:53:08", 
+      "updated_at": "2009-12-24 20:53:08", 
+      "height": null, 
+      "source": 286, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5052499
+    }
+  }, 
+  {
+    "pk": 1026, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/caa7af6253edb7d4825b126014c99710.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 20:56:12", 
+      "updated_at": "2009-12-24 20:56:12", 
+      "height": null, 
+      "source": 286, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7944738
+    }
+  }, 
+  {
+    "pk": 1027, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/caa7af6253edb7d4825b126014c99710.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 20:48:24", 
+      "updated_at": "2009-12-24 20:48:24", 
+      "height": null, 
+      "source": 286, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4382070
+    }
+  }, 
+  {
+    "pk": 1028, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/caa7af6253edb7d4825b126014c99710.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 20:51:12", 
+      "updated_at": "2009-12-24 20:51:12", 
+      "height": null, 
+      "source": 286, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7188432
+    }
+  }, 
+  {
+    "pk": 1029, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/b7cff28a396b9b5b6abb97237cde2c23.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 15:37:15", 
+      "updated_at": "2009-12-24 15:37:15", 
+      "height": null, 
+      "source": 285, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5069171
+    }
+  }, 
+  {
+    "pk": 1030, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/b7cff28a396b9b5b6abb97237cde2c23.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 15:47:00", 
+      "updated_at": "2009-12-24 15:47:00", 
+      "height": null, 
+      "source": 285, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8221699
+    }
+  }, 
+  {
+    "pk": 1031, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/b7cff28a396b9b5b6abb97237cde2c23.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 15:31:37", 
+      "updated_at": "2009-12-24 15:31:37", 
+      "height": null, 
+      "source": 285, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4249180
+    }
+  }, 
+  {
+    "pk": 1032, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/b7cff28a396b9b5b6abb97237cde2c23.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 15:38:40", 
+      "updated_at": "2009-12-24 15:38:40", 
+      "height": null, 
+      "source": 285, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6885490
+    }
+  }, 
+  {
+    "pk": 1033, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f77ff6dd9802648944cd366bfcd4c3ea.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 23:47:38", 
+      "updated_at": "2009-12-24 23:47:38", 
+      "height": null, 
+      "source": 284, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5079239
+    }
+  }, 
+  {
+    "pk": 1034, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f77ff6dd9802648944cd366bfcd4c3ea.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-25 05:37:17", 
+      "updated_at": "2009-12-25 05:37:17", 
+      "height": null, 
+      "source": 284, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8039948
+    }
+  }, 
+  {
+    "pk": 1035, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f77ff6dd9802648944cd366bfcd4c3ea.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 23:41:50", 
+      "updated_at": "2009-12-24 23:41:50", 
+      "height": null, 
+      "source": 284, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4299762
+    }
+  }, 
+  {
+    "pk": 1036, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f77ff6dd9802648944cd366bfcd4c3ea.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 23:45:04", 
+      "updated_at": "2009-12-24 23:45:04", 
+      "height": null, 
+      "source": 284, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7050531
+    }
+  }, 
+  {
+    "pk": 1037, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/21d57c721466536a4e0af1988d924b67.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 05:35:27", 
+      "updated_at": "2009-12-24 05:35:27", 
+      "height": null, 
+      "source": 283, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5154725
+    }
+  }, 
+  {
+    "pk": 1038, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/21d57c721466536a4e0af1988d924b67.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 05:42:03", 
+      "updated_at": "2009-12-24 05:42:03", 
+      "height": null, 
+      "source": 283, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8210612
+    }
+  }, 
+  {
+    "pk": 1039, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/21d57c721466536a4e0af1988d924b67.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 05:28:03", 
+      "updated_at": "2009-12-24 05:28:03", 
+      "height": null, 
+      "source": 283, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4388062
+    }
+  }, 
+  {
+    "pk": 1040, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/21d57c721466536a4e0af1988d924b67.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 05:36:12", 
+      "updated_at": "2009-12-24 05:36:12", 
+      "height": null, 
+      "source": 283, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7198116
+    }
+  }, 
+  {
+    "pk": 1041, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/fd542f225f57c4caf15ce7ca04a5a3b6.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-25 05:23:56", 
+      "updated_at": "2009-12-25 05:23:56", 
+      "height": null, 
+      "source": 282, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4104092
+    }
+  }, 
+  {
+    "pk": 1042, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/fd542f225f57c4caf15ce7ca04a5a3b6.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-25 05:26:25", 
+      "updated_at": "2009-12-25 05:26:25", 
+      "height": null, 
+      "source": 282, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6273659
+    }
+  }, 
+  {
+    "pk": 1043, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/fd542f225f57c4caf15ce7ca04a5a3b6.mts-mp430-272.MP4", 
+      "created_at": "2009-12-25 06:00:55", 
+      "updated_at": "2009-12-25 06:00:55", 
+      "height": null, 
+      "source": 282, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4432315
+    }
+  }, 
+  {
+    "pk": 1044, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/fd542f225f57c4caf15ce7ca04a5a3b6.mts-mp430-360.MP4", 
+      "created_at": "2009-12-25 05:22:21", 
+      "updated_at": "2009-12-25 05:22:21", 
+      "height": null, 
+      "source": 282, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7274598
+    }
+  }, 
+  {
+    "pk": 1045, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/9f22e036c96b328d77596937831bbeef.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 14:04:18", 
+      "updated_at": "2009-12-24 14:04:18", 
+      "height": null, 
+      "source": 281, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5369607
+    }
+  }, 
+  {
+    "pk": 1046, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/9f22e036c96b328d77596937831bbeef.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 14:13:55", 
+      "updated_at": "2009-12-24 14:13:55", 
+      "height": null, 
+      "source": 281, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8744620
+    }
+  }, 
+  {
+    "pk": 1047, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/9f22e036c96b328d77596937831bbeef.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 13:59:57", 
+      "updated_at": "2009-12-24 13:59:57", 
+      "height": null, 
+      "source": 281, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4545027
+    }
+  }, 
+  {
+    "pk": 1048, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/9f22e036c96b328d77596937831bbeef.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 14:02:07", 
+      "updated_at": "2009-12-24 14:02:07", 
+      "height": null, 
+      "source": 281, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7361957
+    }
+  }, 
+  {
+    "pk": 1049, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/590d6d6ac095ce3de0977d1cce01f048.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 08:46:21", 
+      "updated_at": "2009-12-24 08:46:21", 
+      "height": null, 
+      "source": 280, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5145248
+    }
+  }, 
+  {
+    "pk": 1050, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/590d6d6ac095ce3de0977d1cce01f048.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 08:51:30", 
+      "updated_at": "2009-12-24 08:51:30", 
+      "height": null, 
+      "source": 280, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8320589
+    }
+  }, 
+  {
+    "pk": 1051, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/590d6d6ac095ce3de0977d1cce01f048.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 08:36:42", 
+      "updated_at": "2009-12-24 08:36:42", 
+      "height": null, 
+      "source": 280, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4336119
+    }
+  }, 
+  {
+    "pk": 1052, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/590d6d6ac095ce3de0977d1cce01f048.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 08:50:19", 
+      "updated_at": "2009-12-24 08:50:19", 
+      "height": null, 
+      "source": 280, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7034288
+    }
+  }, 
+  {
+    "pk": 1053, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a0c3d9d802dfb89178af260b3f3fc6e7.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 14:26:57", 
+      "updated_at": "2009-12-24 14:26:57", 
+      "height": null, 
+      "source": 279, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5024255
+    }
+  }, 
+  {
+    "pk": 1054, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a0c3d9d802dfb89178af260b3f3fc6e7.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 14:40:00", 
+      "updated_at": "2009-12-24 14:40:00", 
+      "height": null, 
+      "source": 279, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8019686
+    }
+  }, 
+  {
+    "pk": 1055, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a0c3d9d802dfb89178af260b3f3fc6e7.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 14:21:24", 
+      "updated_at": "2009-12-24 14:21:24", 
+      "height": null, 
+      "source": 279, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4423525
+    }
+  }, 
+  {
+    "pk": 1056, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a0c3d9d802dfb89178af260b3f3fc6e7.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 14:27:15", 
+      "updated_at": "2009-12-24 14:27:15", 
+      "height": null, 
+      "source": 279, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7155550
+    }
+  }, 
+  {
+    "pk": 1057, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e4360aded4db483efe3cffc1bada221a.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 22:16:17", 
+      "updated_at": "2009-12-24 22:16:17", 
+      "height": null, 
+      "source": 278, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5392103
+    }
+  }, 
+  {
+    "pk": 1058, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e4360aded4db483efe3cffc1bada221a.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 22:19:39", 
+      "updated_at": "2009-12-24 22:19:39", 
+      "height": null, 
+      "source": 278, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8768841
+    }
+  }, 
+  {
+    "pk": 1059, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e4360aded4db483efe3cffc1bada221a.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 22:11:14", 
+      "updated_at": "2009-12-24 22:11:14", 
+      "height": null, 
+      "source": 278, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4535102
+    }
+  }, 
+  {
+    "pk": 1060, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e4360aded4db483efe3cffc1bada221a.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 22:14:08", 
+      "updated_at": "2009-12-24 22:14:08", 
+      "height": null, 
+      "source": 278, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7350668
+    }
+  }, 
+  {
+    "pk": 1061, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/49b103b70504062cc2fa38dd421e8100.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 08:04:58", 
+      "updated_at": "2009-12-24 08:04:58", 
+      "height": null, 
+      "source": 277, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5362849
+    }
+  }, 
+  {
+    "pk": 1062, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/49b103b70504062cc2fa38dd421e8100.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 08:13:39", 
+      "updated_at": "2009-12-24 08:13:39", 
+      "height": null, 
+      "source": 277, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8721501
+    }
+  }, 
+  {
+    "pk": 1063, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/49b103b70504062cc2fa38dd421e8100.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 07:55:47", 
+      "updated_at": "2009-12-24 07:55:47", 
+      "height": null, 
+      "source": 277, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4612114
+    }
+  }, 
+  {
+    "pk": 1064, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/49b103b70504062cc2fa38dd421e8100.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 08:06:53", 
+      "updated_at": "2009-12-24 08:06:53", 
+      "height": null, 
+      "source": 277, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7429039
+    }
+  }, 
+  {
+    "pk": 1065, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/23a1af70cf2213ad61073afa8747647d.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 05:46:13", 
+      "updated_at": "2009-12-24 05:46:13", 
+      "height": null, 
+      "source": 276, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5308054
+    }
+  }, 
+  {
+    "pk": 1066, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/23a1af70cf2213ad61073afa8747647d.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 05:54:01", 
+      "updated_at": "2009-12-24 05:54:01", 
+      "height": null, 
+      "source": 276, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8635555
+    }
+  }, 
+  {
+    "pk": 1067, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/23a1af70cf2213ad61073afa8747647d.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 05:36:39", 
+      "updated_at": "2009-12-24 05:36:39", 
+      "height": null, 
+      "source": 276, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4416498
+    }
+  }, 
+  {
+    "pk": 1068, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/23a1af70cf2213ad61073afa8747647d.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 05:47:33", 
+      "updated_at": "2009-12-24 05:47:33", 
+      "height": null, 
+      "source": 276, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7194286
+    }
+  }, 
+  {
+    "pk": 1069, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f0176632d07c210e060514c7aeec2c9c.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 23:06:54", 
+      "updated_at": "2009-12-24 23:06:54", 
+      "height": null, 
+      "source": 275, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5206027
+    }
+  }, 
+  {
+    "pk": 1070, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f0176632d07c210e060514c7aeec2c9c.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 23:10:08", 
+      "updated_at": "2009-12-24 23:10:08", 
+      "height": null, 
+      "source": 275, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8470599
+    }
+  }, 
+  {
+    "pk": 1071, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f0176632d07c210e060514c7aeec2c9c.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 23:02:06", 
+      "updated_at": "2009-12-24 23:02:06", 
+      "height": null, 
+      "source": 275, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4438790
+    }
+  }, 
+  {
+    "pk": 1072, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f0176632d07c210e060514c7aeec2c9c.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 23:04:53", 
+      "updated_at": "2009-12-24 23:04:53", 
+      "height": null, 
+      "source": 275, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7190338
+    }
+  }, 
+  {
+    "pk": 1073, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f22547b9310b8745d3d5c380e3c8efad.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 23:36:54", 
+      "updated_at": "2009-12-24 23:36:54", 
+      "height": null, 
+      "source": 274, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5203135
+    }
+  }, 
+  {
+    "pk": 1074, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f22547b9310b8745d3d5c380e3c8efad.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 23:40:11", 
+      "updated_at": "2009-12-24 23:40:11", 
+      "height": null, 
+      "source": 274, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8471183
+    }
+  }, 
+  {
+    "pk": 1075, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f22547b9310b8745d3d5c380e3c8efad.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 23:32:09", 
+      "updated_at": "2009-12-24 23:32:09", 
+      "height": null, 
+      "source": 274, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4421130
+    }
+  }, 
+  {
+    "pk": 1076, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f22547b9310b8745d3d5c380e3c8efad.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 23:34:53", 
+      "updated_at": "2009-12-24 23:34:53", 
+      "height": null, 
+      "source": 274, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7145958
+    }
+  }, 
+  {
+    "pk": 1077, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/508835d730df45e4a0623b1014c39017.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 08:35:50", 
+      "updated_at": "2009-12-24 08:35:50", 
+      "height": null, 
+      "source": 273, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5218003
+    }
+  }, 
+  {
+    "pk": 1078, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/508835d730df45e4a0623b1014c39017.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 08:42:52", 
+      "updated_at": "2009-12-24 08:42:52", 
+      "height": null, 
+      "source": 273, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8384685
+    }
+  }, 
+  {
+    "pk": 1079, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/508835d730df45e4a0623b1014c39017.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 08:27:47", 
+      "updated_at": "2009-12-24 08:27:47", 
+      "height": null, 
+      "source": 273, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4459827
+    }
+  }, 
+  {
+    "pk": 1080, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/508835d730df45e4a0623b1014c39017.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 08:37:20", 
+      "updated_at": "2009-12-24 08:37:20", 
+      "height": null, 
+      "source": 273, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7195260
+    }
+  }, 
+  {
+    "pk": 1081, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/b6dfe655aa6560888c0d67223811c8c8.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 15:25:25", 
+      "updated_at": "2009-12-24 15:25:25", 
+      "height": null, 
+      "source": 272, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5463337
+    }
+  }, 
+  {
+    "pk": 1082, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/b6dfe655aa6560888c0d67223811c8c8.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 15:37:18", 
+      "updated_at": "2009-12-24 15:37:18", 
+      "height": null, 
+      "source": 272, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8878114
+    }
+  }, 
+  {
+    "pk": 1083, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/b6dfe655aa6560888c0d67223811c8c8.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 15:19:22", 
+      "updated_at": "2009-12-24 15:19:22", 
+      "height": null, 
+      "source": 272, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4592348
+    }
+  }, 
+  {
+    "pk": 1084, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/b6dfe655aa6560888c0d67223811c8c8.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 15:28:46", 
+      "updated_at": "2009-12-24 15:28:46", 
+      "height": null, 
+      "source": 272, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7445887
+    }
+  }, 
+  {
+    "pk": 1085, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e2681691807ff66b87cd1354cf45ee93.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 22:06:42", 
+      "updated_at": "2009-12-24 22:06:42", 
+      "height": null, 
+      "source": 271, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4541813
+    }
+  }, 
+  {
+    "pk": 1086, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e2681691807ff66b87cd1354cf45ee93.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 22:09:29", 
+      "updated_at": "2009-12-24 22:09:29", 
+      "height": null, 
+      "source": 271, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7276318
+    }
+  }, 
+  {
+    "pk": 1087, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e2681691807ff66b87cd1354cf45ee93.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 22:01:29", 
+      "updated_at": "2009-12-24 22:01:29", 
+      "height": null, 
+      "source": 271, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4391240
+    }
+  }, 
+  {
+    "pk": 1088, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e2681691807ff66b87cd1354cf45ee93.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 22:04:55", 
+      "updated_at": "2009-12-24 22:04:55", 
+      "height": null, 
+      "source": 271, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7134460
+    }
+  }, 
+  {
+    "pk": 1089, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/2f063a4918a5cf7abc9bc58090ae33af.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 06:20:56", 
+      "updated_at": "2009-12-24 06:20:56", 
+      "height": null, 
+      "source": 270, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5240926
+    }
+  }, 
+  {
+    "pk": 1090, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/2f063a4918a5cf7abc9bc58090ae33af.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 06:26:41", 
+      "updated_at": "2009-12-24 06:26:41", 
+      "height": null, 
+      "source": 270, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8241022
+    }
+  }, 
+  {
+    "pk": 1091, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/2f063a4918a5cf7abc9bc58090ae33af.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 06:10:07", 
+      "updated_at": "2009-12-24 06:10:07", 
+      "height": null, 
+      "source": 270, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4494947
+    }
+  }, 
+  {
+    "pk": 1092, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/2f063a4918a5cf7abc9bc58090ae33af.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 06:20:27", 
+      "updated_at": "2009-12-24 06:20:27", 
+      "height": null, 
+      "source": 270, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7301705
+    }
+  }, 
+  {
+    "pk": 1093, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f06960c0369a627e7bf4f8b4be30fc5d.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 23:17:40", 
+      "updated_at": "2009-12-24 23:17:40", 
+      "height": null, 
+      "source": 269, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5232380
+    }
+  }, 
+  {
+    "pk": 1094, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f06960c0369a627e7bf4f8b4be30fc5d.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 23:20:54", 
+      "updated_at": "2009-12-24 23:20:54", 
+      "height": null, 
+      "source": 269, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8491391
+    }
+  }, 
+  {
+    "pk": 1095, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f06960c0369a627e7bf4f8b4be30fc5d.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 23:11:52", 
+      "updated_at": "2009-12-24 23:11:52", 
+      "height": null, 
+      "source": 269, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4460995
+    }
+  }, 
+  {
+    "pk": 1096, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/f06960c0369a627e7bf4f8b4be30fc5d.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 23:14:37", 
+      "updated_at": "2009-12-24 23:14:37", 
+      "height": null, 
+      "source": 269, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7175491
+    }
+  }, 
+  {
+    "pk": 1097, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/98e6d68bded05de615d20bcf66acd57b.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 13:17:47", 
+      "updated_at": "2009-12-24 13:17:47", 
+      "height": null, 
+      "source": 268, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5132953
+    }
+  }, 
+  {
+    "pk": 1098, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/98e6d68bded05de615d20bcf66acd57b.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 13:28:12", 
+      "updated_at": "2009-12-24 13:28:12", 
+      "height": null, 
+      "source": 268, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8249380
+    }
+  }, 
+  {
+    "pk": 1099, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/98e6d68bded05de615d20bcf66acd57b.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 13:14:57", 
+      "updated_at": "2009-12-24 13:14:57", 
+      "height": null, 
+      "source": 268, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4416077
+    }
+  }, 
+  {
+    "pk": 1100, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/98e6d68bded05de615d20bcf66acd57b.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 13:18:55", 
+      "updated_at": "2009-12-24 13:18:55", 
+      "height": null, 
+      "source": 268, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7108116
+    }
+  }, 
+  {
+    "pk": 1101, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5c3c2e7990f79f55d6c5e6fe92e7295f.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 09:46:59", 
+      "updated_at": "2009-12-24 09:46:59", 
+      "height": null, 
+      "source": 267, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6793123
+    }
+  }, 
+  {
+    "pk": 1102, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5c3c2e7990f79f55d6c5e6fe92e7295f.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 09:54:35", 
+      "updated_at": "2009-12-24 09:54:35", 
+      "height": null, 
+      "source": 267, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 11037376
+    }
+  }, 
+  {
+    "pk": 1103, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5c3c2e7990f79f55d6c5e6fe92e7295f.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 09:38:56", 
+      "updated_at": "2009-12-24 09:38:56", 
+      "height": null, 
+      "source": 267, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5678340
+    }
+  }, 
+  {
+    "pk": 1104, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5c3c2e7990f79f55d6c5e6fe92e7295f.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 09:48:59", 
+      "updated_at": "2009-12-24 09:48:59", 
+      "height": null, 
+      "source": 267, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 9242113
+    }
+  }, 
+  {
+    "pk": 1105, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a07395b1f78cace6cfa6cc588597884f.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 14:14:15", 
+      "updated_at": "2009-12-24 14:14:15", 
+      "height": null, 
+      "source": 266, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5101672
+    }
+  }, 
+  {
+    "pk": 1106, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a07395b1f78cace6cfa6cc588597884f.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 14:25:07", 
+      "updated_at": "2009-12-24 14:25:07", 
+      "height": null, 
+      "source": 266, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8134241
+    }
+  }, 
+  {
+    "pk": 1107, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a07395b1f78cace6cfa6cc588597884f.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 14:09:36", 
+      "updated_at": "2009-12-24 14:09:36", 
+      "height": null, 
+      "source": 266, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4475367
+    }
+  }, 
+  {
+    "pk": 1108, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/a07395b1f78cace6cfa6cc588597884f.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 14:16:02", 
+      "updated_at": "2009-12-24 14:16:02", 
+      "height": null, 
+      "source": 266, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7130566
+    }
+  }, 
+  {
+    "pk": 1109, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/97ebd0539ee117ecc009c0bc67ce6255.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 12:58:44", 
+      "updated_at": "2009-12-24 12:58:44", 
+      "height": null, 
+      "source": 265, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4839686
+    }
+  }, 
+  {
+    "pk": 1110, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/97ebd0539ee117ecc009c0bc67ce6255.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 13:06:05", 
+      "updated_at": "2009-12-24 13:06:05", 
+      "height": null, 
+      "source": 265, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7602412
+    }
+  }, 
+  {
+    "pk": 1111, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/97ebd0539ee117ecc009c0bc67ce6255.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 12:50:53", 
+      "updated_at": "2009-12-24 12:50:53", 
+      "height": null, 
+      "source": 265, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4368335
+    }
+  }, 
+  {
+    "pk": 1112, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/97ebd0539ee117ecc009c0bc67ce6255.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 13:00:05", 
+      "updated_at": "2009-12-24 13:00:05", 
+      "height": null, 
+      "source": 265, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7116007
+    }
+  }, 
+  {
+    "pk": 1113, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5a3bf73e295568bafa1eb1625e651d45.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 09:00:07", 
+      "updated_at": "2009-12-24 09:00:07", 
+      "height": null, 
+      "source": 264, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5122799
+    }
+  }, 
+  {
+    "pk": 1114, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5a3bf73e295568bafa1eb1625e651d45.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 09:07:07", 
+      "updated_at": "2009-12-24 09:07:07", 
+      "height": null, 
+      "source": 264, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8191726
+    }
+  }, 
+  {
+    "pk": 1115, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5a3bf73e295568bafa1eb1625e651d45.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 08:51:57", 
+      "updated_at": "2009-12-24 08:51:57", 
+      "height": null, 
+      "source": 264, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4385620
+    }
+  }, 
+  {
+    "pk": 1116, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5a3bf73e295568bafa1eb1625e651d45.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 08:59:11", 
+      "updated_at": "2009-12-24 08:59:11", 
+      "height": null, 
+      "source": 264, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7099642
+    }
+  }, 
+  {
+    "pk": 1117, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/84b8ffc9a92f221d33ad2366ab690095.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 12:01:57", 
+      "updated_at": "2009-12-24 12:01:57", 
+      "height": null, 
+      "source": 263, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5610123
+    }
+  }, 
+  {
+    "pk": 1118, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/84b8ffc9a92f221d33ad2366ab690095.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 12:09:17", 
+      "updated_at": "2009-12-24 12:09:17", 
+      "height": null, 
+      "source": 263, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 9151374
+    }
+  }, 
+  {
+    "pk": 1119, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/84b8ffc9a92f221d33ad2366ab690095.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 11:52:38", 
+      "updated_at": "2009-12-24 11:52:38", 
+      "height": null, 
+      "source": 263, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4768474
+    }
+  }, 
+  {
+    "pk": 1120, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/84b8ffc9a92f221d33ad2366ab690095.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 12:02:56", 
+      "updated_at": "2009-12-24 12:02:56", 
+      "height": null, 
+      "source": 263, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7704576
+    }
+  }, 
+  {
+    "pk": 1121, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/113e4b758f6175084d27a518b2316bed.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 05:11:42", 
+      "updated_at": "2009-12-24 05:11:42", 
+      "height": null, 
+      "source": 262, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5241992
+    }
+  }, 
+  {
+    "pk": 1122, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/113e4b758f6175084d27a518b2316bed.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 05:22:52", 
+      "updated_at": "2009-12-24 05:22:52", 
+      "height": null, 
+      "source": 262, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8526816
+    }
+  }, 
+  {
+    "pk": 1123, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/113e4b758f6175084d27a518b2316bed.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 05:05:30", 
+      "updated_at": "2009-12-24 05:05:30", 
+      "height": null, 
+      "source": 262, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4420882
+    }
+  }, 
+  {
+    "pk": 1124, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/113e4b758f6175084d27a518b2316bed.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 05:11:35", 
+      "updated_at": "2009-12-24 05:11:35", 
+      "height": null, 
+      "source": 262, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7166864
+    }
+  }, 
+  {
+    "pk": 1125, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5a89f8d234805af5a6457481b0264ce8.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 09:21:34", 
+      "updated_at": "2009-12-24 09:21:34", 
+      "height": null, 
+      "source": 261, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4713530
+    }
+  }, 
+  {
+    "pk": 1126, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5a89f8d234805af5a6457481b0264ce8.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 09:27:58", 
+      "updated_at": "2009-12-24 09:27:58", 
+      "height": null, 
+      "source": 261, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7766112
+    }
+  }, 
+  {
+    "pk": 1127, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5a89f8d234805af5a6457481b0264ce8.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 09:14:35", 
+      "updated_at": "2009-12-24 09:14:35", 
+      "height": null, 
+      "source": 261, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4540149
+    }
+  }, 
+  {
+    "pk": 1128, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/5a89f8d234805af5a6457481b0264ce8.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 09:23:24", 
+      "updated_at": "2009-12-24 09:23:24", 
+      "height": null, 
+      "source": 261, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7192748
+    }
+  }, 
+  {
+    "pk": 1129, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/642581175e1f7f3fbff7e0becf42d1b1.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 10:13:00", 
+      "updated_at": "2009-12-24 10:13:00", 
+      "height": null, 
+      "source": 260, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 2267965
+    }
+  }, 
+  {
+    "pk": 1130, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/642581175e1f7f3fbff7e0becf42d1b1.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 10:18:05", 
+      "updated_at": "2009-12-24 10:18:05", 
+      "height": null, 
+      "source": 260, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 3732208
+    }
+  }, 
+  {
+    "pk": 1131, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/642581175e1f7f3fbff7e0becf42d1b1.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 10:11:08", 
+      "updated_at": "2009-12-24 10:11:08", 
+      "height": null, 
+      "source": 260, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4469381
+    }
+  }, 
+  {
+    "pk": 1132, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/642581175e1f7f3fbff7e0becf42d1b1.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 10:17:13", 
+      "updated_at": "2009-12-24 10:17:13", 
+      "height": null, 
+      "source": 260, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7201358
+    }
+  }, 
+  {
+    "pk": 1133, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ba7ae24a0481d3e2344426c6c722e056.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 15:49:00", 
+      "updated_at": "2009-12-24 15:49:00", 
+      "height": null, 
+      "source": 259, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5366124
+    }
+  }, 
+  {
+    "pk": 1134, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ba7ae24a0481d3e2344426c6c722e056.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 16:02:15", 
+      "updated_at": "2009-12-24 16:02:15", 
+      "height": null, 
+      "source": 259, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8720886
+    }
+  }, 
+  {
+    "pk": 1135, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ba7ae24a0481d3e2344426c6c722e056.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 15:46:25", 
+      "updated_at": "2009-12-24 15:46:25", 
+      "height": null, 
+      "source": 259, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4549177
+    }
+  }, 
+  {
+    "pk": 1136, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ba7ae24a0481d3e2344426c6c722e056.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 15:49:55", 
+      "updated_at": "2009-12-24 15:49:55", 
+      "height": null, 
+      "source": 259, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7367183
+    }
+  }, 
+  {
+    "pk": 1137, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e6d14b89b68e46aa59e791251165d71b.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 22:28:12", 
+      "updated_at": "2009-12-24 22:28:12", 
+      "height": null, 
+      "source": 258, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6432756
+    }
+  }, 
+  {
+    "pk": 1138, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e6d14b89b68e46aa59e791251165d71b.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 22:32:53", 
+      "updated_at": "2009-12-24 22:32:53", 
+      "height": null, 
+      "source": 258, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 10271707
+    }
+  }, 
+  {
+    "pk": 1139, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e6d14b89b68e46aa59e791251165d71b.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 22:21:57", 
+      "updated_at": "2009-12-24 22:21:57", 
+      "height": null, 
+      "source": 258, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5830118
+    }
+  }, 
+  {
+    "pk": 1140, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/e6d14b89b68e46aa59e791251165d71b.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 22:25:41", 
+      "updated_at": "2009-12-24 22:25:41", 
+      "height": null, 
+      "source": 258, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 9422068
+    }
+  }, 
+  {
+    "pk": 1141, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/bf7bd8643f95045a74cd81b81c7a363c.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 16:12:23", 
+      "updated_at": "2009-12-24 16:12:23", 
+      "height": null, 
+      "source": 257, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5157549
+    }
+  }, 
+  {
+    "pk": 1142, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/bf7bd8643f95045a74cd81b81c7a363c.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 16:24:23", 
+      "updated_at": "2009-12-24 16:24:23", 
+      "height": null, 
+      "source": 257, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8370148
+    }
+  }, 
+  {
+    "pk": 1143, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/bf7bd8643f95045a74cd81b81c7a363c.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 16:08:48", 
+      "updated_at": "2009-12-24 16:08:48", 
+      "height": null, 
+      "source": 257, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4288185
+    }
+  }, 
+  {
+    "pk": 1144, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/bf7bd8643f95045a74cd81b81c7a363c.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 16:13:01", 
+      "updated_at": "2009-12-24 16:13:01", 
+      "height": null, 
+      "source": 257, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7113669
+    }
+  }, 
+  {
+    "pk": 1145, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/dfe77fea3d671898b48d47bd42fd2a28.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 21:47:22", 
+      "updated_at": "2009-12-24 21:47:22", 
+      "height": null, 
+      "source": 256, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 3875403
+    }
+  }, 
+  {
+    "pk": 1146, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/dfe77fea3d671898b48d47bd42fd2a28.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 21:49:57", 
+      "updated_at": "2009-12-24 21:49:57", 
+      "height": null, 
+      "source": 256, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6452047
+    }
+  }, 
+  {
+    "pk": 1147, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/dfe77fea3d671898b48d47bd42fd2a28.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 21:43:04", 
+      "updated_at": "2009-12-24 21:43:04", 
+      "height": null, 
+      "source": 256, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4263193
+    }
+  }, 
+  {
+    "pk": 1148, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/dfe77fea3d671898b48d47bd42fd2a28.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 21:45:48", 
+      "updated_at": "2009-12-24 21:45:48", 
+      "height": null, 
+      "source": 256, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6967997
+    }
+  }, 
+  {
+    "pk": 1149, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/fd1cca358bfa7e3988f55736542f6ea1.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-25 05:58:01", 
+      "updated_at": "2009-12-25 05:58:01", 
+      "height": null, 
+      "source": 255, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 1816943
+    }
+  }, 
+  {
+    "pk": 1150, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/fd1cca358bfa7e3988f55736542f6ea1.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-25 05:59:13", 
+      "updated_at": "2009-12-25 05:59:13", 
+      "height": null, 
+      "source": 255, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 3167550
+    }
+  }, 
+  {
+    "pk": 1151, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/fd1cca358bfa7e3988f55736542f6ea1.mts-mp430-272.MP4", 
+      "created_at": "2009-12-25 05:54:32", 
+      "updated_at": "2009-12-25 05:54:32", 
+      "height": null, 
+      "source": 255, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4489291
+    }
+  }, 
+  {
+    "pk": 1152, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/fd1cca358bfa7e3988f55736542f6ea1.mts-mp430-360.MP4", 
+      "created_at": "2009-12-25 05:57:18", 
+      "updated_at": "2009-12-25 05:57:18", 
+      "height": null, 
+      "source": 255, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7262532
+    }
+  }, 
+  {
+    "pk": 1153, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/dbdb4230e166dea6947584c69d1ea6dd.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 21:29:08", 
+      "updated_at": "2009-12-24 21:29:08", 
+      "height": null, 
+      "source": 254, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5230941
+    }
+  }, 
+  {
+    "pk": 1154, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/dbdb4230e166dea6947584c69d1ea6dd.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 21:32:24", 
+      "updated_at": "2009-12-24 21:32:24", 
+      "height": null, 
+      "source": 254, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8519451
+    }
+  }, 
+  {
+    "pk": 1155, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/dbdb4230e166dea6947584c69d1ea6dd.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 21:24:25", 
+      "updated_at": "2009-12-24 21:24:25", 
+      "height": null, 
+      "source": 254, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4403928
+    }
+  }, 
+  {
+    "pk": 1156, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/dbdb4230e166dea6947584c69d1ea6dd.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 21:27:07", 
+      "updated_at": "2009-12-24 21:27:07", 
+      "height": null, 
+      "source": 254, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7138327
+    }
+  }, 
+  {
+    "pk": 1157, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/07e50b1ea952b102a179deb4c55aa777.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 04:53:39", 
+      "updated_at": "2009-12-24 04:53:39", 
+      "height": null, 
+      "source": 253, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5153133
+    }
+  }, 
+  {
+    "pk": 1158, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/07e50b1ea952b102a179deb4c55aa777.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 04:58:58", 
+      "updated_at": "2009-12-24 04:58:58", 
+      "height": null, 
+      "source": 253, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8382476
+    }
+  }, 
+  {
+    "pk": 1159, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/07e50b1ea952b102a179deb4c55aa777.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 04:44:13", 
+      "updated_at": "2009-12-24 04:44:13", 
+      "height": null, 
+      "source": 253, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4370014
+    }
+  }, 
+  {
+    "pk": 1160, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/07e50b1ea952b102a179deb4c55aa777.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 04:52:11", 
+      "updated_at": "2009-12-24 04:52:11", 
+      "height": null, 
+      "source": 253, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7063072
+    }
+  }, 
+  {
+    "pk": 1161, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c31045540cb58a9483e925ddee8a7618.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 20:25:22", 
+      "updated_at": "2009-12-24 20:25:22", 
+      "height": null, 
+      "source": 252, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5124199
+    }
+  }, 
+  {
+    "pk": 1162, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c31045540cb58a9483e925ddee8a7618.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 20:32:59", 
+      "updated_at": "2009-12-24 20:32:59", 
+      "height": null, 
+      "source": 252, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8214791
+    }
+  }, 
+  {
+    "pk": 1163, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c31045540cb58a9483e925ddee8a7618.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 20:13:48", 
+      "updated_at": "2009-12-24 20:13:48", 
+      "height": null, 
+      "source": 252, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4372085
+    }
+  }, 
+  {
+    "pk": 1164, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/c31045540cb58a9483e925ddee8a7618.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 20:26:14", 
+      "updated_at": "2009-12-24 20:26:14", 
+      "height": null, 
+      "source": 252, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7077613
+    }
+  }, 
+  {
+    "pk": 1165, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ce63a3b161d35e6069535627f06c1e4b.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 21:03:13", 
+      "updated_at": "2009-12-24 21:03:13", 
+      "height": null, 
+      "source": 251, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4114448
+    }
+  }, 
+  {
+    "pk": 1166, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ce63a3b161d35e6069535627f06c1e4b.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 21:05:38", 
+      "updated_at": "2009-12-24 21:05:38", 
+      "height": null, 
+      "source": 251, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 6154240
+    }
+  }, 
+  {
+    "pk": 1167, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ce63a3b161d35e6069535627f06c1e4b.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 20:57:55", 
+      "updated_at": "2009-12-24 20:57:55", 
+      "height": null, 
+      "source": 251, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4319466
+    }
+  }, 
+  {
+    "pk": 1168, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/ce63a3b161d35e6069535627f06c1e4b.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 21:01:36", 
+      "updated_at": "2009-12-24 21:01:36", 
+      "height": null, 
+      "source": 251, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7001063
+    }
+  }, 
+  {
+    "pk": 1169, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/99ea744c8d56fe0dd20f4a54439ad782.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 13:28:27", 
+      "updated_at": "2009-12-24 13:28:27", 
+      "height": null, 
+      "source": 250, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 5143132
+    }
+  }, 
+  {
+    "pk": 1170, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/99ea744c8d56fe0dd20f4a54439ad782.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 13:40:22", 
+      "updated_at": "2009-12-24 13:40:22", 
+      "height": null, 
+      "source": 250, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 8362398
+    }
+  }, 
+  {
+    "pk": 1171, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/99ea744c8d56fe0dd20f4a54439ad782.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 13:24:50", 
+      "updated_at": "2009-12-24 13:24:50", 
+      "height": null, 
+      "source": 250, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4405390
+    }
+  }, 
+  {
+    "pk": 1172, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/99ea744c8d56fe0dd20f4a54439ad782.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 13:30:40", 
+      "updated_at": "2009-12-24 13:30:40", 
+      "height": null, 
+      "source": 250, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 7085330
+    }
+  }, 
+  {
+    "pk": 1173, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/0dce6d1644e5a83dab84aa375763e253.mts-ogv30-272.OGV", 
+      "created_at": "2009-12-24 04:58:31", 
+      "updated_at": "2009-12-24 04:58:31", 
+      "height": null, 
+      "source": 249, 
+      "transcoded_with": 1, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 2280946
+    }
+  }, 
+  {
+    "pk": 1174, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/0dce6d1644e5a83dab84aa375763e253.mts-ogv30-360.OGV", 
+      "created_at": "2009-12-24 05:05:26", 
+      "updated_at": "2009-12-24 05:05:26", 
+      "height": null, 
+      "source": 249, 
+      "transcoded_with": 2, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 3319855
+    }
+  }, 
+  {
+    "pk": 1175, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/0dce6d1644e5a83dab84aa375763e253.mts-mp430-272.MP4", 
+      "created_at": "2009-12-24 04:58:19", 
+      "updated_at": "2009-12-24 04:58:19", 
+      "height": null, 
+      "source": 249, 
+      "transcoded_with": 3, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 2938714
+    }
+  }, 
+  {
+    "pk": 1176, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": null, 
+      "url": "http://www.archive.org/download/ace_200907_05/0dce6d1644e5a83dab84aa375763e253.mts-mp430-360.MP4", 
+      "created_at": "2009-12-24 05:02:21", 
+      "updated_at": "2009-12-24 05:02:21", 
+      "height": null, 
+      "source": 249, 
+      "transcoded_with": 4, 
+      "codecs": null, 
+      "duration": null, 
+      "size": 4844070
+    }
   }
 ]
