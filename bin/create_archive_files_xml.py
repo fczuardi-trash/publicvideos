@@ -2,16 +2,16 @@
 
 import os
 
-IDENTIFIER = '000-079-curupira'
-VIDEOS_PATH = '/Volumes/Videos/publicvideos.org/2008/000-079-curupira-derivates'
-VIDEOS_TITLE = "Curupira Park — Ribeirão Preto, São Paulo, Brazil"
+IDENTIFIER = 'ace_200907_05'
+VIDEOS_PATH = '/tmp/publicvideos/versions/'
+VIDEOS_TITLE = "Publicvideos July 2009 batch, disc 05"
 VIDEOS_DESCRIPTION = 'A batch of stock clips made for publicvideos.org.'
 VIDEOS_LABELS = 'publicvideos.org; royalty free; free; cc0; cczero; stock footage; ace of spades'
 VIDEOS_CREATOR = 'Ace of Spades'
 VIDEOS_DIRECTOR = 'Ace of Spades'
-VIDEOS_YEAR = '2008'
-VIDEOS_UPLOADER = 'username@example.com'
-VIDEOS_SPONSOR = 'username@example.com'
+VIDEOS_YEAR = '2009'
+VIDEOS_UPLOADER = 'fabricio@fabricio.org'
+VIDEOS_SPONSOR = 'Fabricio Zuardi'
 VIDEOS_CONTACT = 'http://fabricio.org'
 VIDEOS_UPDATER = 'publicvideos'
 
@@ -24,8 +24,9 @@ for f in files:
   if (f[0] == '.') or (ext == '.xml'):
     continue
   format = 'Ogg Video' if ext == '.OGV' else 'h.264 MPEG4'
-  result = ''.join([result,'  <file name="%s" source="derivative">\n' % f])
-  result = ''.join([result,'    <original>%s.MTS</original>\n' % name])
+  # result = ''.join([result,'  <file name="%s" source="derivative">\n' % f])
+  result = ''.join([result,'  <file name="%s" source="">\n' % f])
+  # result = ''.join([result,'    <original>%s.MTS</original>\n' % name])
   result = ''.join([result,'    <format>%s</format>\n' % format])
   result = ''.join([result,'  </file>\n'])
 

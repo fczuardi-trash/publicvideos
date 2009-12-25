@@ -16,7 +16,7 @@ class TranscodingJobAdmin(admin.ModelAdmin):
 class VideoAdmin(admin.ModelAdmin):
   save_on_top = True
   list_display = ('filename', 'md5', 'status', 'author', 'set_slug', 'created_at')
-  list_filter = ['status']
+  list_filter = ['status', 'set_slug']
   list_editable = ['status']
   search_fields = ['filename', '^md5', 'set_slug']
   date_hierarchy = 'created_at'
