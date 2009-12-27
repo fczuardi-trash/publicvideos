@@ -1,4 +1,8 @@
 
+- update convertion script to include width and height on video versions
+- run through all video versions and update to include width and height
+- create new script to generate static PNGs video versions
+
 Things to fix/improve, or file a bug in launchpad:
 
 - check for duplicates on upload

@@ -1,0 +1,591 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>“Brown horse eating grass” by Ace of Spades — PublicVideos.org</title>
+<style>
+/*CSS Reset*/
+body,h1,h2,h3,h4,a,div,p,video,ol,li,table,caption,thead,tr,td {margin:0;padding:0;}
+
+/* General */
+body{
+  background-color:#000;
+  font-family:sans-serif;
+  color:#444;
+}
+a{text-decoration:none;}
+a{color:#888;}
+a:hover{color:#fff;}
+.float-breaker{float:none;clear:both;}
+
+/* Header */
+#header h1{
+  color:#fff;
+  font-size:1.5em;
+  margin-left:1.13em;
+  margin-right:1.13em;
+}
+#header h2{
+  font-size:1em;
+  margin-left:1.7em;
+  margin-right:1.7em;
+  margin-top:0.6em;
+  margin-bottom:1em;
+}
+#header{
+  position:absolute;
+  background-color:#161616;
+  z-index:50;
+  padding-top:1em;
+}
+#header.lights-off{display:none;}
+#unlocked-credit{display:none;}
+#header.h272 {width:480px;bottom:50%;margin-bottom:132px;left:50%;margin-left:-236;font-size:1em;}
+#header.h360 {width:640px;bottom:50%;margin-bottom:177px;left:50%;margin-left:-317;font-size:1.15em;}
+#header.h540 {width:960px;bottom:50%;margin-bottom:268px;left:50%;margin-left:-478;font-size:1.30em;}
+#header.h720 {width:1280px;bottom:50%;margin-bottom:359px;left:50%;margin-left:-639;font-size:1.45em;}
+#header.h1080{width:1920px;font-size:2em;}
+
+/* Video Containers */
+.box{
+  border:1px solid transparent;
+  background:none;
+  background-color:#000;
+  z-index:0;
+  cursor:pointer;
+}
+.box.below,
+.box.selected{
+  background:none;
+  border-color:transparent;
+  cursor:default;
+}
+.box.locked,
+.box.lights-off,
+.box.below.lights-off{
+  cursor:default;
+}
+.box .video{position:absolute;}
+.box>.video{opacity:.2;}
+.box.locked>.video{opacity:.05;}
+.box.selected>.video{
+  visibility:visible;
+  opacity:1;
+}
+.box.below>.video{visibility:hidden;}
+div.box.below:hover{
+  background-color:#000;
+  border-color: #fff;
+  opacity:.5;
+  cursor:pointer;
+}
+div.box.lights-off>.video{visibility:hidden;}
+div.box.below.lights-off{visibility:hidden;}
+div.box.selected.lights-off>video{visibility:visible;}
+.unlock-button{
+  position:absolute;
+  opacity:0.02;
+  top:50%;
+  left:50%;
+  width:60px;
+  height:50px;
+  overflow:hidden;
+  white-space:normal;
+  margin-top:-25px;
+}
+.unlock-button:hover{opacity:1;}
+.unlock-button.highlight{
+  opacity:1;
+}
+.unlock-button.lights-off{display:none;}
+.box.unauthorized{background-color:#300;}
+#s272 {width:480;height:272; position:absolute;top:50%;margin-top:-136px;left:50%;margin-left:-240;z-index:15;}
+#s360 {width:640;height:360; position:absolute;top:50%;margin-top:-180px;left:50%;margin-left:-320;z-index:14;}
+#s540 {width:960;height:540; position:absolute;top:50%;margin-top:-270px;left:50%;margin-left:-480;z-index:13;}
+#s720 {width:1280;height:720;position:absolute;top:50%;margin-top:-360px;left:50%;margin-left:-640;z-index:12;}
+#s1080{width:1920;height:1080;z-index:11;}
+
+#b540 {margin-left:-390;z-index:16;}
+#b720 {margin-left:-550;z-index:17;}
+#b1080{margin-left:-710;z-index:18;}
+
+/* Actions menu */
+#actions{
+  position:absolute;
+  z-index:40;
+  line-height:1.6em;
+}
+#actions.lights-off{display:none;}
+#actions .menubar{background-color:#161616;text-align:center;}
+#actions .shadow{
+  height:20px;
+  background-image:url(top-shadow.png);
+  background-position:top;
+  background-repeat:repeat-x;
+}
+#actions .menubar .tabs{
+  float:left;
+  width:90%;
+}
+#actions .menubar .tabs a{
+  cursor:pointer;
+}
+#actions .menubar .tabs .selected{
+  color:#fff;
+}
+.a272 {width:480px;top:50%;margin-top:140px;left:50%;margin-left:-236;font-size:1em;}
+.a360 {width:640px;top:50%;margin-top:183px;left:50%;margin-left:-317;font-size:1.15em;}
+.a540 {width:960px;top:50%;margin-top:272px;left:50%;margin-left:-478;font-size:1.30em;}
+.a720 {width:1280px;top:50%;margin-top:361px;left:50%;margin-left:-639;font-size:1.45em;}
+.a1080{width:1920px;top:1081px;font-size:2em;}
+
+/* Panels */
+#panel-container{
+  margin-top:-20px;
+  position:relative;
+  overflow:hidden;
+  z-index:-1;
+  height:20px; /* this is changed by javascript */
+}
+.panel{
+  background-color:#111;
+  position:absolute;
+  width:100%;
+  padding-top:20px;
+  display:none;
+}
+.panel.opened{
+  display:block;
+}
+.panel h3,
+.panel table caption{
+  color:#202020;
+  font-size:1.6em;
+  font-weight:bold;
+  text-align:center;
+  margin-bottom:0.6em;
+}
+.panel .zebra-even{background-color:#161616;}
+.panel .zebra-odd{background-color:#202020;}
+
+/* Download Panel */
+#downloads-panel table{
+  width:80%;
+  padding-bottom:1.5em;
+  margin:auto;;
+}
+#downloads-panel td{
+  padding-top:0.3em;
+  font-size:0.8em;
+}
+#downloads-panel td{padding-left:1em;}
+#downloads-panel td.centered{text-align:center;padding-left:0;}
+#downloads-panel tr.selected{
+  color:#fff;
+  background-color:#444;
+  font-weight:bold;
+}
+
+/* Label Panel */
+.panel .taglist{
+  margin-bottom:1.5em;
+  padding:0 1.3em 1em;
+  border-bottom:1px solid #222;
+  text-align:center;
+}
+.panel .taglist li{
+  display: inline;
+  text-transform: lowercase;
+  margin-right:.2em;
+}
+.panel .taglist .fisrt {
+  text-transform: capitalize;
+}
+.panel .taglist .tag.s1{font-size:1.3em;}
+.panel .taglist .tag.s2{font-size:1.25em;}
+.panel .taglist .tag.s3{font-size:1.20em;}
+.panel .taglist .tag.s4{font-size:1.15em;}
+.panel .taglist .tag.s5{font-size:1.10em;}
+.panel .taglist .tag.s6{font-size:1.05em;}
+.panel .taglist .tag.s7{font-size:1.00em;}
+.panel .taglist .tag.s8{font-size:0.95em;}
+.panel .taglist .tag.s9{font-size:0.90em;}
+.panel .taglist .tag.s10{font-size:0.85em;}
+.panel .taglist .tag.s12{font-size:0.80em;}
+.panel .taglist .tag.s13{font-size:0.75em;}
+.panel .taglist .tag.s14{font-size:0.70em;}
+.panel .taglist .tag.s15{font-size:0.65em;}
+.panel .user-label-list{
+  list-style:none;
+  padding:1.5em;
+  padding-top:0.5em;}
+.panel .avatar{
+  width:4%;
+  height:auto;
+  float:left;
+  margin:0.3em;
+}
+.panel .user{font-weight:bold;font-size:0.8em;}
+.panel .keywords{font-size:0.8em;}
+
+/* Others */
+#navigation{
+  display:none;
+}
+#watermark{
+  position:fixed;
+  right:0.5%;
+  bottom:1%;
+  z-index:60;
+  margin:0.3em;
+  font-weight:bold;
+  font-size:1.2em;
+  opacity:0.8;
+}
+</style>
+<script type="text/javascript">
+
+var sizes = [272,360,540,720,1080];
+var animation = true;
+
+function init(){
+  var boxes = $$('.box');
+  var unlockButtons = $$('.unlock-button')
+  var panelTabButtons = $$('#actions .menubar .tabs a')
+  for(var i = 0; i < boxes.length; i++){
+    boxes[i].addEventListener('click', boxClicked, false)
+    boxes[i].addEventListener('mousedown', boxMouseDown, false)
+    boxes[i].addEventListener('mouseup', boxMouseUp, false)
+    boxes[i].addEventListener('mouseout', boxMouseUp, false)
+    boxes[i].addEventListener('rollout', boxMouseUp, false)
+    var video = boxes[i].getLast('video')
+    if(video){
+      video.addEventListener('play', fadeOutUIClutter, false)
+      video.addEventListener('pause', fadeInUIClutter, false)
+      video.addEventListener('ended', fadeInUIClutter, false)
+    }
+  }
+  for(var i = 0; i< unlockButtons.length; i++){
+    unlockButtons[i].addEventListener('click', unlockButtonClicked, true)
+  }
+  for(var i = 0; i< panelTabButtons.length; i++){
+    panelTabButtons[i].addEventListener('click', panelTabClicked, true)
+  }
+}
+
+function fadeOutUIClutter(e){
+  var elements = $$('.box, .unlock-button, #header, #actions');
+  for(var i=0; i< elements.length; i++){
+    elements[i].addClass('lights-off')
+  }
+}
+function fadeInUIClutter(e){
+  var elements = $$('.box, .unlock-button, #header, #actions');
+  for(var i=0; i< elements.length; i++){
+    elements[i].removeClass('lights-off')
+  }
+}
+function boxClicked(e){
+  var target = (e.target.nodeName.toUpperCase() == 'DIV') ? e.target : e.target.parentNode;
+  if (target.hasClass('selected') || target.hasClass('locked') || target.hasClass('lights-off')) return false;
+  var selected_size = target.get('id').substring(1,target.get('id').length)
+  for (var i=0; i<sizes.length;i++){
+    var size = sizes[i];
+    var box = $('s'+size)
+    var downloadLink = $('d'+size)
+    var video = box.getLast('video')
+    if (video) {
+      video.erase('controls')
+      if (box.hasClass('selected')){
+        var video_clone = video.clone()
+        video_clone.replaces(video)
+        video_clone.addEventListener('play', fadeOutUIClutter, false)
+        video_clone.addEventListener('pause', fadeInUIClutter, false)
+        video_clone.addEventListener('ended', fadeInUIClutter, false)
+      }
+    }
+    box.removeClass('selected')
+    box.removeClass('below')
+    downloadLink.removeClass('selected')
+    if (selected_size > size){
+      box.addClass('below')
+    } else if (selected_size == size){
+      box.addClass('selected')
+      downloadLink.addClass('selected')
+      if (video){
+        video.set('controls', true)
+        if (selected_size < 1080){
+          // video.set('autobuffer', true)
+        }
+      }
+    }
+  }
+  $('header').className = 'h'+selected_size;
+  $('actions').className = 'a'+selected_size;
+  displayPatron(selected_size);
+  updatePanelContainerHeight();
+  e.stopPropagation();
+  return false;
+}
+function updatePanelContainerHeight(){
+  var panelContainer = $('panel-container')
+  var selectedTab = $$('#actions .menubar .tabs a.selected')
+  if (selectedTab[0]){
+    var selectedPanel = $(selectedTab[0].get('_panel'))
+    panelContainer.style.height = Math.max(selectedPanel.offsetHeight,panelContainer.offsetHeight)
+  }
+}
+function unlockButtonClicked(e){
+  e.stopPropagation();
+  return false;
+}
+function displayPatron(size){
+  var credit = $('unlocked-credit');
+  var patrons = $$('#unlocked-credit span')
+  var patron = $('patron'+size);
+  if(patron){
+    credit.style.display = 'inline';
+    for (i=0; i< patrons.length; i++){
+      patrons[i].style.display = 'none'
+    }
+    patron.style.display = 'inline'
+  } else {
+    $('unlocked-credit').style.display = 'none';
+  }
+}
+function boxMouseDown(e){
+  var target = (e.target.nodeName.toUpperCase() == 'DIV') ? e.target : e.target.parentNode;
+  if ( target.hasClass('locked') && !target.hasClass('lights-off')){
+    target.addClass('unauthorized')
+    var selected_size = target.get('id').substring(1,target.get('id').length)
+    $('b'+selected_size).addClass('highlight')
+  }
+}
+function boxMouseUp(e){
+  var target = (e.target.nodeName.toUpperCase() == 'DIV') ? e.target : e.target.parentNode;
+  target.removeClass('unauthorized')
+  var selected_size = target.get('id').substring(1,target.get('id').length)
+  var lockbutton = $('b'+selected_size)
+  if (lockbutton) lockbutton.removeClass('highlight')
+}
+function panelTabClicked(e){
+  var clickedTab = e.target
+  var panelTabButtons = $$('#actions .menubar .tabs a')
+  var panelContainer = $('panel-container')
+  var panels = $$('#panel-container .panel')
+  var selectedPanel = $(clickedTab.get('_panel'))
+  var previousSelectedTab = $$('#actions .menubar .tabs a.selected')
+  var closePanel = clickedTab.hasClass('selected')
+  e.stopPropagation();
+  if (previousSelectedTab[0]){
+    var previousSelectedPanel = $(previousSelectedTab[0].get('_panel'))
+    if(animation){
+      //retract any opening drawwer
+      previousSelectedPanel.set('tween',{'duration':500,'transition':'quad:in'}).tween('top','-'+previousSelectedPanel.offsetHeight+'px');
+      setTimeout(function(element){element.removeClass('opened')},500,previousSelectedPanel)
+    } else{
+      previousSelectedPanel.removeClass('opened')
+    }
+    previousSelectedTab[0].removeClass('selected')
+  }
+  if(closePanel) { return false }
+  //resize panel container with height enough to fit the table
+  selectedPanel.addClass('opened')
+  panelContainer.style.height = Math.max(selectedPanel.offsetHeight,panelContainer.offsetHeight)
+  if(animation){
+    selectedPanel.style.top = '-'+selectedPanel.offsetHeight+'px'
+    var openFx = new Fx.Tween(selectedPanel,{'duration':'normal','transition':'quad:out'}).start('top','0px');  
+  }
+  clickedTab.addClass('selected')
+  return false;
+}
+</script>
+</head>
+<body>
+  <div id="header" class="h272">
+    <h1 id="title">Brown horse eating grass</h1>
+    <h2>
+      by <a href="#">Ace of Spades</a>
+      <span id="unlocked-credit">—
+        <span id="patron540">Large version made public by <a href="http://mnmo.com/">mnmo</a></span>
+        <span id="patron720">HD 720 version made public by <a href="http://scobleizer.com/">Robert Scoble</a></span>
+        <span id="patron1080">Full HD version made public by <a href="http://blog.pmarca.com">Marc Andreessen</a></span>
+      <span>
+    </h2>
+  </div>
+  <input type="button" value="Unlock Large Version!" class="unlock-button" id="b540"/>
+  <input type="button" value="Unlock HD Version!" class="unlock-button" id="b720"/>
+  <input type="button" value="Unlock Full HD Version!" class="unlock-button" id="b1080"/>
+  <div id="s1080" class="box locked">
+    <div id="s720" class="box locked">
+      <div id="s540" class="box locked">
+        <div id="s360" class="box">
+          <div id="s272" class="box selected">
+          <!-- 480x272 -->
+            <video class="video" width="480" height="272" controls poster="2009-05_00140_horse-eating-sky-field-480x272.png">
+              <source src="2009-05_00140_horse-eating-sky-field-480x272.ogv" type='video/ogg; codecs="theora, vorbis"' />
+              <source src="2009-05_00140_horse-eating-sky-field-480x272.mp4" type="video/mp4"/>
+            </video>
+          </div>
+          <!-- 640x360 -->
+            <video class="video" width="640" height="360" poster="2009-05_00140_horse-eating-sky-field-480x272.png" >
+              <source src="2009-05_00140_horse-eating-sky-field-640x360.ogv" type='video/ogg; codecs="theora, vorbis"'/>
+              <source src="2009-05_00140_horse-eating-sky-field-640x360.mp4" type="video/mp4"/>
+              <p>Sorry, you need Ogg Video support to see this video. Try upgrading your browser or <a href="http://getfirefox.com">download Firefox</a></p>
+            </video>
+          </div>
+        <!-- 960x540 -->
+          <video class="video" width="960" height="540" poster="2009-05_00140_horse-eating-sky-field-480x272.png" >
+            <source src="2009-05_00140_horse-eating-sky-field-960x540.ogv" type='video/ogg; codecs="theora, vorbis"'/>
+            <source src="2009-05_00140_horse-eating-sky-field-960x540.mp4" type="video/mp4"/>
+            <p>Sorry, you need Ogg Video support to see this video. Try upgrading your browser or <a href="http://getfirefox.com">download Firefox</a></p>
+          </video>
+        </div>
+      <!-- 1280x720 -->
+        <video class="video" width="1280" height="720" poster="2009-05_00140_horse-eating-sky-field-480x272.png" >
+          <source src="2009-05_00140_horse-eating-sky-field-1280x720.ogv" type='video/ogg; codecs="theora, vorbis"'/>
+          <source src="2009-05_00140_horse-eating-sky-field-1280x720.mp4" type="video/mp4"/>
+          <p>Sorry, you need Ogg Video support to see this video. Try upgrading your browser or <a href="http://getfirefox.com">download Firefox</a></p>
+        </video>
+      </div>
+    <!-- 1920x1080 -->
+      <video class="video" width="1920" height="1080" poster="2009-05_00140_horse-eating-sky-field-480x272.png" >
+        <source src="2009-05_00140_horse-eating-sky-field-1920x1080.ogv" type='video/ogg; codecs="theora, vorbis"'/>
+        <source src="2009-05_00140_horse-eating-sky-field-1920x1080.mp4" type="video/mp4"/>
+        <p>Sorry, you need Ogg Video support to see this video. Try upgrading your browser or <a href="http://getfirefox.com">download Firefox</a></p>
+      </video>
+  </div>
+  <div id="actions" class="a272">
+    <div class="menubar">
+      <div style="float:left;width:5%;"><a href="#" title="Previous Clip">«</a></div>
+      <div class="tabs">
+        <a title="Available Versions for Download." _panel="downloads-panel">downloads</a> •
+        <a title="Keywords associated with this clip." _panel="labels-panel">labels</a>
+      </div>
+      <div style="float:left;width:5%;"><a href="#" title="Next Clip">»</a></div>
+      <div style="float:none;clear:both;"></div>
+    </div>
+    <div class="shadow"></div>
+    <!-- Label Panel -->
+    <div id="panel-container">
+      <!-- Download Panel -->
+      <div class="panel" id="downloads-panel">
+        <table>
+          <caption>Available Downloads</caption>
+            <tr id="d272" class="zebra-odd selected">
+              <td>Small (480x272)</td>
+              <td><a href="2009-05_00140_horse-eating-sky-field-480x272.ogv" title="2.6MB">ogv</a></td>
+              <td><a href="2009-05_00140_horse-eating-sky-field-480x272.mp4" title="2.7MB">mp4</a></td>
+            </tr>
+            <tr id="d360" class="zebra-even">
+              <td>Medium (640x360)</td>
+              <td><a href="2009-05_00140_horse-eating-sky-field-640x360.ogv" title="3.9MB">ogv</a></td>
+              <td><a href="2009-05_00140_horse-eating-sky-field-640x360.mp4" title="3.9MB">mp4</a></td>
+            </tr>
+            <tr id="d540" class="zebra-odd">
+              <td>Large (960x540)</td>
+              <td colspan="2" class="centered" ><input type="button" value="Unlock!" /></td>
+            </tr>
+            <tr id="d720" class="zebra-even">
+              <td>HD 720 (1280x720)</td>
+              <td colspan="2" class="centered" ><input type="button" value="Unlock!" /></td>
+            </tr>
+            <tr id="d1080" class="zebra-odd">
+              <td>Full HD (1920x1080)</td>
+              <td colspan="2" class="centered" ><input type="button" value="Unlock!" /></td>
+            </tr>
+        </table>
+      </div>
+      <div class="panel" id="labels-panel">
+        <h3>Top Labels</h3>
+        <ol class="taglist">
+          <li><a class="tag s1 fisrt" href="#">horse</a>,</li>
+          <li><a class="tag s2" href="#">grass</a>,</li>
+          <li><a class="tag s3" href="#">sky</a>,</li>
+          <li><a class="tag s4" href="#">blue</a>,</li>
+          <li><a class="tag s5" href="#">farm</a>,</li>
+          <li><a class="tag s6" href="#">trees</a>,</li>
+          <li><a class="tag s7" href="#">bird</a>,</li>
+          <li><a class="tag s8" href="#">field</a>,</li>
+          <li><a class="tag s9" href="#">nature</a>,</li>
+          <li><a class="tag s10" href="#">lame</a>,</li>
+          <li><a class="tag s11" href="#">green</a>,</li>
+          <li><a class="tag s12" href="#">quadrupede</a>,</li>
+          <li><a class="tag s13" href="#">cavalo</a>,</li>
+          <li><a class="tag s14" href="#">grama</a>,</li>
+          <li><a class="tag s15" href="#">céu</a>.</li>
+        </ol>
+        <h3>This clip in 5 words.</h3>
+        <ol class="user-label-list">
+          <li class="zebra-odd">
+            <img src="avatar_fczuardi.png" class="avatar" /> 
+            <span class="user">
+              <a href="#">fczuardi</a>:
+            </span>
+            <span class="keywords">
+              <a href="#">Cavalo</a>, 
+              <a href="#">grama</a>, 
+              <a href="#">alimento</a>, 
+              <a href="#">quadrúpede</a>, 
+              <a href="#">campo</a>.
+            </span>
+            <div class="float-breaker"></div>
+          </li>
+          <li class="zebra-even">
+            <img src="avatar_galvez.jpg" class="avatar" /> 
+            <span class="user">
+              <a href="#">galvez</a>:
+            </span>
+            <span class="keywords">
+              <a href="#">Horse</a>, 
+              <a href="#">field</a>, 
+              <a href="#">nature</a>, 
+              <a href="#">animals</a>, 
+              <a href="#">mamal</a>.
+            </span>
+            <div class="float-breaker"></div>
+          </li>
+          <li class="zebra-odd">
+            <img src="avatar_lucas_gonze.jpg" class="avatar" /> 
+            <span class="user">
+              <a href="#">lucas_gonze</a>:
+            </span>
+            <span class="keywords">
+              <a href="#">Horse</a>, 
+              <a href="#">nature</a>, 
+              <a href="#">bird</a>, 
+              <a href="#">animal</a>, 
+              <a href="#">farm</a>.
+            </span>
+            <div class="float-breaker"></div>
+          </li>
+          <li class="zebra-even">
+            <img src="avatar_fzero.jpg" class="avatar" /> 
+            <span class="user">
+              <a href="#">fzero</a>:
+            </span>
+            <span class="keywords">
+              <a href="#">Co</a>, 
+              <a href="#">coco</a>, 
+              <a href="#">cococo</a>, 
+              <a href="#">cocococo</a>, 
+              <a href="#">combo.breaker</a>.
+            </span>
+            <div class="float-breaker"></div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div id="navigation">
+    <p>J:next, K:previous, +:bigger, -:smaller, spacebar:play/pause
+  </div>
+  <div id="watermark">
+    <p><a href="http://publicvideos.org">public videos</a></p>
+  </div>
+  <!-- Javascript libraries -->
+  <script type="text/javascript" src="mootools-1.2.3-core-nc.js"></script>
+  <script type="text/javascript">
+  init();
+  </script>
+</body>
+</html>

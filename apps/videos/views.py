@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from __future__ import with_statement
 import os
 import sha
@@ -19,15 +21,39 @@ from django.forms.widgets import Input
 from django.contrib.auth.forms import UserCreationForm
 
 from django.http import HttpResponse, HttpResponseRedirect
+from django.http import Http404
 from lib.jinjasupport import render_to_response
 
 from videos.models import Video
+from videos.models import VideoVersion
 from django.contrib.auth.models import User
 
 
 def index(request):
   videos = Video.objects.all()
   return render_to_response("videos/index.html", {})
+
+def show(request):
+  if 'h' in request.GET:
+    md5hash = request.GET['h']
+    try:
+      video = Video.objects.filter(md5=md5hash)[0]
+    except IndexError:
+      raise Http404
+  else:
+    try:
+      video = Video.objects.order_by('?')[0]
+    except IndexError:
+      raise Http404
+  video_versions = VideoVersion.objects.filter(source=video)
+  versions = {}
+  for version in video_versions:
+    version_slug = version.url[version.url.rfind('-')+1:]
+    versions[str(version_slug)] = version
+  video_title = video.title if video.title else video.filename[:-4]
+  author_name = u"%s %s" % (video.author.first_name, video.author.last_name) if video.author.first_name else str(video.author)
+  page_title = u"“%s” by %s" % (video_title, author_name)
+  return render_to_response("videos/show.html", locals())
   
 def simple_upload_videos(request):
   # generate S3 policy and signature
