@@ -24,27 +24,27 @@ a:hover{color:#fff;}
   margin-left:1.7em;
   margin-right:1.7em;
   margin-top:0.6em;
-  margin-bottom:1em;
 }
 #header{
   position:absolute;
   background-color:#161616;
   z-index:50;
   padding-top:1em;
+  padding-bottom:1em;
 }
 #header.lights-off{display:none;}
 #unlocked-credit{display:none;}
-#header.h272 {width:480px;bottom:50%;margin-bottom:132px;left:50%;margin-left:-236;font-size:1em;}
-#header.h360 {width:640px;bottom:50%;margin-bottom:177px;left:50%;margin-left:-317;font-size:1.15em;}
-#header.h540 {width:960px;bottom:50%;margin-bottom:268px;left:50%;margin-left:-478;font-size:1.30em;}
-#header.h720 {width:1280px;bottom:50%;margin-bottom:359px;left:50%;margin-left:-639;font-size:1.45em;}
+#header.h272 {width:480px; bottom:55%;margin-bottom:132px;left:50%;margin-left:-236;font-size:1em;}
+#header.h360 {width:640px; bottom:55%;margin-bottom:177px;left:50%;margin-left:-317;font-size:1.15em;}
+#header.h540 {width:960px; bottom:55%;margin-bottom:268px;left:50%;margin-left:-478;font-size:1.30em;}
+#header.h720 {width:1280px;bottom:55%;margin-bottom:359px;left:50%;margin-left:-639;font-size:1.45em;}
 #header.h1080{width:1920px;font-size:2em;}
 
 /* Video Containers */
 .box{
   border:1px solid transparent;
   background:none;
-  background-color:#000;
+  background-color:#111;
   z-index:0;
   cursor:pointer;
 }
@@ -58,6 +58,7 @@ a:hover{color:#fff;}
 .box.lights-off,
 .box.below.lights-off{
   cursor:default;
+  background:none;
 }
 .box .video{position:absolute;}
 .box>.video{opacity:.2;}
@@ -94,7 +95,7 @@ div.box.selected.lights-off>video{visibility:visible;}
 .unlock-button.lights-off{display:none;}
 .box.unauthorized{background-color:#300;}
 #s272 {width:480;height:272; position:absolute;top:50%;margin-top:-136px;left:50%;margin-left:-240;z-index:15;}
-#s360 {width:640;height:360; position:absolute;top:50%;margin-top:-180px;left:50%;margin-left:-320;z-index:14;}
+#s360 {width:640;height:360; position:absolute;top:45%;margin-top:-180px;left:50%;margin-left:-320;z-index:14;}
 #s540 {width:960;height:540; position:absolute;top:50%;margin-top:-270px;left:50%;margin-left:-480;z-index:13;}
 #s720 {width:1280;height:720;position:absolute;top:50%;margin-top:-360px;left:50%;margin-left:-640;z-index:12;}
 #s1080{width:1920;height:1080;z-index:11;}
@@ -127,10 +128,10 @@ div.box.selected.lights-off>video{visibility:visible;}
 #actions .menubar .tabs .selected{
   color:#fff;
 }
-.a272 {width:480px;top:50%;margin-top:140px;left:50%;margin-left:-236;font-size:1em;}
-.a360 {width:640px;top:50%;margin-top:183px;left:50%;margin-left:-317;font-size:1.15em;}
-.a540 {width:960px;top:50%;margin-top:272px;left:50%;margin-left:-478;font-size:1.30em;}
-.a720 {width:1280px;top:50%;margin-top:361px;left:50%;margin-left:-639;font-size:1.45em;}
+.a272 {width:480px; top:45%;margin-top:140px;left:50%;margin-left:-236;font-size:1em;}
+.a360 {width:640px; top:45%;margin-top:183px;left:50%;margin-left:-317;font-size:1.15em;}
+.a540 {width:960px; top:45%;margin-top:272px;left:50%;margin-left:-478;font-size:1.30em;}
+.a720 {width:1280px;top:45%;margin-top:361px;left:50%;margin-left:-639;font-size:1.45em;}
 .a1080{width:1920px;top:1081px;font-size:2em;}
 
 /* Panels */
@@ -152,11 +153,20 @@ div.box.selected.lights-off>video{visibility:visible;}
   display:block;
 }
 .panel h3,
+.panel h4,
 .panel table caption{
   color:#202020;
   font-size:1.6em;
   font-weight:bold;
   text-align:center;
+  margin-bottom:0.6em;
+}
+.panel h4{
+  font-size:1em;
+}
+.panel p{
+  margin-left:1em;
+  margin-right:1em;
   margin-bottom:0.6em;
 }
 .panel .zebra-even{background-color:#161616;}

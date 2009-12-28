@@ -22,6 +22,7 @@ class VideoAdmin(admin.ModelAdmin):
   date_hierarchy = 'created_at'
   actions = [
     'update_status_to_transcoded',
+    'update_status_to_pending_transcoding',
     'check_archive_and_create_video_versions',
   ]
   
@@ -34,6 +35,8 @@ class VideoAdmin(admin.ModelAdmin):
     self.message_user(request, "%s successfully marked as %s." % (message_bit, new_status))
   def update_status_to_transcoded(self, request, queryset):
     self.update_status(request, queryset, 'transcoded')
+  def update_status_to_pending_transcoding(self, request, queryset):
+    self.update_status(request, queryset, 'pending_transcoding')
     
   def check_archive_and_create_video_versions(self, request, queryset):
     """Manually generate the video versions for videos that were uploaded already
@@ -60,6 +63,8 @@ class VideoAdmin(admin.ModelAdmin):
           video_version.url = archive_url
           video_version.mimetype = info['Content-Type']
           video_version.size = info['Content-Length']
+          video_version.width = job.width
+          video_version.height = job.height
           # Archive.org headers use las-modified with this format: Wed, 09 Sep 2009 07:57:25 GMT
           video_version.updated_at = datetime.datetime.fromtimestamp(
             time.mktime(

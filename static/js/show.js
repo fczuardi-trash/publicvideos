@@ -64,12 +64,20 @@ function boxClicked(e){
     box.removeClass('selected')
     box.removeClass('below')
     downloadLink.removeClass('selected')
+    // if(video.get('poster')){
+    //   current_poster = video.get('poster')
+    //   video.set('poster',current_poster.replace('-jpg-','-jpgbw-'))
+    // }
     if (selected_size > size){
       box.addClass('below')
     } else if (selected_size == size){
       box.addClass('selected')
       downloadLink.addClass('selected')
       if (video){
+        // if(video.get('poster')){
+        //   current_poster = video.get('poster')
+        //   video.set('poster',current_poster.replace('-jpgbw-','-jpg-'))
+        // }
         video.set('controls', true)
         if (selected_size < 1080){
           // video.set('autobuffer', true)

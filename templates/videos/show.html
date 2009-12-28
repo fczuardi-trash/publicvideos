@@ -7,47 +7,29 @@
 {% block content %}
     <div id="header" class="h272">
         <h1 id="title">{{ video_title }}</h1>
-        <h2>
-            by <a href="#">{{ author_name }}</a>
-            <span id="unlocked-credit">—
-              <span id="patron540">Large version made public by <a href="http://example.com/">foobar</a></span>
-              <span id="patron720">HD 720 version made public by <a href="http://example.com/">foobar</a></span>
-              <span id="patron1080">Full HD version made public by <a href="http://example.com/">foobar</a></span>
-            <span>
-        </h2>
     </div>
-<div id="s1080" class="box locked">
-<div id="s720" class="box locked">
-<div id="s540" class="box locked">
     <div id="s360" class="box">
         <div id="s272" class="box selected">
         <!-- 480x272 -->
-        {% if versions['272.OGV'] is defined %}
-        <video class="video" width="480" height="272" controls{% if versions['272.PNG'] is defined %} poster="{{ versions['272.PNG'].url }}"{% endif %}>
+        <video class="video" width="480" height="272" controls{% if versions['272.JPG'] is defined %} poster="{{ versions['272.JPG'].url }}"{% endif %}>
             <source src="{{ versions['272.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' />
-            {% if versions['272.MP4'] is defined %}<source src="{{ versions['272.MP4'].url }}" type="video/mp4"/>{% endif %}
+            <source src="{{ versions['272.MP4'].url }}" type="video/mp4"/>
             <p>Sorry, you need Ogg Video support to see this video. Try upgrading your browser or <a href="http://getfirefox.com">download Firefox</a></p>
         </video>
-        {% endif %}
       </div>
         <!-- 640x360 -->
-        {% if versions['360.OGV'] is defined %}
-        <video class="video" width="640" height="360" controls{% if versions['360.PNG'] is defined %} poster="{{ versions['360.PNG'].url }}"{% endif %}>
+        <video class="video" width="640" height="360" {% if versions['360.JPG'] is defined %} poster="{{ versions['360.JPG'].url }}"{% endif %}
             <source src="{{ versions['360.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' />
-            {% if versions['360.MP4'] is defined %}<source src="{{ versions['360.MP4'].url }}" type="video/mp4"/>{% endif %}
+            <source src="{{ versions['360.MP4'].url }}" type="video/mp4"/>
             <p>Sorry, you need Ogg Video support to see this video. Try upgrading your browser or <a href="http://getfirefox.com">download Firefox</a></p>
         </video>
-        {% endif %}
     </div>
-</div>
-</div>
-</div>
     <div id="actions" class="a272">
         <div class="menubar">
             <div style="float:left;width:5%;"><a href="#" title="Previous Clip">«</a></div>
             <div class="tabs">
-                <a title="Available Versions for Download." _panel="downloads-panel">downloads</a> •
-                <a title="Keywords associated with this clip." _panel="labels-panel">labels</a>
+                <a title="Available versions for download." _panel="downloads-panel">download</a> •
+                <a title="License terms for this clip." _panel="license-panel">license</a>
             </div>
             <div style="float:left;width:5%;"><a href="#" title="Next Clip">»</a></div>
             <div style="float:none;clear:both;"></div>
@@ -61,95 +43,37 @@
                     <caption>Available Downloads</caption>
                     <tr id="d272" class="zebra-odd selected">
                         <td>Small (480x272)</td>
-                        <td><a href="2009-05_00140_horse-eating-sky-field-480x272.ogv" title="2.6MB">ogv</a></td>
-                        <td><a href="2009-05_00140_horse-eating-sky-field-480x272.mp4" title="2.7MB">mp4</a></td>
+                        <td><a href="{{ versions['272.OGV'].url }}" title="{{ versions['272.OGV'].size|filesizeformat }}">ogv</a></td>
+                        <td><a href="{{ versions['272.MP4'].url }}" title="{{ versions['272.MP4'].size|filesizeformat }}">mp4</a></td>
                     </tr>
                     <tr id="d360" class="zebra-even">
                         <td>Medium (640x360)</td>
-                        <td><a href="2009-05_00140_horse-eating-sky-field-640x360.ogv" title="3.9MB">ogv</a></td>
-                        <td><a href="2009-05_00140_horse-eating-sky-field-640x360.mp4" title="3.9MB">mp4</a></td>
+                        <td><a href="{{ versions['360.OGV'].url }}" title="{{ versions['360.OGV'].size|filesizeformat }}">ogv</a></td>
+                        <td><a href="{{ versions['360.MP4'].url }}" title="{{ versions['360.MP4'].size|filesizeformat }}">mp4</a></td>
                     </tr>
                 </table>
             </div> <!-- end downloads-panel -->
-            <div class="panel" id="labels-panel">
-                <h3>Top Labels</h3>
-                <ol class="taglist">
-                    <li><a class="tag s1 fisrt" href="#">horse</a>,</li>
-                    <li><a class="tag s2" href="#">grass</a>,</li>
-                    <li><a class="tag s3" href="#">sky</a>,</li>
-                    <li><a class="tag s4" href="#">blue</a>,</li>
-                    <li><a class="tag s5" href="#">farm</a>,</li>
-                    <li><a class="tag s6" href="#">trees</a>,</li>
-                    <li><a class="tag s7" href="#">bird</a>,</li>
-                    <li><a class="tag s8" href="#">field</a>,</li>
-                    <li><a class="tag s9" href="#">nature</a>,</li>
-                    <li><a class="tag s10" href="#">lame</a>,</li>
-                    <li><a class="tag s11" href="#">green</a>,</li>
-                    <li><a class="tag s12" href="#">quadrupede</a>,</li>
-                    <li><a class="tag s13" href="#">cavalo</a>,</li>
-                    <li><a class="tag s14" href="#">grama</a>,</li>
-                    <li><a class="tag s15" href="#">céu</a>.</li>
-                </ol>
-                <h3>This clip in 5 words.</h3>
-                <ol class="user-label-list">
-                    <li class="zebra-odd">
-                        <img src="avatar_fczuardi.png" class="avatar" /> 
-                        <span class="user">
-                            <a href="#">fczuardi</a>:
-                        </span>
-                        <span class="keywords">
-                            <a href="#">Cavalo</a>, 
-                            <a href="#">grama</a>, 
-                            <a href="#">alimento</a>, 
-                            <a href="#">quadrúpede</a>, 
-                            <a href="#">campo</a>.
-                        </span>
-                        <div class="float-breaker"></div>
-                    </li>
-                    <li class="zebra-even">
-                        <img src="avatar_galvez.jpg" class="avatar" /> 
-                        <span class="user">
-                            <a href="#">galvez</a>:
-                        </span>
-                        <span class="keywords">
-                            <a href="#">Horse</a>, 
-                            <a href="#">field</a>, 
-                            <a href="#">nature</a>, 
-                            <a href="#">animals</a>, 
-                            <a href="#">mamal</a>.
-                        </span>
-                        <div class="float-breaker"></div>
-                    </li>
-                    <li class="zebra-odd">
-                        <img src="avatar_lucas_gonze.jpg" class="avatar" /> 
-                        <span class="user">
-                            <a href="#">lucas_gonze</a>:
-                        </span>
-                        <span class="keywords">
-                            <a href="#">Horse</a>, 
-                            <a href="#">nature</a>, 
-                            <a href="#">bird</a>, 
-                            <a href="#">animal</a>, 
-                            <a href="#">farm</a>.
-                        </span>
-                        <div class="float-breaker"></div>
-                    </li>
-                    <li class="zebra-even">
-                        <img src="avatar_fzero.jpg" class="avatar" /> 
-                        <span class="user">
-                            <a href="#">fzero</a>:
-                        </span>
-                        <span class="keywords">
-                            <a href="#">Co</a>, 
-                            <a href="#">coco</a>, 
-                            <a href="#">cococo</a>, 
-                            <a href="#">cocococo</a>, 
-                            <a href="#">combo.breaker</a>.
-                        </span>
-                        <div class="float-breaker"></div>
-                    </li>
-                </ol>
-            </div> <!-- end labels-panel -->
+            <!-- License Panel -->
+            <div class="panel" id="license-panel">
+                <h3>Creative Commons CC0 1.0 Universal</h3>
+                <h4>Summary</h4>
+                <p>
+                    The person who associated a work with this document has 
+                    dedicated the work to the Commons by waiving all of his or
+                    her rights to the work worldwide under copyright law and 
+                    all related or neighboring legal rights he or she had in 
+                    the work, to the extent allowable by law.
+                </p>
+                <p>
+                    Works under CC0 do not require attribution. When citing 
+                    the work, you should not imply endorsement by the author.
+                </p>
+                <h4>Legal Code</h4>
+                <p>
+                    Click the following link to read the 
+                    <a href="http://creativecommons.org/publicdomain/zero/1.0/legalcode" rel="license">
+                        full legal code of the waiver applied to this clip</a>.</p>
+            </div> <!-- end downloads-panel -->
         </div> <!-- end panel-container -->
     </div> <!-- end actions -->
     <div id="navigation">

@@ -3,7 +3,7 @@
 import os
 
 IDENTIFIER = 'ace_200907_06'
-VIDEOS_PATH = '/Users/fabricio/temp/'
+VIDEOS_PATH = '/tmp/publicvideos/versions/'
 VIDEOS_TITLE = "Publicvideos July 2009 batch, disc 06"
 VIDEOS_DESCRIPTION = 'A batch of stock clips made for publicvideos.org.'
 VIDEOS_LABELS = 'publicvideos.org; royalty free; free; cc0; cczero; stock footage; ace of spades'
@@ -23,7 +23,7 @@ for f in files:
   ext = f[-4:]
   if (f[0] == '.') or (ext == '.xml'):
     continue
-  format = 'Ogg Video' if ext == '.OGV' else 'h.264 MPEG4'
+  format = 'Ogg Video' if ext == '.OGV' else 'h.264 MPEG4' if ext == '.MP4' else 'JPEG'
   # result = ''.join([result,'  <file name="%s" source="derivative">\n' % f])
   result = ''.join([result,'  <file name="%s" source="">\n' % f])
   # result = ''.join([result,'    <original>%s.MTS</original>\n' % name])

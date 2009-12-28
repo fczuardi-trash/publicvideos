@@ -39,6 +39,8 @@ class TranscodingJob(models.Model):
   """
   description = models.CharField(max_length=100, blank=True, null=True)
   job_slug = models.CharField(max_length=40, blank=True, null=True)
+  width = models.PositiveIntegerField(blank=True, null=True)
+  height = models.PositiveIntegerField(blank=True, null=True)
   def __unicode__(self):
     return self.description
 

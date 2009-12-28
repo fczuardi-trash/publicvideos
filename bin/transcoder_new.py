@@ -125,11 +125,14 @@ class TranscoderDaemon():
               source_pass_path = target_pass_path
           logging.info("Transcode completed, uploading result back to S3.")
           # source_url = self.put_the_result_back_in_s3(current_video, job.job_slug, target_pass_path, target_extension)
+          if os.path.isdir(target_pass_path):
+            logging.info("%s is an image path, consider the 00000001.jpg file inside that path as the result" % (target_pass_path))
+            target_pass_path = os.path.join(target_pass_path, '00000001.jpg')
           source_url = self.put_the_result_back_in_video_tmp(current_video, job.job_slug, target_pass_path, target_extension)
           logging.info("Transcoded and uploaded video %s with the %s encoding." % (current_video.md5, job.job_slug))          
         utils.unlock_on_string(cursor, 'video_queue');
-        self.debug_log("\n Wait 15 seconds...");
-        time.sleep(15)
+        self.debug_log("\n Wait 1 second...");
+        time.sleep(1)
       except:
         self.debug_log("\n Error!");
         traceback.print_exc(file=sys.stdout)

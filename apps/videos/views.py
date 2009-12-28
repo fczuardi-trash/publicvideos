@@ -34,25 +34,23 @@ def index(request):
   return render_to_response("videos/index.html", {})
 
 def show(request):
-  if 'h' in request.GET:
-    md5hash = request.GET['h']
-    try:
-      video = Video.objects.filter(md5=md5hash)[0]
-    except IndexError:
-      raise Http404
-  else:
-    try:
+  try:
+    if 'h' in request.GET:
+      video = Video.objects.filter(md5=request.GET['h'])[0]
+    else:
       video = Video.objects.order_by('?')[0]
-    except IndexError:
-      raise Http404
+  except IndexError:
+    raise Http404
   video_versions = VideoVersion.objects.filter(source=video)
   versions = {}
   for version in video_versions:
-    version_slug = version.url[version.url.rfind('-')+1:]
-    versions[str(version_slug)] = version
-  video_title = video.title if video.title else video.filename[:-4]
+    urlparts = version.url.split('-')
+    version_name = urlparts[-1]
+    if urlparts[-2] == 'jpgbw': version_name = "%s.BW" % version_name
+    versions[str(version_name)] = version
+  video_title = video.title if video.title else "Clip #%s" % video.pk
   author_name = u"%s %s" % (video.author.first_name, video.author.last_name) if video.author.first_name else str(video.author)
-  page_title = u"“%s” by %s" % (video_title, author_name)
+  page_title = u"“%s”" % video_title
   return render_to_response("videos/show.html", locals())
   
 def simple_upload_videos(request):
