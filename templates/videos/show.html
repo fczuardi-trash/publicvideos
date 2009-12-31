@@ -11,7 +11,7 @@
     <div id="s360" class="box">
         <div id="s272" class="box selected">
         <!-- 480x272 -->
-        <video class="video" width="480" height="272" controls{% if versions['272.JPG'] is defined %} poster="{{ versions['272.JPG'].url }}"{% endif %}>
+        <video class="video" width="480" height="272" controls {% if versions['272.JPG'] is defined %} poster="{{ versions['272.JPG'].url }}"{% endif %}>
             <source src="{{ versions['272.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' />
             <source src="{{ versions['272.MP4'].url }}" type="video/mp4"/>
             <p>Sorry, you need Ogg Video support to see this video. Try upgrading your browser or <a href="http://getfirefox.com">download Firefox</a></p>

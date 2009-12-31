@@ -34,8 +34,8 @@ a:hover{color:#fff;}
 }
 #header.lights-off{display:none;}
 #unlocked-credit{display:none;}
-#header.h272 {width:480px; bottom:55%;margin-bottom:132px;left:50%;margin-left:-236;font-size:1em;}
-#header.h360 {width:640px; bottom:55%;margin-bottom:177px;left:50%;margin-left:-317;font-size:1.15em;}
+#header.h272 {width:480px; bottom:55%;margin-bottom:134px;left:50%;margin-left:-238;font-size:1em;}
+#header.h360 {width:640px; bottom:55%;margin-bottom:179px;left:50%;margin-left:-319;font-size:1.15em;}
 #header.h540 {width:960px; bottom:55%;margin-bottom:268px;left:50%;margin-left:-478;font-size:1.30em;}
 #header.h720 {width:1280px;bottom:55%;margin-bottom:359px;left:50%;margin-left:-639;font-size:1.45em;}
 #header.h1080{width:1920px;font-size:2em;}
@@ -128,8 +128,8 @@ div.box.selected.lights-off>video{visibility:visible;}
 #actions .menubar .tabs .selected{
   color:#fff;
 }
-.a272 {width:480px; top:45%;margin-top:140px;left:50%;margin-left:-236;font-size:1em;}
-.a360 {width:640px; top:45%;margin-top:183px;left:50%;margin-left:-317;font-size:1.15em;}
+.a272 {width:480px; top:45%;margin-top:138px;left:50%;margin-left:-238;font-size:1em;}
+.a360 {width:640px; top:45%;margin-top:181px;left:50%;margin-left:-319;font-size:1.15em;}
 .a540 {width:960px; top:45%;margin-top:272px;left:50%;margin-left:-478;font-size:1.30em;}
 .a720 {width:1280px;top:45%;margin-top:361px;left:50%;margin-left:-639;font-size:1.45em;}
 .a1080{width:1920px;top:1081px;font-size:2em;}
