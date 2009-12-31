@@ -3,6 +3,8 @@
     "pk": 1, 
     "model": "videos.transcodingjob", 
     "fields": {
+      "width": 480, 
+      "height": 272, 
       "description": "Generates 30fps deinterlaced OGV 480x272 files from 60fps mpegts files.", 
       "job_slug": "mts-ogv30-272"
     }
@@ -11,6 +13,8 @@
     "pk": 2, 
     "model": "videos.transcodingjob", 
     "fields": {
+      "width": 640, 
+      "height": 360, 
       "description": "Generates 30fps deinterlaced OGV 640x360 files from 60fps mpegts files.", 
       "job_slug": "mts-ogv30-360"
     }
@@ -19,6 +23,8 @@
     "pk": 3, 
     "model": "videos.transcodingjob", 
     "fields": {
+      "width": 480, 
+      "height": 272, 
       "description": "Generates 30fps deinterlaced MP4 480x272 files from 60fps mpegts files.", 
       "job_slug": "mts-mp430-272"
     }
@@ -27,8 +33,70 @@
     "pk": 4, 
     "model": "videos.transcodingjob", 
     "fields": {
+      "width": 640, 
+      "height": 360, 
       "description": "Generates 30fps deinterlaced MP4 640x360 files from 60fps mpegts files.", 
       "job_slug": "mts-mp430-360"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "videos.transcodingjob", 
+    "fields": {
+      "width": 480, 
+      "height": 272, 
+      "description": "Generates a black and white 480x272 jpeg file from mpegts files.", 
+      "job_slug": "mts-jpgbw-272"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "videos.transcodingjob", 
+    "fields": {
+      "width": 640, 
+      "height": 360, 
+      "description": "Generates a black and white 640x360 jpeg file from mpegts files.", 
+      "job_slug": "mts-jpgbw-360"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "videos.transcodingjob", 
+    "fields": {
+      "width": 480, 
+      "height": 272, 
+      "description": "Generates a 480x272 jpeg file from mpegts files.", 
+      "job_slug": "mts-jpg-272"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "videos.transcodingjob", 
+    "fields": {
+      "width": 640, 
+      "height": 360, 
+      "description": "Generates a 640x360 jpeg file from mpegts files.", 
+      "job_slug": "mts-jpg-360"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "videos.transcodingjob", 
+    "fields": {
+      "width": 192, 
+      "height": 108, 
+      "description": "Generates a 192x108 jpeg file from mpegts files.", 
+      "job_slug": "mts-jpg-108"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "videos.transcodingjob", 
+    "fields": {
+      "width": 192, 
+      "height": 108, 
+      "description": "Generates a black and white 192x108 jpeg file from mpegts files.", 
+      "job_slug": "mts-jpgbw-108"
     }
   }
 ]
