@@ -38,7 +38,7 @@ def show(request):
     if 'h' in request.GET:
       video = Video.objects.filter(md5=request.GET['h'])[0]
     else:
-      video = Video.objects.order_by('?')[0]
+      video = Video.objects.filter(status='transcoded').order_by('?')[0]
   except IndexError:
     raise Http404
   video_versions = VideoVersion.objects.filter(source=video)
@@ -106,8 +106,10 @@ def upload_videos(request):
         uploaded_video.set_slug = set_slug
         if not os.path.exists(os.path.join(settings.TMP_VIDEO_ROOT, 'originals')):
           os.makedirs(os.path.join(settings.TMP_VIDEO_ROOT, 'originals'))
+        if not os.path.exists(os.path.join(settings.TMP_VIDEO_ROOT, 'originals', set_slug)):
+          os.makedirs(os.path.join(settings.TMP_VIDEO_ROOT, 'originals', set_slug))
         original_filename = "%s.%s" % (uploaded_video.md5, uploaded_video.extension)
-        with open(os.path.join(settings.TMP_VIDEO_ROOT, 'originals', original_filename), 'wb') as f:
+        with open(os.path.join(settings.TMP_VIDEO_ROOT, 'originals', set_slug, original_filename), 'wb') as f:
           f.write(uploaded_file_content)
         del uploaded_file_content
         uploaded_video.save()

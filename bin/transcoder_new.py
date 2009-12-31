@@ -30,10 +30,12 @@ class TranscoderDaemon():
     os.makedirs(os.path.join(TMP_VIDEO_ROOT, 'originals'))
   if not os.path.exists(os.path.join(TMP_VIDEO_ROOT, 'transcoding')):
     os.makedirs(os.path.join(TMP_VIDEO_ROOT, 'transcoding'))
+  if not os.path.exists(os.path.join(TMP_VIDEO_ROOT, 'versions')):
+    os.makedirs(os.path.join(TMP_VIDEO_ROOT, 'versions'))
   S3_BUCKET_NAME = 'camera'
   def save_tmp_video_and_create_references(self, current_video):
     original_filename = "%s.%s" % (current_video.md5, current_video.extension)
-    original_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'originals', original_filename)
+    original_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'originals', current_video.set_slug, original_filename)
     self.debug_log("\nos.path.exists(original_path): %s, %s" % (str(os.path.exists(original_path)), original_path))
     logging.info("os.path.exists(original_path): %s, %s" % (str(os.path.exists(original_path)), original_path))
     if not os.path.exists(original_path):
@@ -45,10 +47,10 @@ class TranscoderDaemon():
         logging.info("writing: %s" % response.object.data[0:10])
         f.write(response.object.data)
   def put_the_result_back_in_video_tmp(self, current_video, job_slug, result, result_extension):
-    if not os.path.exists(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'versions')):
-      os.makedirs(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'versions'))
+    logging.info("put_the_result_back_in_video_tmp")
     version_filename = "%s.%s.%s" % (current_video.md5, job_slug,  result_extension)
-    version_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'versions', version_filename)
+    version_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'versions', current_video.set_slug, version_filename)
+    logging.info("version path = %s" % version_path)
     shutil.copy2(result, version_path)
     return version_path
   def put_the_result_back_in_s3(self, current_video, job_slug, result, result_extension):
@@ -80,6 +82,12 @@ class TranscoderDaemon():
           utils.unlock_on_string(cursor, 'video_queue')
           time.sleep(10)
           continue
+        if not os.path.exists(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'originals', current_video.set_slug)):
+          os.makedirs(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'originals', current_video.set_slug))
+        if not os.path.exists(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'transcoding', current_video.set_slug)):
+          os.makedirs(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'transcoding', current_video.set_slug))
+        if not os.path.exists(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'versions', current_video.set_slug)):
+          os.makedirs(os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'versions', current_video.set_slug))
         self.debug_log("\nDownloading original video %s so we can transcode the shit out of it." % current_video.md5)
         logging.info("Downloading original video %s so we can transcode the shit out of it." % current_video.md5)
         self.save_tmp_video_and_create_references(current_video)        
@@ -93,7 +101,7 @@ class TranscoderDaemon():
           job_passes = job.transcodingjobpass_set.select_related().order_by('step_number')
           current_pass_stack = ''
           original_filename = "%s.%s" % (current_video.md5, current_video.extension)
-          original_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'originals', original_filename)
+          original_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'originals', current_video.set_slug, original_filename)
           source_pass_path = original_path
           for job_pass in job_passes:
             self.debug_log("\n\n Job Pass: %s." % job_pass.transcoding_pass);
@@ -103,7 +111,7 @@ class TranscoderDaemon():
             self.debug_log("\n target_extension: %s" % target_extension);
             target_pass_filename = "%s%s.%s" % (current_video.md5, current_pass_stack, target_extension)
             self.debug_log("\n target_pass_filename: %s" % target_pass_filename);
-            target_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'transcoding', target_pass_filename)
+            target_pass_path = os.path.join(TranscoderDaemon.TMP_VIDEO_ROOT, 'transcoding', current_video.set_slug, target_pass_filename)
             self.debug_log("\n target_pass_path: %s" % target_pass_path);
             self.debug_log("\n source_pass_path: %s target_pass_path: %s" % (source_pass_path, target_pass_path));
             self.debug_log("\n os.path.exists(target_pass_path): %s" % os.path.exists(target_pass_path));
