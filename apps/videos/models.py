@@ -66,7 +66,6 @@ class TranscodingJobPass(models.Model):
   """
   transcoding_job = models.ForeignKey(TranscodingJob, blank=True, null=True)
   transcoding_pass = models.ForeignKey(TranscodingPass, blank=True, null=True)
-  use_result_from = models.ForeignKey('self', blank=True, null=True)
   step_number = models.PositiveIntegerField(blank=True, null=True)
   def __unicode__(self):
     return self.transcoding_job.job_slug + ': ' + str(self.step_number)
@@ -82,8 +81,6 @@ class VideoVersion(models.Model):
   size = models.PositiveIntegerField(blank=True, null=True, help_text='File size in bytes.')
   duration = models.DecimalField(max_digits=8, decimal_places=3, blank=True, null=True, help_text='Clip duration in seconds.')
   transcoded_with = models.ForeignKey(TranscodingJob, blank=True, null=True)
-  codecs = models.CharField(max_length=40, blank=True, null=True, help_text='HTML5 \
-    <a href="http://www.whatwg.org/specs/web-apps/current-work/#attr-source-type">codecs</a> string.')
   created_at = models.DateTimeField('datetime created_at', null=True)
   updated_at = models.DateTimeField('datetime updated_at', null=True)
   # bitrate, framerate, samplingrate, channels, lang, player ?
