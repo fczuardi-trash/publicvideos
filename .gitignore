@@ -10,3 +10,4 @@ log/*.error
 ffmpeg2pass-0.log
 x264_2pass.log
 /log/*.log
+settings_production.py
