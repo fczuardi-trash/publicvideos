@@ -1,2 +1,75 @@
-videos index
-{{ videos_length }}
+{% extends "base_jinja.html" %}
+{% block extrahead %}
+    <link rel="stylesheet" type="text/css" href="/static/css/show.css" />
+    <script type="text/javascript" src="/static/js/show.js"></script>
+    <style>
+img{
+    border:none;
+}
+a{
+    border:none;
+}
+div a>img{
+    float:left;
+    padding-right:1px;
+    padding-bottom:1px;
+}
+div:hover a img{
+    opacity:.3;
+}
+div:hover a img.hoverdisabled{
+    opacity:1;
+}
+div:hover a:hover img{
+    opacity:1;
+}
+.logo_108{
+    width:192;
+    height:108;
+    float:left;
+    background-color:#161616;
+}
+.logo_108 h1{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 23px;
+    margin-top: 15px;
+    color: #fff;
+}
+.logo_108 input{
+    margin-top: 27px; 
+    background-color: #ddd;
+}
+    </style>
+    <script>
+function highlight_off(){
+    console.log('oh hai')
+    var images = document.getElementsByTagName('IMG')
+    for (i=0; i<images.length; i++){
+        images[i].className = 'hoverdisabled'
+    }
+}
+function highlight_on(){
+    console.log('oh bye')
+    var images = document.getElementsByTagName('IMG')
+    for (i=0; i<images.length; i++){
+        images[i].className = ''
+    }
+}
+    </script>
+{% endblock %}
+{% block content %}
+
+<div style="width:90%;margin:auto;text-align:center;margin-top:80px;">
+{% for thumb in thumbs %}
+<a href="{{thumb.page}}"><img src="{{thumb.src}}" _colorsrc="" width="192" height="108" /></a>
+{% endfor %}
+<div class="logo_108" onMouseOver="highlight_off();" onMouseOut="highlight_on();" >
+<h1>Public Videos</h1>
+<input type="text" id="search" value="Search"/>
+</div>
+</div>
+{% endblock %}

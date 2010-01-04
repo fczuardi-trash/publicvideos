@@ -1,10 +1,10 @@
-
+BUG http://127.0.0.1:8000/clip/?h=aaaafbf10e9283fed8a3a13d9db0bcef transparencia aparecendo
 - add some stats (google analytics style)
 - make the size name on the download tab clickable
 - add "hosted by archive.org"
 - add "notify me of new versions of this clip"
 - cron job to announce new clips every hour
-
+- replace video tags with img and then add video tags via javascript
 
 Things to fix/improve, or file a bug in launchpad:
 
