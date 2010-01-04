@@ -30,8 +30,9 @@ from django.contrib.auth.models import User
 
 
 def index(request):
-  videos = Video.objects.all()
-  return render_to_response("videos/index.html", {})
+  videos = Video.objects.filter(status='transcoded')
+  videos_length = len(videos)
+  return render_to_response("videos/index.html", locals())
 
 def show(request):
   try:

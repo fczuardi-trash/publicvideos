@@ -1,4 +1,5 @@
 
+- add some stats (google analytics style)
 - make the size name on the download tab clickable
 - add "hosted by archive.org"
 - add "notify me of new versions of this clip"
