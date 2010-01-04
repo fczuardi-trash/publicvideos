@@ -8,7 +8,7 @@ from django.contrib.auth.views import login, logout
 admin.autodiscover()
 
 urlpatterns = patterns('',
-  (r'^$', 'website.views.index'),
+  (r'^$', 'videos.views.index'),
   (r'^account/', include('django_authopenid.urls')),
   (r'^clip', include('videos.urls')),
   (r'^users', include('users.urls')),

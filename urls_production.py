@@ -2,7 +2,7 @@ from django.conf import settings
 from django.conf.urls.defaults import *
 
 urlpatterns = patterns('',
-  (r'^$', 'website.views.index'),
+  (r'^$', 'videos.views.index'),
   (r'^clip', include('videos.urls_production')),
   (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 )
