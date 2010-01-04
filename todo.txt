@@ -1,7 +1,9 @@
 
-- update convertion script to include width and height on video versions
-- run through all video versions and update to include width and height
-- create new script to generate static PNGs video versions
+- make the size name on the download tab clickable
+- add "hosted by archive.org"
+- add "notify me of new versions of this clip"
+- cron job to announce new clips every hour
+
 
 Things to fix/improve, or file a bug in launchpad:
 
@@ -9,7 +11,6 @@ Things to fix/improve, or file a bug in launchpad:
 - change transcoding pass to have an extra command_muted attribute containing the muted version of that transcoding pass
 - upload form to have option to flag a video as "mute derivates"
 - transcoder to recognise the attribute mute_export and use the mute versions of the transcoding passes
-- add new video state: rejected
 - fill up video created_date on the first uploader
 - check if for hash colision after first uploading to avoid duplicates
 - replace the hardcoded s3 foldername 'originals' with a setting variable
@@ -17,3 +18,10 @@ Things to fix/improve, or file a bug in launchpad:
 - remove the hardcoded 'mts' references -> original videos might come with a different format
 - modify the transcoder daemon to NOT download files from s3, a transcoder should be a transcoder, not a downloader/transcoder
 - modify the transcoder daemon to NOT upload back to s3, a transcoder should be a transcoder, not a transcoder/uploader
+
+ok?- update convertion script to include width and height on video versions
+ok - buy a linode (or other dedicated server) host
+ok- migrate the wiki to somewhere
+ok - run through all video versions and update to include width and height
+ok - create new script to generate static JPG video versions
+ok - add new video state: rejected
