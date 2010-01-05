@@ -51,6 +51,10 @@ div#grid{
     color: #fff;
 }
 #logo_108 input{
-    margin-top: 27px; 
+    margin-top: 20px;
     background-color: #ddd;
+}
+.didyoumean {
+  margin-top:7px;
+  font-size:12px;
 }

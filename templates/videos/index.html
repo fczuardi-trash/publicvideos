@@ -7,6 +7,7 @@
 {% for thumb in thumbs %}<a class="imagecontainer" href="{{thumb.page}}"><img src="{{thumb.src}}" _colorsrc="" width="192" height="108" /></a>{% endfor %}<div id="logo_108">
 <h1><a href="/">Public Videos</a></h1>
 <input type="text" id="search" value="{{ query_text }}" onClick="this.select()" onChange="submit_search(this)" />
+{% if didyoumean %}<p class="didyoumean">Did you mean: <a href="/?q={{ didyoumean }}">{{ didyoumean }}</a>?</p>{% endif %}
 </div>
 </div>
 <script type="text/javascript" src="/static/lib/mootools-1.2.4-core-elements-all-fw-tween.js"></script>

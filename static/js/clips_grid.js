@@ -31,7 +31,7 @@ function page_loaded(){
 function window_resized(){
   gridbox = $('grid')
   w = gridbox.getWidth()
-  h = window.getHeight()-80
+  h = window.getHeight()-130
   columns = Math.floor(w/193)
   rows = Math.floor(h/109)
   spots_available = rows * columns

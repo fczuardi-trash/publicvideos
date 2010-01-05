@@ -13,6 +13,8 @@ ok - implement animation for loading images
 Search Results:
 - implement logo left-aligned on the last row for search results
 - include page title
+- funny "did you mean"s
+- mickey mouse easter egg
 
 Show:
 - add "hosted by archive.org"
