@@ -20,6 +20,9 @@ a.imagecontainer{
   margin-right:1px;
   margin-bottom:1px;
 }
+a.imagecontainer img{
+  opacity:0;
+}
 div#grid{
     width:90%;
     margin:auto;
