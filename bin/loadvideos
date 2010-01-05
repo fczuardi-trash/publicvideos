@@ -1,2 +1,3 @@
 #!/bin/sh
 python manage.py loaddata apps/videos/fixtures/all.json 
+python manage.py loaddata --settings publicvideos.settings_production apps/videos/fixtures/video.json
