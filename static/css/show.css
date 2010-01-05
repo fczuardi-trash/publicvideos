@@ -242,7 +242,9 @@ div.box.selected.lights-off>video{visibility:visible;}
   bottom:1%;
   z-index:60;
   margin:0.3em;
-  font-weight:bold;
-  font-size:1.2em;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 23px;
   opacity:0.8;
+/*  color: #fff;*/
 }

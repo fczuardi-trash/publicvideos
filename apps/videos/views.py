@@ -28,10 +28,14 @@ from videos.models import Video
 from videos.models import VideoVersion
 from django.contrib.auth.models import User
 
-
 def index(request):
   try:
     videos = Video.objects.filter(status='transcoded').order_by('?')
+    query_text = 'Search'
+    if 'q' in request.GET:
+      if request.GET['q'].strip() != '':
+        query_text = request.GET['q']
+        videos = Video.objects.filter(status='transcoded').filter(filename__contains=query_text).order_by('?')
   except IndexError:
     raise Http404
   # http://www.archive.org/download/ace_200910_02/a391d9f8b519255ef21e36c1a75265a5.mts-jpg-108.JPG
@@ -42,7 +46,7 @@ def index(request):
     url = "http://www.archive.org/download/%s/%s.%s" % (video.set_slug, video.md5, 'mts-jpg-108.JPG')
     page = "/clip/?h=%s" % video.md5
     thumbs.append({'src':url,'page':page})
-  return render_to_response("videos/index.html", locals())
+  return render_to_response("videos/index.html", {'query_text':query_text,'thumbs':thumbs})
 
 def show(request):
   try:
@@ -62,7 +66,7 @@ def show(request):
   video_title = video.title if video.title else "Clip #%s" % video.pk
   author_name = u"%s %s" % (video.author.first_name, video.author.last_name) if video.author.first_name else str(video.author)
   page_title = u"“%s”" % video_title
-  return render_to_response("videos/show.html", locals())
+  return render_to_response("videos/show.html", dict(locals()))
   
 def simple_upload_videos(request):
   # generate S3 policy and signature

@@ -59,17 +59,19 @@ function highlight_on(){
         images[i].className = ''
     }
 }
+function submit_search(txt_input){
+    document.location =  "{{ url('site_index_url') }}?q="+txt_input.value
+}
     </script>
 {% endblock %}
 {% block content %}
-
 <div style="width:90%;margin:auto;text-align:center;margin-top:80px;">
 {% for thumb in thumbs %}
 <a href="{{thumb.page}}"><img src="{{thumb.src}}" _colorsrc="" width="192" height="108" /></a>
 {% endfor %}
 <div class="logo_108" onMouseOver="highlight_off();" onMouseOut="highlight_on();" >
 <h1>Public Videos</h1>
-<input type="text" id="search" value="Search"/>
+<input type="text" id="search" value="{{ query_text }}" onClick="this.select()" onChange="submit_search(this)" />
 </div>
 </div>
 {% endblock %}
