@@ -1,10 +1,21 @@
-BUG http://127.0.0.1:8000/clip/?h=aaaafbf10e9283fed8a3a13d9db0bcef transparencia aparecendo
+Home:
+ok - make logo link to the home
+ok - fix the centralizaion of the grid
+ok - implement animation for loading images
+- implement logo on corner for home page
+- implement logo left-aligned on the last row for search results
+- put title on the 3 pages (index, results, show)
+
+- add "hosted by archive.org"
+- replace video tags with img and then add video tags via javascript
 - add some stats (google analytics style)
 - make the size name on the download tab clickable
-- add "hosted by archive.org"
+
 - add "notify me of new versions of this clip"
+
+
+BUG http://127.0.0.1:8000/clip/?h=aaaafbf10e9283fed8a3a13d9db0bcef transparencia aparecendo
 - cron job to announce new clips every hour
-- replace video tags with img and then add video tags via javascript
 
 Things to fix/improve, or file a bug in launchpad:
 
