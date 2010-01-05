@@ -54,5 +54,6 @@ function init(){
   $('logo_108').addEvent('mouseover', highlight_all_images);
   window.addEvent('load', page_loaded);
   window.addEvent('resize', window_resized);  
+  window_resized();
 }
 init();
