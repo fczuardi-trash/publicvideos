@@ -38,12 +38,12 @@ def index(request):
         videos = Video.objects.filter(status='transcoded').filter(filename__contains=query_text).order_by('?')
   except IndexError:
     raise Http404
-  # http://www.archive.org/download/ace_200910_02/a391d9f8b519255ef21e36c1a75265a5.mts-jpg-108.JPG
-  # http://www.archive.org/download/ace_200910_01/025d08c0ab447e69dbccbb99a1df0b35.mts-jpg-108.JPG
   # http://www.archive.org/download/ace_200907_01/33470ecf16669eb165619a9e229ce751.mts-jpg-108.JPG.JPG
+  # http://static.publicvideos.org/thumbnails/ace_200910_03/1f3e8ef1f7967b7d39d2ca8158f865d2.mts-jpgbw-108.JPG
   thumbs = []
   for video in videos[:47]:
-    url = "http://www.archive.org/download/%s/%s.%s" % (video.set_slug, video.md5, 'mts-jpg-108.JPG')
+    # url = "http://www.archive.org/download/%s/%s.%s" % (video.set_slug, video.md5, 'mts-jpg-108.JPG')
+    url = "http://static.publicvideos.org/thumbnails/%s/%s.%s" % (video.set_slug, video.md5, 'mts-jpg-108.JPG')
     page = "/clip/?h=%s" % video.md5
     thumbs.append({'src':url,'page':page})
   return render_to_response("videos/index.html", {'query_text':query_text,'thumbs':thumbs})
