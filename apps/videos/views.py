@@ -30,11 +30,11 @@ from videos.models import VideoVersion
 from django.contrib.auth.models import User
 
 def index(request):
+  didyoumean = None
   try:
     videos = Video.objects.filter(status='transcoded').order_by('?')
     query_text = 'Search'
     if 'q' in request.GET:
-      didyoumean = None
       didyoumeans = [
         'fire',
         'sky',
