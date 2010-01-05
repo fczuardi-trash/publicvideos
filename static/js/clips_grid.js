@@ -39,7 +39,6 @@ function window_resized(){
     if(i < spots_available-1){
       images[i].parentNode.setStyle('display', 'inline-block')
     } else {
-      console.log(images[i].parentNode)
       images[i].parentNode.setStyle('display', 'none')
     }
   }
