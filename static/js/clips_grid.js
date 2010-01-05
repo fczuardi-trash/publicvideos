@@ -28,6 +28,21 @@ function page_loaded(){
     }
   }
 }
+function window_resized(){
+  gridbox = $('grid')
+  w = gridbox.getWidth()
+  h = window.getHeight()-80
+  columns = Math.floor(w/193)
+  rows = Math.floor(h/109)
+  spots_available = rows * columns
+  for (i=0; i<images.length;i++){
+    if(i < spots_available-1){
+      images[i].setStyle('display', 'block')
+    } else {
+      images[i].setStyle('display', 'none')
+    }
+  }
+}
 function init(){
   images = $$('img');
   for (i=0; i<images.length;i++){
@@ -38,5 +53,6 @@ function init(){
   $('grid').addEvent('mouseleave', highlight_all_images);
   $('logo_108').addEvent('mouseover', highlight_all_images);
   window.addEvent('load', page_loaded);
+  window.addEvent('resize', window_resized);  
 }
 init();

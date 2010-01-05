@@ -1,36 +1,106 @@
-Home:
-ok - make logo link to the home
-ok - fix the centralizaion of the grid
-ok - implement animation for loading images
-- implement logo on corner for home page
-- implement logo left-aligned on the last row for search results
-- put title on the 3 pages (index, results, show)
-
-- add "hosted by archive.org"
-- replace video tags with img and then add video tags via javascript
+All:
 - add some stats (google analytics style)
 - make the size name on the download tab clickable
 
+Home:
+- implement logo on corner for home page
+- include page title
+- link to about/faq
+ok - make logo link to the home
+ok - fix the centralizaion of the grid
+ok - implement animation for loading images
+
+Search Results:
+- implement logo left-aligned on the last row for search results
+- include page title
+
+Show:
+- add "hosted by archive.org"
+- replace video tags with img and then add video tags via javascript
+- scroll to the beggining of the drawer when open
+- include page title
+- make permalink shorter
 - add "notify me of new versions of this clip"
-
-
 BUG http://127.0.0.1:8000/clip/?h=aaaafbf10e9283fed8a3a13d9db0bcef transparencia aparecendo
-- cron job to announce new clips every hour
+- add js transitions when changing sizes
+- remove previous/next
 
+About
+- everything
+
+=== Future ===
+
+Show:
+- serve poster jpegs from Linode?
+- include previous/next
+
+Show/Label:
+- everything
+
+
+API:
+- results in json
+- results in atom
+- retrieve clips by uploaded time
+
+Tasks:
+- upload all MTS originals to S3 or other server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------ Old ---------
 Things to fix/improve, or file a bug in launchpad:
 
 - check for duplicates on upload
 - change transcoding pass to have an extra command_muted attribute containing the muted version of that transcoding pass
 - upload form to have option to flag a video as "mute derivates"
 - transcoder to recognise the attribute mute_export and use the mute versions of the transcoding passes
-- fill up video created_date on the first uploader
 - check if for hash colision after first uploading to avoid duplicates
 - replace the hardcoded s3 foldername 'originals' with a setting variable
 - replace the hardcoded s3 bucket 'camera' with a setting variable
-- remove the hardcoded 'mts' references -> original videos might come with a different format
 - modify the transcoder daemon to NOT download files from s3, a transcoder should be a transcoder, not a downloader/transcoder
 - modify the transcoder daemon to NOT upload back to s3, a transcoder should be a transcoder, not a transcoder/uploader
 
+ok?- remove the hardcoded 'mts' references -> original videos might come with a different format
+ok? - fill up video created_date on the first uploader
 ok?- update convertion script to include width and height on video versions
 ok - buy a linode (or other dedicated server) host
 ok- migrate the wiki to somewhere
