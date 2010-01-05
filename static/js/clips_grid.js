@@ -37,9 +37,9 @@ function window_resized(){
   spots_available = rows * columns
   for (i=0; i<images.length;i++){
     if(i < spots_available-1){
-      images[i].setStyle('display', 'block')
+      images[i].parentNode.setStyle('display', 'block')
     } else {
-      images[i].setStyle('display', 'none')
+      images[i].parentNode.setStyle('display', 'none')
     }
   }
 }
