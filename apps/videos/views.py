@@ -59,7 +59,7 @@ def index(request):
         'palm',
         'cloud',
         'pine',
-        'Chewbacca'
+        'Chewbacca','Swartzenager'
       ]
       if request.GET['q'].strip() != '':
         query_text = request.GET['q']

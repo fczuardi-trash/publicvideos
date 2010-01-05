@@ -94558,5 +94558,4165 @@
       "duration": null, 
       "size": 3058
     }
+  }, 
+  {
+    "pk": 5911, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/ab8cd92987f3ac48eeceb75c5fce4486.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 22:20:16", 
+      "updated_at": "2010-01-05 22:20:16", 
+      "height": 272, 
+      "source": 669, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 4397499
+    }
+  }, 
+  {
+    "pk": 5912, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/ab8cd92987f3ac48eeceb75c5fce4486.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 22:24:21", 
+      "updated_at": "2010-01-05 22:24:21", 
+      "height": 360, 
+      "source": 669, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 8102858
+    }
+  }, 
+  {
+    "pk": 5913, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/ab8cd92987f3ac48eeceb75c5fce4486.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 22:24:35", 
+      "updated_at": "2010-01-05 22:24:35", 
+      "height": 272, 
+      "source": 669, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4339864
+    }
+  }, 
+  {
+    "pk": 5914, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/ab8cd92987f3ac48eeceb75c5fce4486.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 22:26:16", 
+      "updated_at": "2010-01-05 22:26:16", 
+      "height": 360, 
+      "source": 669, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 7078146
+    }
+  }, 
+  {
+    "pk": 5915, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/ab8cd92987f3ac48eeceb75c5fce4486.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 22:24:38", 
+      "updated_at": "2010-01-05 22:24:38", 
+      "height": 272, 
+      "source": 669, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 5507
+    }
+  }, 
+  {
+    "pk": 5916, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/ab8cd92987f3ac48eeceb75c5fce4486.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 22:24:49", 
+      "updated_at": "2010-01-05 22:24:49", 
+      "height": 360, 
+      "source": 669, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 8359
+    }
+  }, 
+  {
+    "pk": 5917, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/ab8cd92987f3ac48eeceb75c5fce4486.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 22:24:42", 
+      "updated_at": "2010-01-05 22:24:42", 
+      "height": 272, 
+      "source": 669, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 7040
+    }
+  }, 
+  {
+    "pk": 5918, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/ab8cd92987f3ac48eeceb75c5fce4486.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 22:24:45", 
+      "updated_at": "2010-01-05 22:24:45", 
+      "height": 360, 
+      "source": 669, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 10752
+    }
+  }, 
+  {
+    "pk": 5919, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/ab8cd92987f3ac48eeceb75c5fce4486.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 22:24:40", 
+      "updated_at": "2010-01-05 22:24:40", 
+      "height": 108, 
+      "source": 669, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 2444
+    }
+  }, 
+  {
+    "pk": 5920, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/ab8cd92987f3ac48eeceb75c5fce4486.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 22:24:47", 
+      "updated_at": "2010-01-05 22:24:47", 
+      "height": 108, 
+      "source": 669, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 1569
+    }
+  }, 
+  {
+    "pk": 5921, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/471204754d895e5759bb41429a95a513.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 22:12:00", 
+      "updated_at": "2010-01-05 22:12:00", 
+      "height": 272, 
+      "source": 668, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 5081051
+    }
+  }, 
+  {
+    "pk": 5922, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/471204754d895e5759bb41429a95a513.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 22:15:33", 
+      "updated_at": "2010-01-05 22:15:33", 
+      "height": 360, 
+      "source": 668, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 8258481
+    }
+  }, 
+  {
+    "pk": 5923, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/471204754d895e5759bb41429a95a513.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 22:14:57", 
+      "updated_at": "2010-01-05 22:14:57", 
+      "height": 272, 
+      "source": 668, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4232979
+    }
+  }, 
+  {
+    "pk": 5924, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/471204754d895e5759bb41429a95a513.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 22:22:23", 
+      "updated_at": "2010-01-05 22:22:23", 
+      "height": 360, 
+      "source": 668, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 6862531
+    }
+  }, 
+  {
+    "pk": 5925, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/471204754d895e5759bb41429a95a513.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 22:15:16", 
+      "updated_at": "2010-01-05 22:15:16", 
+      "height": 272, 
+      "source": 668, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 11516
+    }
+  }, 
+  {
+    "pk": 5926, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/471204754d895e5759bb41429a95a513.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 22:16:57", 
+      "updated_at": "2010-01-05 22:16:57", 
+      "height": 360, 
+      "source": 668, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 18521
+    }
+  }, 
+  {
+    "pk": 5927, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/471204754d895e5759bb41429a95a513.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 22:15:02", 
+      "updated_at": "2010-01-05 22:15:02", 
+      "height": 272, 
+      "source": 668, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 13928
+    }
+  }, 
+  {
+    "pk": 5928, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/471204754d895e5759bb41429a95a513.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 22:18:16", 
+      "updated_at": "2010-01-05 22:18:16", 
+      "height": 360, 
+      "source": 668, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 22414
+    }
+  }, 
+  {
+    "pk": 5929, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/471204754d895e5759bb41429a95a513.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 22:17:18", 
+      "updated_at": "2010-01-05 22:17:18", 
+      "height": 108, 
+      "source": 668, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 3672
+    }
+  }, 
+  {
+    "pk": 5930, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/471204754d895e5759bb41429a95a513.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 22:18:26", 
+      "updated_at": "2010-01-05 22:18:26", 
+      "height": 108, 
+      "source": 668, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 3149
+    }
+  }, 
+  {
+    "pk": 5931, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/15152bbbcce24a87f76e72a7cb34c23b.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 22:06:56", 
+      "updated_at": "2010-01-05 22:06:56", 
+      "height": 272, 
+      "source": 667, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 1786994
+    }
+  }, 
+  {
+    "pk": 5932, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/15152bbbcce24a87f76e72a7cb34c23b.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 22:07:13", 
+      "updated_at": "2010-01-05 22:07:13", 
+      "height": 360, 
+      "source": 667, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 2708656
+    }
+  }, 
+  {
+    "pk": 5933, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/15152bbbcce24a87f76e72a7cb34c23b.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 22:08:53", 
+      "updated_at": "2010-01-05 22:08:53", 
+      "height": 272, 
+      "source": 667, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4148626
+    }
+  }, 
+  {
+    "pk": 5934, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/15152bbbcce24a87f76e72a7cb34c23b.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 23:52:10", 
+      "updated_at": "2010-01-05 23:52:10", 
+      "height": 360, 
+      "source": 667, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 6683234
+    }
+  }, 
+  {
+    "pk": 5935, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/15152bbbcce24a87f76e72a7cb34c23b.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 23:49:16", 
+      "updated_at": "2010-01-05 23:49:16", 
+      "height": 272, 
+      "source": 667, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 7833
+    }
+  }, 
+  {
+    "pk": 5936, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/15152bbbcce24a87f76e72a7cb34c23b.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 22:10:44", 
+      "updated_at": "2010-01-05 22:10:44", 
+      "height": 360, 
+      "source": 667, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 13067
+    }
+  }, 
+  {
+    "pk": 5937, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/15152bbbcce24a87f76e72a7cb34c23b.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 22:10:39", 
+      "updated_at": "2010-01-05 22:10:39", 
+      "height": 272, 
+      "source": 667, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 8643
+    }
+  }, 
+  {
+    "pk": 5938, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/15152bbbcce24a87f76e72a7cb34c23b.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 22:10:41", 
+      "updated_at": "2010-01-05 22:10:41", 
+      "height": 360, 
+      "source": 667, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 14383
+    }
+  }, 
+  {
+    "pk": 5939, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/15152bbbcce24a87f76e72a7cb34c23b.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 22:12:50", 
+      "updated_at": "2010-01-05 22:12:50", 
+      "height": 108, 
+      "source": 667, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 2223
+    }
+  }, 
+  {
+    "pk": 5940, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/15152bbbcce24a87f76e72a7cb34c23b.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 22:10:42", 
+      "updated_at": "2010-01-05 22:10:42", 
+      "height": 108, 
+      "source": 667, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 2081
+    }
+  }, 
+  {
+    "pk": 5941, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/fa7e1a8067e9359d4c7092fd5c3fae24.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 22:01:40", 
+      "updated_at": "2010-01-05 22:01:40", 
+      "height": 272, 
+      "source": 666, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 1749741
+    }
+  }, 
+  {
+    "pk": 5942, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/fa7e1a8067e9359d4c7092fd5c3fae24.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 22:03:37", 
+      "updated_at": "2010-01-05 22:03:37", 
+      "height": 360, 
+      "source": 666, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 3788304
+    }
+  }, 
+  {
+    "pk": 5943, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/fa7e1a8067e9359d4c7092fd5c3fae24.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 22:05:08", 
+      "updated_at": "2010-01-05 22:05:08", 
+      "height": 272, 
+      "source": 666, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4219040
+    }
+  }, 
+  {
+    "pk": 5944, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/fa7e1a8067e9359d4c7092fd5c3fae24.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 22:06:05", 
+      "updated_at": "2010-01-05 22:06:05", 
+      "height": 360, 
+      "source": 666, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 6925133
+    }
+  }, 
+  {
+    "pk": 5945, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/fa7e1a8067e9359d4c7092fd5c3fae24.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 22:05:34", 
+      "updated_at": "2010-01-05 22:05:34", 
+      "height": 272, 
+      "source": 666, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 3129
+    }
+  }, 
+  {
+    "pk": 5946, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/fa7e1a8067e9359d4c7092fd5c3fae24.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 22:05:40", 
+      "updated_at": "2010-01-05 22:05:40", 
+      "height": 360, 
+      "source": 666, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 4914
+    }
+  }, 
+  {
+    "pk": 5947, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/fa7e1a8067e9359d4c7092fd5c3fae24.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 22:05:36", 
+      "updated_at": "2010-01-05 22:05:36", 
+      "height": 272, 
+      "source": 666, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 6770
+    }
+  }, 
+  {
+    "pk": 5948, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/fa7e1a8067e9359d4c7092fd5c3fae24.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 22:05:38", 
+      "updated_at": "2010-01-05 22:05:38", 
+      "height": 360, 
+      "source": 666, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 10947
+    }
+  }, 
+  {
+    "pk": 5949, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/fa7e1a8067e9359d4c7092fd5c3fae24.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 22:06:08", 
+      "updated_at": "2010-01-05 22:06:08", 
+      "height": 108, 
+      "source": 666, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 1912
+    }
+  }, 
+  {
+    "pk": 5950, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/fa7e1a8067e9359d4c7092fd5c3fae24.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 22:06:06", 
+      "updated_at": "2010-01-05 22:06:06", 
+      "height": 108, 
+      "source": 666, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 1180
+    }
+  }, 
+  {
+    "pk": 5951, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/dc2bb4413c7fd6795684acaf61dae81d.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 21:59:17", 
+      "updated_at": "2010-01-05 21:59:17", 
+      "height": 272, 
+      "source": 665, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 1056674
+    }
+  }, 
+  {
+    "pk": 5952, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/dc2bb4413c7fd6795684acaf61dae81d.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 21:58:14", 
+      "updated_at": "2010-01-05 21:58:14", 
+      "height": 360, 
+      "source": 665, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 1498297
+    }
+  }, 
+  {
+    "pk": 5953, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/dc2bb4413c7fd6795684acaf61dae81d.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 22:00:09", 
+      "updated_at": "2010-01-05 22:00:09", 
+      "height": 272, 
+      "source": 665, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 5082193
+    }
+  }, 
+  {
+    "pk": 5954, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/dc2bb4413c7fd6795684acaf61dae81d.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 22:03:04", 
+      "updated_at": "2010-01-05 22:03:04", 
+      "height": 360, 
+      "source": 665, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 8300977
+    }
+  }, 
+  {
+    "pk": 5955, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/dc2bb4413c7fd6795684acaf61dae81d.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 22:00:13", 
+      "updated_at": "2010-01-05 22:00:13", 
+      "height": 272, 
+      "source": 665, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 1434
+    }
+  }, 
+  {
+    "pk": 5956, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/dc2bb4413c7fd6795684acaf61dae81d.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 22:00:18", 
+      "updated_at": "2010-01-05 22:00:18", 
+      "height": 360, 
+      "source": 665, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 2084
+    }
+  }, 
+  {
+    "pk": 5957, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/dc2bb4413c7fd6795684acaf61dae81d.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 22:00:15", 
+      "updated_at": "2010-01-05 22:00:15", 
+      "height": 272, 
+      "source": 665, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 2823
+    }
+  }, 
+  {
+    "pk": 5958, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/dc2bb4413c7fd6795684acaf61dae81d.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 22:00:17", 
+      "updated_at": "2010-01-05 22:00:17", 
+      "height": 360, 
+      "source": 665, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 4245
+    }
+  }, 
+  {
+    "pk": 5959, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/dc2bb4413c7fd6795684acaf61dae81d.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 22:00:48", 
+      "updated_at": "2010-01-05 22:00:48", 
+      "height": 108, 
+      "source": 665, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 1112
+    }
+  }, 
+  {
+    "pk": 5960, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/dc2bb4413c7fd6795684acaf61dae81d.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 22:00:49", 
+      "updated_at": "2010-01-05 22:00:49", 
+      "height": 108, 
+      "source": 665, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 715
+    }
+  }, 
+  {
+    "pk": 5961, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/3ac0ed864d769812d2f006cd4dd69c69.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 23:46:00", 
+      "updated_at": "2010-01-05 23:46:00", 
+      "height": 272, 
+      "source": 664, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 5143213
+    }
+  }, 
+  {
+    "pk": 5962, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/3ac0ed864d769812d2f006cd4dd69c69.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 23:49:04", 
+      "updated_at": "2010-01-05 23:49:04", 
+      "height": 360, 
+      "source": 664, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 8380037
+    }
+  }, 
+  {
+    "pk": 5963, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/3ac0ed864d769812d2f006cd4dd69c69.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 23:48:19", 
+      "updated_at": "2010-01-05 23:48:19", 
+      "height": 272, 
+      "source": 664, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4325137
+    }
+  }, 
+  {
+    "pk": 5964, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/3ac0ed864d769812d2f006cd4dd69c69.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 23:51:41", 
+      "updated_at": "2010-01-05 23:51:41", 
+      "height": 360, 
+      "source": 664, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 7022325
+    }
+  }, 
+  {
+    "pk": 5965, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/3ac0ed864d769812d2f006cd4dd69c69.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 23:49:05", 
+      "updated_at": "2010-01-05 23:49:05", 
+      "height": 272, 
+      "source": 664, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 6996
+    }
+  }, 
+  {
+    "pk": 5966, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/3ac0ed864d769812d2f006cd4dd69c69.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 21:57:50", 
+      "updated_at": "2010-01-05 21:57:50", 
+      "height": 360, 
+      "source": 664, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 11867
+    }
+  }, 
+  {
+    "pk": 5967, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/3ac0ed864d769812d2f006cd4dd69c69.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 23:49:08", 
+      "updated_at": "2010-01-05 23:49:08", 
+      "height": 272, 
+      "source": 664, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 10558
+    }
+  }, 
+  {
+    "pk": 5968, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/3ac0ed864d769812d2f006cd4dd69c69.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 23:49:11", 
+      "updated_at": "2010-01-05 23:49:11", 
+      "height": 360, 
+      "source": 664, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 18009
+    }
+  }, 
+  {
+    "pk": 5969, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/3ac0ed864d769812d2f006cd4dd69c69.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 23:49:06", 
+      "updated_at": "2010-01-05 23:49:06", 
+      "height": 108, 
+      "source": 664, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 2571
+    }
+  }, 
+  {
+    "pk": 5970, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/3ac0ed864d769812d2f006cd4dd69c69.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 23:49:13", 
+      "updated_at": "2010-01-05 23:49:13", 
+      "height": 108, 
+      "source": 664, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 1842
+    }
+  }, 
+  {
+    "pk": 5971, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/77a457726939c4a0569b2971d6090ffa.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 21:45:44", 
+      "updated_at": "2010-01-05 21:45:44", 
+      "height": 272, 
+      "source": 663, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 1096359
+    }
+  }, 
+  {
+    "pk": 5972, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/77a457726939c4a0569b2971d6090ffa.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 21:46:48", 
+      "updated_at": "2010-01-05 21:46:48", 
+      "height": 360, 
+      "source": 663, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 1688398
+    }
+  }, 
+  {
+    "pk": 5973, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/77a457726939c4a0569b2971d6090ffa.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 21:48:51", 
+      "updated_at": "2010-01-05 21:48:51", 
+      "height": 272, 
+      "source": 663, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4194402
+    }
+  }, 
+  {
+    "pk": 5974, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/77a457726939c4a0569b2971d6090ffa.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 23:45:03", 
+      "updated_at": "2010-01-05 23:45:03", 
+      "height": 360, 
+      "source": 663, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 6934093
+    }
+  }, 
+  {
+    "pk": 5975, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/77a457726939c4a0569b2971d6090ffa.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 21:48:53", 
+      "updated_at": "2010-01-05 21:48:53", 
+      "height": 272, 
+      "source": 663, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 3641
+    }
+  }, 
+  {
+    "pk": 5976, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/77a457726939c4a0569b2971d6090ffa.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 21:48:55", 
+      "updated_at": "2010-01-05 21:48:55", 
+      "height": 360, 
+      "source": 663, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 5509
+    }
+  }, 
+  {
+    "pk": 5977, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/77a457726939c4a0569b2971d6090ffa.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 21:48:52", 
+      "updated_at": "2010-01-05 21:48:52", 
+      "height": 272, 
+      "source": 663, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 5618
+    }
+  }, 
+  {
+    "pk": 5978, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/77a457726939c4a0569b2971d6090ffa.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 21:48:58", 
+      "updated_at": "2010-01-05 21:48:58", 
+      "height": 360, 
+      "source": 663, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 8485
+    }
+  }, 
+  {
+    "pk": 5979, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/77a457726939c4a0569b2971d6090ffa.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 21:48:56", 
+      "updated_at": "2010-01-05 21:48:56", 
+      "height": 108, 
+      "source": 663, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 1867
+    }
+  }, 
+  {
+    "pk": 5980, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/77a457726939c4a0569b2971d6090ffa.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 23:41:23", 
+      "updated_at": "2010-01-05 23:41:23", 
+      "height": 108, 
+      "source": 663, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 1364
+    }
+  }, 
+  {
+    "pk": 5981, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/c0067cf459fc144a5d8f8b882f1f641e.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 21:41:34", 
+      "updated_at": "2010-01-05 21:41:34", 
+      "height": 272, 
+      "source": 662, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 5053175
+    }
+  }, 
+  {
+    "pk": 5982, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/c0067cf459fc144a5d8f8b882f1f641e.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 21:44:33", 
+      "updated_at": "2010-01-05 21:44:33", 
+      "height": 360, 
+      "source": 662, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 8227775
+    }
+  }, 
+  {
+    "pk": 5983, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/c0067cf459fc144a5d8f8b882f1f641e.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 21:43:54", 
+      "updated_at": "2010-01-05 21:43:54", 
+      "height": 272, 
+      "source": 662, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4350597
+    }
+  }, 
+  {
+    "pk": 5984, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/c0067cf459fc144a5d8f8b882f1f641e.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 21:47:39", 
+      "updated_at": "2010-01-05 21:47:39", 
+      "height": 360, 
+      "source": 662, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 6851849
+    }
+  }, 
+  {
+    "pk": 5985, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/c0067cf459fc144a5d8f8b882f1f641e.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 21:44:45", 
+      "updated_at": "2010-01-05 21:44:45", 
+      "height": 272, 
+      "source": 662, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 10335
+    }
+  }, 
+  {
+    "pk": 5986, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/c0067cf459fc144a5d8f8b882f1f641e.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 21:44:49", 
+      "updated_at": "2010-01-05 21:44:49", 
+      "height": 360, 
+      "source": 662, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 16351
+    }
+  }, 
+  {
+    "pk": 5987, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/c0067cf459fc144a5d8f8b882f1f641e.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 21:44:38", 
+      "updated_at": "2010-01-05 21:44:38", 
+      "height": 272, 
+      "source": 662, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 12305
+    }
+  }, 
+  {
+    "pk": 5988, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/c0067cf459fc144a5d8f8b882f1f641e.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 21:44:41", 
+      "updated_at": "2010-01-05 21:44:41", 
+      "height": 360, 
+      "source": 662, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 19582
+    }
+  }, 
+  {
+    "pk": 5989, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/c0067cf459fc144a5d8f8b882f1f641e.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 21:44:35", 
+      "updated_at": "2010-01-05 21:44:35", 
+      "height": 108, 
+      "source": 662, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 3372
+    }
+  }, 
+  {
+    "pk": 5990, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/c0067cf459fc144a5d8f8b882f1f641e.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 21:44:42", 
+      "updated_at": "2010-01-05 21:44:42", 
+      "height": 108, 
+      "source": 662, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 2958
+    }
+  }, 
+  {
+    "pk": 5991, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/38a54824d4b35112847c7af2e89cb698.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 21:34:20", 
+      "updated_at": "2010-01-05 21:34:20", 
+      "height": 272, 
+      "source": 661, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 2116172
+    }
+  }, 
+  {
+    "pk": 5992, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/38a54824d4b35112847c7af2e89cb698.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 21:35:49", 
+      "updated_at": "2010-01-05 21:35:49", 
+      "height": 360, 
+      "source": 661, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 2998094
+    }
+  }, 
+  {
+    "pk": 5993, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/38a54824d4b35112847c7af2e89cb698.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 21:38:10", 
+      "updated_at": "2010-01-05 21:38:10", 
+      "height": 272, 
+      "source": 661, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4598629
+    }
+  }, 
+  {
+    "pk": 5994, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/38a54824d4b35112847c7af2e89cb698.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 21:40:03", 
+      "updated_at": "2010-01-05 21:40:03", 
+      "height": 360, 
+      "source": 661, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 7332184
+    }
+  }, 
+  {
+    "pk": 5995, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/38a54824d4b35112847c7af2e89cb698.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 21:38:11", 
+      "updated_at": "2010-01-05 21:38:11", 
+      "height": 272, 
+      "source": 661, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 6350
+    }
+  }, 
+  {
+    "pk": 5996, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/38a54824d4b35112847c7af2e89cb698.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 21:39:17", 
+      "updated_at": "2010-01-05 21:39:17", 
+      "height": 360, 
+      "source": 661, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 9544
+    }
+  }, 
+  {
+    "pk": 5997, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/38a54824d4b35112847c7af2e89cb698.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 21:38:40", 
+      "updated_at": "2010-01-05 21:38:40", 
+      "height": 272, 
+      "source": 661, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 8762
+    }
+  }, 
+  {
+    "pk": 5998, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/38a54824d4b35112847c7af2e89cb698.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 21:38:43", 
+      "updated_at": "2010-01-05 21:38:43", 
+      "height": 360, 
+      "source": 661, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 13242
+    }
+  }, 
+  {
+    "pk": 5999, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/38a54824d4b35112847c7af2e89cb698.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 21:38:37", 
+      "updated_at": "2010-01-05 21:38:37", 
+      "height": 108, 
+      "source": 661, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 2704
+    }
+  }, 
+  {
+    "pk": 6000, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/38a54824d4b35112847c7af2e89cb698.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 21:38:44", 
+      "updated_at": "2010-01-05 21:38:44", 
+      "height": 108, 
+      "source": 661, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 2075
+    }
+  }, 
+  {
+    "pk": 6001, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/f8665d25c549bb58ac51b8dffb69e5dc.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 21:22:59", 
+      "updated_at": "2010-01-05 21:22:59", 
+      "height": 272, 
+      "source": 660, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 5118802
+    }
+  }, 
+  {
+    "pk": 6002, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/f8665d25c549bb58ac51b8dffb69e5dc.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 21:37:25", 
+      "updated_at": "2010-01-05 21:37:25", 
+      "height": 360, 
+      "source": 660, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 8274870
+    }
+  }, 
+  {
+    "pk": 6003, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/f8665d25c549bb58ac51b8dffb69e5dc.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 21:25:29", 
+      "updated_at": "2010-01-05 21:25:29", 
+      "height": 272, 
+      "source": 660, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4324466
+    }
+  }, 
+  {
+    "pk": 6004, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/f8665d25c549bb58ac51b8dffb69e5dc.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 23:43:51", 
+      "updated_at": "2010-01-05 23:43:51", 
+      "height": 360, 
+      "source": 660, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 7040566
+    }
+  }, 
+  {
+    "pk": 6005, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/f8665d25c549bb58ac51b8dffb69e5dc.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 21:32:00", 
+      "updated_at": "2010-01-05 21:32:00", 
+      "height": 272, 
+      "source": 660, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 8815
+    }
+  }, 
+  {
+    "pk": 6006, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/f8665d25c549bb58ac51b8dffb69e5dc.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 21:32:14", 
+      "updated_at": "2010-01-05 21:32:14", 
+      "height": 360, 
+      "source": 660, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 13673
+    }
+  }, 
+  {
+    "pk": 6007, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/f8665d25c549bb58ac51b8dffb69e5dc.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 21:32:05", 
+      "updated_at": "2010-01-05 21:32:05", 
+      "height": 272, 
+      "source": 660, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 10448
+    }
+  }, 
+  {
+    "pk": 6008, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/f8665d25c549bb58ac51b8dffb69e5dc.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 21:32:07", 
+      "updated_at": "2010-01-05 21:32:07", 
+      "height": 360, 
+      "source": 660, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 16336
+    }
+  }, 
+  {
+    "pk": 6009, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/f8665d25c549bb58ac51b8dffb69e5dc.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 21:32:02", 
+      "updated_at": "2010-01-05 21:32:02", 
+      "height": 108, 
+      "source": 660, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 3011
+    }
+  }, 
+  {
+    "pk": 6010, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/f8665d25c549bb58ac51b8dffb69e5dc.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 21:32:10", 
+      "updated_at": "2010-01-05 21:32:10", 
+      "height": 108, 
+      "source": 660, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 2636
+    }
+  }, 
+  {
+    "pk": 6011, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/28c1e1f335e98c5f2655cf6f7d3475a9.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 21:17:19", 
+      "updated_at": "2010-01-05 21:17:19", 
+      "height": 272, 
+      "source": 659, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 1762351
+    }
+  }, 
+  {
+    "pk": 6012, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/28c1e1f335e98c5f2655cf6f7d3475a9.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 21:19:07", 
+      "updated_at": "2010-01-05 21:19:07", 
+      "height": 360, 
+      "source": 659, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 3429251
+    }
+  }, 
+  {
+    "pk": 6013, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/28c1e1f335e98c5f2655cf6f7d3475a9.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 21:19:44", 
+      "updated_at": "2010-01-05 21:19:44", 
+      "height": 272, 
+      "source": 659, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4296391
+    }
+  }, 
+  {
+    "pk": 6014, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/28c1e1f335e98c5f2655cf6f7d3475a9.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 21:22:15", 
+      "updated_at": "2010-01-05 21:22:15", 
+      "height": 360, 
+      "source": 659, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 7016178
+    }
+  }, 
+  {
+    "pk": 6015, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/28c1e1f335e98c5f2655cf6f7d3475a9.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 21:19:45", 
+      "updated_at": "2010-01-05 21:19:45", 
+      "height": 272, 
+      "source": 659, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 2156
+    }
+  }, 
+  {
+    "pk": 6016, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/28c1e1f335e98c5f2655cf6f7d3475a9.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 21:20:44", 
+      "updated_at": "2010-01-05 21:20:44", 
+      "height": 360, 
+      "source": 659, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 3268
+    }
+  }, 
+  {
+    "pk": 6017, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/28c1e1f335e98c5f2655cf6f7d3475a9.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 21:19:48", 
+      "updated_at": "2010-01-05 21:19:48", 
+      "height": 272, 
+      "source": 659, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 4367
+    }
+  }, 
+  {
+    "pk": 6018, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/28c1e1f335e98c5f2655cf6f7d3475a9.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 21:20:41", 
+      "updated_at": "2010-01-05 21:20:41", 
+      "height": 360, 
+      "source": 659, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 7080
+    }
+  }, 
+  {
+    "pk": 6019, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/28c1e1f335e98c5f2655cf6f7d3475a9.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 21:19:46", 
+      "updated_at": "2010-01-05 21:19:46", 
+      "height": 108, 
+      "source": 659, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 1385
+    }
+  }, 
+  {
+    "pk": 6020, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/28c1e1f335e98c5f2655cf6f7d3475a9.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 21:20:43", 
+      "updated_at": "2010-01-05 21:20:43", 
+      "height": 108, 
+      "source": 659, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 928
+    }
+  }, 
+  {
+    "pk": 6021, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/402ae7a0904c463d5869632037991ea8.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 21:15:10", 
+      "updated_at": "2010-01-05 21:15:10", 
+      "height": 272, 
+      "source": 658, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 1553221
+    }
+  }, 
+  {
+    "pk": 6022, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/402ae7a0904c463d5869632037991ea8.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 21:14:45", 
+      "updated_at": "2010-01-05 21:14:45", 
+      "height": 360, 
+      "source": 658, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 3015893
+    }
+  }, 
+  {
+    "pk": 6023, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/402ae7a0904c463d5869632037991ea8.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 21:16:07", 
+      "updated_at": "2010-01-05 21:16:07", 
+      "height": 272, 
+      "source": 658, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 2672440
+    }
+  }, 
+  {
+    "pk": 6024, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/402ae7a0904c463d5869632037991ea8.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 21:17:25", 
+      "updated_at": "2010-01-05 21:17:25", 
+      "height": 360, 
+      "source": 658, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 4370197
+    }
+  }, 
+  {
+    "pk": 6025, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/402ae7a0904c463d5869632037991ea8.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 21:16:08", 
+      "updated_at": "2010-01-05 21:16:08", 
+      "height": 272, 
+      "source": 658, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 6137
+    }
+  }, 
+  {
+    "pk": 6026, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/402ae7a0904c463d5869632037991ea8.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 21:16:20", 
+      "updated_at": "2010-01-05 21:16:20", 
+      "height": 360, 
+      "source": 658, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 9839
+    }
+  }, 
+  {
+    "pk": 6027, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/402ae7a0904c463d5869632037991ea8.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 21:16:12", 
+      "updated_at": "2010-01-05 21:16:12", 
+      "height": 272, 
+      "source": 658, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 8452
+    }
+  }, 
+  {
+    "pk": 6028, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/402ae7a0904c463d5869632037991ea8.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 21:16:15", 
+      "updated_at": "2010-01-05 21:16:15", 
+      "height": 360, 
+      "source": 658, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 13966
+    }
+  }, 
+  {
+    "pk": 6029, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/402ae7a0904c463d5869632037991ea8.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 21:16:10", 
+      "updated_at": "2010-01-05 21:16:10", 
+      "height": 108, 
+      "source": 658, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 2242
+    }
+  }, 
+  {
+    "pk": 6030, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/402ae7a0904c463d5869632037991ea8.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 21:16:17", 
+      "updated_at": "2010-01-05 21:16:17", 
+      "height": 108, 
+      "source": 658, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 1833
+    }
+  }, 
+  {
+    "pk": 6031, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/88aea1697d73ff3635eb5173bb52dda9.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 21:09:44", 
+      "updated_at": "2010-01-05 21:09:44", 
+      "height": 272, 
+      "source": 657, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 851336
+    }
+  }, 
+  {
+    "pk": 6032, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/88aea1697d73ff3635eb5173bb52dda9.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 21:10:29", 
+      "updated_at": "2010-01-05 21:10:29", 
+      "height": 360, 
+      "source": 657, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 1180261
+    }
+  }, 
+  {
+    "pk": 6033, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/88aea1697d73ff3635eb5173bb52dda9.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 23:41:09", 
+      "updated_at": "2010-01-05 23:41:09", 
+      "height": 272, 
+      "source": 657, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4305887
+    }
+  }, 
+  {
+    "pk": 6034, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/88aea1697d73ff3635eb5173bb52dda9.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 23:40:13", 
+      "updated_at": "2010-01-05 23:40:13", 
+      "height": 360, 
+      "source": 657, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 7022019
+    }
+  }, 
+  {
+    "pk": 6035, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/88aea1697d73ff3635eb5173bb52dda9.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 23:40:14", 
+      "updated_at": "2010-01-05 23:40:14", 
+      "height": 272, 
+      "source": 657, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 1505
+    }
+  }, 
+  {
+    "pk": 6036, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/88aea1697d73ff3635eb5173bb52dda9.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 21:13:12", 
+      "updated_at": "2010-01-05 21:13:12", 
+      "height": 360, 
+      "source": 657, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 2205
+    }
+  }, 
+  {
+    "pk": 6037, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/88aea1697d73ff3635eb5173bb52dda9.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 23:40:23", 
+      "updated_at": "2010-01-05 23:40:23", 
+      "height": 272, 
+      "source": 657, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 2807
+    }
+  }, 
+  {
+    "pk": 6038, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/88aea1697d73ff3635eb5173bb52dda9.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 23:40:31", 
+      "updated_at": "2010-01-05 23:40:31", 
+      "height": 360, 
+      "source": 657, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 4234
+    }
+  }, 
+  {
+    "pk": 6039, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/88aea1697d73ff3635eb5173bb52dda9.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 23:40:25", 
+      "updated_at": "2010-01-05 23:40:25", 
+      "height": 108, 
+      "source": 657, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 1101
+    }
+  }, 
+  {
+    "pk": 6040, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/88aea1697d73ff3635eb5173bb52dda9.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 23:40:28", 
+      "updated_at": "2010-01-05 23:40:28", 
+      "height": 108, 
+      "source": 657, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 740
+    }
+  }, 
+  {
+    "pk": 6041, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/93b7fd5901915cb3843102bab142d504.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 21:04:37", 
+      "updated_at": "2010-01-05 21:04:37", 
+      "height": 272, 
+      "source": 656, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 5158941
+    }
+  }, 
+  {
+    "pk": 6042, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/93b7fd5901915cb3843102bab142d504.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 21:07:00", 
+      "updated_at": "2010-01-05 21:07:00", 
+      "height": 360, 
+      "source": 656, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 8191542
+    }
+  }, 
+  {
+    "pk": 6043, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/93b7fd5901915cb3843102bab142d504.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 21:08:41", 
+      "updated_at": "2010-01-05 21:08:41", 
+      "height": 272, 
+      "source": 656, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4288025
+    }
+  }, 
+  {
+    "pk": 6044, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/93b7fd5901915cb3843102bab142d504.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 21:11:12", 
+      "updated_at": "2010-01-05 21:11:12", 
+      "height": 360, 
+      "source": 656, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 6825498
+    }
+  }, 
+  {
+    "pk": 6045, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/93b7fd5901915cb3843102bab142d504.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 21:08:48", 
+      "updated_at": "2010-01-05 21:08:48", 
+      "height": 272, 
+      "source": 656, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 11546
+    }
+  }, 
+  {
+    "pk": 6046, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/93b7fd5901915cb3843102bab142d504.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 21:08:50", 
+      "updated_at": "2010-01-05 21:08:50", 
+      "height": 360, 
+      "source": 656, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 18412
+    }
+  }, 
+  {
+    "pk": 6047, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/93b7fd5901915cb3843102bab142d504.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 21:08:43", 
+      "updated_at": "2010-01-05 21:08:43", 
+      "height": 272, 
+      "source": 656, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 14148
+    }
+  }, 
+  {
+    "pk": 6048, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/93b7fd5901915cb3843102bab142d504.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 21:08:46", 
+      "updated_at": "2010-01-05 21:08:46", 
+      "height": 360, 
+      "source": 656, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 22630
+    }
+  }, 
+  {
+    "pk": 6049, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/93b7fd5901915cb3843102bab142d504.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 21:08:52", 
+      "updated_at": "2010-01-05 21:08:52", 
+      "height": 108, 
+      "source": 656, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 3833
+    }
+  }, 
+  {
+    "pk": 6050, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/93b7fd5901915cb3843102bab142d504.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 21:09:29", 
+      "updated_at": "2010-01-05 21:09:29", 
+      "height": 108, 
+      "source": 656, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 3227
+    }
+  }, 
+  {
+    "pk": 6051, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/f340eab43d564bac9fb9af8fb5f2b479.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 20:59:50", 
+      "updated_at": "2010-01-05 20:59:50", 
+      "height": 272, 
+      "source": 655, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 768793
+    }
+  }, 
+  {
+    "pk": 6052, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/f340eab43d564bac9fb9af8fb5f2b479.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 21:01:06", 
+      "updated_at": "2010-01-05 21:01:06", 
+      "height": 360, 
+      "source": 655, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 913226
+    }
+  }, 
+  {
+    "pk": 6053, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/f340eab43d564bac9fb9af8fb5f2b479.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 21:00:37", 
+      "updated_at": "2010-01-05 21:00:37", 
+      "height": 272, 
+      "source": 655, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 2893822
+    }
+  }, 
+  {
+    "pk": 6054, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/f340eab43d564bac9fb9af8fb5f2b479.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 21:03:07", 
+      "updated_at": "2010-01-05 21:03:07", 
+      "height": 360, 
+      "source": 655, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 6078896
+    }
+  }, 
+  {
+    "pk": 6055, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/f340eab43d564bac9fb9af8fb5f2b479.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 21:03:09", 
+      "updated_at": "2010-01-05 21:03:09", 
+      "height": 272, 
+      "source": 655, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 1841
+    }
+  }, 
+  {
+    "pk": 6056, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/f340eab43d564bac9fb9af8fb5f2b479.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 21:03:10", 
+      "updated_at": "2010-01-05 21:03:10", 
+      "height": 360, 
+      "source": 655, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 2695
+    }
+  }, 
+  {
+    "pk": 6057, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/f340eab43d564bac9fb9af8fb5f2b479.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 21:02:07", 
+      "updated_at": "2010-01-05 21:02:07", 
+      "height": 272, 
+      "source": 655, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 2022
+    }
+  }, 
+  {
+    "pk": 6058, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/f340eab43d564bac9fb9af8fb5f2b479.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 21:02:09", 
+      "updated_at": "2010-01-05 21:02:09", 
+      "height": 360, 
+      "source": 655, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 3173
+    }
+  }, 
+  {
+    "pk": 6059, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/f340eab43d564bac9fb9af8fb5f2b479.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 21:02:04", 
+      "updated_at": "2010-01-05 21:02:04", 
+      "height": 108, 
+      "source": 655, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 944
+    }
+  }, 
+  {
+    "pk": 6060, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/f340eab43d564bac9fb9af8fb5f2b479.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 21:08:05", 
+      "updated_at": "2010-01-05 21:08:05", 
+      "height": 108, 
+      "source": 655, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 880
+    }
+  }, 
+  {
+    "pk": 6061, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/78d0381ebf1c6396b13a883cd523607f.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 20:47:49", 
+      "updated_at": "2010-01-05 20:47:49", 
+      "height": 272, 
+      "source": 654, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 1063789
+    }
+  }, 
+  {
+    "pk": 6062, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/78d0381ebf1c6396b13a883cd523607f.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 20:48:26", 
+      "updated_at": "2010-01-05 20:48:26", 
+      "height": 360, 
+      "source": 654, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 1499288
+    }
+  }, 
+  {
+    "pk": 6063, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/78d0381ebf1c6396b13a883cd523607f.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 23:36:49", 
+      "updated_at": "2010-01-05 23:36:49", 
+      "height": 272, 
+      "source": 654, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4279833
+    }
+  }, 
+  {
+    "pk": 6064, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/78d0381ebf1c6396b13a883cd523607f.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 20:59:39", 
+      "updated_at": "2010-01-05 20:59:39", 
+      "height": 360, 
+      "source": 654, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 6949080
+    }
+  }, 
+  {
+    "pk": 6065, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/78d0381ebf1c6396b13a883cd523607f.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 20:59:02", 
+      "updated_at": "2010-01-05 20:59:02", 
+      "height": 272, 
+      "source": 654, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 3007
+    }
+  }, 
+  {
+    "pk": 6066, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/78d0381ebf1c6396b13a883cd523607f.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 20:59:30", 
+      "updated_at": "2010-01-05 20:59:30", 
+      "height": 360, 
+      "source": 654, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 4447
+    }
+  }, 
+  {
+    "pk": 6067, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/78d0381ebf1c6396b13a883cd523607f.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 20:58:30", 
+      "updated_at": "2010-01-05 20:58:30", 
+      "height": 272, 
+      "source": 654, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 4897
+    }
+  }, 
+  {
+    "pk": 6068, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/78d0381ebf1c6396b13a883cd523607f.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 20:58:31", 
+      "updated_at": "2010-01-05 20:58:31", 
+      "height": 360, 
+      "source": 654, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 7427
+    }
+  }, 
+  {
+    "pk": 6069, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/78d0381ebf1c6396b13a883cd523607f.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 20:59:31", 
+      "updated_at": "2010-01-05 20:59:31", 
+      "height": 108, 
+      "source": 654, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 1630
+    }
+  }, 
+  {
+    "pk": 6070, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/78d0381ebf1c6396b13a883cd523607f.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 20:59:32", 
+      "updated_at": "2010-01-05 20:59:32", 
+      "height": 108, 
+      "source": 654, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 1167
+    }
+  }, 
+  {
+    "pk": 6071, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/c09ad517736bcb5b44bf4f17dcb37571.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 20:40:38", 
+      "updated_at": "2010-01-05 20:40:38", 
+      "height": 272, 
+      "source": 653, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 1876000
+    }
+  }, 
+  {
+    "pk": 6072, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/c09ad517736bcb5b44bf4f17dcb37571.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 20:41:59", 
+      "updated_at": "2010-01-05 20:41:59", 
+      "height": 360, 
+      "source": 653, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 2455696
+    }
+  }, 
+  {
+    "pk": 6073, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/c09ad517736bcb5b44bf4f17dcb37571.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 23:39:33", 
+      "updated_at": "2010-01-05 23:39:33", 
+      "height": 272, 
+      "source": 653, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 7152663
+    }
+  }, 
+  {
+    "pk": 6074, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/c09ad517736bcb5b44bf4f17dcb37571.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 20:48:41", 
+      "updated_at": "2010-01-05 20:48:41", 
+      "height": 360, 
+      "source": 653, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 11487085
+    }
+  }, 
+  {
+    "pk": 6075, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/c09ad517736bcb5b44bf4f17dcb37571.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 20:47:09", 
+      "updated_at": "2010-01-05 20:47:09", 
+      "height": 272, 
+      "source": 653, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 1918
+    }
+  }, 
+  {
+    "pk": 6076, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/c09ad517736bcb5b44bf4f17dcb37571.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 20:47:15", 
+      "updated_at": "2010-01-05 20:47:15", 
+      "height": 360, 
+      "source": 653, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 2770
+    }
+  }, 
+  {
+    "pk": 6077, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/c09ad517736bcb5b44bf4f17dcb37571.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 20:47:11", 
+      "updated_at": "2010-01-05 20:47:11", 
+      "height": 272, 
+      "source": 653, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 3792
+    }
+  }, 
+  {
+    "pk": 6078, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/c09ad517736bcb5b44bf4f17dcb37571.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 20:47:12", 
+      "updated_at": "2010-01-05 20:47:12", 
+      "height": 360, 
+      "source": 653, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 5546
+    }
+  }, 
+  {
+    "pk": 6079, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/c09ad517736bcb5b44bf4f17dcb37571.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 20:47:10", 
+      "updated_at": "2010-01-05 20:47:10", 
+      "height": 108, 
+      "source": 653, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 1333
+    }
+  }, 
+  {
+    "pk": 6080, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/c09ad517736bcb5b44bf4f17dcb37571.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 20:47:14", 
+      "updated_at": "2010-01-05 20:47:14", 
+      "height": 108, 
+      "source": 653, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 842
+    }
+  }, 
+  {
+    "pk": 6081, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/6fb383d56757bf24b4594f5f93576541.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 20:37:29", 
+      "updated_at": "2010-01-05 20:37:29", 
+      "height": 272, 
+      "source": 652, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 1093403
+    }
+  }, 
+  {
+    "pk": 6082, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/6fb383d56757bf24b4594f5f93576541.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 20:38:03", 
+      "updated_at": "2010-01-05 20:38:03", 
+      "height": 360, 
+      "source": 652, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 1419697
+    }
+  }, 
+  {
+    "pk": 6083, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/6fb383d56757bf24b4594f5f93576541.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 20:39:05", 
+      "updated_at": "2010-01-05 20:39:05", 
+      "height": 272, 
+      "source": 652, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 3197976
+    }
+  }, 
+  {
+    "pk": 6084, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/6fb383d56757bf24b4594f5f93576541.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 20:40:50", 
+      "updated_at": "2010-01-05 20:40:50", 
+      "height": 360, 
+      "source": 652, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 6977226
+    }
+  }, 
+  {
+    "pk": 6085, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/6fb383d56757bf24b4594f5f93576541.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 20:39:37", 
+      "updated_at": "2010-01-05 20:39:37", 
+      "height": 272, 
+      "source": 652, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 3434
+    }
+  }, 
+  {
+    "pk": 6086, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/6fb383d56757bf24b4594f5f93576541.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 20:39:39", 
+      "updated_at": "2010-01-05 20:39:39", 
+      "height": 360, 
+      "source": 652, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 5176
+    }
+  }, 
+  {
+    "pk": 6087, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/6fb383d56757bf24b4594f5f93576541.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 20:39:08", 
+      "updated_at": "2010-01-05 20:39:08", 
+      "height": 272, 
+      "source": 652, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 4703
+    }
+  }, 
+  {
+    "pk": 6088, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/6fb383d56757bf24b4594f5f93576541.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 20:39:10", 
+      "updated_at": "2010-01-05 20:39:10", 
+      "height": 360, 
+      "source": 652, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 7187
+    }
+  }, 
+  {
+    "pk": 6089, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/6fb383d56757bf24b4594f5f93576541.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 20:39:06", 
+      "updated_at": "2010-01-05 20:39:06", 
+      "height": 108, 
+      "source": 652, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 1664
+    }
+  }, 
+  {
+    "pk": 6090, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/6fb383d56757bf24b4594f5f93576541.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 20:39:40", 
+      "updated_at": "2010-01-05 20:39:40", 
+      "height": 108, 
+      "source": 652, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 1361
+    }
+  }, 
+  {
+    "pk": 6091, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/cce1ddf65acd71e5489894d207a97411.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 20:35:06", 
+      "updated_at": "2010-01-05 20:35:06", 
+      "height": 272, 
+      "source": 651, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 862232
+    }
+  }, 
+  {
+    "pk": 6092, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/cce1ddf65acd71e5489894d207a97411.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 20:35:25", 
+      "updated_at": "2010-01-05 20:35:25", 
+      "height": 360, 
+      "source": 651, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 1030160
+    }
+  }, 
+  {
+    "pk": 6093, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/cce1ddf65acd71e5489894d207a97411.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 20:36:33", 
+      "updated_at": "2010-01-05 20:36:33", 
+      "height": 272, 
+      "source": 651, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 2623930
+    }
+  }, 
+  {
+    "pk": 6094, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/cce1ddf65acd71e5489894d207a97411.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 20:37:13", 
+      "updated_at": "2010-01-05 20:37:13", 
+      "height": 360, 
+      "source": 651, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 4336981
+    }
+  }, 
+  {
+    "pk": 6095, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/cce1ddf65acd71e5489894d207a97411.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 20:36:36", 
+      "updated_at": "2010-01-05 20:36:36", 
+      "height": 272, 
+      "source": 651, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 1506
+    }
+  }, 
+  {
+    "pk": 6096, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/cce1ddf65acd71e5489894d207a97411.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 20:36:38", 
+      "updated_at": "2010-01-05 20:36:38", 
+      "height": 360, 
+      "source": 651, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 2187
+    }
+  }, 
+  {
+    "pk": 6097, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/cce1ddf65acd71e5489894d207a97411.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 20:36:34", 
+      "updated_at": "2010-01-05 20:36:34", 
+      "height": 272, 
+      "source": 651, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 2041
+    }
+  }, 
+  {
+    "pk": 6098, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/cce1ddf65acd71e5489894d207a97411.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 20:36:35", 
+      "updated_at": "2010-01-05 20:36:35", 
+      "height": 360, 
+      "source": 651, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 3117
+    }
+  }, 
+  {
+    "pk": 6099, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/cce1ddf65acd71e5489894d207a97411.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 20:37:03", 
+      "updated_at": "2010-01-05 20:37:03", 
+      "height": 108, 
+      "source": 651, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 674
+    }
+  }, 
+  {
+    "pk": 6100, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/cce1ddf65acd71e5489894d207a97411.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 20:37:32", 
+      "updated_at": "2010-01-05 20:37:32", 
+      "height": 108, 
+      "source": 651, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 663
+    }
+  }, 
+  {
+    "pk": 6101, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/07a2f5c3c2451c3a53261f9e43a2ec14.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 20:31:27", 
+      "updated_at": "2010-01-05 20:31:27", 
+      "height": 272, 
+      "source": 650, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 2046444
+    }
+  }, 
+  {
+    "pk": 6102, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/07a2f5c3c2451c3a53261f9e43a2ec14.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 20:32:48", 
+      "updated_at": "2010-01-05 20:32:48", 
+      "height": 360, 
+      "source": 650, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 2868808
+    }
+  }, 
+  {
+    "pk": 6103, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/07a2f5c3c2451c3a53261f9e43a2ec14.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 20:33:59", 
+      "updated_at": "2010-01-05 20:33:59", 
+      "height": 272, 
+      "source": 650, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4316193
+    }
+  }, 
+  {
+    "pk": 6104, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/07a2f5c3c2451c3a53261f9e43a2ec14.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 20:35:47", 
+      "updated_at": "2010-01-05 20:35:47", 
+      "height": 360, 
+      "source": 650, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 6851683
+    }
+  }, 
+  {
+    "pk": 6105, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/07a2f5c3c2451c3a53261f9e43a2ec14.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 20:34:01", 
+      "updated_at": "2010-01-05 20:34:01", 
+      "height": 272, 
+      "source": 650, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 7887
+    }
+  }, 
+  {
+    "pk": 6106, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/07a2f5c3c2451c3a53261f9e43a2ec14.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 20:34:11", 
+      "updated_at": "2010-01-05 20:34:11", 
+      "height": 360, 
+      "source": 650, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 11651
+    }
+  }, 
+  {
+    "pk": 6107, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/07a2f5c3c2451c3a53261f9e43a2ec14.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 20:34:04", 
+      "updated_at": "2010-01-05 20:34:04", 
+      "height": 272, 
+      "source": 650, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 10589
+    }
+  }, 
+  {
+    "pk": 6108, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/07a2f5c3c2451c3a53261f9e43a2ec14.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 20:34:06", 
+      "updated_at": "2010-01-05 20:34:06", 
+      "height": 360, 
+      "source": 650, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 15845
+    }
+  }, 
+  {
+    "pk": 6109, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/07a2f5c3c2451c3a53261f9e43a2ec14.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 20:34:02", 
+      "updated_at": "2010-01-05 20:34:02", 
+      "height": 108, 
+      "source": 650, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 3238
+    }
+  }, 
+  {
+    "pk": 6110, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/07a2f5c3c2451c3a53261f9e43a2ec14.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 20:34:09", 
+      "updated_at": "2010-01-05 20:34:09", 
+      "height": 108, 
+      "source": 650, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 2546
+    }
+  }, 
+  {
+    "pk": 6111, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/782bb7d0e15318ae39ca8a7341af7037.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 20:27:08", 
+      "updated_at": "2010-01-05 20:27:08", 
+      "height": 272, 
+      "source": 649, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 1179612
+    }
+  }, 
+  {
+    "pk": 6112, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/782bb7d0e15318ae39ca8a7341af7037.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 20:28:11", 
+      "updated_at": "2010-01-05 20:28:11", 
+      "height": 360, 
+      "source": 649, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 2108474
+    }
+  }, 
+  {
+    "pk": 6113, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/782bb7d0e15318ae39ca8a7341af7037.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 20:30:22", 
+      "updated_at": "2010-01-05 20:30:22", 
+      "height": 272, 
+      "source": 649, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4400640
+    }
+  }, 
+  {
+    "pk": 6114, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/782bb7d0e15318ae39ca8a7341af7037.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 20:31:47", 
+      "updated_at": "2010-01-05 20:31:47", 
+      "height": 360, 
+      "source": 649, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 7104651
+    }
+  }, 
+  {
+    "pk": 6115, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/782bb7d0e15318ae39ca8a7341af7037.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 20:30:29", 
+      "updated_at": "2010-01-05 20:30:29", 
+      "height": 272, 
+      "source": 649, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 2277
+    }
+  }, 
+  {
+    "pk": 6116, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/782bb7d0e15318ae39ca8a7341af7037.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 20:30:31", 
+      "updated_at": "2010-01-05 20:30:31", 
+      "height": 360, 
+      "source": 649, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 3400
+    }
+  }, 
+  {
+    "pk": 6117, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/782bb7d0e15318ae39ca8a7341af7037.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 20:30:24", 
+      "updated_at": "2010-01-05 20:30:24", 
+      "height": 272, 
+      "source": 649, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 4227
+    }
+  }, 
+  {
+    "pk": 6118, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/782bb7d0e15318ae39ca8a7341af7037.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 20:30:26", 
+      "updated_at": "2010-01-05 20:30:26", 
+      "height": 360, 
+      "source": 649, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 6484
+    }
+  }, 
+  {
+    "pk": 6119, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/782bb7d0e15318ae39ca8a7341af7037.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 20:30:23", 
+      "updated_at": "2010-01-05 20:30:23", 
+      "height": 108, 
+      "source": 649, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 1623
+    }
+  }, 
+  {
+    "pk": 6120, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/782bb7d0e15318ae39ca8a7341af7037.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 20:30:27", 
+      "updated_at": "2010-01-05 20:30:27", 
+      "height": 108, 
+      "source": 649, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 993
+    }
+  }, 
+  {
+    "pk": 6121, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/89239301af753f87bb33aa9b57937704.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 20:23:34", 
+      "updated_at": "2010-01-05 20:23:34", 
+      "height": 272, 
+      "source": 648, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 1250862
+    }
+  }, 
+  {
+    "pk": 6122, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/89239301af753f87bb33aa9b57937704.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 20:24:42", 
+      "updated_at": "2010-01-05 20:24:42", 
+      "height": 360, 
+      "source": 648, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 2294148
+    }
+  }, 
+  {
+    "pk": 6123, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/89239301af753f87bb33aa9b57937704.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 20:26:21", 
+      "updated_at": "2010-01-05 20:26:21", 
+      "height": 272, 
+      "source": 648, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4290546
+    }
+  }, 
+  {
+    "pk": 6124, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/89239301af753f87bb33aa9b57937704.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 20:28:18", 
+      "updated_at": "2010-01-05 20:28:18", 
+      "height": 360, 
+      "source": 648, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 7079329
+    }
+  }, 
+  {
+    "pk": 6125, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/89239301af753f87bb33aa9b57937704.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 20:26:24", 
+      "updated_at": "2010-01-05 20:26:24", 
+      "height": 272, 
+      "source": 648, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 2958
+    }
+  }, 
+  {
+    "pk": 6126, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/89239301af753f87bb33aa9b57937704.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 20:26:26", 
+      "updated_at": "2010-01-05 20:26:26", 
+      "height": 360, 
+      "source": 648, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 4423
+    }
+  }, 
+  {
+    "pk": 6127, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/89239301af753f87bb33aa9b57937704.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 20:26:23", 
+      "updated_at": "2010-01-05 20:26:23", 
+      "height": 272, 
+      "source": 648, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 4940
+    }
+  }, 
+  {
+    "pk": 6128, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/89239301af753f87bb33aa9b57937704.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 20:26:30", 
+      "updated_at": "2010-01-05 20:26:30", 
+      "height": 360, 
+      "source": 648, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 7551
+    }
+  }, 
+  {
+    "pk": 6129, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/89239301af753f87bb33aa9b57937704.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 20:26:27", 
+      "updated_at": "2010-01-05 20:26:27", 
+      "height": 108, 
+      "source": 648, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 1708
+    }
+  }, 
+  {
+    "pk": 6130, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/89239301af753f87bb33aa9b57937704.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 20:26:32", 
+      "updated_at": "2010-01-05 20:26:32", 
+      "height": 108, 
+      "source": 648, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 1195
+    }
+  }, 
+  {
+    "pk": 6131, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/3779e5698494e803a3e9296ef586042c.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 20:17:37", 
+      "updated_at": "2010-01-05 20:17:37", 
+      "height": 272, 
+      "source": 647, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 2458866
+    }
+  }, 
+  {
+    "pk": 6132, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/3779e5698494e803a3e9296ef586042c.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 20:20:22", 
+      "updated_at": "2010-01-05 20:20:22", 
+      "height": 360, 
+      "source": 647, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 4917872
+    }
+  }, 
+  {
+    "pk": 6133, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/3779e5698494e803a3e9296ef586042c.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 20:22:24", 
+      "updated_at": "2010-01-05 20:22:24", 
+      "height": 272, 
+      "source": 647, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4305483
+    }
+  }, 
+  {
+    "pk": 6134, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/3779e5698494e803a3e9296ef586042c.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 20:24:41", 
+      "updated_at": "2010-01-05 20:24:41", 
+      "height": 360, 
+      "source": 647, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 6980746
+    }
+  }, 
+  {
+    "pk": 6135, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/3779e5698494e803a3e9296ef586042c.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 20:22:31", 
+      "updated_at": "2010-01-05 20:22:31", 
+      "height": 272, 
+      "source": 647, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 2966
+    }
+  }, 
+  {
+    "pk": 6136, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/3779e5698494e803a3e9296ef586042c.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 20:22:32", 
+      "updated_at": "2010-01-05 20:22:32", 
+      "height": 360, 
+      "source": 647, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 4688
+    }
+  }, 
+  {
+    "pk": 6137, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/3779e5698494e803a3e9296ef586042c.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 20:22:26", 
+      "updated_at": "2010-01-05 20:22:26", 
+      "height": 272, 
+      "source": 647, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 6977
+    }
+  }, 
+  {
+    "pk": 6138, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/3779e5698494e803a3e9296ef586042c.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 20:22:29", 
+      "updated_at": "2010-01-05 20:22:29", 
+      "height": 360, 
+      "source": 647, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 11432
+    }
+  }, 
+  {
+    "pk": 6139, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/3779e5698494e803a3e9296ef586042c.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 20:22:25", 
+      "updated_at": "2010-01-05 20:22:25", 
+      "height": 108, 
+      "source": 647, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 1996
+    }
+  }, 
+  {
+    "pk": 6140, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/3779e5698494e803a3e9296ef586042c.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 20:22:33", 
+      "updated_at": "2010-01-05 20:22:33", 
+      "height": 108, 
+      "source": 647, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 1134
+    }
+  }, 
+  {
+    "pk": 6141, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/2e7a220d6f24faa19a8b8dd26aa879be.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 20:16:46", 
+      "updated_at": "2010-01-05 20:16:46", 
+      "height": 272, 
+      "source": 646, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 1056249
+    }
+  }, 
+  {
+    "pk": 6142, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/2e7a220d6f24faa19a8b8dd26aa879be.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 20:16:21", 
+      "updated_at": "2010-01-05 20:16:21", 
+      "height": 360, 
+      "source": 646, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 1966746
+    }
+  }, 
+  {
+    "pk": 6143, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/2e7a220d6f24faa19a8b8dd26aa879be.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 20:21:49", 
+      "updated_at": "2010-01-05 20:21:49", 
+      "height": 272, 
+      "source": 646, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 4179448
+    }
+  }, 
+  {
+    "pk": 6144, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/2e7a220d6f24faa19a8b8dd26aa879be.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 20:20:15", 
+      "updated_at": "2010-01-05 20:20:15", 
+      "height": 360, 
+      "source": 646, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 6900815
+    }
+  }, 
+  {
+    "pk": 6145, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/2e7a220d6f24faa19a8b8dd26aa879be.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 20:04:54", 
+      "updated_at": "2010-01-05 20:04:54", 
+      "height": 272, 
+      "source": 646, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 2202
+    }
+  }, 
+  {
+    "pk": 6146, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/2e7a220d6f24faa19a8b8dd26aa879be.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 20:04:31", 
+      "updated_at": "2010-01-05 20:04:31", 
+      "height": 360, 
+      "source": 646, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 3286
+    }
+  }, 
+  {
+    "pk": 6147, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/2e7a220d6f24faa19a8b8dd26aa879be.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 20:16:48", 
+      "updated_at": "2010-01-05 20:16:48", 
+      "height": 272, 
+      "source": 646, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 4088
+    }
+  }, 
+  {
+    "pk": 6148, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/2e7a220d6f24faa19a8b8dd26aa879be.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 20:16:49", 
+      "updated_at": "2010-01-05 20:16:49", 
+      "height": 360, 
+      "source": 646, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 6334
+    }
+  }, 
+  {
+    "pk": 6149, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/2e7a220d6f24faa19a8b8dd26aa879be.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 20:04:31", 
+      "updated_at": "2010-01-05 20:04:31", 
+      "height": 108, 
+      "source": 646, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 1468
+    }
+  }, 
+  {
+    "pk": 6150, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/2e7a220d6f24faa19a8b8dd26aa879be.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 20:04:31", 
+      "updated_at": "2010-01-05 20:04:31", 
+      "height": 108, 
+      "source": 646, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 962
+    }
+  }, 
+  {
+    "pk": 6151, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/9d57a7dab2317f9960f130088b8b0105.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 20:10:15", 
+      "updated_at": "2010-01-05 20:10:15", 
+      "height": 272, 
+      "source": 645, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 6780884
+    }
+  }, 
+  {
+    "pk": 6152, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/9d57a7dab2317f9960f130088b8b0105.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 20:15:22", 
+      "updated_at": "2010-01-05 20:15:22", 
+      "height": 360, 
+      "source": 645, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 11049781
+    }
+  }, 
+  {
+    "pk": 6153, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/9d57a7dab2317f9960f130088b8b0105.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 20:15:18", 
+      "updated_at": "2010-01-05 20:15:18", 
+      "height": 272, 
+      "source": 645, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 5744672
+    }
+  }, 
+  {
+    "pk": 6154, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/9d57a7dab2317f9960f130088b8b0105.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 20:15:47", 
+      "updated_at": "2010-01-05 20:15:47", 
+      "height": 360, 
+      "source": 645, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 9365626
+    }
+  }, 
+  {
+    "pk": 6155, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/9d57a7dab2317f9960f130088b8b0105.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 20:10:39", 
+      "updated_at": "2010-01-05 20:10:39", 
+      "height": 272, 
+      "source": 645, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 13892
+    }
+  }, 
+  {
+    "pk": 6156, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/9d57a7dab2317f9960f130088b8b0105.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 20:15:23", 
+      "updated_at": "2010-01-05 20:15:23", 
+      "height": 360, 
+      "source": 645, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 22895
+    }
+  }, 
+  {
+    "pk": 6157, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/9d57a7dab2317f9960f130088b8b0105.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 20:10:37", 
+      "updated_at": "2010-01-05 20:10:37", 
+      "height": 272, 
+      "source": 645, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 16299
+    }
+  }, 
+  {
+    "pk": 6158, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/9d57a7dab2317f9960f130088b8b0105.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 20:15:25", 
+      "updated_at": "2010-01-05 20:15:25", 
+      "height": 360, 
+      "source": 645, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 26922
+    }
+  }, 
+  {
+    "pk": 6159, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/9d57a7dab2317f9960f130088b8b0105.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 23:35:02", 
+      "updated_at": "2010-01-05 23:35:02", 
+      "height": 108, 
+      "source": 645, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 3819
+    }
+  }, 
+  {
+    "pk": 6160, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/9d57a7dab2317f9960f130088b8b0105.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 20:15:26", 
+      "updated_at": "2010-01-05 20:15:26", 
+      "height": 108, 
+      "source": 645, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 3323
+    }
+  }, 
+  {
+    "pk": 6161, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/716286173174920d4a383c67273f0089.mts-ogv30-272.OGV", 
+      "created_at": "2010-01-05 19:55:33", 
+      "updated_at": "2010-01-05 19:55:33", 
+      "height": 272, 
+      "source": 644, 
+      "transcoded_with": 1, 
+      "duration": null, 
+      "size": 919298
+    }
+  }, 
+  {
+    "pk": 6162, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "application/ogg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/716286173174920d4a383c67273f0089.mts-ogv30-360.OGV", 
+      "created_at": "2010-01-05 19:55:47", 
+      "updated_at": "2010-01-05 19:55:47", 
+      "height": 360, 
+      "source": 644, 
+      "transcoded_with": 2, 
+      "duration": null, 
+      "size": 1206313
+    }
+  }, 
+  {
+    "pk": 6163, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/716286173174920d4a383c67273f0089.mts-mp430-272.MP4", 
+      "created_at": "2010-01-05 20:07:34", 
+      "updated_at": "2010-01-05 20:07:34", 
+      "height": 272, 
+      "source": 644, 
+      "transcoded_with": 3, 
+      "duration": null, 
+      "size": 3011584
+    }
+  }, 
+  {
+    "pk": 6164, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "video/mp4", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/716286173174920d4a383c67273f0089.mts-mp430-360.MP4", 
+      "created_at": "2010-01-05 20:10:12", 
+      "updated_at": "2010-01-05 20:10:12", 
+      "height": 360, 
+      "source": 644, 
+      "transcoded_with": 4, 
+      "duration": null, 
+      "size": 6461530
+    }
+  }, 
+  {
+    "pk": 6165, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/716286173174920d4a383c67273f0089.mts-jpgbw-272.JPG", 
+      "created_at": "2010-01-05 19:56:47", 
+      "updated_at": "2010-01-05 19:56:47", 
+      "height": 272, 
+      "source": 644, 
+      "transcoded_with": 5, 
+      "duration": null, 
+      "size": 1805
+    }
+  }, 
+  {
+    "pk": 6166, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/716286173174920d4a383c67273f0089.mts-jpgbw-360.JPG", 
+      "created_at": "2010-01-05 19:56:47", 
+      "updated_at": "2010-01-05 19:56:47", 
+      "height": 360, 
+      "source": 644, 
+      "transcoded_with": 6, 
+      "duration": null, 
+      "size": 2674
+    }
+  }, 
+  {
+    "pk": 6167, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 480, 
+      "url": "http://www.archive.org/download/ace_200911_01/716286173174920d4a383c67273f0089.mts-jpg-272.JPG", 
+      "created_at": "2010-01-05 19:55:51", 
+      "updated_at": "2010-01-05 19:55:51", 
+      "height": 272, 
+      "source": 644, 
+      "transcoded_with": 7, 
+      "duration": null, 
+      "size": 3943
+    }
+  }, 
+  {
+    "pk": 6168, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 640, 
+      "url": "http://www.archive.org/download/ace_200911_01/716286173174920d4a383c67273f0089.mts-jpg-360.JPG", 
+      "created_at": "2010-01-05 19:55:54", 
+      "updated_at": "2010-01-05 19:55:54", 
+      "height": 360, 
+      "source": 644, 
+      "transcoded_with": 8, 
+      "duration": null, 
+      "size": 6266
+    }
+  }, 
+  {
+    "pk": 6169, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/716286173174920d4a383c67273f0089.mts-jpg-108.JPG", 
+      "created_at": "2010-01-05 19:55:49", 
+      "updated_at": "2010-01-05 19:55:49", 
+      "height": 108, 
+      "source": 644, 
+      "transcoded_with": 9, 
+      "duration": null, 
+      "size": 1350
+    }
+  }, 
+  {
+    "pk": 6170, 
+    "model": "videos.videoversion", 
+    "fields": {
+      "mimetype": "image/jpeg", 
+      "width": 192, 
+      "url": "http://www.archive.org/download/ace_200911_01/716286173174920d4a383c67273f0089.mts-jpgbw-108.JPG", 
+      "created_at": "2010-01-05 19:56:47", 
+      "updated_at": "2010-01-05 19:56:47", 
+      "height": 108, 
+      "source": 644, 
+      "transcoded_with": 10, 
+      "duration": null, 
+      "size": 859
+    }
   }
 ]
