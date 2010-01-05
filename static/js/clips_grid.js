@@ -37,8 +37,9 @@ function window_resized(){
   spots_available = rows * columns
   for (i=0; i<images.length;i++){
     if(i < spots_available-1){
-      images[i].parentNode.setStyle('display', 'block')
+      images[i].parentNode.setStyle('display', 'inline-block')
     } else {
+      console.log(images[i].parentNode)
       images[i].parentNode.setStyle('display', 'none')
     }
   }
