@@ -1,5 +1,5 @@
 /*CSS Reset*/
-body,h1,h2,h3,h4,a,div,p,video,ol,li,table,caption,thead,tr,td {margin:0;padding:0;}
+body,h1,h2,h3,h4,a,img,div,p,video,ol,li,table,caption,thead,tr,td {margin:0;padding:0;border:none;}
 
 /* General */
 body{
@@ -39,6 +39,23 @@ a:hover{color:#fff;}
 #header.h540 {width:960px; bottom:55%;margin-bottom:268px;left:50%;margin-left:-478;font-size:1.30em;}
 #header.h720 {width:1280px;bottom:55%;margin-bottom:359px;left:50%;margin-left:-639;font-size:1.45em;}
 #header.h1080{width:1920px;font-size:2em;}
+
+
+#main-play-button {
+  position:absolute;
+  z-index:59;
+  opacity:0.7;
+  outline:0;
+}
+#main-play-button img{
+  width:100%;
+  height:100%;
+}
+#main-play-button:hover{
+  opacity:1;
+}
+#main-play-button.p272 {width:82px;height:82px;bottom:55%;margin-bottom:-42px;left:50%;margin-left:-42px;}
+#main-play-button.p360 {width:108px;height:108px;bottom:55%;margin-bottom:-54px;left:50%;margin-left:-54px;}
 
 /* Video Containers */
 .box{
@@ -103,6 +120,57 @@ div.box.selected.lights-off>video{visibility:visible;}
 #b540 {margin-left:-390;z-index:16;}
 #b720 {margin-left:-550;z-index:17;}
 #b1080{margin-left:-710;z-index:18;}
+
+/*Film ratings style unsupported <vide> tag disclaimer */
+#w272 {width:480px;height:272px;}
+#w360 {width:640px;height:360px;}
+
+.warning{
+  background-color:#500;
+  color:#fff;
+  display:block;
+  text-align:center;
+  text-transform:uppercase;
+}
+.warning a{
+  color:#fff;
+  border-bottom-style:dotted;
+  border-bottom-width:1px;
+}
+.warning a:hover{  border-bottom-style:solid;}
+.warning b{font-size:16px;}
+.warning p{
+  font-size:14px;
+  line-height:25px;
+}
+.warning p.middle{
+  position: absolute;
+  width:100%;
+  top:50%;
+  margin-top:-5em;
+}
+.warning .bottom{
+  bottom:0px;
+  width:100%;
+  position:absolute;
+}
+.warning p.useflash{
+  font-size:12px;
+  text-transform:none;
+  margin-bottom:5px;
+}
+.warning p.bottomlink{
+  text-transform:none;
+  font-size:12px;
+}
+.warning .left{
+  float:left;
+  margin-left:1em;
+}
+.warning .right{
+  float:right;
+  margin-right:1em;
+}
 
 /* Actions menu */
 #actions{

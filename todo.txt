@@ -1,22 +1,4 @@
-All:
-ok - add some stats (google analytics style)
-
-Home:
-- include page title
-- link to about/faq
-ok - implement logo on corner for home page
-ok - make logo link to the home
-ok - fix the centralizaion of the grid
-ok - implement animation for loading images
-
-Search Results:
-- include page title
-- make a larger keywords list and a page linking all queries
-ok - implement logo left-aligned on the last row for search results
-ok - funny "did you mean"s
-
 Show:
-- add "hosted by archive.org"
 - fallback to swf http://code.google.com/p/videoplayer/
 - replace video tags with img and then add video tags via javascript
 - scroll to the beggining of the drawer when open
@@ -25,10 +7,30 @@ Show:
 - add "notify me of new versions of this clip"
 BUG http://127.0.0.1:8000/clip/?h=aaaafbf10e9283fed8a3a13d9db0bcef transparencia aparecendo
 - add js transitions when changing sizes
-- remove previous/next
+- remove or implement previous/next
+ok - add "hosted by archive.org"
 
 About
 - everything
+
+Home:
+- link to about/faq
+ok - include page title
+ok - implement logo on corner for home page
+ok - make logo link to the home
+ok - fix the centralizaion of the grid
+ok - implement animation for loading images
+
+All:
+ok - add some stats (google analytics style)
+
+Search Results:
+- make a larger keywords list and a page linking all queries
+ok - include page title
+ok - implement logo left-aligned on the last row for search results
+ok - funny "did you mean"s
+
+
 
 === Future ===
 

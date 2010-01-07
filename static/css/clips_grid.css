@@ -1,5 +1,5 @@
 /*CSS Reset*/
-body,h1,h2,h3,h4,a,div,p,video,ol,li,table,caption,thead,tr,td {margin:0;padding:0;}
+body,h1,h2,h3,h4,a,div,img,p,video,ol,li,table,caption,thead,tr,td {margin:0;padding:0;border:none;}
 
 /* General */
 body{
@@ -9,9 +9,8 @@ body{
 }
 
 a{text-decoration:none;}
-a{color:#888;}
+a{color:#888;;}
 a:hover{color:#fff;}
-a,img{border:none;}
 
 div#grid{
     width:90%;

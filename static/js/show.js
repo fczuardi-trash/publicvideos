@@ -6,6 +6,7 @@ function init(){
   var boxes = $$('.box');
   var unlockButtons = $$('.unlock-button')
   var panelTabButtons = $$('#actions .menubar .tabs a')
+  var playButtons = $$('.play-button')
   for(var i = 0; i < boxes.length; i++){
     boxes[i].addEventListener('click', boxClicked, false)
     boxes[i].addEventListener('mousedown', boxMouseDown, false)
@@ -25,6 +26,9 @@ function init(){
   for(var i = 0; i< panelTabButtons.length; i++){
     panelTabButtons[i].addEventListener('click', panelTabClicked, true)
   }
+  for(var i = 0; i< playButtons.length; i++){
+    playButtons[i].addEventListener('click', playButtonClicked, true)
+  }
 }
 
 function fadeOutUIClutter(e){
@@ -38,6 +42,12 @@ function fadeInUIClutter(e){
   for(var i=0; i< elements.length; i++){
     elements[i].removeClass('lights-off')
   }
+}
+function playButtonClicked(e){
+  console.log('oi')
+  videos = $$('.video')
+  alert(videos[0].constructor)
+  alert(videos[0].constructor == window.HTMLVideoElement)
 }
 function boxClicked(e){
   var target = (e.target.nodeName.toUpperCase() == 'DIV') ? e.target : e.target.parentNode;
@@ -87,6 +97,7 @@ function boxClicked(e){
   }
   $('header').className = 'h'+selected_size;
   $('actions').className = 'a'+selected_size;
+  $('play-button').className = 'p'+selected_size;
   displayPatron(selected_size);
   updatePanelContainerHeight();
   e.stopPropagation();

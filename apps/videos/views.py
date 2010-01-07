@@ -108,7 +108,22 @@ def show(request):
     versions[str(version_name)] = version
   video_title = video.title if video.title else "Clip #%s" % video.pk
   author_name = u"%s %s" % (video.author.first_name, video.author.last_name) if video.author.first_name else str(video.author)
+  host_link = "http://www.archive.org/details/%s" % video.set_slug
   page_title = u"“%s” — Public Videos(alpha)" % video_title
+  unsuported_video_tag_msg = u"""
+  <p class="middle">
+  The following <b>clip</b> works better in browsers with<br \>
+          <b>native html5 video support</b></br>
+  We recommend the download of <a href="http://getfirefox.com"><b>mozilla firefox</b></a>
+  </p>
+  <div class="bottom">
+  <p class="useflash">
+  (but you can still <a href="#" class="play-button">watch it using flash</a> or 
+  download it using the link below)
+  </small></p>
+  <p class="left bottomlink"><a href="http://www.playogg.org">www.playogg.org</a></p>
+  <p class="right bottomlink"><a href="http://www.mozilla.org">www.mozilla.org</a></p>
+  </div>"""
   return render_to_response("videos/show.html", dict(locals()))
   
 def simple_upload_videos(request):
