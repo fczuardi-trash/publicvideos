@@ -33,9 +33,10 @@ def index(request):
   didyoumean = None
   try:
     videos = Video.objects.filter(status='transcoded').order_by('?')
-    results_num = 55
+    results_num = 64
     query_text = 'Search'
     is_search_results = 'false'
+    page_title = 'Public Videos(alpha)'
     if 'q' in request.GET:
       didyoumeans = [
         'fire',
@@ -66,9 +67,11 @@ def index(request):
       if request.GET['q'].strip() != '':
         is_search_results = 'true'
         query_text = request.GET['q']
+        page_title = u'Free Stock Video Footage: %s — Public Videos(alpha)' % query_text.capitalize()
         results_num = 103
         videos = Video.objects.filter(status='transcoded').filter(filename__contains=query_text).order_by('?')
         if(len(videos) == 0):
+          page_title = u'no results for “%s” — Public Videos(alpha)' % query_text
           didyoumean = random.choice(didyoumeans)
   except IndexError:
     raise Http404
@@ -80,7 +83,13 @@ def index(request):
     url = "http://static.publicvideos.org/thumbnails/%s/%s.%s" % (video.set_slug, video.md5, 'mts-jpg-108.JPG')
     page = "/clip/?h=%s" % video.md5
     thumbs.append({'src':url,'page':page})
-  return render_to_response("videos/index.html", {'query_text':query_text,'thumbs':thumbs,'is_search_results':is_search_results,'didyoumean':didyoumean})
+  return render_to_response("videos/index.html", {
+    'page_title': page_title,
+    'query_text':query_text,
+    'thumbs':thumbs,
+    'is_search_results':is_search_results,
+    'didyoumean':didyoumean
+    })
 
 def show(request):
   try:
@@ -99,7 +108,7 @@ def show(request):
     versions[str(version_name)] = version
   video_title = video.title if video.title else "Clip #%s" % video.pk
   author_name = u"%s %s" % (video.author.first_name, video.author.last_name) if video.author.first_name else str(video.author)
-  page_title = u"“%s”" % video_title
+  page_title = u"“%s” — Public Videos(alpha)" % video_title
   return render_to_response("videos/show.html", dict(locals()))
   
 def simple_upload_videos(request):

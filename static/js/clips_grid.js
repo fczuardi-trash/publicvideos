@@ -11,7 +11,7 @@ function highlight_image(image_element){
     if(images[i]==image_element){
       images[i].tween('opacity', 1)
     } else {
-      images[i].tween('opacity', 0.3)
+      images[i].tween('opacity', 0.4)
     }
   }
 }
@@ -29,10 +29,11 @@ function page_loaded(){
   }
 }
 function window_resized(){
+  thumbs_available = images.length
+  if (thumbs_available == 0) {return;} 
   gridbox = $('grid')
   w = gridbox.getWidth()
-  h = window.getHeight()-130
-  thumbs_available = images.length
+  h = window.getHeight()-160
   columns = Math.floor(w/193)
   rows = Math.floor(h/109)
   max_rows = Math.ceil((thumbs_available+1)/columns)

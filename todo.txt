@@ -2,22 +2,22 @@ All:
 ok - add some stats (google analytics style)
 
 Home:
-- implement logo on corner for home page
 - include page title
 - link to about/faq
+ok - implement logo on corner for home page
 ok - make logo link to the home
 ok - fix the centralizaion of the grid
 ok - implement animation for loading images
 
 Search Results:
-- implement logo left-aligned on the last row for search results
 - include page title
-- funny "did you mean"s
-- mickey mouse easter egg
 - make a larger keywords list and a page linking all queries
+ok - implement logo left-aligned on the last row for search results
+ok - funny "did you mean"s
 
 Show:
 - add "hosted by archive.org"
+- fallback to swf http://code.google.com/p/videoplayer/
 - replace video tags with img and then add video tags via javascript
 - scroll to the beggining of the drawer when open
 - include page title
