@@ -15,6 +15,7 @@ function init(){
     boxes[i].addEventListener('rollout', boxMouseUp, false)
     var video = boxes[i].getLast('video')
     if(video){
+      video.addEventListener('canplay', removeThrobber, false)
       video.addEventListener('play', fadeOutUIClutter, false)
       video.addEventListener('pause', fadeInUIClutter, false)
       video.addEventListener('ended', fadeInUIClutter, false)
@@ -30,24 +31,64 @@ function init(){
     playButtons[i].addEventListener('click', playButtonClicked, true)
   }
 }
-
+function firefox35hack(video){
+  var video_clone = video.clone()
+  video_clone.replaces(video)
+  video_clone.addEventListener('play', fadeOutUIClutter, false)
+  video_clone.addEventListener('pause', fadeInUIClutter, false)
+  video_clone.addEventListener('ended', fadeInUIClutter, false)
+  video_clone.addEventListener('canplay', removeThrobber, false)
+  video.dispose()
+  return video_clone;
+}
+function removeThrobber(e){
+  $('throbber').setStyle('display','none')
+}
 function fadeOutUIClutter(e){
   var elements = $$('.box, .unlock-button, #header, #actions');
   for(var i=0; i< elements.length; i++){
     elements[i].addClass('lights-off')
   }
+  $('main-play-button').setStyle('display','none')
 }
 function fadeInUIClutter(e){
   var elements = $$('.box, .unlock-button, #header, #actions');
   for(var i=0; i< elements.length; i++){
     elements[i].removeClass('lights-off')
   }
+  $('main-play-button').setStyle('display','block')
 }
 function playButtonClicked(e){
-  console.log('oi')
-  videos = $$('.video')
-  alert(videos[0].constructor)
-  alert(videos[0].constructor == window.HTMLVideoElement)
+  var play_btn = $('main-play-button')
+  var selected_size = play_btn.className.substring(1,play_btn.className.indexOf(' '))
+  var box = $('s'+selected_size)
+  var video = box.getLast('video')
+  var video_sources = $$('#s'+selected_size+' video source')
+  if(video.constructor == window.HTMLVideoElement){
+    //browser has native support
+    for (var i=0; i<video_sources.length;i++){
+      video_sources[i].set('src', video_sources[i].get('_src'))
+    }
+    //check if it is Firefox 3.5.x because of a bug that does not refresh when you change attributes
+    if ($('poster'+selected_size).getStyle('display') == 'block'){
+      $('poster'+selected_size).setStyle('display','none')
+      the_video =firefox35hack(video)
+    } else{
+      the_video = video;
+    }
+    the_video.setProperty('autobuffer','true')
+    the_video.setProperty('autoplay','true')
+    if (navigator.userAgent.indexOf('Gecko/') == -1){
+      //firefox has a decent native throbber while safari and chrome don't give useful feedback
+      $('throbber').setStyle('display','block')
+    }
+    the_video.play()
+  }else{
+    //fallback to flash player
+    alert('Flash fallback not yet implemented, this is ALPHA')
+  }
+  //hide main play button
+  $('main-play-button').setStyle('display','none')
 }
 function boxClicked(e){
   var target = (e.target.nodeName.toUpperCase() == 'DIV') ? e.target : e.target.parentNode;
@@ -59,13 +100,7 @@ function boxClicked(e){
     var downloadLink = $('d'+size)
     var video = box.getLast('video')
     if (video) {
-      //video.erase('controls')
       if (box.hasClass('selected')){
-        //var video_clone = video.clone()
-        //video_clone.replaces(video)
-        // video_clone.addEventListener('play', fadeOutUIClutter, false)
-        // video_clone.addEventListener('pause', fadeInUIClutter, false)
-        // video_clone.addEventListener('ended', fadeInUIClutter, false)
         video.addEventListener('play', fadeOutUIClutter, false)
         video.addEventListener('pause', fadeInUIClutter, false)
         video.addEventListener('ended', fadeInUIClutter, false)
@@ -74,20 +109,12 @@ function boxClicked(e){
     box.removeClass('selected')
     box.removeClass('below')
     downloadLink.removeClass('selected')
-    // if(video.get('poster')){
-    //   current_poster = video.get('poster')
-    //   video.set('poster',current_poster.replace('-jpg-','-jpgbw-'))
-    // }
     if (selected_size > size){
       box.addClass('below')
     } else if (selected_size == size){
       box.addClass('selected')
       downloadLink.addClass('selected')
       if (video){
-        // if(video.get('poster')){
-        //   current_poster = video.get('poster')
-        //   video.set('poster',current_poster.replace('-jpgbw-','-jpg-'))
-        // }
         video.set('controls', true)
         if (selected_size < 1080){
           // video.set('autobuffer', true)
@@ -97,7 +124,7 @@ function boxClicked(e){
   }
   $('header').className = 'h'+selected_size;
   $('actions').className = 'a'+selected_size;
-  $('play-button').className = 'p'+selected_size;
+  $('main-play-button').className = 'p'+selected_size+' play-button';
   displayPatron(selected_size);
   updatePanelContainerHeight();
   e.stopPropagation();

@@ -114,7 +114,7 @@ def show(request):
   <p class="middle">
   The following <b>clip</b> works better in browsers with<br \>
           <b>native html5 video support</b></br>
-  We recommend the download of <a href="http://getfirefox.com"><b>mozilla firefox</b></a>
+  We recommend the download of <a href="http://www.mozilla.com/en-US/firefox/all-beta.html"><b>firefox 3.6 beta</b></a>
   </p>
   <div class="bottom">
   <p class="useflash">

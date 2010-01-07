@@ -57,6 +57,16 @@ a:hover{color:#fff;}
 #main-play-button.p272 {width:82px;height:82px;bottom:55%;margin-bottom:-42px;left:50%;margin-left:-42px;}
 #main-play-button.p360 {width:108px;height:108px;bottom:55%;margin-bottom:-54px;left:50%;margin-left:-54px;}
 
+#throbber{
+  z-index:61;
+  margin-left:-16px;
+  margin-top:-16px;
+  top:45%;
+  left:50%;
+  display:block;
+  position:absolute;
+  display:none;
+}
 /* Video Containers */
 .box{
   border:1px solid transparent;
@@ -121,6 +131,9 @@ div.box.selected.lights-off>video{visibility:visible;}
 #b720 {margin-left:-550;z-index:17;}
 #b1080{margin-left:-710;z-index:18;}
 
+.static-poster{
+  position:absolute;
+}
 /*Film ratings style unsupported <vide> tag disclaimer */
 #w272 {width:480px;height:272px;}
 #w360 {width:640px;height:360px;}

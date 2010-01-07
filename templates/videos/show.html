@@ -12,10 +12,12 @@
           brought to you by <a href="{{ host_link }}">archive.org</a>
         </h2>
     </div>
+    <img id="throbber" style="display:none;" src="/static/images/ajax-loader.gif">
     <a href="#" id="main-play-button" class="p272 play-button"><img src="/static/images/play_btn.png" /></a>
     <div id="s360" class="box">
         <div id="s272" class="box selected">
         <!-- 480x272 -->
+        {% if versions['272.JPG'] is defined %}<img src="{{ versions['272.JPG'].url }}" id="poster272" class="video" />{% endif %}
         <video class="video" width="480" height="272" controls {% if versions['272.JPG'] is defined %} poster="{{ versions['272.JPG'].url }}"{% endif %}>
             <source _src="{{ versions['272.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' />
             <source _src="{{ versions['272.MP4'].url }}" type="video/mp4"/>
@@ -23,6 +25,7 @@
         </video>
       </div>
         <!-- 640x360 -->
+        {% if versions['272.JPG'] is defined %}<img src="{{ versions['360.JPG'].url }}" id="poster360" class="video" />{% endif %}
         <video class="video" width="640" height="360" {% if versions['360.JPG'] is defined %} poster="{{ versions['360.JPG'].url }}"{% endif %}
             <source _src="{{ versions['360.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' />
             <source _src="{{ versions['360.MP4'].url }}" type="video/mp4"/>
