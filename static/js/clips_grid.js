@@ -32,15 +32,48 @@ function window_resized(){
   gridbox = $('grid')
   w = gridbox.getWidth()
   h = window.getHeight()-130
+  thumbs_available = images.length
   columns = Math.floor(w/193)
   rows = Math.floor(h/109)
-  spots_available = rows * columns
+  max_rows = Math.ceil((thumbs_available+1)/columns)
+  max_grid_spots = max_rows *columns
+  empty_cells = (max_grid_spots-(thumbs_available+1))
+  grid_spots_per_screen = rows * columns
+  // is_search_results = true
+  if (is_search_results){
+    left_align_last_row(empty_cells)
+  }else{
+    hide_extra_images(grid_spots_per_screen, thumbs_available, empty_cells, columns)
+  }
+}
+//used to make the home page grid always a rectangle
+function hide_extra_images(spots_available, thumbs_available, empty_cells, columns){
+  if (spots_available < thumbs_available){
+    last_img_cell = spots_available - 1
+  } else {
+    last_img_cell = thumbs_available - (columns-empty_cells)
+  }
   for (i=0; i<images.length;i++){
-    if(i < spots_available-1){
+    if(i < last_img_cell){
       images[i].parentNode.setStyle('display', 'inline-block')
     } else {
       images[i].parentNode.setStyle('display', 'none')
     }
+  }
+}
+function left_align_last_row(empty_cells){
+  placeholders = $$('span')
+  if (placeholders.length == empty_cells) { return }
+  //remove placeholders
+  for (i=0; i<placeholders.length;i++){
+    placeholders[i].dispose()
+  }
+  //add placeholders
+  var placeholder = new Element('span',{'class':'grid_cell'})
+  var grid_element = $('grid')
+  for (i=0;i<empty_cells;i++){
+    var new_placeholder = placeholder.clone()
+    new_placeholder.inject(grid_element)  
   }
 }
 function init(){

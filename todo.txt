@@ -1,6 +1,5 @@
 All:
-- add some stats (google analytics style)
-- make the size name on the download tab clickable
+ok - add some stats (google analytics style)
 
 Home:
 - implement logo on corner for home page
@@ -15,6 +14,7 @@ Search Results:
 - include page title
 - funny "did you mean"s
 - mickey mouse easter egg
+- make a larger keywords list and a page linking all queries
 
 Show:
 - add "hosted by archive.org"
@@ -32,9 +32,13 @@ About
 
 === Future ===
 
+Search:
+- autocomplete
+
 Show:
 - serve poster jpegs from Linode?
 - include previous/next
+- make the size name on the download tab clickable
 
 Show/Label:
 - everything

@@ -33,7 +33,9 @@ def index(request):
   didyoumean = None
   try:
     videos = Video.objects.filter(status='transcoded').order_by('?')
+    results_num = 55
     query_text = 'Search'
+    is_search_results = 'false'
     if 'q' in request.GET:
       didyoumeans = [
         'fire',
@@ -59,10 +61,12 @@ def index(request):
         'palm',
         'cloud',
         'pine',
-        'Chewbacca','Swartzenager'
+        'Chewbacca'
       ]
       if request.GET['q'].strip() != '':
+        is_search_results = 'true'
         query_text = request.GET['q']
+        results_num = 103
         videos = Video.objects.filter(status='transcoded').filter(filename__contains=query_text).order_by('?')
         if(len(videos) == 0):
           didyoumean = random.choice(didyoumeans)
@@ -71,12 +75,12 @@ def index(request):
   # http://www.archive.org/download/ace_200907_01/33470ecf16669eb165619a9e229ce751.mts-jpg-108.JPG.JPG
   # http://static.publicvideos.org/thumbnails/ace_200910_03/1f3e8ef1f7967b7d39d2ca8158f865d2.mts-jpgbw-108.JPG
   thumbs = []
-  for video in videos[:55]:
+  for video in videos[:results_num]:
     # url = "http://www.archive.org/download/%s/%s.%s" % (video.set_slug, video.md5, 'mts-jpg-108.JPG')
     url = "http://static.publicvideos.org/thumbnails/%s/%s.%s" % (video.set_slug, video.md5, 'mts-jpg-108.JPG')
     page = "/clip/?h=%s" % video.md5
     thumbs.append({'src':url,'page':page})
-  return render_to_response("videos/index.html", {'query_text':query_text,'thumbs':thumbs,'didyoumean':didyoumean})
+  return render_to_response("videos/index.html", {'query_text':query_text,'thumbs':thumbs,'is_search_results':is_search_results,'didyoumean':didyoumean})
 
 def show(request):
   try:

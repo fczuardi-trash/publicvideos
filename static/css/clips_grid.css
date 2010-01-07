@@ -13,30 +13,26 @@ a{color:#888;}
 a:hover{color:#fff;}
 a,img{border:none;}
 
-a.imagecontainer{
-  height:108px;
-  display:inline-block;
-  overflow:hidden;
-  margin-right:1px;
-  margin-bottom:1px;
-}
-a.imagecontainer img{
-  opacity:0;
-}
 div#grid{
     width:90%;
     margin:auto;
     text-align:center;
     margin-top:80px;
 }
+.grid_cell {
+  width:192px;
+  height:108px;
+  display:inline-block;
+  margin-right:1px;
+  margin-bottom:1px;
+  overflow:hidden;
+  vertical-align:top;
+}
+a.grid_cell img{
+  opacity:0;
+}
 #logo_108{
-    width:192;
-    height:108;
-    display:inline-block;
-    vertical-align:top;
     background-color:#161616;
-    margin-right:1px;
-    margin-bottom:1px;
 }
 #logo_108 h1{
     position: relative;
