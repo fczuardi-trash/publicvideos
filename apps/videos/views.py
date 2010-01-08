@@ -91,10 +91,12 @@ def index(request):
     'didyoumean':didyoumean
     })
 
-def show(request, short, rubish):
+def show(request, short=None, rubish=None, id=None):
   try:
-    if 'h' in request.GET:
-      video = Video.objects.filter(md5=request.GET['h'])[0]
+    if id:
+      video = Video.objects.get(pk=id)
+    elif 'id' in request.GET:
+      video = Video.objects.get(pk=request.GET['id'])
     elif short:
       video = Video.objects.filter(status='transcoded').filter(md5__startswith=short).order_by('created_at')[0]
     else:
