@@ -81,7 +81,7 @@ def index(request):
   for video in videos[:results_num]:
     # url = "http://www.archive.org/download/%s/%s.%s" % (video.set_slug, video.md5, 'mts-jpg-108.JPG')
     url = "http://static.publicvideos.org/thumbnails/%s/%s.%s" % (video.set_slug, video.md5, 'mts-jpg-108.JPG')
-    page = "/clip/?h=%s" % video.md5
+    page = "/%s" % video.md5[:7]
     thumbs.append({'src':url,'page':page})
   return render_to_response("videos/index.html", {
     'page_title': page_title,
@@ -91,10 +91,12 @@ def index(request):
     'didyoumean':didyoumean
     })
 
-def show(request):
+def show(request, short, rubish):
   try:
     if 'h' in request.GET:
       video = Video.objects.filter(md5=request.GET['h'])[0]
+    elif short:
+      video = Video.objects.filter(status='transcoded').filter(md5__contains=short).order_by('created_at')[0]
     else:
       video = Video.objects.filter(status='transcoded').order_by('?')[0]
   except IndexError:

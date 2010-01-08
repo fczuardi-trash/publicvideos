@@ -1,6 +1,6 @@
 Show:
-- make permalink shorter
-- remove or implement previous/next
+ok - make permalink shorter
+ok - remove or implement previous/next
 ok - scroll to the beggining of the drawer when open
 ok - add "hosted by archive.org"
 ok - replace video tags with img and then add video tags via javascript
@@ -39,6 +39,7 @@ Search:
 - autocomplete
 
 Show:
+- implement previous/next
 - fallback to swf http://code.google.com/p/videoplayer/
 - add "notify me of new versions of this clip"
 - add js transitions when changing sizes

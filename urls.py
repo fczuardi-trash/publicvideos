@@ -29,3 +29,7 @@ urlpatterns += patterns('django.views.generic.simple',
     {'url': 'http://spreadsheets.google.com/viewform?formkey=dHJPZzczbVhuR0tnX0doaFRJVE5IX1E6MA..'}, 
     name="join_beta_form"),
 )
+
+urlpatterns += patterns('',
+  (r'^(.[a-z0-9]+)(.*)', 'videos.views.show')
+)
