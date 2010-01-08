@@ -1,14 +1,10 @@
 Show:
-- fallback to swf http://code.google.com/p/videoplayer/
-- replace video tags with img and then add video tags via javascript
 - scroll to the beggining of the drawer when open
-- include page title
 - make permalink shorter
-- add "notify me of new versions of this clip"
-BUG http://127.0.0.1:8000/clip/?h=aaaafbf10e9283fed8a3a13d9db0bcef transparencia aparecendo
-- add js transitions when changing sizes
 - remove or implement previous/next
 ok - add "hosted by archive.org"
+ok - replace video tags with img and then add video tags via javascript
+ok - include page title
 
 About
 - everything
@@ -30,7 +26,10 @@ ok - include page title
 ok - implement logo left-aligned on the last row for search results
 ok - funny "did you mean"s
 
-
+Launch
+- update dokuwiki
+- optimize piwik
+- review and cleanup launchpad that is kinda of abandonned
 
 === Future ===
 
@@ -38,9 +37,13 @@ Search:
 - autocomplete
 
 Show:
+- fallback to swf http://code.google.com/p/videoplayer/
+- add "notify me of new versions of this clip"
+- add js transitions when changing sizes
 - serve poster jpegs from Linode?
 - include previous/next
 - make the size name on the download tab clickable
+BUG http://127.0.0.1:8000/clip/?h=aaaafbf10e9283fed8a3a13d9db0bcef transparencia aparecendo
 
 Show/Label:
 - everything
