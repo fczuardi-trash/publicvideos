@@ -9,18 +9,18 @@ ok - make logo link to the home
 ok - fix the centralizaion of the grid
 ok - implement animation for loading images
 
-Search Results:
-ok - make a larger keywords list and a page linking all queries
-ok - include page title
-ok - implement logo left-aligned on the last row for search results
-ok - funny "did you mean"s
-
 Launch
 - create posterous
 - create formspring.me
 - update dokuwiki
 - optimize piwik
 - review and cleanup launchpad that is kinda of abandonned
+
+Search Results:
+ok - make a larger keywords list and a page linking all queries
+ok - include page title
+ok - implement logo left-aligned on the last row for search results
+ok - funny "did you mean"s
 
 All:
 ok - add some stats (google analytics style)
