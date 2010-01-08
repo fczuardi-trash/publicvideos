@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.conf.urls.defaults import *
+from lib.jinjasupport import jenv
 
 urlpatterns = patterns('',
   (r'^$', 'videos.views.index'),
