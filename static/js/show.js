@@ -1,6 +1,5 @@
 // var sizes = [272,360,540,720,1080];
 var sizes = [272,360];
-var animation = true;
 
 function init(){
   var boxes = $$('.box');
@@ -25,7 +24,7 @@ function init(){
     unlockButtons[i].addEventListener('click', unlockButtonClicked, true)
   }
   for(var i = 0; i< panelTabButtons.length; i++){
-    panelTabButtons[i].addEventListener('click', panelTabClicked, true)
+    panelTabButtons[i].addEventListener('click', panelTabClicked, false)
   }
   for(var i = 0; i< playButtons.length; i++){
     playButtons[i].addEventListener('click', playButtonClicked, true)
@@ -182,23 +181,46 @@ function panelTabClicked(e){
   e.stopPropagation();
   if (previousSelectedTab[0]){
     var previousSelectedPanel = $(previousSelectedTab[0].get('_panel'))
-    if(animation){
-      //retract any opening drawwer
-      previousSelectedPanel.set('tween',{'duration':500,'transition':'quad:in'}).tween('top','-'+previousSelectedPanel.offsetHeight+'px');
-      setTimeout(function(element){element.removeClass('opened')},500,previousSelectedPanel)
-    } else{
-      previousSelectedPanel.removeClass('opened')
+    //retract any opening drawwer
+    if (previousSelectedTab.get('_panel_anchor') != clickedTab.get('_panel_anchor')) {
+      previousSelectedTab.set('href',previousSelectedTab.get('_panel_anchor'))
     }
+    previousSelectedPanel.set('tween',{'duration':500,'transition':'quad:in'}).tween('top','-'+previousSelectedPanel.offsetHeight+'px');
+    setTimeout(function(previous_panel){
+      previous_panel.removeClass('opened')
+    },500,previousSelectedPanel)
     previousSelectedTab[0].removeClass('selected')
   }
-  if(closePanel) { return false }
-  //resize panel container with height enough to fit the table
-  selectedPanel.addClass('opened')
-  panelContainer.style.height = Math.max(selectedPanel.offsetHeight,panelContainer.offsetHeight)
-  if(animation){
-    selectedPanel.style.top = '-'+selectedPanel.offsetHeight+'px'
-    var openFx = new Fx.Tween(selectedPanel,{'duration':'normal','transition':'quad:out'}).start('top','0px');  
+  if(!closePanel) { 
+    //resize panel container with height enough to fit the table
+    selectedPanel.addClass('opened')
+    panelContainer.style.height = Math.max(selectedPanel.offsetHeight,panelContainer.offsetHeight)
+    // selectedPanel.style.top = '-'+selectedPanel.offsetHeight+'px'
+    selectedPanel.style.visibility = 'hidden'
+    selectedPanel.style.top = '0px'
+    var openFx = new Fx.Tween(selectedPanel,{'duration':'normal','transition':'quad:out'}).start('top','-'+selectedPanel.offsetHeight+'px','0px');
+    setTimeout(function(selectedPanel){
+      selectedPanel.style.visibility = 'visible'
+    },100,selectedPanel)
+  } else {
+    var scrollFx = new Fx.Scroll(window).toTop(window);
   }
-  clickedTab.addClass('selected')
+  setTimeout(function(clickedTab){
+    if (clickedTab.get('href') == "#") { 
+      clickedTab.removeClass('selected')
+      clickedTab.set('href',clickedTab.get('_panel_anchor'))
+    }else {
+      var anchorName = clickedTab.get('href')
+      var anchor = $(anchorName.substring(1,anchorName.length))
+      clickedTab.addClass('selected')
+      var scrollFx = new Fx.Scroll(window, { offset: {
+              'x': 0,
+              'y': -50
+          }
+      }).toElement(anchor);
+      clickedTab.set('href','#')
+    }
+  }, 400, clickedTab)
+  
   return false;
 }

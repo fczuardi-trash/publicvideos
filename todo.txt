@@ -1,7 +1,7 @@
 Show:
-- scroll to the beggining of the drawer when open
 - make permalink shorter
 - remove or implement previous/next
+ok - scroll to the beggining of the drawer when open
 ok - add "hosted by archive.org"
 ok - replace video tags with img and then add video tags via javascript
 ok - include page title
@@ -27,6 +27,8 @@ ok - implement logo left-aligned on the last row for search results
 ok - funny "did you mean"s
 
 Launch
+- create posterous
+- create formspring.me
 - update dokuwiki
 - optimize piwik
 - review and cleanup launchpad that is kinda of abandonned
