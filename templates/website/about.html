@@ -3,6 +3,9 @@
 {% block title %}About{% endblock %}
 {% block extrahead %}
 <style>
+body{
+    background-color:#fff;
+}
 #content  {
     font-family:Arial,sans-serif;
     width:50%;
@@ -13,12 +16,17 @@
     background-color:Cornsilk;
     padding:2em;
 }
+#last-update p{
+    font-size:12px;
+    background-color: #ddd;
+    display:inline;
+}
 </style>
 {% endblock %}
 
 {% block content %}
 <h1>About Public Videos</h1>
-<div id="last-update">Last updated on </div>
+<div id="last-update"><p>Last updated on January 8, 5:18pm (GMT).</p></div>
 <p>
     Public Videos is a repository of open, original, high-quality, and 
     royalty-free video footage that are released or waiting-to-be-released 
@@ -113,4 +121,5 @@ use the wiki, or the launchpad page. See the links below.
 <p>
     But you can use <a href="/faq">this temporary website if you want to ask any question</a> :)
 </p>
+<p><a href="/">Back to the alpha home page</a>
 {% endblock %}
