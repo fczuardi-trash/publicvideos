@@ -55,7 +55,7 @@ a.grid_cell img{
   font-size:12px;
 }
 #alpha-footer {
-  position:absolute;
+  position:fixed;
   bottom:0;
   font-size:13px;
   text-align:center;
