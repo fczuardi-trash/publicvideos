@@ -1,6 +1,3 @@
-About
-- everything
-
 Home:
 - link to about/faq
 ok - include page title
@@ -9,12 +6,16 @@ ok - make logo link to the home
 ok - fix the centralizaion of the grid
 ok - implement animation for loading images
 
+
+About
+ok - everything
+
 Launch
 - create posterous
-- create formspring.me
 - update dokuwiki
 - optimize piwik
-- review and cleanup launchpad that is kinda of abandonned
+ok - review and cleanup launchpad that is kinda of abandonned
+ok - create formspring.me
 
 Search Results:
 ok - make a larger keywords list and a page linking all queries
