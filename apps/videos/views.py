@@ -55,6 +55,7 @@ def index(request):
       'bug',
       'burning',
       'bus',
+      'butterfly',
       'car',
       'cat',
       'city',
