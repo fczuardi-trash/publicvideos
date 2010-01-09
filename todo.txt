@@ -1,57 +1,86 @@
-Home:
-- link to about/faq
-ok - include page title
-ok - implement logo on corner for home page
-ok - make logo link to the home
-ok - fix the centralizaion of the grid
-ok - implement animation for loading images
+= The Plan =
+
+=== CURRENT (Milestone A) ===
+
+Polishing post alpha announcement:
+- fallback to swf http://code.google.com/p/videoplayer/
+
+- make the size name on the download tab clickable
+- blog post idomyownstunts
+- setup a posterous
+- one tech article about video hacks to work on chrome, ff3.5, ff3.6 and safari
+- continue uploading videos
 
 
-About
-ok - everything
+=== Milestone B ===
 
-Launch
-- create posterous
-- update dokuwiki
-- optimize piwik
-ok - review and cleanup launchpad that is kinda of abandonned
-ok - create formspring.me
+API v.0.1
 
-Search Results:
-ok - make a larger keywords list and a page linking all queries
-ok - include page title
-ok - implement logo left-aligned on the last row for search results
-ok - funny "did you mean"s
+=== Milestone C ===
 
-All:
-ok - add some stats (google analytics style)
+Labels:
+- figure out which model/approach to use
+- implement separated mTurk special interface
+- invest in mturk labeling
+- continue uploading videos
 
-Show:
-ok - make permalink shorter
-ok - remove or implement previous/next
-ok - scroll to the beggining of the drawer when open
-ok - add "hosted by archive.org"
-ok - replace video tags with img and then add video tags via javascript
-ok - include page title
+=== Milestone D ===
+
+API v.0.2
+
+=== Milestone C ===
+
+User accounts:
+- figure out where to put login/logout
+- test openID interface
+
+Labels:
+- logged users can describe videos in 5 words
+- anonymous users should be able to label as well, figure out best approach needed
+
+=== Milestone D ===
+
+Unlocking System:
+- everything
+
+=== Milestone E ===
+
+Contributors:
+- upload ui
+- profile page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 === Future ===
 
 Search:
 - autocomplete
+- firefox search
 
 Show:
-- implement previous/next
-- fallback to swf http://code.google.com/p/videoplayer/
-- add "notify me of new versions of this clip"
-- add js transitions when changing sizes
 - serve poster jpegs from Linode?
-- include previous/next
-- make the size name on the download tab clickable
-BUG http://127.0.0.1:8000/clip/?h=aaaafbf10e9283fed8a3a13d9db0bcef transparencia aparecendo
-
-Show/Label:
-- everything
-
+- implement previous/next
+- add "notify me of new versions of this clip"
 
 API:
 - results in json
