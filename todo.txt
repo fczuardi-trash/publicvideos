@@ -4,6 +4,7 @@
 
 Polishing post alpha announcement:
 - fallback to swf http://code.google.com/p/videoplayer/
+- sitemap for crwaling bots to index
 
 - make the size name on the download tab clickable
 - blog post idomyownstunts
