@@ -1,10 +1,12 @@
 = The Plan =
 
 === CURRENT (Milestone A) ===
-
-Polishing post alpha announcement:
-- fallback to swf http://code.google.com/p/videoplayer/
+- recalculate grid size on load
 - sitemap for crwaling bots to index
+  - list clip sets
+  - list popular queries
+
+- fallback to swf http://code.google.com/p/videoplayer/
 
 - make the size name on the download tab clickable
 - blog post idomyownstunts
