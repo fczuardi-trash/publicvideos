@@ -32,6 +32,8 @@ function window_resized(){
   thumbs_available = images.length
   if (thumbs_available == 0) {return;} 
   gridbox = $('grid')
+  //temporarily remove scrollbar to get precise width
+  document.body.setStyle('overflow','hidden')
   w = gridbox.getWidth()
   h = window.getHeight()-160
   columns = Math.floor(w/193)
@@ -46,6 +48,8 @@ function window_resized(){
   }else{
     hide_extra_images(grid_spots_per_screen, thumbs_available, empty_cells, columns)
   }
+  //add back scrollbar if needed
+  document.body.setStyle('overflow','auto')
 }
 //used to make the home page grid always a rectangle
 function hide_extra_images(spots_available, thumbs_available, empty_cells, columns){

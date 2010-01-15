@@ -1,18 +1,18 @@
 = The Plan =
 
 === CURRENT (Milestone A) ===
-- recalculate grid size on load
+- rss miro compatible
 - sitemap for crwaling bots to index
   - list clip sets
   - list popular queries
-
 - fallback to swf http://code.google.com/p/videoplayer/
-
 - make the size name on the download tab clickable
 - blog post idomyownstunts
 - setup a posterous
 - one tech article about video hacks to work on chrome, ff3.5, ff3.6 and safari
 - continue uploading videos
+
+ok - recalculate grid size on load (bug) -> the problem was the scrollbar geting into the width calc
 
 
 === Milestone B ===
