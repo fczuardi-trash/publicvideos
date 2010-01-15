@@ -2,9 +2,6 @@
 
 === CURRENT (Milestone A) ===
 - rss miro compatible
-- sitemap for crwaling bots to index
-  - list clip sets
-  - list popular queries
 - fallback to swf http://code.google.com/p/videoplayer/
 - make the size name on the download tab clickable
 - blog post idomyownstunts
@@ -12,7 +9,9 @@
 - one tech article about video hacks to work on chrome, ff3.5, ff3.6 and safari
 - continue uploading videos
 
+ok - links to clip sets (for crawling bots to index)
 ok - recalculate grid size on load (bug) -> the problem was the scrollbar geting into the width calc
+ok - implement support for listing clips in a set
 
 
 === Milestone B ===

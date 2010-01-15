@@ -29,89 +29,34 @@ from videos.models import Video
 from videos.models import VideoVersion
 from django.contrib.auth.models import User
 
-def index(request):
+def index(request, set_slug=None):
   didyoumean = None
+  query_text = 'Search'
+  page_title = 'Public Videos(alpha)'
+  if 'set' in request.GET:
+    set_slug = request.GET['set']
   try:
-    videos = Video.objects.filter(status='transcoded').order_by('?')
-    results_num = 64
-    query_text = 'Search'
-    is_search_results = 'false'
-    page_title = 'Public Videos(alpha)'
-    if 'q' in request.GET:
-      didyoumeans = [
-      'airplane',
-      'ants',
-      'asphalt',
-      'banana',
-      'bee',
-      'bike',
-      'bird',
-      'black',
-      'blue',
-      'box',
-      'branch',
-      'brown',
-      'bubble',
-      'bug',
-      'burning',
-      'bus',
-      'butterfly',
-      'car',
-      'cat',
-      'city',
-      'cloud',
-      'cross',
-      'dirt',
-      'drop',
-      'duck',
-      'eating',
-      'elevator',
-      'fence',
-      'fire',
-      'flower',
-      'fruit',
-      'glass',
-      'green',
-      'hose',
-      'lake',
-      'leaves',
-      'light',
-      'lightning',
-      'macro',
-      'mud',
-      'night',
-      'owl',
-      'pine',
-      'rain',
-      'road',
-      'roof',
-      'samambaia',
-      'sky',
-      'smoke',
-      'snail',
-      'sunset',
-      'tire',
-      'tree',
-      'violet',
-      'trunk',
-      'truck',
-      'water',
-      'waterfall',
-      'wheel',
-      'windshield',
-      'wire',
-      'yellow',
-      'Chewbacca'
-      ]
+    if set_slug:
+      videos = Video.objects.filter(status='transcoded').filter(set_slug__exact=set_slug).order_by('filename')
+      author_name = u"%s %s" % (videos[0].author.first_name, videos[0].author.last_name) if videos[0].author.first_name else str(videos[0].author)
+      results_num = len(videos)
+      is_search_results = 'true'
+      page_title = u'Clip Set “%s” by %s — Public Videos(alpha)' % (set_slug,author_name)
+    elif 'q' in request.GET:
       if request.GET['q'].strip() != '':
         is_search_results = 'true'
         query_text = request.GET['q']
-        page_title = u'Free Stock Video Footage: %s — Public Videos(alpha)' % query_text.capitalize()
         results_num = 103
         videos = Video.objects.filter(status='transcoded').filter(filename__contains=query_text).order_by('?')
+        page_title = u'Free Stock Video Footage: %s — Public Videos(alpha)' % query_text.capitalize()
         if(len(videos) == 0):
+          import keyword_list
           page_title = u'no results for “%s” — Public Videos(alpha)' % query_text
           didyoumean = random.choice(didyoumeans)
+    else:
+      videos = Video.objects.filter(status='transcoded').order_by('?')
+      results_num = 64
+      is_search_results = 'false'
   except IndexError:
     raise Http404
   # http://www.archive.org/download/ace_200907_01/33470ecf16669eb165619a9e229ce751.mts-jpg-108.JPG.JPG
@@ -129,7 +74,33 @@ def index(request):
     'is_search_results':is_search_results,
     'didyoumean':didyoumean
     })
-
+def list_sets(request):
+  available_sets = [
+    'ace_200905_01',
+    # ace_200905_02
+    # ace_200905_03
+    'ace_200907_01',
+    'ace_200907_02',
+    'ace_200907_03',
+    'ace_200907_04',
+    'ace_200907_05',
+    'ace_200907_06',
+    'ace_200910_01',
+    'ace_200910_02',
+    'ace_200910_03',
+    'ace_200911_01',
+    'ace_200911_02',
+    'ace_200911_03',
+    'ace_200911_04',
+    'ace_200911_05',
+    'ace_200911_06',
+    'ace_200912_01',
+    'ace_200912_02',
+    'ace_200912_03',
+    'ace_200912_04'
+  ]
+  return render_to_response("videos/sets.html", locals())
+  
 def show(request, short=None, rubish=None, id=None):
   try:
     if id:

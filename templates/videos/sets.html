@@ -1,0 +1,14 @@
+{% extends "base_jinja.html" %}
+{% block title %}{{ page_title }}{% endblock %}
+{% block extrahead %}
+{% endblock %}
+{% block content %}
+<h1>Available Clip Sets</h1>
+<ul>
+    {% for set_slug in available_sets %}
+    <li><a href="/set/{{ set_slug }}">{{ set_slug }}</a></li>
+    {% endfor %}
+</ul>
+<p>
+    <a href="/">Public Videos(alpha) Home</a>
+{% endblock %}

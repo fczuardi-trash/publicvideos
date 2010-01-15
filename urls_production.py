@@ -4,6 +4,8 @@ from lib.jinjasupport import jenv
 
 urlpatterns = patterns('',
   (r'^$', 'videos.views.index'),
+  (r'^sets\/?$', 'videos.views.list_sets'),
+  (r'^set/(?P<set_slug>[^\/]*)\/?$', 'videos.views.index'),
   (r'^about/?$', 'django.views.generic.simple.direct_to_template', {'template': 'website/about.html','template_loader':jenv}),
   (r'^clip', include('videos.urls_production')),
   (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
