@@ -52,6 +52,9 @@ Contributors:
 - profile page
 
 
+=== Beta launch ===
+- update the url on http://meta.wikimedia.org/wiki/Help:Public_domain_image_resources#General_collections
+- update url at http://commons.wikimedia.org/wiki/Commons:Free_media_resources/Video
 
 
 
