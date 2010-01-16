@@ -2,20 +2,30 @@
 {% block title %}{{ page_title }}{% endblock %}
 {% block extrahead %}
     <link rel="stylesheet" type="text/css" href="/static/css/clips_grid.css" />
-    <meta name="description" content="Public Videos is a repository of open, original, high-quality, and royalty-free video footage. A free clips-farm that can be used by anyone for any purpose." />
+    <meta name="description" content="Public Videos (alpha) is a repository of open, original, high-quality, and royalty-free video footage. A free clips-farm that can be used by anyone for any purpose." />
     <meta name="keywords" content="open, free, footage, stock footage, clips, royalty free, ogg, theora, open video, cc0, public domain, HTML5" /> 
 {% endblock %}
 {% block content %}
-<div id="alpha-footer"><p><a href="/about">about</a> • <a href="/sets">clip sets</a></p></div>
+<h1 class="text-browser-only">{{ page_title }}</h1>
+{% if not is_search_results %}
+<p class="description text-browser-only">Public Videos (alpha) is a repository of open, original, high-quality, and royalty-free video footage. A free clips-farm that can be used by anyone for any purpose.</p>
+<div id="alpha-footer"><p><a href="/about">About Public Videos</a> • <a href="/sets">Clips Directory</a></p></div>
+<h2 class="text-browser-only">Random Clips</h2>
+{% else %}
+<h2 class="text-browser-only">Clips</h2>
+{% endif %}
 <div id="grid">
 {% for thumb in thumbs %}<a class="grid_cell" href="{{thumb.page}}"><img src="{{thumb.src}}" _colorsrc="" width="192" height="108" alt="{{ thumb.alt }}"/></a>{% endfor %}<div id="logo_108" class="grid_cell">
 <h1><a href="/">Public Videos</a></h1>
-<input type="text" id="search" value="{{ query_text }}" onClick="this.select()" onChange="submit_search(this)" />
+<form method="GET" action="/">
+<input type="text" id="search" name="q" value="" onClick="this.select()" onChange="submit_search(this)" />
+<input class="text-browser-only" type="submit" value="Search" />
 {% if didyoumean %}<p class="didyoumean">Did you mean <a href="/?q={{ didyoumean }}">{{ didyoumean }}</a>?</p>{% endif %}
 </div>
 </div>
 <script type="text/javascript">
-var is_search_results = {{ is_search_results }}
+var is_search_results = {{ is_search_results|lower}}
+var query_text = "{{ query_text }}"
 </script>
 <script type="text/javascript" src="/static/lib/mootools-1.2.4-core-elements-all-fw-tween.js"></script>
 <script type="text/javascript" src="/static/js/clips_grid.js"></script>

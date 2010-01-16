@@ -17,24 +17,6 @@
           brought to you by <a href="{{ host_link }}">archive.org</a>
         </h2>
     </div>
-    <div id="s360" class="box">
-        <div id="s272" class="box selected">
-        <!-- 480x272 -->
-        {% if versions['272.JPG'] is defined %}<img  width="480" height="272" src="{{ versions['272.JPG'].url }}" id="poster272" class="video" />{% endif %}
-        <video class="video" width="480" height="272" controls {% if versions['272.JPG'] is defined %} poster="{{ versions['272.JPG'].url }}"{% endif %}>
-            <source _src="{{ versions['272.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' />
-            <source _src="{{ versions['272.MP4'].url }}" type="video/mp4"/>
-            <div class="warning" id="w272">{{ unsuported_video_tag_msg }}</div>
-        </video>
-      </div>
-        <!-- 640x360 -->
-        {% if versions['272.JPG'] is defined %}<img width="640" height="360" src="{{ versions['360.JPG'].url }}" id="poster360" class="video" />{% endif %}
-        <video class="video" width="640" height="360" {% if versions['360.JPG'] is defined %} poster="{{ versions['360.JPG'].url }}"{% endif %}
-            <source _src="{{ versions['360.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' />
-            <source _src="{{ versions['360.MP4'].url }}" type="video/mp4"/>
-            <div class="warning" id="w360">{{ unsuported_video_tag_msg }}</div>
-        </video>
-    </div>
     <div id="actions" class="a272">
         <div class="menubar">
             <div style="float:left;width:5%;"><a href="#" title="Previous Clip">&nbsp;</a></div>
@@ -50,7 +32,7 @@
         <div id="panel-container">
             <!-- Download Panel -->
             <div class="panel" id="downloads-panel">
-                <a name="download" id="download" ></a>
+                <a name="download" id="download" ><h2 class="text-browser-only">Download</h2></a>
                 <table>
                     <caption>Available Downloads</caption>
                     <tr id="d272" class="zebra-odd selected">
@@ -67,7 +49,7 @@
             </div> <!-- end downloads-panel -->
             <!-- License Panel -->
             <div class="panel" id="license-panel">
-                <a name="license" id="license"></a>
+                <a name="license" id="license"><h2 class="text-browser-only">License</h2></a>
                 <h3>Creative Commons CC0 1.0 Universal</h3>
                 <h4>Summary</h4>
                 <p>
@@ -89,6 +71,24 @@
             </div> <!-- end downloads-panel -->
         </div> <!-- end panel-container -->
     </div> <!-- end actions -->
+    <div id="s360" class="box">
+        <div id="s272" class="box selected">
+        <!-- 480x272 -->
+        {% if versions['272.JPG'] is defined %}<img  width="480" height="272" src="{{ versions['272.JPG'].url }}" id="poster272" class="video" />{% endif %}
+        <video class="video" width="480" height="272" controls {% if versions['272.JPG'] is defined %} poster="{{ versions['272.JPG'].url }}"{% endif %}>
+            <source _src="{{ versions['272.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' />
+            <source _src="{{ versions['272.MP4'].url }}" type="video/mp4"/>
+            <div class="warning" id="w272">{{ unsuported_video_tag_msg }}</div>
+        </video>
+      </div>
+        <!-- 640x360 -->
+        {% if versions['272.JPG'] is defined %}<img width="640" height="360" src="{{ versions['360.JPG'].url }}" id="poster360" class="video" />{% endif %}
+        <video class="video" width="640" height="360" {% if versions['360.JPG'] is defined %} poster="{{ versions['360.JPG'].url }}"{% endif %}
+            <source _src="{{ versions['360.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' />
+            <source _src="{{ versions['360.MP4'].url }}" type="video/mp4"/>
+            <div class="warning" id="w360">{{ unsuported_video_tag_msg }}</div>
+        </video>
+    </div>
     <div id="watermark">
         <h1><a href="/">Public Videos</a></h1>
     </div>

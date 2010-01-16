@@ -40,11 +40,11 @@ def index(request, set_slug=None):
       videos = Video.objects.filter(status='transcoded').filter(set_slug__exact=set_slug).order_by('filename')
       author_name = u"%s %s" % (videos[0].author.first_name, videos[0].author.last_name) if videos[0].author.first_name else str(videos[0].author)
       results_num = len(videos)
-      is_search_results = 'true'
+      is_search_results = True
       page_title = u'Clip Set “%s” by %s — Public Videos(alpha)' % (set_slug,author_name)
     elif 'q' in request.GET:
       if request.GET['q'].strip() != '':
-        is_search_results = 'true'
+        is_search_results = True
         query_text = request.GET['q']
         results_num = 103
         videos = Video.objects.filter(status='transcoded').filter(filename__contains=query_text).order_by('?')
@@ -57,7 +57,7 @@ def index(request, set_slug=None):
     else:
       videos = Video.objects.filter(status='transcoded').order_by('?')
       results_num = 64
-      is_search_results = 'false'
+      is_search_results = False
   except IndexError:
     raise Http404
   # http://www.archive.org/download/ace_200907_01/33470ecf16669eb165619a9e229ce751.mts-jpg-108.JPG.JPG
@@ -77,29 +77,30 @@ def index(request, set_slug=None):
     'didyoumean':didyoumean
     })
 def list_sets(request):
+  page_title = u"Free Clips Directory, browse by clip sets. — Public Videos(alpha)"
   available_sets = [
-    'ace_200905_01',
-    'ace_200905_02',
-    'ace_200905_03',
-    'ace_200907_01',
-    'ace_200907_02',
-    'ace_200907_03',
-    'ace_200907_04',
-    'ace_200907_05',
-    'ace_200907_06',
-    'ace_200910_01',
-    'ace_200910_02',
-    'ace_200910_03',
-    'ace_200911_01',
-    'ace_200911_02',
-    'ace_200911_03',
-    'ace_200911_04',
-    'ace_200911_05',
-    'ace_200911_06',
-    'ace_200912_01',
-    'ace_200912_02',
-    'ace_200912_03',
-    'ace_200912_04'
+    {'contributor':'Ace', 'year':'2009', 'month':'May', 'part':'1 of 6', 'set_slug':'ace_200905_01'},
+    {'contributor':'Ace', 'year':'2009', 'month':'May', 'part':'2 of 6', 'set_slug':'ace_200905_02'},
+    {'contributor':'Ace', 'year':'2009', 'month':'May', 'part':'3 of 6', 'set_slug':'ace_200905_03'},
+    {'contributor':'Ace', 'year':'2009', 'month':'June', 'part':'1 of 6', 'set_slug':'ace_200907_01'},
+    {'contributor':'Ace', 'year':'2009', 'month':'June', 'part':'2 of 6', 'set_slug':'ace_200907_02'},
+    {'contributor':'Ace', 'year':'2009', 'month':'June', 'part':'3 of 6', 'set_slug':'ace_200907_03'},
+    {'contributor':'Ace', 'year':'2009', 'month':'June', 'part':'4 of 6', 'set_slug':'ace_200907_04'},
+    {'contributor':'Ace', 'year':'2009', 'month':'June', 'part':'5 of 6', 'set_slug':'ace_200907_05'},
+    {'contributor':'Ace', 'year':'2009', 'month':'June', 'part':'6 of 6', 'set_slug':'ace_200907_06'},
+    {'contributor':'Ace', 'year':'2009', 'month':'October', 'part':'1 of 3', 'set_slug':'ace_200910_01'},
+    {'contributor':'Ace', 'year':'2009', 'month':'October', 'part':'2 of 3', 'set_slug':'ace_200910_02'},
+    {'contributor':'Ace', 'year':'2009', 'month':'October', 'part':'3 of 3', 'set_slug':'ace_200910_03'},
+    {'contributor':'Ace', 'year':'2009', 'month':'November', 'part':'1 of 6', 'set_slug':'ace_200911_01'},
+    {'contributor':'Ace', 'year':'2009', 'month':'November', 'part':'2 of 6', 'set_slug':'ace_200911_02'},
+    {'contributor':'Ace', 'year':'2009', 'month':'November', 'part':'3 of 6', 'set_slug':'ace_200911_03'},
+    {'contributor':'Ace', 'year':'2009', 'month':'November', 'part':'4 of 6', 'set_slug':'ace_200911_04'},
+    {'contributor':'Ace', 'year':'2009', 'month':'November', 'part':'5 of 6', 'set_slug':'ace_200911_05'},
+    {'contributor':'Ace', 'year':'2009', 'month':'November', 'part':'6 of 6', 'set_slug':'ace_200911_06'},
+    {'contributor':'Ace', 'year':'2009', 'month':'December', 'part':'1 of 4', 'set_slug':'ace_200912_01'},
+    {'contributor':'Ace', 'year':'2009', 'month':'December', 'part':'2 of 4', 'set_slug':'ace_200912_02'},
+    {'contributor':'Ace', 'year':'2009', 'month':'December', 'part':'3 of 4', 'set_slug':'ace_200912_03'},
+    {'contributor':'Ace', 'year':'2009', 'month':'December', 'part':'4 of 4', 'set_slug':'ace_200912_04'}
   ]
   return render_to_response("videos/sets.html", locals())
   

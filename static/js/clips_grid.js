@@ -90,6 +90,7 @@ function init(){
   }
   $('grid').addEvent('mouseleave', highlight_all_images);
   $('logo_108').addEvent('mouseover', highlight_all_images);
+  $('search').set('value',query_text);
   window.addEvent('load', page_loaded);
   window.addEvent('resize', window_resized);  
   window_resized();

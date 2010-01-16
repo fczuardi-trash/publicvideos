@@ -3,10 +3,11 @@
 {% block extrahead %}
 {% endblock %}
 {% block content %}
-<h1>Available Clip Sets</h1>
+<h1 class="text-browser-only">{{ page_title }}</h1>
+<h2>Available Clip Sets</h2>
 <ul>
-    {% for set_slug in available_sets %}
-    <li><a href="/set/{{ set_slug }}">{{ set_slug }}</a></li>
+    {% for set in available_sets %}
+    <li><a href="/set/{{ set.set_slug }}">Videos from the contributor {{ set.contributor}}, {{ set.month }} of {{ set.year }} batch, part {{ set.part}}</a></li>
     {% endfor %}
 </ul>
 <p>
