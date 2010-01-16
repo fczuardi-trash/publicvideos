@@ -68,7 +68,7 @@ def index(request, set_slug=None):
     url = "http://static.publicvideos.org/thumbnails/%s/%s.%s" % (video.set_slug, video.md5, 'mts-jpg-108.JPG')
     page = "/%s" % video.md5[:7]
     alt = video.filename[video.filename.rfind('_')+1:-4]
-    thumbs.append({'src':url,'page':page, 'alt':alt})
+    thumbs.append({'src':url,'page':page, 'alt':alt[:alt.find('-')]})
   return render_to_response("videos/index.html", {
     'page_title': page_title,
     'query_text':query_text,
