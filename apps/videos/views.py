@@ -33,6 +33,7 @@ def index(request, set_slug=None):
   didyoumean = None
   query_text = 'Search'
   page_title = 'Public Videos(alpha)'
+  canonical_url = 'http://alpha.publicvideos.org/'
   if 'set' in request.GET:
     set_slug = request.GET['set']
   try:
@@ -42,6 +43,7 @@ def index(request, set_slug=None):
       results_num = len(videos)
       is_search_results = True
       page_title = u'Clip Set “%s” by %s — Public Videos(alpha)' % (set_slug,author_name)
+      canonical_url = 'http://alpha.publicvideos.org/set/%s/' % set_slug
     elif 'q' in request.GET:
       if request.GET['q'].strip() != '':
         is_search_results = True
@@ -49,6 +51,7 @@ def index(request, set_slug=None):
         results_num = 103
         videos = Video.objects.filter(status='transcoded').filter(filename__contains=query_text).order_by('?')
         page_title = u'Free Stock Video Footage: %s — Public Videos(alpha)' % query_text.capitalize()
+        canonical_url = 'http://alpha.publicvideos.org/?q=%s' % query_text
         if(len(videos) == 0):
           import keyword_list
           page_title = u'no results for “%s” — Public Videos(alpha)' % query_text
@@ -71,6 +74,7 @@ def index(request, set_slug=None):
     thumbs.append({'src':url,'page':page, 'alt':alt[:alt.find('-')]})
   return render_to_response("videos/index.html", {
     'page_title': page_title,
+    'canonical_url': canonical_url,
     'query_text':query_text,
     'thumbs':thumbs,
     'is_search_results':is_search_results,
@@ -78,6 +82,7 @@ def index(request, set_slug=None):
     })
 def list_sets(request):
   page_title = u"Free Clips Directory, browse by clip sets. — Public Videos(alpha)"
+  canonical_url = 'http://alpha.publicvideos.org/sets/'
   available_sets = [
     {'contributor':'Ace', 'year':'2009', 'month':'May', 'part':'1 of 6', 'set_slug':'ace_200905_01'},
     {'contributor':'Ace', 'year':'2009', 'month':'May', 'part':'2 of 6', 'set_slug':'ace_200905_02'},
@@ -127,6 +132,7 @@ def show(request, short=None, rubish=None, id=None):
   author_name = u"%s %s" % (video.author.first_name, video.author.last_name) if video.author.first_name else str(video.author)
   host_link = "http://www.archive.org/details/%s" % video.set_slug
   page_title = u"“%s” — Public Videos(alpha)" % video_title
+  canonical_url = 'http://alpha.publicvideos.org/clip/%s/' % video.pk
   keywords = video.filename[video.filename.rfind('_')+1:-4]
   keywords = keywords.replace('-',', ')
   unsuported_video_tag_msg = u"""
