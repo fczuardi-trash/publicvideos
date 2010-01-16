@@ -1,7 +1,7 @@
 = The Plan =
 
 === CURRENT (Milestone A) ===
-- rss miro compatible
+- rss miro compatible (https://develop.participatoryculture.org/trac/democracy/wiki/RSSFeedSpecs)
 - fallback to swf http://code.google.com/p/videoplayer/
 - make the size name on the download tab clickable
 - blog post idomyownstunts
