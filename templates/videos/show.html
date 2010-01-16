@@ -5,6 +5,9 @@
     <script type="text/javascript" src="/static/js/show.js"></script>
     <link rel="canonical" href="/clip/{{ video.pk }}" />
     <meta name="keywords" content="free, video, footage, {{ keywords }}" /> 
+    <meta name="title" content="{{ page_title }}" />
+    <meta name="medium" content="video" />
+    <link rel="image_src" href="{{ versions['272.JPG'].url }}" />
 {% endblock %}
 {% block content %}
     <div id="header" class="h272">
