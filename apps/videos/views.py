@@ -124,6 +124,8 @@ def show(request, short=None, rubish=None, id=None):
   author_name = u"%s %s" % (video.author.first_name, video.author.last_name) if video.author.first_name else str(video.author)
   host_link = "http://www.archive.org/details/%s" % video.set_slug
   page_title = u"“%s” — Public Videos(alpha)" % video_title
+  keywords = video.filename[video.filename.rfind('_')+1:-4]
+  keywords = keywords.replace('-',', ')
   unsuported_video_tag_msg = u"""
   <p class="middle">
   The following <b>clip</b> works better in browsers with<br \>
