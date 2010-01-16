@@ -7,9 +7,6 @@ body{
   font-family:Arial, sans-serif;
   color:#444;
 }
-.text-browser-only{
-  display:none;
-}
 a{text-decoration:none;}
 a{color:#888;;}
 a:hover{color:#fff;}
