@@ -52,6 +52,7 @@ def index(request, set_slug=None):
         if(len(videos) == 0):
           import keyword_list
           page_title = u'no results for “%s” — Public Videos(alpha)' % query_text
+          didyoumeans = keyword_list.get_whitelist()
           didyoumean = random.choice(didyoumeans)
     else:
       videos = Video.objects.filter(status='transcoded').order_by('?')
