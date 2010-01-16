@@ -33,6 +33,7 @@ didyoumeans = [
 'glass',
 'green',
 'hose',
+'horse',
 'lake',
 'leaves',
 'light',

@@ -77,7 +77,7 @@ def index(request, set_slug=None):
 def list_sets(request):
   available_sets = [
     'ace_200905_01',
-    # ace_200905_02
+    'ace_200905_02',
     # ace_200905_03
     'ace_200907_01',
     'ace_200907_02',
