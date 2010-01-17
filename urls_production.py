@@ -4,6 +4,7 @@ from lib.jinjasupport import jenv
 
 urlpatterns = patterns('',
   (r'^$', 'videos.views.index'),
+  (r'^sitemap.xml$', 'videos.views.sitemap_index'),
   (r'^sets\/?$', 'videos.views.list_sets'),
   (r'^set/(?P<set_slug>[^\/]*)\/?$', 'videos.views.index'),
   (r'^about/?$', 'django.views.generic.simple.direct_to_template', {'template': 'website/about.html','template_loader':jenv}),
