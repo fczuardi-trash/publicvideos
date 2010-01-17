@@ -5,6 +5,7 @@
 <url> 
   <loc>http://alpha.publicvideos.org/clip/{{thumb.video.pk}}/</loc>
     <video:video>
+      <video:title>Clip #{{thumb.video.pk}}</video:title>
       <video:thumbnail_loc>{{thumb.src}}</video:thumbnail_loc>
       {% for tag in thumb.tags %}<video:tag>{{ tag }}</video:tag>{% endfor %}
       <video:family_friendly>yes</video:family_friendly>
