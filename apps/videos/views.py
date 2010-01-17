@@ -156,15 +156,15 @@ def show(request, short=None, rubish=None, id=None):
   keywords = keywords.replace('-',', ')
   unsuported_video_tag_msg = u"""
   <p class="middle">
-  The following <b>clip</b> works better in browsers with<br \>
-          <b>native html5 video support</b></br>
+  The following <b>clip</b> works better in browsers with<br>
+          <b>native html5 video support</b><br>
   We recommend the download of <a href="http://www.mozilla.com/en-US/firefox/all-beta.html"><b>firefox 3.6 beta</b></a>
   </p>
   <div class="bottom">
   <p class="useflash">
   (but you can still <a href="#" class="play-button">watch it using flash</a> or 
   download it using the link below)
-  </small></p>
+  </p>
   <p class="left bottomlink"><a href="http://www.playogg.org">www.playogg.org</a></p>
   <p class="right bottomlink"><a href="http://www.mozilla.org">www.mozilla.org</a></p>
   </div>"""

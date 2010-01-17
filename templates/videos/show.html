@@ -32,7 +32,7 @@
         <div id="panel-container">
             <!-- Download Panel -->
             <div class="panel" id="downloads-panel">
-                <a name="download" id="download" ><NOSCRIPT><h2>Download</h2></NOSCRIPT></a>
+                <a id="download" ><NOSCRIPT><h2>Download</h2></NOSCRIPT></a>
                 <table>
                     <caption>Available Downloads</caption>
                     <tr id="d272" class="zebra-odd selected">
@@ -49,7 +49,7 @@
             </div> <!-- end downloads-panel -->
             <!-- License Panel -->
             <div class="panel" id="license-panel">
-                <a name="license" id="license"><NOSCRIPT><h2>License</h2></NOSCRIPT></a>
+                <a id="license"><NOSCRIPT><h2>License</h2></NOSCRIPT></a>
                 <h3>Creative Commons CC0 1.0 Universal</h3>
                 <h4>Summary</h4>
                 <p>
@@ -76,16 +76,16 @@
         <!-- 480x272 -->
         {% if versions['272.JPG'] is defined %}<img  width="480" height="272" src="{{ versions['272.JPG'].url }}" id="poster272" class="video" />{% endif %}
         <video class="video" width="480" height="272" controls {% if versions['272.JPG'] is defined %} poster="{{ versions['272.JPG'].url }}"{% endif %}>
-            <source _src="{{ versions['272.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' />
-            <source _src="{{ versions['272.MP4'].url }}" type="video/mp4"/>
+            <source _src="{{ versions['272.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' src="" />
+            <source _src="{{ versions['272.MP4'].url }}" type="video/mp4" src="" />
             <div class="warning" id="w272">{{ unsuported_video_tag_msg }}</div>
         </video>
       </div>
         <!-- 640x360 -->
         {% if versions['272.JPG'] is defined %}<img width="640" height="360" src="{{ versions['360.JPG'].url }}" id="poster360" class="video" />{% endif %}
         <video class="video" width="640" height="360" {% if versions['360.JPG'] is defined %} poster="{{ versions['360.JPG'].url }}"{% endif %}
-            <source _src="{{ versions['360.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' />
-            <source _src="{{ versions['360.MP4'].url }}" type="video/mp4"/>
+            <source _src="{{ versions['360.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' src="" />
+            <source _src="{{ versions['360.MP4'].url }}" type="video/mp4" src="" />
             <div class="warning" id="w360">{{ unsuported_video_tag_msg }}</div>
         </video>
     </div>
