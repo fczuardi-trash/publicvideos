@@ -107,6 +107,7 @@ def list_sets(request, fmt='html'):
     {'contributor':'Ace', 'year':'2009', 'month':'May', 'part':'2 of 6', 'set_slug':'ace_200905_02'},
     {'contributor':'Ace', 'year':'2009', 'month':'May', 'part':'3 of 6', 'set_slug':'ace_200905_03'},
     {'contributor':'Ace', 'year':'2009', 'month':'May', 'part':'4 of 6', 'set_slug':'ace_200905_04'},
+    {'contributor':'Ace', 'year':'2009', 'month':'May', 'part':'5 of 6', 'set_slug':'ace_200905_05'},
     {'contributor':'Ace', 'year':'2009', 'month':'June', 'part':'1 of 6', 'set_slug':'ace_200907_01'},
     {'contributor':'Ace', 'year':'2009', 'month':'June', 'part':'2 of 6', 'set_slug':'ace_200907_02'},
     {'contributor':'Ace', 'year':'2009', 'month':'June', 'part':'3 of 6', 'set_slug':'ace_200907_03'},
