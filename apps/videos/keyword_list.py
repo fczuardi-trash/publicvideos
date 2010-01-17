@@ -58,6 +58,7 @@ def get_whitelist():
   'violet',
   'trunk',
   'truck',
+  'turtle',
   'water',
   'waterfall',
   'wheel',
