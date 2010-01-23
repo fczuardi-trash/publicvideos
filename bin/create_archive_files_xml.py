@@ -2,9 +2,9 @@
 
 import os
 
-IDENTIFIER = 'ace_200904_03'
-VIDEOS_PATH = '/tmp/publicvideos/versions/ace_200904_03/'
-VIDEOS_TITLE = "Publicvideos April 2009 batch, part 3"
+IDENTIFIER = 'ace_200903_02'
+VIDEOS_PATH = '/tmp/publicvideos/versions/ace_200903_02/'
+VIDEOS_TITLE = "Publicvideos March 2009 batch, part 1"
 VIDEOS_DESCRIPTION = 'A batch of stock clips made for publicvideos.org.'
 VIDEOS_LABELS = 'publicvideos.org; royalty free; free; cc0; cczero; stock footage; ace of spades'
 VIDEOS_CREATOR = 'Ace of Spades'
