@@ -35,6 +35,8 @@ def index(request, set_slug=None, fmt='html'):
   page_title = 'Public Videos(alpha)'
   canonical_url = 'http://alpha.publicvideos.org/'
   template_path = "videos/index.html"
+  logo_colors = ['red', 'green', 'blue', 'white']
+  a_color = random.choice(logo_colors)
   if 'set' in request.GET:
     set_slug = request.GET['set']
   if 'fmt' in request.GET:
@@ -68,6 +70,7 @@ def index(request, set_slug=None, fmt='html'):
       videos = Video.objects.filter(status='transcoded').order_by('?')
       results_num = 64
       is_search_results = False
+      request.session['logo_color']  = a_color
   except IndexError:
     raise Http404
   # http://www.archive.org/download/ace_200907_01/33470ecf16669eb165619a9e229ce751.mts-jpg-108.JPG.JPG
@@ -82,13 +85,19 @@ def index(request, set_slug=None, fmt='html'):
     alt = tags[0]
     video = video
     thumbs.append({'src':url,'page':page, 'alt':alt, 'tags':tags, 'video':video })
+  if ('logo_color' in request.session):
+    color = request.session['logo_color']
+  else:
+    color = a_color
+    request.session['logo_color'] = color
   return render_to_response(template_path, {
     'page_title': page_title,
     'canonical_url': canonical_url,
     'query_text':query_text,
     'thumbs':thumbs,
     'is_search_results':is_search_results,
-    'didyoumean':didyoumean
+    'didyoumean':didyoumean,
+    'logo_color':color
     })
 
 def sitemap_index(request):
@@ -138,6 +147,7 @@ def list_sets(request, fmt='html'):
   return render_to_response(template_path, locals())
   
 def show(request, short=None, rubish=None, id=None):
+  logo_colors = ['red', 'green', 'blue', 'white']
   try:
     if id:
       video = Video.objects.get(pk=id)
@@ -163,6 +173,11 @@ def show(request, short=None, rubish=None, id=None):
   canonical_url = 'http://alpha.publicvideos.org/clip/%s/' % video.pk
   keywords = video.filename[video.filename.rfind('_')+1:-4]
   keywords = keywords.replace('-',', ')
+  if ('logo_color' in request.session):
+    logo_color = request.session['logo_color']
+  else:
+    logo_color = a_color
+    request.session['logo_color'] = logo_color
   unsuported_video_tag_msg = u"""
   <p class="middle">
   The following <b>clip</b> works better in browsers with<br>
