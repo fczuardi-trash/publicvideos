@@ -44,7 +44,7 @@ a:hover{color:#fff;}
 #main-play-button {
   position:absolute;
   z-index:59;
-  opacity:0.7;
+  opacity:0.8;
   outline:0;
 }
 #main-play-button img{
@@ -54,9 +54,12 @@ a:hover{color:#fff;}
 #main-play-button:hover{
   opacity:1;
 }
+/*
 #main-play-button.p272 {width:82px;height:82px;bottom:55%;margin-bottom:-42px;left:50%;margin-left:-42px;}
 #main-play-button.p360 {width:108px;height:108px;bottom:55%;margin-bottom:-54px;left:50%;margin-left:-54px;}
-
+*/
+#main-play-button.p272 {width:93px;height:110px;bottom:55%;margin-bottom:-50px;left:50%;margin-left:-37px;}
+#main-play-button.p360 {width:93px;height:110px;bottom:55%;margin-bottom:-50px;left:50%;margin-left:-37px;}
 #throbber{
   z-index:61;
   margin-left:-16px;
