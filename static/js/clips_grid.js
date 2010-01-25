@@ -7,6 +7,7 @@ function image_loaded(image_element){
 }
 function highlight_image(image_element){
   for (i=0; i<images.length;i++){
+    if(images[i].className=='logo_corner') continue;
     images[i].set('tween', {duration: 'short'});
     if(images[i]==image_element){
       images[i].tween('opacity', 1)
@@ -17,6 +18,7 @@ function highlight_image(image_element){
 }
 function highlight_all_images(){
   for (i=0; i<images.length;i++){
+    if(images[i].className=='logo_corner') continue;
     images[i].set('tween', {duration: 'normal'});
     images[i].tween('opacity', 1)
   }
@@ -38,18 +40,28 @@ function window_resized(){
   h = window.getHeight()-160
   columns = Math.floor(w/193)
   rows = Math.floor(h/109)
-  max_rows = Math.ceil((thumbs_available+1)/columns)
+  max_rows = Math.ceil((thumbs_available)/columns)
   max_grid_spots = max_rows *columns
-  empty_cells = (max_grid_spots-(thumbs_available+1))
+  // alert(max_grid_spots+'='+max_rows+'*'+columns)
+  empty_cells = (max_grid_spots-(thumbs_available))
   grid_spots_per_screen = rows * columns
   // is_search_results = true
   if (is_search_results){
+    reposition_footer(columns)
     left_align_last_row(empty_cells)
   }else{
     hide_extra_images(grid_spots_per_screen, thumbs_available, empty_cells, columns)
+    reposition_footer(columns)
   }
   //add back scrollbar if needed
   document.body.setStyle('overflow','auto')
+}
+
+function reposition_footer(columns){
+  footer = $('alpha-footer')
+  gridbox = $('grid')
+  footer.setStyle('top', gridbox.getHeight()+80+16)
+  footer.setStyle('width', 192*columns+columns-2)  
 }
 //used to make the home page grid always a rectangle
 function hide_extra_images(spots_available, thumbs_available, empty_cells, columns){
@@ -59,6 +71,7 @@ function hide_extra_images(spots_available, thumbs_available, empty_cells, colum
     last_img_cell = thumbs_available - (columns-empty_cells)
   }
   for (i=0; i<images.length;i++){
+    if(images[i].className=='logo_corner') continue;
     if(i < last_img_cell){
       images[i].parentNode.setStyle('display', 'inline-block')
     } else {
@@ -76,9 +89,10 @@ function left_align_last_row(empty_cells){
   //add placeholders
   var placeholder = new Element('span',{'class':'grid_cell'})
   var grid_element = $('grid')
+  var logo_cell = $('logo_108')
   for (i=0;i<empty_cells;i++){
     var new_placeholder = placeholder.clone()
-    new_placeholder.inject(grid_element)  
+    new_placeholder.inject(logo_cell,'before')  
   }
 }
 function init(){

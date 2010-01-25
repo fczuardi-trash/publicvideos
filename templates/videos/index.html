@@ -20,14 +20,13 @@
 </NOSCRIPT>
 <div id="grid">
 {% for thumb in thumbs %}<a class="grid_cell" href="{{thumb.page}}"><img src="{{thumb.src}}" width="192" height="108" alt="{{ thumb.alt }}" /></a>{% endfor %}<div id="logo_108" class="grid_cell">
-<h1><a href="/">Public Videos</a></h1>
+<img src="/static/images/logo_home_{{ logo_color }}.png" class="logo_corner">
 <form method="GET" action="/">
 <input type="text" id="search" name="q" value="" onClick="this.select()" onChange="submit_search(this)" />
 <NOSCRIPT><input type="submit" value="Search" /></NOSCRIPT>
 </form>
 {% if didyoumean %}<p class="didyoumean">Did you mean <a href="/?q={{ didyoumean }}">{{ didyoumean }}</a>?</p>{% endif %}
-</div><!-- logo -->
-</div><!-- grid -->
+</div><!-- logo --></div><!-- grid -->
 <script type="text/javascript">
 var is_search_results = {{ is_search_results|lower}}
 var query_text = "{{ query_text }}"
