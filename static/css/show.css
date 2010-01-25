@@ -325,26 +325,30 @@ div.box.selected.lights-off>video{visibility:visible;}
 #navigation{
   display:none;
 }
-#watermark{
-  width:192px;
-  height:63px;
-  text-align:center;
+#logo_108{
+    text-align:left;
+}
+#logo_108 img{
+  position:absolute;
+  margin-left:-47px;
+}
+#logo_108 input {
+  position:relative;
+  background-color:#313131;
+  border:4px solid #313131;
+  color:#FFFFFF;
+  font-family:Lucida Grande,Lucida Sans,sans-serif;
+  font-size:12px;
+  height:11px;
+  margin-left:30px;
+  margin-top:39px;
+  width:89px;
+}
+.watermark {
+  width:155px;
+  height:90px;
   position:fixed;
-  right:10px;
-  bottom:10px;
   z-index:60;
-  background-color:#161616;
-  opacity:0.15;
-}
-#watermark h1{
-  margin-top:15px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 23px;
-}
-#watermark h1 a{
-  color:#fff;
-}
-#watermark:hover{
-  opacity:1;
+  right:0px;
+  bottom:0px;
 }

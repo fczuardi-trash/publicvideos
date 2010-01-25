@@ -1,5 +1,11 @@
 = The Plan =
 
+- remove http://www.archive.org/download/ace_200905_05/089c41bebdc570f587c760b5933f6232.mts-jpg-272.JPG" />
+
+
+
+
+
 === CURRENT (Milestone A) ===
 - rss miro compatible (https://develop.participatoryculture.org/trac/democracy/wiki/RSSFeedSpecs)
 - fallback to swf http://code.google.com/p/videoplayer/

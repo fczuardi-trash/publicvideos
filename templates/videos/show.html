@@ -90,9 +90,17 @@
             <div class="warning" id="w360">{{ unsuported_video_tag_msg }}</div>
         </video>
     </div>
-    <div id="watermark">
+    <div id="logo_108" class="watermark grid_cell">
+    <a href="/"><img src="/static/images/internas.png" class="logo_corner"></a>
+    <form method="GET" action="/">
+    <input type="text" id="search" name="q" value="search" onClick="this.select()" onChange="submit_search(this)" />
+    <NOSCRIPT><input type="submit" value="Search" /></NOSCRIPT>
+    </form>
+    {% if didyoumean %}<p class="didyoumean">Did you mean <a href="/?q={{ didyoumean }}">{{ didyoumean }}</a>?</p>{% endif %}
+    </div><!-- logo -->
+    <!-- <div id="watermark">
         <h1><a href="/">Public Videos</a></h1>
-    </div>
+    </div> -->
     <img id="throbber" style="display:none;" src="/static/images/ajax-loader.gif">
     <a href="#" id="main-play-button" class="p272 play-button"><img src="/static/images/play_{{ logo_color }}.png" /></a>
     <!-- Javascript libraries -->
