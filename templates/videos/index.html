@@ -8,7 +8,7 @@
     <meta name="keywords" content="open, free, footage, stock footage, clips, royalty free, ogg, theora, open video, cc0, public domain, HTML5" /> 
 {% endblock %}
 {% block content %}
-<div id="alpha-footer"><p><a href="/about">About Public Videos</a> • <a href="/sets">Clips Directory</a></p></div>
+<div id="alpha-footer"><p><a href="/about">about</a> • <a href="/blog">blog</a> • <a href="/sets">all clips</a></p></div>
 <NOSCRIPT>
 <h1>{{ page_title }}</h1>
 {% if not is_search_results %}
@@ -20,7 +20,7 @@
 </NOSCRIPT>
 <div id="grid">
 {% for thumb in thumbs %}<a class="grid_cell" href="{{thumb.page}}"><img src="{{thumb.src}}" width="192" height="108" alt="{{ thumb.alt }}" /></a>{% endfor %}<div id="logo_108" class="grid_cell">
-<img src="/static/images/logo_home_{{ logo_color }}.png" class="logo_corner">
+<a href="/"><img src="/static/images/logo_home_{{ logo_color }}.png" class="logo_corner"></a>
 <form method="GET" action="/">
 <input type="text" id="search" name="q" value="" onClick="this.select()" onChange="submit_search(this)" />
 <NOSCRIPT><input type="submit" value="Search" /></NOSCRIPT>

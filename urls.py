@@ -25,6 +25,9 @@ urlpatterns = patterns('',
 
 # external links that appears on the beta-coming soon page
 urlpatterns += patterns('django.views.generic.simple',
+  url(r'^blog/?$', 'redirect_to', 
+    {'url': 'http://publicvideos.posterous.com/'}, 
+    name="blog_url"),
   url(r'^development/?$', 'redirect_to', 
     {'url': 'https://launchpad.net/publicvideos'}, 
     name="development_url"),

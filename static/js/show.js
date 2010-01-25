@@ -198,6 +198,7 @@ function panelTabClicked(e){
     // selectedPanel.style.top = '-'+selectedPanel.offsetHeight+'px'
     selectedPanel.style.visibility = 'hidden'
     selectedPanel.style.top = '0px'
+    panelContainer.setStyle('height',selectedPanel.offsetHeight);
     var openFx = new Fx.Tween(selectedPanel,{'duration':'normal','transition':'quad:out'}).start('top','-'+selectedPanel.offsetHeight+'px','0px');
     setTimeout(function(selectedPanel){
       selectedPanel.style.visibility = 'visible'
