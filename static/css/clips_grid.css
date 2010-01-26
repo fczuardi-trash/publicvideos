@@ -83,6 +83,7 @@ a.grid_cell img{
   text-align:center;
   background-color:#1a1a1a;
   text-transform:lowercase;
+  top:1000px;
 }
 #alpha-footer a{
   color:#444;
