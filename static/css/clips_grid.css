@@ -50,6 +50,20 @@ a.grid_cell img{
   margin-top:51px;
   width:89px;
 }
+#logo_108 form{
+  position:absolute;
+}
+#logo_108 form.entry{
+  opacity:0;
+}
+#entry_logo {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-132px;
+  margin-top:-139px;
+  opacity:0;
+}
 .didyoumean {
   margin-top:6px;
   margin-left:67px;

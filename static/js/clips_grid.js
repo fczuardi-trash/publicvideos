@@ -7,7 +7,7 @@ function image_loaded(image_element){
 }
 function highlight_image(image_element){
   for (i=0; i<images.length;i++){
-    if(images[i].className=='logo_corner') continue;
+    if(images[i].id == 'corner_logo' || images[i].id == 'entry_logo') continue;
     images[i].set('tween', {duration: 'short'});
     if(images[i]==image_element){
       images[i].tween('opacity', 1)
@@ -18,7 +18,7 @@ function highlight_image(image_element){
 }
 function highlight_all_images(){
   for (i=0; i<images.length;i++){
-    if(images[i].className=='logo_corner') continue;
+    if(images[i].id == 'corner_logo' || images[i].id == 'entry_logo') continue;
     images[i].set('tween', {duration: 'normal'});
     images[i].tween('opacity', 1)
   }
@@ -29,6 +29,15 @@ function page_loaded(){
       image_loaded(images[i])
     }
   }
+  setTimeout(remove_entry_logo,500)
+}
+function remove_entry_logo(){
+  entry_logo = $('entry_logo')
+  corner_logo = $('corner-form')
+  entry_logo.set('tween', {duration: 'long'})
+  corner_logo.set('tween', {duration: 'long'})
+  entry_logo.tween('opacity', [1, 0]);
+  corner_logo.tween('opacity', [0, 1]);
 }
 function window_resized(){
   thumbs_available = images.length
@@ -76,7 +85,7 @@ function hide_extra_images(spots_available, thumbs_available, empty_cells, colum
     last_img_cell = thumbs_available - (columns-empty_cells)
   }
   for (i=0; i<images.length;i++){
-    if(images[i].className=='logo_corner') continue;
+    if(images[i].id == 'corner_logo' || images[i].id == 'entry_logo') continue;
     if(i < last_img_cell){
       images[i].parentNode.setStyle('display', 'inline-block')
     } else {
@@ -103,6 +112,7 @@ function left_align_last_row(empty_cells){
 function init(){
   images = $$('img');
   for (i=0; i<images.length;i++){
+    if(images[i].id == 'corner_logo'){continue;}
     images[i].set('opacity',0)
     images[i].addEvent('load', function(){image_loaded(this)});
     images[i].addEvent('mouseover', function(){highlight_image(this)});

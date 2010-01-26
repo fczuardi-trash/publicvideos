@@ -19,9 +19,10 @@
 {% endif %}
 </NOSCRIPT>
 <div id="grid">
-{% for thumb in thumbs %}<a class="grid_cell" href="{{thumb.page}}"><img src="{{thumb.src}}" width="192" height="108" alt="{{ thumb.alt }}" /></a>{% endfor %}<div id="logo_108" class="grid_cell">
-<a href="/"><img src="/static/images/logo_home_{{ logo_color }}.png" class="logo_corner"></a>
-<form method="GET" action="/">
+{% for thumb in thumbs %}<a class="grid_cell" href="{{thumb.page}}"><img src="{{thumb.src}}"
+ width="192" height="108" alt="{{ thumb.alt }}" /></a>{% endfor %}<div id="logo_108" class="grid_cell">
+<form method="GET" action="/" class="{% if not is_search_results %}entry{% endif %}" id="corner-form">
+<a href="/"><img src="/static/images/logo_home_{{ logo_color }}.png" id="corner_logo"></a>
 <input type="text" id="search" name="q" value="" onClick="this.select()" onChange="submit_search(this)" />
 <NOSCRIPT><input type="submit" value="Search" /></NOSCRIPT>
 </form>
@@ -33,4 +34,7 @@ var query_text = "{{ query_text }}"
 </script>
 <script type="text/javascript" src="/static/lib/mootools-1.2.4-core-elements-all-fw-tween.js"></script>
 <script type="text/javascript" src="/static/js/clips_grid.js"></script>
+{% if not is_search_results %}
+<img src="/static/images/main_{{ logo_color }}.png" id="entry_logo" onload="image_loaded(this)"/>
+{% endif %}
 {% endblock %}

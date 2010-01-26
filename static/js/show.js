@@ -29,6 +29,12 @@ function init(){
   for(var i = 0; i< playButtons.length; i++){
     playButtons[i].addEventListener('click', playButtonClicked, true)
   }
+  window.addEvent('load', page_loaded);
+}
+function page_loaded(){
+  main_play_btn = $('main-play-button')
+  main_play_btn.set('tween', {duration:'long'})
+  main_play_btn.tween('opacity', [0,0.8])
 }
 function firefox35hack(video){
   var video_clone = video.clone()
@@ -186,10 +192,10 @@ function panelTabClicked(e){
       previousSelectedTab.set('href',previousSelectedTab.get('_panel_anchor'))
     }
     //closing panel animation
-    previousSelectedPanel.set('tween',{'duration':500,'transition':'quad:in'}).tween('top','-'+previousSelectedPanel.offsetHeight+'px');
+    previousSelectedPanel.set('tween',{'duration':1000,'transition':'sine:in:out'}).tween('top','-'+previousSelectedPanel.offsetHeight+'px');
     setTimeout(function(previous_panel){
       previous_panel.removeClass('opened')
-    },500,previousSelectedPanel)
+    },1500,previousSelectedPanel)
     previousSelectedTab[0].removeClass('selected')
   }
   if(!closePanel) { 
@@ -199,7 +205,7 @@ function panelTabClicked(e){
     selectedPanel.style.visibility = 'hidden'
     selectedPanel.style.top = '0px'
     panelContainer.setStyle('height',Math.max(selectedPanel.offsetHeight,panelContainer.offsetHeight))
-    var openFx = new Fx.Tween(selectedPanel,{'duration':'normal','transition':'quad:out'}).start('top','-'+selectedPanel.offsetHeight+'px','0px');
+    var openFx = new Fx.Tween(selectedPanel,{'duration':1000,'transition':'sine:in:out'}).start('top','-'+selectedPanel.offsetHeight+'px','0px');
     setTimeout(function(selectedPanel){
       selectedPanel.style.visibility = 'visible'
     },100,selectedPanel)
@@ -221,7 +227,7 @@ function panelTabClicked(e){
       }).toElement(anchor);
       clickedTab.set('href','#')
     }
-  }, 400, clickedTab)
+  }, 900, clickedTab)
   
   return false;
 }

@@ -44,7 +44,7 @@ a:hover{color:#fff;}
 #main-play-button {
   position:absolute;
   z-index:59;
-  opacity:0.8;
+  opacity:0;
   outline:0;
 }
 #main-play-button img{
@@ -346,7 +346,7 @@ div.box.selected.lights-off>video{visibility:visible;}
 }
 .watermark {
   width:155px;
-  height:90px;
+  height:94px;
   position:fixed;
   z-index:60;
   right:0px;
