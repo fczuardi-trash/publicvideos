@@ -51,8 +51,14 @@ a.grid_cell img{
   width:89px;
 }
 .didyoumean {
-  margin-top:7px;
-  font-size:12px;
+  margin-top:6px;
+  margin-left:67px;
+  font-size:10px;
+  color:#313131;
+  position:relative;
+}
+.didyoumean a{
+/*  color:white;*/
 }
 #alpha-footer {
   width:100%;

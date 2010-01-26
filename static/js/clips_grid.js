@@ -42,26 +42,31 @@ function window_resized(){
   rows = Math.floor(h/109)
   max_rows = Math.ceil((thumbs_available)/columns)
   max_grid_spots = max_rows *columns
-  // alert(max_grid_spots+'='+max_rows+'*'+columns)
   empty_cells = (max_grid_spots-(thumbs_available))
   grid_spots_per_screen = rows * columns
   // is_search_results = true
   if (is_search_results){
-    reposition_footer(columns)
-    left_align_last_row(empty_cells)
+    reposition_footer(columns, thumbs_available)
+    if (thumbs_available > 1) {
+      left_align_last_row(empty_cells)
+    }
   }else{
     hide_extra_images(grid_spots_per_screen, thumbs_available, empty_cells, columns)
-    reposition_footer(columns)
+    reposition_footer(columns, thumbs_available)
   }
   //add back scrollbar if needed
   document.body.setStyle('overflow','auto')
 }
 
-function reposition_footer(columns){
+function reposition_footer(columns, thumbs_available){
   footer = $('alpha-footer')
   gridbox = $('grid')
   footer.setStyle('top', gridbox.getHeight()+80+16)
-  footer.setStyle('width', 192*columns+columns-2)  
+  if (thumbs_available == 1){
+    footer.setStyle('width', 192)
+  } else {
+    footer.setStyle('width', 192*columns+columns-2)
+  }
 }
 //used to make the home page grid always a rectangle
 function hide_extra_images(spots_available, thumbs_available, empty_cells, columns){

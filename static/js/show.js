@@ -185,6 +185,7 @@ function panelTabClicked(e){
     if (previousSelectedTab.get('_panel_anchor') != clickedTab.get('_panel_anchor')) {
       previousSelectedTab.set('href',previousSelectedTab.get('_panel_anchor'))
     }
+    //closing panel animation
     previousSelectedPanel.set('tween',{'duration':500,'transition':'quad:in'}).tween('top','-'+previousSelectedPanel.offsetHeight+'px');
     setTimeout(function(previous_panel){
       previous_panel.removeClass('opened')
@@ -194,11 +195,10 @@ function panelTabClicked(e){
   if(!closePanel) { 
     //resize panel container with height enough to fit the table
     selectedPanel.addClass('opened')
-    panelContainer.style.height = Math.max(selectedPanel.offsetHeight,panelContainer.offsetHeight)
     // selectedPanel.style.top = '-'+selectedPanel.offsetHeight+'px'
     selectedPanel.style.visibility = 'hidden'
     selectedPanel.style.top = '0px'
-    panelContainer.setStyle('height',selectedPanel.offsetHeight);
+    panelContainer.setStyle('height',Math.max(selectedPanel.offsetHeight,panelContainer.offsetHeight))
     var openFx = new Fx.Tween(selectedPanel,{'duration':'normal','transition':'quad:out'}).start('top','-'+selectedPanel.offsetHeight+'px','0px');
     setTimeout(function(selectedPanel){
       selectedPanel.style.visibility = 'visible'
