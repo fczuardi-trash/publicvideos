@@ -5,7 +5,7 @@
     "fields": {
       "width": 480, 
       "height": 272, 
-      "description": "Generates 30fps deinterlaced OGV 480x272 files from 60fps mpegts files.", 
+      "description": "Generates 30fps deinterlaced Theora OGV 480x272 files from 60fps mpegts files.", 
       "job_slug": "mts-ogv30-272"
     }
   }, 
@@ -15,7 +15,7 @@
     "fields": {
       "width": 640, 
       "height": 360, 
-      "description": "Generates 30fps deinterlaced OGV 640x360 files from 60fps mpegts files.", 
+      "description": "Generates 30fps deinterlaced Theora OGV 640x360 files from 60fps mpegts files.", 
       "job_slug": "mts-ogv30-360"
     }
   }, 
@@ -97,6 +97,26 @@
       "height": 108, 
       "description": "Generates a black and white 192x108 jpeg file from mpegts files.", 
       "job_slug": "mts-jpgbw-108"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "videos.transcodingjob", 
+    "fields": {
+      "width": 640, 
+      "height": 360, 
+      "description": "Generates 30fps deinterlaced Dirac OGV 640x360 files from 60fps mpegts files.", 
+      "job_slug": "mts-dirac30-360"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "videos.transcodingjob", 
+    "fields": {
+      "width": 480, 
+      "height": 272, 
+      "description": "Generates 30fps deinterlaced Dirac OGV 480x272 files from 60fps mpegts files.", 
+      "job_slug": "mts-dirac30-272"
     }
   }
 ]

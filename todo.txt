@@ -3,19 +3,16 @@
 - remove http://www.archive.org/download/ace_200905_05/089c41bebdc570f587c760b5933f6232.mts-jpg-272.JPG" />
 
 
-
-
-
 === CURRENT (Milestone A) ===
 - rss miro compatible (https://develop.participatoryculture.org/trac/democracy/wiki/RSSFeedSpecs)
 - fallback to swf http://code.google.com/p/videoplayer/
   - update metatags when we add flash in order for this to be shareable on facebook http://wiki.developers.facebook.com/index.php/Facebook_Share/Specifying_Meta_Tags
 - make the size name on the download tab clickable
-- blog post idomyownstunts
-- setup a posterous
 - one tech article about video hacks to work on chrome, ff3.5, ff3.6 and safari
 - continue uploading videos
 
+ok - setup a posterous
+ok - blog post idomyownstunts
 ok - links to clip sets (for crawling bots to index)
 ok - recalculate grid size on load (bug) -> the problem was the scrollbar geting into the width calc
 ok - implement support for listing clips in a set

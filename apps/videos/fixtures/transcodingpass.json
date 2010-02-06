@@ -26,7 +26,7 @@
     "model": "videos.transcodingpass", 
     "fields": {
       "from_extension": "", 
-      "description": "Converts a given video to ogv 1200k bitrate, two pass", 
+      "description": "Converts a given video to theora ogv 1200k bitrate, two pass", 
       "command": "ffmpeg2theora --videobitrate 1200 --keyint 30 --audiobitrate 128 --samplerate 44100 --optimize --two-pass --license \"http://creativecommons.org/publicdomain/zero/1.0/\" --copyright \"No Copyright. The person who associated a work with this document has dedicated this work to the Commons by waiving all of his or her rights to the work under copyright law and all related or neighboring legal rights he or she had in the work, to the extent allowable by law.\" -o \"$TARGET\" \"$SOURCE\"", 
       "slug": "theo.1200k.vorbis.128.44100", 
       "to_extension": "OGV"
@@ -37,7 +37,7 @@
     "model": "videos.transcodingpass", 
     "fields": {
       "from_extension": "", 
-      "description": "Converts a given video to ogv 2040k bitrate, two pass", 
+      "description": "Converts a given video to theora ogv 2040k bitrate, two pass", 
       "command": "ffmpeg2theora --videobitrate 2040 --keyint 30 --audiobitrate 128 --samplerate 44100 --optimize --two-pass --license \"http://creativecommons.org/publicdomain/zero/1.0/\" --copyright \"No Copyright. The person who associated a work with this document has dedicated this work to the Commons by waiving all of his or her rights to the work under copyright law and all related or neighboring legal rights he or she had in the work, to the extent allowable by law.\" -o \"$TARGET\" \"$SOURCE\"", 
       "slug": "theo.2040k.vorbis.128.44100", 
       "to_extension": "OGV"
@@ -107,6 +107,28 @@
       "command": "mplayer \"$SOURCE\" -ss 2 -nosound -frames 1 -vo jpeg:outdir=$TARGET:smooth=60:quality=60:progressive -vf scale=192:108", 
       "slug": "jpeg.q60.108", 
       "to_extension": "JPG"
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "videos.transcodingpass", 
+    "fields": {
+      "from_extension": "", 
+      "description": "Converts a given video to dirac ogv 1000k bitrate", 
+      "command": "ffmpeg2dirac --videobitrate 1000 --keyint 30 --audiobitrate 128 --samplerate 44100 --license \"http://creativecommons.org/publicdomain/zero/1.0/\" --copyright \"No Copyright. The person who associated a work with this document has dedicated this work to the Commons by waiving all of his or her rights to the work under copyright law and all related or neighboring legal rights he or she had in the work, to the extent allowable by law.\" -o \"$TARGET\" \"$SOURCE\"", 
+      "slug": "dirac.1000k.vorbis.128.44100", 
+      "to_extension": "OGV"
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "videos.transcodingpass", 
+    "fields": {
+      "from_extension": "", 
+      "description": "Converts a given video to dirac ogv 1700k bitrate", 
+      "command": "ffmpeg2dirac --videobitrate 1700 --keyint 30 --audiobitrate 128 --samplerate 44100 --license \"http://creativecommons.org/publicdomain/zero/1.0/\" --copyright \"No Copyright. The person who associated a work with this document has dedicated this work to the Commons by waiving all of his or her rights to the work under copyright law and all related or neighboring legal rights he or she had in the work, to the extent allowable by law.\" -o \"$TARGET\" \"$SOURCE\"", 
+      "slug": "dirac.1700k.vorbis.128.44100", 
+      "to_extension": "OGV"
     }
   }
 ]

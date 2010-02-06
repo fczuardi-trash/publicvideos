@@ -22,6 +22,7 @@ class VideoAdmin(admin.ModelAdmin):
   date_hierarchy = 'created_at'
   actions = [
     'update_status_to_transcoded',
+    'update_status_to_transcoding',
     'update_status_to_pending_transcoding',
     'check_archive_and_create_video_versions',
   ]
@@ -37,6 +38,8 @@ class VideoAdmin(admin.ModelAdmin):
     self.update_status(request, queryset, 'transcoded')
   def update_status_to_pending_transcoding(self, request, queryset):
     self.update_status(request, queryset, 'pending_transcoding')
+  def update_status_to_transcoding(self, request, queryset):
+    self.update_status(request, queryset, 'transcoding')
     
   def check_archive_and_create_video_versions(self, request, queryset):
     """Manually generate the video versions for videos that were uploaded already
