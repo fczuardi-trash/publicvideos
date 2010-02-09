@@ -267,9 +267,13 @@ div.box.selected.lights-off>video{visibility:visible;}
   padding-bottom:1.5em;
   margin:auto;;
 }
+#downloads-panel thead td{
+  text-align:center;
+}
 #downloads-panel td{
   padding-top:0.3em;
   font-size:0.8em;
+  text-align:center;
 }
 #downloads-panel td{padding-left:1em;}
 #downloads-panel td.centered{text-align:center;padding-left:0;}

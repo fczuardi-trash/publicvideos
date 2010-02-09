@@ -112,7 +112,9 @@ def list_sets(request, fmt='html'):
   if fmt == 'sitemap':
     template_path = "videos/sitemap_index.xml"
   available_sets = [
-    {'contributor':'Ace', 'year':'2009', 'month':'January', 'part':'1 of 1', 'set_slug':'ace_200901_01'},
+    {'contributor':'Ace', 'year':'2008', 'month':'December', 'part':'1 of 2', 'set_slug':'ace_200812_01'},
+    {'contributor':'Ace', 'year':'2008', 'month':'December', 'part':'2 of 2', 'set_slug':'ace_200812_02'},
+    {'contributor':'Ace', 'year':'2009', 'month':'January', 'part':'1 of 2', 'set_slug':'ace_200901_01'},
     {'contributor':'Ace', 'year':'2009', 'month':'January', 'part':'2 of 2', 'set_slug':'ace_200901_02'},
     {'contributor':'Ace', 'year':'2009', 'month':'March', 'part':'1 of 4', 'set_slug':'ace_200903_01'},
     {'contributor':'Ace', 'year':'2009', 'month':'March', 'part':'2 of 4', 'set_slug':'ace_200903_02'},
@@ -148,6 +150,7 @@ def list_sets(request, fmt='html'):
   
 def show(request, short=None, rubish=None, id=None):
   logo_colors = ['red', 'green', 'blue', 'white']
+  a_color = random.choice(logo_colors)
   try:
     if id:
       video = Video.objects.get(pk=id)
@@ -163,8 +166,10 @@ def show(request, short=None, rubish=None, id=None):
   versions = {}
   for version in video_versions:
     urlparts = version.url.split('-')
+    is_dirac = (urlparts[-2].find('dirac') != -1)
     version_name = urlparts[-1]
     if urlparts[-2] == 'jpgbw': version_name = "%s.BW" % version_name
+    if is_dirac: version_name = "DIRAC.%s" % version_name
     versions[str(version_name)] = version
   video_title = video.title if video.title else "Clip #%s" % video.pk
   author_name = u"%s %s" % (video.author.first_name, video.author.last_name) if video.author.first_name else str(video.author)

@@ -54,6 +54,8 @@ class VideoAdmin(admin.ModelAdmin):
     for video in queryset:
       for job in jobs:
         to_extension = job.job_slug[4:7].upper()
+        if to_extension == 'DIR':
+          to_extension = 'OGV'
         archive_url = "http://www.archive.org/download/%s/%s.%s.%s" % (video.set_slug, video.md5, job.job_slug, to_extension)
         try:
           video_version = VideoVersion.objects.get(url=archive_url)

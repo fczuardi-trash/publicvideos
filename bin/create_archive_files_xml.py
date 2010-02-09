@@ -2,9 +2,9 @@
 
 import os
 
-IDENTIFIER = 'ace_200901_02'
-VIDEOS_PATH = '/tmp/publicvideos/versions/ace_200901_02/'
-VIDEOS_TITLE = "Publicvideos January 2009 batch, part 2"
+IDENTIFIER = 'ace_200812_02'
+VIDEOS_PATH = '/tmp/publicvideos/versions/ace_200812_02/'
+VIDEOS_TITLE = "Publicvideos December 2008 batch, part 2"
 VIDEOS_DESCRIPTION = 'A batch of stock clips made for publicvideos.org.'
 VIDEOS_LABELS = 'publicvideos.org; royalty free; free; cc0; cczero; stock footage; ace of spades'
 VIDEOS_CREATOR = 'Ace of Spades'
@@ -21,9 +21,10 @@ result = '<?xml version="1.0" encoding="UTF-8"?>\n<files>\n'
 for f in files:
   name = f[:-4]
   ext = f[-4:]
+  is_dirac = (f.find('dirac') != -1)
   if (f[0] == '.') or (ext == '.xml'):
     continue
-  format = 'Ogg Video' if ext == '.OGV' else 'h.264 MPEG4' if ext == '.MP4' else 'JPEG'
+  format = 'Ogg Video' if ext == '.OGV' and is_dirac else 'Ogg Theora' if ext == '.OGV' else 'h.264 MPEG4' if ext == '.MP4' else 'JPEG'
   # result = ''.join([result,'  <file name="%s" source="derivative">\n' % f])
   result = ''.join([result,'  <file name="%s" source="">\n' % f])
   # result = ''.join([result,'    <original>%s.MTS</original>\n' % name])
