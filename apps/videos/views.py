@@ -112,6 +112,7 @@ def list_sets(request, fmt='html'):
   if fmt == 'sitemap':
     template_path = "videos/sitemap_index.xml"
   available_sets = [
+    {'contributor':'Ace', 'year':'2008', 'month':'September', 'part':'1 of 1', 'set_slug':'ace_200809_01'},
     {'contributor':'Ace', 'year':'2008', 'month':'October', 'part':'1 of 1', 'set_slug':'ace_200810_01'},
     {'contributor':'Ace', 'year':'2008', 'month':'December', 'part':'1 of 2', 'set_slug':'ace_200812_01'},
     {'contributor':'Ace', 'year':'2008', 'month':'December', 'part':'2 of 2', 'set_slug':'ace_200812_02'},
