@@ -9,7 +9,7 @@
       "is_active": 1, 
       "is_superuser": 1, 
       "is_staff": 1, 
-      "last_login": "2009-09-10 19:18:47", 
+      "last_login": "2010-01-31 12:45:51", 
       "groups": [], 
       "user_permissions": [], 
       "password": "sha1$97f1f$c682d93effcad253b9e8503717a47f2a30f339b4", 
@@ -18,30 +18,12 @@
     }
   }, 
   {
-    "pk": 2, 
-    "model": "auth.user", 
-    "fields": {
-      "username": "fabricio", 
-      "first_name": "", 
-      "last_name": "", 
-      "is_active": 1, 
-      "is_superuser": 0, 
-      "is_staff": 0, 
-      "last_login": "2009-09-10 15:26:00", 
-      "groups": [], 
-      "user_permissions": [], 
-      "password": "!", 
-      "email": "fabricio@gmail.com", 
-      "date_joined": "2009-09-10 15:25:59"
-    }
-  }, 
-  {
     "pk": 3, 
     "model": "auth.user", 
     "fields": {
       "username": "ace", 
-      "first_name": "", 
-      "last_name": "", 
+      "first_name": "Ace", 
+      "last_name": "of Spades", 
       "is_active": 1, 
       "is_superuser": 0, 
       "is_staff": 0, 
@@ -51,6 +33,24 @@
       "password": "!", 
       "email": "aceofspades02@gmail.com", 
       "date_joined": "2009-09-10 15:25:59"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "taboca", 
+      "first_name": "Marcio", 
+      "last_name": "Galli", 
+      "is_active": 1, 
+      "is_superuser": 0, 
+      "is_staff": 0, 
+      "last_login": "2009-09-10 15:26:00", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "!", 
+      "email": "taboca@gmail.com", 
+      "date_joined": "2010-02-10 15:25:59"
     }
   }
 ]

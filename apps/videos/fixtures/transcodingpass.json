@@ -130,5 +130,49 @@
       "slug": "dirac.1700k.vorbis.128.44100", 
       "to_extension": "OGV"
     }
+  }, 
+  {
+    "pk": 19, 
+    "model": "videos.transcodingpass", 
+    "fields": {
+      "from_extension": "", 
+      "description": "Convert a given 30fps AVI file into 24fps using detelecine filter and scale to 480x272", 
+      "command": "mencoder \"$SOURCE\" -noaspect -noskip -o \"$TARGET\" -ofps 24000/1001 -ovc raw -oac copy -vf pp=ci,scale=480:272,detc,softskip", 
+      "slug": "30fps_to24fps272raw", 
+      "to_extension": "AVI"
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "videos.transcodingpass", 
+    "fields": {
+      "from_extension": "", 
+      "description": "Convert a given 30fps AVI file into 24fps using detelecine filter and scale to 640x360", 
+      "command": "mencoder \"$SOURCE\" -noaspect -noskip -o \"$TARGET\" -ofps 24000/1001 -ovc raw -oac copy -vf pp=ci,scale=640:360,detc,softskip", 
+      "slug": "30fps_to24fps360raw", 
+      "to_extension": "AVI"
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "videos.transcodingpass", 
+    "fields": {
+      "from_extension": "MTS", 
+      "description": "Convert 60fps mpegts files into 24fps huff avi, deinterlace, pulldown remove and scale to 480x272 ", 
+      "command": "mencoder \"$SOURCE\" -fps 60000/1001 -oac pcm -demuxer lavf -vf pp=ci,scale=480:272,detc,softskip -ofps 24000/1001 -ovc lavc -lavcopts vcodec=ffvhuff:format=YV12:vstrict=-1:aspect=16/9 -o \"$TARGET\"", 
+      "slug": "MTS.60-30.vHuff.aPcm272", 
+      "to_extension": "AVI"
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "videos.transcodingpass", 
+    "fields": {
+      "from_extension": "MTS", 
+      "description": "Convert 60fps mpegts files into 24fps huff avi, deinterlace, pulldown remove and scale to 640x360", 
+      "command": "mencoder \"$SOURCE\" -fps 60000/1001 -oac pcm -demuxer lavf -vf pp=ci,scale=640:360,detc,softskip -ofps 24000/1001 -ovc lavc -lavcopts vcodec=ffvhuff:format=YV12:vstrict=-1:aspect=16/9 -o \"$TARGET\"", 
+      "slug": "MTS.60-30.vHuff.aPcm360", 
+      "to_extension": "AVI"
+    }
   }
 ]
