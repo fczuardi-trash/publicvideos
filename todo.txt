@@ -1,5 +1,6 @@
 = The Plan =
 
+- make new thumbnail generation transcoding jobs for videos in 24p
 - remove http://www.archive.org/download/ace_200905_05/089c41bebdc570f587c760b5933f6232.mts-jpg-272.JPG" />
 - remove 6c925c7f3540705ccb140061a539d315
 

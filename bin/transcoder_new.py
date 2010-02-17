@@ -97,6 +97,14 @@ class TranscoderDaemon():
         self.debug_log("\nPreparing to run transcoding jobs on video %s." % current_video.md5);
         logging.info("Preparing to run transcoding jobs on video %s." % current_video.md5)
         for job in self.jobs:
+          job_slug_parts = job.job_slug.split('-')
+          framerate = job_slug_parts[1][-2:]
+          self.debug_log("\nTranscoding job framerate = %s." % framerate);
+          self.debug_log("\nVideo framerate choice = %s." % current_video.fps_choice);
+          if (framerate == '24' or framerate == '30'):
+            if (int(current_video.fps_choice) != int(framerate)):
+              self.debug_log("\nIgnoring this transcoding job");
+              continue
           self.debug_log("\n\n Job: %s." % job.job_slug);
           job_passes = job.transcodingjobpass_set.select_related().order_by('step_number')
           current_pass_stack = ''

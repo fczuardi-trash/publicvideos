@@ -2,13 +2,13 @@
 
 import os
 
-IDENTIFIER = 'ace_200809_01'
-VIDEOS_PATH = '/tmp/publicvideos/versions/ace_200809_01/'
-VIDEOS_TITLE = "Publicvideos September 2008 batch, part 1"
+IDENTIFIER = 'taboca_200912_02'
+VIDEOS_PATH = '/tmp/publicvideos/versions/taboca_200912_02/'
+VIDEOS_TITLE = "Publicvideos December 2009 (Marcio) batch, part 2"
 VIDEOS_DESCRIPTION = 'A batch of stock clips made for publicvideos.org.'
 VIDEOS_LABELS = 'publicvideos.org; royalty free; free; cc0; cczero; stock footage; ace of spades'
-VIDEOS_CREATOR = 'Ace of Spades'
-VIDEOS_DIRECTOR = 'Ace of Spades'
+VIDEOS_CREATOR = 'Marcio Galli'
+VIDEOS_DIRECTOR = 'Marcio Galli'
 VIDEOS_YEAR = '2009'
 VIDEOS_UPLOADER = 'fabricio@fabricio.org'
 VIDEOS_SPONSOR = 'Fabricio Zuardi'

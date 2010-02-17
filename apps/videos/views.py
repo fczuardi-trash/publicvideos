@@ -149,7 +149,7 @@ def list_sets(request, fmt='html'):
     {'contributor':'Ace', 'year':'2009', 'month':'December', 'part':'4 of 4', 'set_slug':'ace_200912_04'}
   ]
   return render_to_response(template_path, locals())
-  
+
 def show(request, short=None, rubish=None, id=None):
   logo_colors = ['red', 'green', 'blue', 'white']
   a_color = random.choice(logo_colors)
@@ -200,7 +200,7 @@ def show(request, short=None, rubish=None, id=None):
   <p class="right bottomlink"><a href="http://www.mozilla.org">www.mozilla.org</a></p>
   </div>"""
   return render_to_response("videos/show.html", dict(locals()))
-  
+
 def simple_upload_videos(request):
   # generate S3 policy and signature
   policy_document = {
@@ -228,6 +228,7 @@ def upload_videos(request):
     if request.method == 'POST':
       author_email = request.POST['author']
       set_slug = request.POST['set_slug']
+      fps_choice = request.POST['fps_choice']
       author = User.objects.filter(email=author_email)[0]
       for k in request.FILES.keys():
         uploaded_file = request.FILES[k]
@@ -252,6 +253,7 @@ def upload_videos(request):
         uploaded_video.updated_at = datetime.datetime.now()+delta
         uploaded_video.author = author
         uploaded_video.set_slug = set_slug
+        uploaded_video.fps_choice = fps_choice
         if not os.path.exists(os.path.join(settings.TMP_VIDEO_ROOT, 'originals')):
           os.makedirs(os.path.join(settings.TMP_VIDEO_ROOT, 'originals'))
         if not os.path.exists(os.path.join(settings.TMP_VIDEO_ROOT, 'originals', set_slug)):
@@ -265,6 +267,7 @@ def upload_videos(request):
     else:
       author_email = request.GET['author'] if 'author' in request.GET else ''
       set_slug = request.GET['set_slug'] if 'set_slug' in request.GET else ''
+      fps_choice = request.GET['fps_choice'] if 'fps_choice' in request.GET else ''
     return render_to_response("videos/upload.html", locals())
   except:
     error_details = open(settings.DEBUG_ERROR_FILE, 'w')

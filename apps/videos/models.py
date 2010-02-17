@@ -27,6 +27,7 @@ class Video(models.Model):
   filename = models.CharField(max_length=100, blank=True, null=True, help_text='The filename of the original file.')
   mute_export = models.NullBooleanField(blank=True)
   set_slug = models.CharField(max_length=40, blank=True, null=True)
+  fps_choice = models.PositiveIntegerField(blank=True, null=True, help_text='Which final framerate to be used by the transcoding jobs (30 or 24).')
   author = models.ForeignKey('auth.User', blank=True, null=True)
   # thumbnail, author, credit, copyright, keywords, category ?
   def __unicode__(self):
