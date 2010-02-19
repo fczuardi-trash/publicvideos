@@ -1,5 +1,14 @@
 #!/bin/sh
+
+mysql -u root publicvideos_prod -e "show tables" | grep -v Tables_in | grep -v "+" | gawk '{print "drop table " $1 ";"}' | mysql -u root publicvideos_prod
+python manage.py syncdb --settings publicvideos.settings_production
+
 python manage.py loaddata apps/videos/fixtures/all.json 
+
+python manage.py loaddata --settings publicvideos.settings_production apps/users/fixtures/user.json
+python manage.py loaddata --settings publicvideos.settings_production apps/videos/fixtures/transcodingjob.json
+python manage.py loaddata --settings publicvideos.settings_production apps/videos/fixtures/transcodingjobpass.json
+python manage.py loaddata --settings publicvideos.settings_production apps/videos/fixtures/transcodingpass.json
 python manage.py loaddata --settings publicvideos.settings_production apps/videos/fixtures/video.json
 python manage.py loaddata --settings publicvideos.settings_production apps/videos/fixtures/videoversion.json
 
