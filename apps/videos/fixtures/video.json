@@ -25603,7 +25603,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": "model/vnd.mts", 
-      "status": "transcoded", 
+      "status": "rejected", 
       "mute_export": null, 
       "description": null, 
       "extension": "mts", 
@@ -25948,7 +25948,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": "model/vnd.mts", 
-      "status": "transcoded", 
+      "status": "rejected", 
       "mute_export": null, 
       "description": null, 
       "extension": "mts", 
@@ -41427,7 +41427,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": "model/vnd.mts", 
-      "status": "transcoded", 
+      "status": "rejected", 
       "mute_export": null, 
       "description": null, 
       "extension": "mts", 
@@ -61621,7 +61621,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61644,7 +61644,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61667,7 +61667,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61690,7 +61690,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61713,7 +61713,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61736,7 +61736,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61759,7 +61759,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61782,7 +61782,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61805,7 +61805,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61828,7 +61828,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61851,7 +61851,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61874,7 +61874,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61897,7 +61897,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61920,7 +61920,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61943,7 +61943,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61966,7 +61966,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -61989,7 +61989,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
@@ -62012,7 +62012,7 @@
     "model": "videos.video", 
     "fields": {
       "mimetype": null, 
-      "status": "pending_transcoding", 
+      "status": "transcoding", 
       "mute_export": null, 
       "description": null, 
       "extension": "MTS", 
