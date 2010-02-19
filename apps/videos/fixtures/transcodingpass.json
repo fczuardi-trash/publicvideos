@@ -71,7 +71,7 @@
     "fields": {
       "from_extension": "", 
       "description": "Generate black and white low contrast JPG from the second #2 of a video", 
-      "command": "mplayer \"$SOURCE\" -ss 2 -nosound -frames 1 -vo jpeg:outdir=$TARGET:smooth=60:quality=60:progressive -saturation -100 -brightness -0 -contrast -10", 
+      "command": "mplayer \"$SOURCE\" -ss 2 -nosound -frames 1 -vo jpeg:outdir=$TARGET:smooth=0:quality=60:progressive -saturation -100 -brightness -0 -contrast -10", 
       "slug": "jpeg.bw.q60", 
       "to_extension": "JPG"
     }
@@ -82,7 +82,7 @@
     "fields": {
       "from_extension": "", 
       "description": "Generate a JPG, from the second #2 of a video", 
-      "command": "mplayer \"$SOURCE\" -ss 2 -nosound -frames 1 -vo jpeg:outdir=$TARGET:smooth=60:quality=60:progressive", 
+      "command": "mplayer \"$SOURCE\" -ss 2 -nosound -frames 1 -vo jpeg:outdir=$TARGET:smooth=0:quality=60:progressive", 
       "slug": "jpeg.q60.108", 
       "to_extension": "JPG"
     }
@@ -93,7 +93,7 @@
     "fields": {
       "from_extension": "", 
       "description": "Generate black and white low contrast JPG scaled to 192x108 from the second #2 of a video", 
-      "command": "mplayer \"$SOURCE\" -ss 2 -nosound -frames 1 -vo jpeg:outdir=$TARGET:smooth=60:quality=60:progressive -saturation -100 -brightness -0 -contrast -10 -vf scale=192:108", 
+      "command": "mplayer \"$SOURCE\" -ss 2 -nosound -frames 1 -vo jpeg:outdir=$TARGET:smooth=0:quality=80:progressive -saturation -100 -brightness -0 -contrast -10 -vf scale=192:108", 
       "slug": "jpeg.bw.q60.108", 
       "to_extension": "JPG"
     }
@@ -104,7 +104,7 @@
     "fields": {
       "from_extension": "", 
       "description": "Generate a JPG scaled to 192x108, from the second #2 of a video", 
-      "command": "mplayer \"$SOURCE\" -ss 2 -nosound -frames 1 -vo jpeg:outdir=$TARGET:smooth=60:quality=60:progressive -vf scale=192:108", 
+      "command": "mplayer \"$SOURCE\" -ss 2 -nosound -frames 1 -vo jpeg:outdir=$TARGET:smooth=0:quality=80:progressive -vf scale=192:108", 
       "slug": "jpeg.q60.108", 
       "to_extension": "JPG"
     }
