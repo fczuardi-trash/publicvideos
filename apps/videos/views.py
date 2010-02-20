@@ -149,7 +149,8 @@ def list_sets(request, fmt='html'):
     {'contributor':'Ace', 'year':'2009', 'month':'December', 'part':'4 of 4', 'set_slug':'ace_200912_04'},
     {'contributor':'Taboca', 'year':'2009', 'month':'December', 'part':'1 of 2', 'set_slug':'taboca_200912_01'},
     {'contributor':'Taboca', 'year':'2009', 'month':'December', 'part':'2 of 2', 'set_slug':'taboca_200912_02'},
-    {'contributor':'Taboca', 'year':'2010', 'month':'January', 'part':'1 of 3', 'set_slug':'taboca_201001_01'}
+    {'contributor':'Taboca', 'year':'2010', 'month':'January', 'part':'1 of 3', 'set_slug':'taboca_201001_01'},
+    {'contributor':'Taboca', 'year':'2010', 'month':'January', 'part':'2 of 3', 'set_slug':'taboca_201001_02'}
   ]
   return render_to_response(template_path, locals())
 
