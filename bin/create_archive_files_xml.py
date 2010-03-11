@@ -2,9 +2,9 @@
 
 import os
 
-IDENTIFIER = 'taboca_201002_04'
-VIDEOS_PATH = '/tmp/publicvideos/versions/taboca_201002_04/'
-VIDEOS_TITLE = "Publicvideos February 2010 (Marcio) batch, part 4"
+IDENTIFIER = 'taboca_201003_01'
+VIDEOS_PATH = '/tmp/publicvideos/versions/taboca_201003_01/'
+VIDEOS_TITLE = "Publicvideos March 2010 (Marcio) batch, part 1"
 VIDEOS_DESCRIPTION = 'A batch of stock clips made for publicvideos.org.'
 VIDEOS_LABELS = 'publicvideos.org; royalty free; free; cc0; cczero; stock footage; ace of spades'
 VIDEOS_CREATOR = 'Marcio Galli'

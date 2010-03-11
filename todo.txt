@@ -1,21 +1,32 @@
-= The Plan =
+= New Plan =
 
-- make new thumbnail generation transcoding jobs for videos in 24p
-- remove 2009-12_00144_sea-waves-sunset-light.mts
--remove 2009-12_00173_beach-sea-waves-sunrise.mts
-- remove http://www.archive.org/download/ace_200905_05/089c41bebdc570f587c760b5933f6232.mts-jpg-272.JPG
-- remove 6c925c7f3540705ccb140061a539d315
-- pagination for search (q=bird)
+The new plane is just to pick a next task, write it below and then remove it once its done.
 
+next task = "get a random clip" API method
+
+
+
+
+
+
+
+= Old Plan =
+
+=== Milestone São Carlos ===
+Labels:
+- logged users can describe videos in 5 words
+- anonymous users should be able to label as well, figure out best approach needed
+
+Cleanup transcoding_new
 
 === CURRENT (Milestone A) ===
-- rss miro compatible (https://develop.participatoryculture.org/trac/democracy/wiki/RSSFeedSpecs)
 - fallback to swf http://code.google.com/p/videoplayer/
   - update metatags when we add flash in order for this to be shareable on facebook http://wiki.developers.facebook.com/index.php/Facebook_Share/Specifying_Meta_Tags
 - make the size name on the download tab clickable
 - one tech article about video hacks to work on chrome, ff3.5, ff3.6 and safari
 - continue uploading videos
 
+ok - make new thumbnail generation transcoding jobs for videos in 24p
 ok - setup a posterous
 ok - blog post idomyownstunts
 ok - links to clip sets (for crawling bots to index)
@@ -26,10 +37,16 @@ ok - implement support for listing clips in a set
 === Milestone B ===
 
 API v.0.1
+- configure nginx for api.publicvideos.org
+- get a random video
+- get n random videos
+- impose an API requests limit per IP
 
 === Milestone C ===
 
 Labels:
+- pagination for search (q=bird)
+- rss miro compatible (https://develop.participatoryculture.org/trac/democracy/wiki/RSSFeedSpecs)
 - figure out which model/approach to use
 - implement separated mTurk special interface
 - invest in mturk labeling
@@ -69,6 +86,11 @@ Contributors:
 
 
 
+=== to remove ===
+- remove 2009-12_00144_sea-waves-sunset-light.mts
+- remove 2009-12_00173_beach-sea-waves-sunrise.mts
+- remove http://www.archive.org/download/ace_200905_05/089c41bebdc570f587c760b5933f6232.mts-jpg-272.JPG
+- remove 6c925c7f3540705ccb140061a539d315
 
 
 
