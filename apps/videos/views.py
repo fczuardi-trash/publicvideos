@@ -149,6 +149,8 @@ def list_sets(request, fmt='html'):
     {'contributor':'Ace', 'year':'2009', 'month':'December', 'part':'4 of 4', 'set_slug':'ace_200912_04'},
     {'contributor':'Ace', 'year':'2010', 'month':'February', 'part':'1 of 4', 'set_slug':'ace_201002_01'},
     {'contributor':'Ace', 'year':'2010', 'month':'February', 'part':'2 of 4', 'set_slug':'ace_201002_02'},
+    {'contributor':'Ace', 'year':'2010', 'month':'February', 'part':'3 of 4', 'set_slug':'ace_201002_03'},
+    {'contributor':'Ace', 'year':'2010', 'month':'February', 'part':'4 of 4', 'set_slug':'ace_201002_04'},
     {'contributor':'Fabricio', 'year':'2010', 'month':'March', 'part':'1 of 1', 'set_slug':'fabricio_201003_01'},
     {'contributor':'Taboca', 'year':'2009', 'month':'December', 'part':'1 of 2', 'set_slug':'taboca_200912_01'},
     {'contributor':'Taboca', 'year':'2009', 'month':'December', 'part':'2 of 2', 'set_slug':'taboca_200912_02'},
