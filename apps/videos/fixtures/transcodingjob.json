@@ -178,5 +178,25 @@
       "description": "Generates 24fps deinterlaced Dirac OGV 480x272 files from 60fps mpegts files.", 
       "job_slug": "mts-dirac24-272"
     }
+  }, 
+  {
+    "pk": 19, 
+    "model": "videos.transcodingjob", 
+    "fields": {
+      "width": 480, 
+      "height": 272, 
+      "description": "Generates 24fps deinterlaced WebM 480x272 files from 60fps mpegts files.", 
+      "job_slug": "mts-webm24-272"
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "videos.transcodingjob", 
+    "fields": {
+      "width": 640, 
+      "height": 360, 
+      "description": "Generates 24fps deinterlaced WebM 640x360 files from 60fps mpegts files.", 
+      "job_slug": "mts-webm24-360"
+    }
   }
 ]

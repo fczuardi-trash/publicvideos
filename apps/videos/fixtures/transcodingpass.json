@@ -174,5 +174,27 @@
       "slug": "MTS.60-30.vHuff.aPcm360", 
       "to_extension": "AVI"
     }
+  }, 
+  {
+    "pk": 23, 
+    "model": "videos.transcodingpass", 
+    "fields": {
+      "from_extension": "", 
+      "description": "Converts a given video to VP8 WebM 1000k bitrate, two pass", 
+      "command": "ffmpeg -i \"$SOURCE\" -vpre libvpx_vp8-360p -bt 1.13M -vb 580k -maxrate 1.13M -minrate 30k -b 1000k -an -pass 1 -f webm -threads 0 -benchmark -y /dev/null&&ffmpeg -i \"$SOURCE\" -vpre libvpx_vp8-360p -b 1000k  -bt 1.13M -vb 580k -maxrate 1.13M -minrate 30k -pass 2 -acodec libvorbis -ab 128k -ar 44100 -threads 0 -benchmark -y \"$TARGET\"", 
+      "slug": "vp8.1000k.vorbis.128.44100", 
+      "to_extension": "WEBM"
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "videos.transcodingpass", 
+    "fields": {
+      "from_extension": "", 
+      "description": "Converts a given video to VP8 WebM 1700k bitrate, two pass", 
+      "command": "ffmpeg -i \"$SOURCE\" -vpre libvpx_vp8-360p -b 1700k -an -pass 1 -f webm -threads 0 -benchmark -y /dev/null&&ffmpeg -i \"$SOURCE\" -vpre libvpx_vp8-360p -b 1700k -pass 2 -acodec libvorbis -ab 128k -ar 44100 -threads 0 -benchmark -y \"$TARGET\"", 
+      "slug": "vp8.1700k.vorbis.128.44100", 
+      "to_extension": "WEBM"
+    }
   }
 ]
