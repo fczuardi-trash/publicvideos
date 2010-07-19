@@ -44,7 +44,7 @@ a:hover{color:#fff;}
 #main-play-button {
   position:absolute;
   z-index:59;
-  opacity:0;
+  opacity:1;
   outline:0;
 }
 #main-play-button img{
@@ -94,9 +94,13 @@ a:hover{color:#fff;}
 .box .video{position:absolute;}
 .box>.video{opacity:.2;}
 .box.locked>.video{opacity:.05;}
-.box.selected>.video{
+.box.selected>.video,
+.box.selected>.video>.video{
   visibility:visible;
   opacity:1;
+}
+.box.selected .video video{
+/*  z-index:100000;*/
 }
 .box.below>.video{visibility:hidden;}
 div.box.below:hover{

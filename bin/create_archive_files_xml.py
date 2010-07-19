@@ -2,14 +2,14 @@
 
 import os
 
-IDENTIFIER = 'ace_201002_04'
-VIDEOS_PATH = '/tmp/publicvideos/versions/ace_201002_04/'
-VIDEOS_TITLE = "Publicvideos February 2010 (Ace) batch, part 4"
+IDENTIFIER = 'taboca_201004_04'
+VIDEOS_PATH = '/tmp/publicvideos/versions/taboca_201004_04/'
+VIDEOS_TITLE = "Publicvideos April 2010 (Marcio) batch, part 4"
 VIDEOS_DESCRIPTION = 'A batch of stock clips made for publicvideos.org.'
 VIDEOS_LABELS = 'publicvideos.org; royalty free; free; cc0; cczero; stock footage; ace of spades'
-VIDEOS_CREATOR = 'Ace of Spades'
-VIDEOS_DIRECTOR = 'Ace of Spades'
-VIDEOS_YEAR = '2009'
+VIDEOS_CREATOR = 'Marcio Galli'
+VIDEOS_DIRECTOR = 'Marcio Galli'
+VIDEOS_YEAR = '2010'
 VIDEOS_UPLOADER = 'fabricio@fabricio.org'
 VIDEOS_SPONSOR = 'Fabricio Zuardi'
 VIDEOS_CONTACT = 'http://fabricio.org'
@@ -24,11 +24,14 @@ for f in files:
   is_dirac = (f.find('dirac') != -1)
   if (f[0] == '.') or (ext == '.xml'):
     continue
-  format = 'Ogg Video' if ext == '.OGV' and is_dirac else 'Ogg Theora' if ext == '.OGV' else 'h.264 MPEG4' if ext == '.MP4' else 'JPEG'
+  format = 'Ogg Video' if ext == '.OGV' and is_dirac else \
+    'Ogg Theora' if ext == '.OGV' else \
+    'h.264 MPEG4' if ext == '.MP4' else \
+    'WebM VP8' if ext == 'WEBM' else 'JPEG'
   # result = ''.join([result,'  <file name="%s" source="derivative">\n' % f])
   result = ''.join([result,'  <file name="%s" source="">\n' % f])
   # result = ''.join([result,'    <original>%s.MTS</original>\n' % name])
-  result = ''.join([result,'    <format>%s</format>\n' % format])
+  if format: result = ''.join([result,'    <format>%s</format>\n' % format])
   result = ''.join([result,'  </file>\n'])
 
 result = ''.join([result, "</files>"])

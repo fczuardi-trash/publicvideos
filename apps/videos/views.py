@@ -162,7 +162,10 @@ def list_sets(request, fmt='html'):
     {'contributor':'Taboca', 'year':'2010', 'month':'February', 'part':'3 of 4', 'set_slug':'taboca_201002_03'},
     {'contributor':'Taboca', 'year':'2010', 'month':'February', 'part':'4 of 4', 'set_slug':'taboca_201002_04'},
     {'contributor':'Taboca', 'year':'2010', 'month':'March', 'part':'1 of 2', 'set_slug':'taboca_201003_01'},
-    {'contributor':'Taboca', 'year':'2010', 'month':'March', 'part':'2 of 2', 'set_slug':'taboca_201003_02'}
+    {'contributor':'Taboca', 'year':'2010', 'month':'March', 'part':'2 of 2', 'set_slug':'taboca_201003_02'},
+    {'contributor':'Taboca', 'year':'2010', 'month':'April', 'part':'2 of 4', 'set_slug':'taboca_201004_02'},
+    {'contributor':'Taboca', 'year':'2010', 'month':'April', 'part':'3 of 4', 'set_slug':'taboca_201004_03'},
+    {'contributor':'Taboca', 'year':'2010', 'month':'April', 'part':'4 of 4', 'set_slug':'taboca_201004_04'}
   ]
   return render_to_response(template_path, locals())
 

@@ -7,18 +7,9 @@
   {% endblock %}
 </head>
 <body {% block body_attributes %}{% endblock %}>
-  <menu>
-    {% block menu %}{% endblock %}
-  </menu>
-  <header>
-    {% block header %}{% endblock %}
-  </header>
   <div id="content">
     {% block content %}{% endblock %}
   </div>
-  <footer>
-    {% block footer %}{% endblock %}
-  </footer>
 {% include 'analytics_code.html' %}
 </body>
 </html>

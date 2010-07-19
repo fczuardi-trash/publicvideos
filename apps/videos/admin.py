@@ -72,6 +72,8 @@ class VideoAdmin(admin.ModelAdmin):
             continue
         if to_extension == 'DIR':
           to_extension = 'OGV'
+        if to_extension == 'WEB':
+          to_extension = 'WEBM'
         archive_url = "http://www.archive.org/download/%s/%s.%s.%s" % (video.set_slug, video.md5, job.job_slug, to_extension)
         try:
           video_version = VideoVersion.objects.get(url=archive_url)

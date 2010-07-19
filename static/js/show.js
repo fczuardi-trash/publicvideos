@@ -1,233 +1,178 @@
+//For people without firebug
+if (!console) {
+  var console = {}
+  console.log = function(text){
+    return
+  }
+}
+
+
 // var sizes = [272,360,540,720,1080];
 var sizes = [272,360];
 
-function init(){
-  var boxes = $$('.box');
-  var unlockButtons = $$('.unlock-button')
-  var panelTabButtons = $$('#actions .menubar .tabs a')
-  var playButtons = $$('.play-button')
-  for(var i = 0; i < boxes.length; i++){
-    boxes[i].addEventListener('click', boxClicked, false)
-    boxes[i].addEventListener('mousedown', boxMouseDown, false)
-    boxes[i].addEventListener('mouseup', boxMouseUp, false)
-    boxes[i].addEventListener('mouseout', boxMouseUp, false)
-    boxes[i].addEventListener('rollout', boxMouseUp, false)
-    var video = boxes[i].getLast('video')
-    if(video){
-      video.addEventListener('canplay', removeThrobber, false)
-      video.addEventListener('play', fadeOutUIClutter, false)
-      video.addEventListener('pause', fadeInUIClutter, false)
-      video.addEventListener('ended', fadeInUIClutter, false)
-    }
-  }
-  for(var i = 0; i< unlockButtons.length; i++){
-    unlockButtons[i].addEventListener('click', unlockButtonClicked, true)
-  }
-  for(var i = 0; i< panelTabButtons.length; i++){
-    panelTabButtons[i].addEventListener('click', panelTabClicked, false)
-  }
-  for(var i = 0; i< playButtons.length; i++){
-    playButtons[i].addEventListener('click', playButtonClicked, true)
-  }
-  window.addEvent('load', page_loaded);
+//init
+$(document).ready(function(){
+  initHacks();
+  $('.play-button').click(playButtonClicked);
+  //panel tab buttons
+  $('#actions .menubar .tabs a').each(function(){
+    $(this).click(panelTabClicked);
+  });
+  
+  bindSizeBoxSelectionEvents();
+});
+function bindSizeBoxSelectionEvents(){
+  $('.box').each(function(){
+    $(this).bind({
+      'click': boxClicked
+      ,'mousedown': boxMouseDown
+      ,'mouseup': boxMouseUp
+      ,'mouseout': boxMouseUp
+    });
+  })
 }
-function page_loaded(){
-  main_play_btn = $('main-play-button')
-  main_play_btn.set('tween', {duration:'long'})
-  main_play_btn.tween('opacity', [0,0.8])
+function unbindSizeBoxSelectionEvents(){
+  $('.box').each(function(){
+    $(this).unbind();
+  });
 }
-function firefox35hack(video){
-  var video_clone = video.clone()
-  video_clone.replaces(video)
-  video_clone.addEventListener('play', fadeOutUIClutter, false)
-  video_clone.addEventListener('pause', fadeInUIClutter, false)
-  video_clone.addEventListener('ended', fadeInUIClutter, false)
-  video_clone.addEventListener('canplay', removeThrobber, false)
-  video.dispose()
-  return video_clone;
-}
-function removeThrobber(e){
-  $('throbber').setStyle('display','none')
-}
-function fadeOutUIClutter(e){
-  var elements = $$('.box, .unlock-button, #header, #actions');
-  for(var i=0; i< elements.length; i++){
-    elements[i].addClass('lights-off')
-  }
-  $('main-play-button').setStyle('display','none')
-}
-function fadeInUIClutter(e){
-  var elements = $$('.box, .unlock-button, #header, #actions');
-  for(var i=0; i< elements.length; i++){
-    elements[i].removeClass('lights-off')
-  }
-  $('main-play-button').setStyle('display','block')
-}
-function playButtonClicked(e){
-  var play_btn = $('main-play-button')
-  var selected_size = play_btn.className.substring(1,play_btn.className.indexOf(' '))
-  var box = $('s'+selected_size)
-  var video = box.getLast('video')
-  var video_sources = $$('#s'+selected_size+' video source')
-  if(video.constructor == window.HTMLVideoElement){
-    //browser has native support
-    for (var i=0; i<video_sources.length;i++){
-      video_sources[i].set('src', video_sources[i].get('_src'))
-    }
-    //check if it is Firefox 3.5.x because of a bug that does not refresh when you change attributes
-    if ($('poster'+selected_size).getStyle('display') == 'block'){
-      $('poster'+selected_size).setStyle('display','none')
-      the_video =firefox35hack(video)
-    } else{
-      the_video = video;
-    }
-    the_video.setProperty('autobuffer','true')
-    the_video.setProperty('autoplay','true')
-    if (navigator.userAgent.indexOf('Gecko/') == -1){
-      //firefox has a decent native throbber while safari and chrome don't give useful feedback
-      $('throbber').setStyle('display','block')
-    }
-    the_video.play()
+
+function playButtonClicked(event){
+  event.preventDefault();
+  var video_container = $('.box.selected .video.container:last').get(0);
+  //first run (if the proper src attributes are not yet in place)
+  if (video_container.innerHTML.indexOf('src=""') != -1){
+    //replace dummy video tag with the proper one (replace _src with src and replace the dom node)
+    html = video_container.innerHTML.replace(/_src=\"h/g,'src="h').replace(/src=\"\"/g,'').replace('<video ','<video controls autoplay="true" ');
+    video_container.innerHTML = html;
+    //remove fake poster-frame
+    $('.box.selected img.posterframe:last').fadeOut(1000);
   }else{
-    //fallback to flash player
-    alert('Flash fallback not yet implemented, this is ALPHA')
+    $('.box.selected video:last').get(0).play();
   }
-  //hide main play button
-  $('main-play-button').setStyle('display','none')
+  //hide play button
+  $('#main-play-button').fadeOut();
+  //atach events to be triggered by the video playback
+  fadeOutUIClutter();
+  $('.box.selected video:last').bind('play', fadeOutUIClutter);
+  $('.box.selected video:last').bind('pause ended', fadeInUIClutter);
 }
-function boxClicked(e){
-  var target = (e.target.nodeName.toUpperCase() == 'DIV') ? e.target : e.target.parentNode;
-  if (target.hasClass('selected') || target.hasClass('locked') || target.hasClass('lights-off')) return false;
-  var selected_size = target.get('id').substring(1,target.get('id').length)
-  for (var i=0; i<sizes.length;i++){
+
+function boxClicked(event){
+  if ($(this).hasClass('selected') || $(this).hasClass('locked') || $(this).hasClass('lights-off')) return false;
+  var box_id = $(this).attr('id')
+  var selected_size = box_id.substring(1, box_id.length)
+  for (var i=0; i<sizes.length; i++){
     var size = sizes[i];
-    var box = $('s'+size)
-    var downloadLink = $('d'+size)
-    var video = box.getLast('video')
-    if (video) {
-      if (box.hasClass('selected')){
-        video.addEventListener('play', fadeOutUIClutter, false)
-        video.addEventListener('pause', fadeInUIClutter, false)
-        video.addEventListener('ended', fadeInUIClutter, false)
-      }
-    }
-    box.removeClass('selected')
-    box.removeClass('below')
-    downloadLink.removeClass('selected')
+    var box = $('#s' + size);
+    var downloadLink = $('#d' + size);
+    box.removeClass('selected below');
+    downloadLink.removeClass('selected');
     if (selected_size > size){
       box.addClass('below')
     } else if (selected_size == size){
       box.addClass('selected')
       downloadLink.addClass('selected')
-      if (video){
-        video.set('controls', true)
-        if (selected_size < 1080){
-          // video.set('autobuffer', true)
-        }
-      }
     }
   }
-  $('header').className = 'h'+selected_size;
-  $('actions').className = 'a'+selected_size;
-  $('main-play-button').className = 'p'+selected_size+' play-button';
-  displayPatron(selected_size);
-  updatePanelContainerHeight();
-  e.stopPropagation();
-  return false;
+  $('#header').get(0).className = 'h'+selected_size;
+  $('#actions').get(0).className = 'a'+selected_size;
+  $('#main-play-button').get(0).className = 'p'+selected_size+' play-button';
+  // displayPatron(selected_size);
+  // updatePanelContainerHeight();
+  event.stopPropagation();
 }
-function updatePanelContainerHeight(){
-  var panelContainer = $('panel-container')
-  var selectedTab = $$('#actions .menubar .tabs a.selected')
-  if (selectedTab[0]){
-    var selectedPanel = $(selectedTab[0].get('_panel'))
-    panelContainer.style.height = Math.max(selectedPanel.offsetHeight,panelContainer.offsetHeight)
-  }
-}
-function unlockButtonClicked(e){
-  e.stopPropagation();
-  return false;
-}
-function displayPatron(size){
-  var credit = $('unlocked-credit');
-  var patrons = $$('#unlocked-credit span')
-  var patron = $('patron'+size);
-  if(patron){
-    credit.style.display = 'inline';
-    for (i=0; i< patrons.length; i++){
-      patrons[i].style.display = 'none'
-    }
-    patron.style.display = 'inline'
-  } else {
-    if (credit) credit.style.display = 'none';
-  }
-}
-function boxMouseDown(e){
-  var target = (e.target.nodeName.toUpperCase() == 'DIV') ? e.target : e.target.parentNode;
-  if ( target.hasClass('locked') && !target.hasClass('lights-off')){
-    target.addClass('unauthorized')
-    var selected_size = target.get('id').substring(1,target.get('id').length)
-    $('b'+selected_size).addClass('highlight')
-  }
-}
-function boxMouseUp(e){
-  var target = (e.target.nodeName.toUpperCase() == 'DIV') ? e.target : e.target.parentNode;
-  target.removeClass('unauthorized')
-  var selected_size = target.get('id').substring(1,target.get('id').length)
-  var lockbutton = $('b'+selected_size)
-  if (lockbutton) lockbutton.removeClass('highlight')
-}
+
 function panelTabClicked(e){
-  var clickedTab = e.target
-  var panelTabButtons = $$('#actions .menubar .tabs a')
-  var panelContainer = $('panel-container')
-  var panels = $$('#panel-container .panel')
-  var selectedPanel = $(clickedTab.get('_panel'))
-  var previousSelectedTab = $$('#actions .menubar .tabs a.selected')
+  var clickedTab = $(this);
+  var panelContainer = $('#panel-container')
+  var selectedPanelID = clickedTab.attr('_panel');
+  var selectedPanel = $('#' + selectedPanelID);
   var closePanel = clickedTab.hasClass('selected')
+  var selectedTabs = $('#actions .menubar .tabs a.selected')
   e.stopPropagation();
-  if (previousSelectedTab[0]){
-    var previousSelectedPanel = $(previousSelectedTab[0].get('_panel'))
-    //retract any opening drawwer
-    if (previousSelectedTab.get('_panel_anchor') != clickedTab.get('_panel_anchor')) {
-      previousSelectedTab.set('href',previousSelectedTab.get('_panel_anchor'))
+  e.preventDefault();
+  
+  //the tab clicked is not currently selected
+  if (!closePanel){
+    //check if there is any previous opened panels to close
+    if (selectedTabs.length > 0){
+      //a different tab was selected
+      previousSelectedTab = selectedTabs
+      //close the opened panel
+      var previousSelectedPanelID = previousSelectedTab.attr('_panel');
+      var previousSelectedPanel = $('#' + previousSelectedPanelID)
+      previousSelectedPanel.animate({
+        'top': '-'+previousSelectedPanel.outerHeight()+'px'
+      }, 1000, function(){
+        $(this).removeClass('opened')
+      });
+      //remove the selected status on that tab
+      previousSelectedTab.removeClass('selected')
+      previousSelectedTab.attr('href', previousSelectedTab.attr('_panel_anchor'))
     }
-    //closing panel animation
-    previousSelectedPanel.set('tween',{'duration':1000,'transition':'sine:in:out'}).tween('top','-'+previousSelectedPanel.offsetHeight+'px');
-    setTimeout(function(previous_panel){
-      previous_panel.removeClass('opened')
-    },1500,previousSelectedPanel)
-    previousSelectedTab[0].removeClass('selected')
-  }
-  if(!closePanel) { 
-    //resize panel container with height enough to fit the table
+    //open panel
+    panelContainer.css('height', Math.max(selectedPanel.outerHeight(), panelContainer.outerHeight()))
     selectedPanel.addClass('opened')
-    // selectedPanel.style.top = '-'+selectedPanel.offsetHeight+'px'
-    selectedPanel.style.visibility = 'hidden'
-    selectedPanel.style.top = '0px'
-    panelContainer.setStyle('height',Math.max(selectedPanel.offsetHeight,panelContainer.offsetHeight))
-    var openFx = new Fx.Tween(selectedPanel,{'duration':1000,'transition':'sine:in:out'}).start('top','-'+selectedPanel.offsetHeight+'px','0px');
-    setTimeout(function(selectedPanel){
-      selectedPanel.style.visibility = 'visible'
-    },100,selectedPanel)
-  } else {
-    var scrollFx = new Fx.Scroll(window).toTop(window);
+    selectedPanel.css('top', -selectedPanel.outerHeight() + 'px')
+    selectedPanel.animate({'top': '0px'}, 1000);
+    clickedTab.addClass('selected')
+  }else{
+    //close panel
+    selectedPanel.animate({
+      'top': -selectedPanel.outerHeight() + 'px'
+    }, 1000, function(){
+      $(this).removeClass('opened')
+    });
+    clickedTab.removeClass('selected')
   }
   setTimeout(function(clickedTab){
-    if (clickedTab.get('href') == "#") { 
-      clickedTab.removeClass('selected')
-      clickedTab.set('href',clickedTab.get('_panel_anchor'))
+    if (clickedTab.attr('href') == "#") { 
+      clickedTab.attr('href', clickedTab.attr('_panel_anchor'))
     }else {
-      var anchorName = clickedTab.get('href')
-      var anchor = $(anchorName.substring(1,anchorName.length))
-      clickedTab.addClass('selected')
-      var scrollFx = new Fx.Scroll(window, { offset: {
-              'x': 0,
-              'y': -50
-          }
-      }).toElement(anchor);
-      clickedTab.set('href','#')
+      clickedTab.attr('href','#')
     }
   }, 900, clickedTab)
-  
-  return false;
+}
+
+function fadeOutUIClutter(){
+  $('.box, .unlock-button, #header, #actions').each(function(){
+    $(this).addClass('lights-off')
+  });
+  $('#main-play-button').fadeOut();
+  //temporarily remove the box click handlers so the user can use the native play/pause controls
+  unbindSizeBoxSelectionEvents();
+}
+function fadeInUIClutter(){
+  $('.box, .unlock-button, #header, #actions').each(function(){
+    $(this).removeClass('lights-off')
+  });
+  $('#main-play-button').fadeIn();
+  bindSizeBoxSelectionEvents();
+}
+function boxMouseDown(event){}
+function boxMouseUp(event){}
+
+//--------------------Hacks-------------------------------------------------\\
+function initHacks(){
+  //hacks to make html5 video cross browser
+  hack_addPosterFrameOverlay();
+}
+
+function hack_addPosterFrameOverlay(){
+  //
+  // Problem:
+  // Firefox 3.5 does not support the video tag poster attribute.
+  //
+  // Solution:
+  // Add the poster frame as an img tag with javascript an make it cover the 
+  // other interface with css position absolute.
+  $('video').each(function (){
+    var video_height = $(this).attr('height')
+    $('<img id="poster' + video_height
+      + '" class="video posterframe" width="' + $(this).attr('width')
+      + '" height="' + $(this).attr('height')
+      + '" src="' + $(this).attr('poster')
+      + '" />').insertAfter($(this))
+  });
 }

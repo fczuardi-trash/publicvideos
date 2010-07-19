@@ -2,7 +2,6 @@
 {% block title %}{{ page_title }}{% endblock %}
 {% block extrahead %}
     <link rel="stylesheet" type="text/css" href="/static/css/show.css" />
-    <script type="text/javascript" src="/static/js/show.js"></script>
     <link rel="canonical" href="{{ canonical_url }}" />
     <link rel="icon" type="image/png" href="/static/images/favicon_pv_{{ logo_color }}.png">
     <meta name="keywords" content="free, video, footage, {{ keywords }}" /> 
@@ -37,16 +36,18 @@
                 <table>
                     <caption>Available Downloads</caption>
                     <thead>
-                        <td>Size</td><td colspan="2">Ogg Video</td><td>MP4</td>
+                        <td>Size</td>{% if versions['272.WEBM'] is defined %}<td>WebM</td>{% endif %}<td colspan="2">Ogg Video</td><td>MP4</td>
                     </thead>
                     <tr id="d272" class="zebra-odd selected">
                         <td>Small (480x272)</td>
+                        {% if versions['272.WEBM'] is defined %}<td><a href="{{ versions['272.WEBM'].url }}" title="{{ versions['272.WEBM'].size|filesizeformat }}">VP8</a></td>{% endif %}
                         <td{% if versions['DIRAC.272.OGV'] is not defined %} colspan="2"{% endif %}><a href="{{ versions['272.OGV'].url }}" title="{{ versions['272.OGV'].size|filesizeformat }}">Theora</a></td>
                         {% if versions['DIRAC.272.OGV'] is defined %}<td><a href="{{ versions['DIRAC.272.OGV'].url }}" title="{{ versions['DIRAC.272.OGV'].size|filesizeformat }}">Dirac</a></td>{% endif %}
                         <td><a href="{{ versions['272.MP4'].url }}" title="{{ versions['272.MP4'].size|filesizeformat }}">H.264</a></td>
                     </tr>
                     <tr id="d360" class="zebra-even">
                         <td>Medium (640x360)</td>
+                        {% if versions['360.WEBM'] is defined %}<td><a href="{{ versions['360.WEBM'].url }}" title="{{ versions['360.WEBM'].size|filesizeformat }}">VP8</a></td>{% endif %}
                         <td{% if versions['DIRAC.360.OGV'] is not defined %} colspan="2"{% endif %}><a href="{{ versions['360.OGV'].url }}" title="{{ versions['360.OGV'].size|filesizeformat }}">Theora</a></td>
                         {% if versions['DIRAC.360.OGV'] is defined %}<td><a href="{{ versions['DIRAC.360.OGV'].url }}" title="{{ versions['DIRAC.360.OGV'].size|filesizeformat }}">Dirac</a></td>{% endif %}
                         <td><a href="{{ versions['360.MP4'].url }}" title="{{ versions['360.MP4'].size|filesizeformat }}">H.264</a></td>
@@ -77,25 +78,47 @@
             </div> <!-- end downloads-panel -->
         </div> <!-- end panel-container -->
     </div> <!-- end actions -->
+    <!-- Videos (mp4 uses a _src hack instead of src because safari loads everything without asking even without autobuffer enabled) -->
+    <!-- Firefox will not play the webm source https://bugzilla.mozilla.org/show_bug.cgi?id=546129 because archive.org uses the wrong mime type http://www.archive.org/post/315963/webm-videos-are-being-served-with-a-generic-mime-type -->
     <div id="s360" class="box">
         <div id="s272" class="box selected">
-        <!-- 480x272 -->
-        <video class="video" width="480" height="272" controls {% if versions['272.JPG'] is defined %} poster="{{ versions['272.JPG'].url }}"{% endif %}>
-            <source _src="{{ versions['272.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' src="" />
-            {% if versions['DIRAC.272.OGV'] is defined %}<source _src="{{ versions['DIRAC.272.OGV'].url }}" type='video/ogg; codecs="dirac, vorbis"' src="" />{% endif %}
-            <source _src="{{ versions['272.MP4'].url }}" type="video/mp4" src="" />
-            <div class="warning" id="w272">{{ unsuported_video_tag_msg }}</div>
-        </video>
-        {% if versions['272.JPG'] is defined %}<img  width="480" height="272" src="{{ versions['272.JPG'].url }}" id="poster272" class="video" />{% endif %}
-      </div>
+          <!-- 480x272 -->
+          <div class="video container">
+            <video class="video" width="480" height="272" preload="none" {% if versions['272.JPG'] is defined %} poster="{{ versions['272.JPG'].url }}"{% endif %} >
+                {% if versions['272.WEBM'] is defined %}
+                  <source src="" _src="{{ versions['272.WEBM'].url }}" type='video/webm; codecs="vp8.0, vorbis"' />
+                {% endif %}
+                {% if versions['272.OGV'] is defined %}
+                  <source src="" _src="{{ versions['272.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' />
+                {% endif %}
+                {% if versions['DIRAC.272.OGV'] is defined %}
+                  <source src="" _src="{{ versions['DIRAC.272.OGV'].url }}" type='video/ogg; codecs="dirac, vorbis"' />
+                {% endif %}
+                {% if versions['272.MP4'] is defined %}
+                  <source src="" _src="{{ versions['272.MP4'].url }}" type="video/mp4" />
+                {% endif %}
+                <div class="warning" id="w272">{{ unsuported_video_tag_msg }}</div>
+            </video>
+          </div>
+        </div>
         <!-- 640x360 -->
-        <video class="video" width="640" height="360" {% if versions['360.JPG'] is defined %} poster="{{ versions['360.JPG'].url }}"{% endif %}>
-            <source _src="{{ versions['360.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' src="" />
-            {% if versions['DIRAC.360.OGV'] is defined %}<source _src="{{ versions['DIRAC.360.OGV'].url }}" type='video/ogg; codecs="dirac, vorbis"' src="" />{% endif %}
-            <source _src="{{ versions['360.MP4'].url }}" type="video/mp4" src="" />
-            <div class="warning" id="w360">{{ unsuported_video_tag_msg }}</div>
-        </video>
-        {% if versions['272.JPG'] is defined %}<img width="640" height="360" src="{{ versions['360.JPG'].url }}" id="poster360" class="video" />{% endif %}
+        <div class="video container">
+          <video class="video" width="640" height="360" preload="none" {% if versions['360.JPG'] is defined %} poster="{{ versions['360.JPG'].url }}"{% endif %}>
+              {% if versions['360.WEBM'] is defined %}
+                <source src="" _src="{{ versions['360.WEBM'].url }}" type='video/webm; codecs="vp8.0, vorbis"' />
+              {% endif %}
+              {% if versions['360.OGV'] is defined %}
+                <source src="" _src="{{ versions['360.OGV'].url }}" type='video/ogg; codecs="theora, vorbis"' />
+              {% endif %}
+              {% if versions['DIRAC.360.OGV'] is defined %}
+                <source src="" _src="{{ versions['DIRAC.360.OGV'].url }}" type='video/ogg; codecs="dirac, vorbis"' />
+              {% endif %}
+              {% if versions['360.MP4'] is defined %}
+                <source src="" _src="{{ versions['360.MP4'].url }}" type="video/mp4" />
+              {% endif %}
+              <div class="warning" id="w360">{{ unsuported_video_tag_msg }}</div>
+          </video>
+        </div>
     </div>
     <div id="logo_108" class="watermark grid_cell">
     <a href="/"><img src="/static/images/internas.png" class="logo_corner"></a>
@@ -105,15 +128,8 @@
     </form>
     {% if didyoumean %}<p class="didyoumean">Did you mean <a href="/?q={{ didyoumean }}">{{ didyoumean }}</a>?</p>{% endif %}
     </div><!-- logo -->
-    <!-- <div id="watermark">
-        <h1><a href="/">Public Videos</a></h1>
-    </div> -->
-    <img id="throbber" style="display:none;" src="/static/images/ajax-loader.gif">
-    <a href="#" id="main-play-button" class="p272 play-button"><img src="/static/images/play_{{ logo_color }}.png" /></a>
+    <a href="#" rel="nofollow" id="main-play-button" class="p272 play-button"><img src="/static/images/play_{{ logo_color }}.png" /></a>
     <!-- Javascript libraries -->
-    <script type="text/javascript" src="/static/lib/mootools-1.2.3-core-nc.js"></script>
-    <script type="text/javascript" src="/static/lib/mootools-1.2.4.2-more-fx-scroll.js"></script>
-    <script type="text/javascript">
-        init();
-    </script>
+    <script type="text/javascript" src="/static/lib/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="/static/js/show2.js"></script>
 {% endblock %}
